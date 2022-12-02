@@ -1,0 +1,114 @@
+.about{
+   
+    .heading{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 87px;
+        // display: flex;
+        // align-items: flex-end;
+        text-align: center;
+        letter-spacing: 0.025em;
+
+        color: #3E3E3E;
+
+    }
+
+    .aboutContent{
+        align-items: center;
+        margin-left:15%;
+        margin-right: 15%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height:120%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: justify;
+        // letter-spacing: 0.025em;
+
+        color: #747474;
+        // @media only screen and (max-width: 750px) {
+        //     font-size: 32px;}
+    
+    }
+
+    .background1{
+        //  width:400px;
+    	height:20%;    
+
+        background: linear-gradient(
+            to right,
+            #F3F3F3 0%,
+            #F3F3F3 70%,
+            #D7E9FF 70%,
+            #D7E9FF 100%
+          );    
+          
+        
+        }
+
+        .background2{
+            //  width:400px;
+            height:20%;	
+            background: linear-gradient(
+                to right,
+                #FFE5D7 0%,
+                #FFE5D7 30%,
+                #F3F3F3 30%,
+                #F3F3F3 100%
+              );    
+              
+            
+            }
+
+            .background3{
+                //  width:400px;
+                height:20%; 	
+                background: linear-gradient(
+                    to right,
+                    #F3F3F3 0%,
+                    #F3F3F3 70%,
+                    #FFF6A4 70%,
+                    #FFF6A4 100%
+                  );    
+                 
+                
+                }
+
+                .about1{
+                    backdrop-filter: blur(50px);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin : 2vh;
+                    p{
+                       width: 60%;
+                    //    height: 405px;
+                       font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 2vw;
+                        line-height: 139.18%;
+                        /* or 45px */
+
+                        display: flex;
+                        align-items: flex-end;
+                        text-align: justify;
+                        letter-spacing: 0.06em;
+
+                        color: #000000;
+
+                    }
+
+                    img{
+                        width: 20%;
+                    }
+                    
+                }
+
+                
+}

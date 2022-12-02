@@ -1,0 +1,54 @@
+
+
+/* #bound-one {
+  background: #d0d8db;
+}
+
+#bound-two {
+  background: #dfcece;
+}
+
+#bound-three {
+  background: #D0D6B3;
+} */
+
+.scroll-bound {
+  height: 500vh;
+ margin-top: -18px;
+}
+.scroll-bound .content {
+  height: 120vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-bound video {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  .scroll-bound {
+    height: 100vh;
+     margin-top: -280px;
+    margin-bottom: -250px;
+  }
+
+
+}
+
+// @media only screen and (max-width: 750px) {
+
+//   .scroll-bound {
+//     height: 100vh;
+//      margin-top: -300px;
+//      margin-bottom: -250px;
+//   }
+
+
+// }

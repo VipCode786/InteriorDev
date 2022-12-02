@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,133 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+* {
+  font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+  margin: 0%;
+}
+
+body{
+  background: #F3F3F3;
+
+  width: 100%;
+}
+
+.border{
+  height: 132px;
+  background-color: #ffffff;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  /* flex-wrap: nowrap; */
+}
+
+.borderSet{
+  width: 278px;
+  height: 2rem; 
+  background-color: #959595 ;
+  
+
+  /* border: 18px solid #959595; */
+}
+
+.borderText{
+  
+  margin: 1rem;
+
+
+
+ 
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 118%;
+
+
+
+  letter-spacing: -0.005em; 
+
+  color: #959595;
+}
+
+.boxView{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.boxButton:hover{
+  background-color: #CB572C;
+  color:#FFFFFF
+}
+.boxButton{
+  box-sizing: border-box;
+
+/* Auto layout */
+
+    
+     padding: 16px 58px;
+     gap: 10px;
+
+     
+     /* height: 70px; */
+    
+
+     background: #FFFFFF;
+     border: 3px solid #CB572C;
+     border-radius: 50px;
+
+
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 25px;
+     line-height: 118%;
+
+
+     color: #000000;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .borderText{
+    font-size: 25px;
+  }
+}
+
+.row{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  
+
+}
+.cloumn{
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap
+
+}
+
+.row-wrap{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  
+
+}
+.cloumn-wrap{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+
+}
+
+a{
+  text-decoration: none;
 }

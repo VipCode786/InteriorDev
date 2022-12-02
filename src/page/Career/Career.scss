@@ -1,0 +1,178 @@
+.career{
+
+    .rowCareer{
+            display: flex;
+            flex-direction: row;
+            margin: 5rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    }
+    .rowCareer p:first-of-type{
+                width: 417px;
+                height: 144px;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 72px;
+                text-align: center;
+                color: #000000;
+                    }
+
+                    div p:nth-of-type(2)   {
+                        width: 652px;
+                height: 120px;
+                left: 792px;
+                top: 196px;
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 118%;
+                /* or 24px */
+
+                display: flex;
+                align-items: flex-end;
+                text-align: justify;
+                letter-spacing: -0.015em;
+
+                color: #353535;
+                    }
+
+    .grey-bg{
+        width: 632px;
+        height: 448px;
+        background: #7A7A7A;
+        border-radius: 37px;
+        
+        .heading{
+            width: 494px;
+            height: 144px;
+            margin:2rem;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            letter-spacing: 0.025em;
+
+            color: #FFFFFF;
+        }
+    }
+
+    .orange-bg{
+        width: 632px;
+        height: 448px;
+       
+        
+        background: #E37C56;
+        border-radius: 37px;
+
+        .heading{
+            width: 494px;
+            height: 144px;
+            
+
+         
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            /* identical to box height */
+
+           margin: 2rem;
+            letter-spacing: 0.025em;
+
+            color: #FFFFFF;
+        }
+    }
+
+    .careerForm{
+        width: 1512px;
+        height: 585px;
+
+        background: #383838;
+        
+     
+        input{
+        
+            width:30vw;
+            background: #FFFFFF;
+            border: 1px solid #424242;
+            border-radius: 8px;
+            height: 2rem;
+            margin-top:0.5rem
+            }
+    
+            textarea{
+                width: 60vw;
+                height: 8rem;
+                margin-left: 1rem;
+                margin-top:0.5rem
+            }
+
+            span{
+                width: 191px;
+            }
+
+
+    }
+
+    .careerForm p:nth-of-type(1){
+        width: 858px;
+        height: 96px;
+    
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 96px;
+        /* identical to box height */
+    
+    
+        letter-spacing: 0.025em;
+    
+        color: #CB572C;
+        }
+
+        .careerForm p:nth-of-type(2){
+            width: 478px;
+        
+        margin-top: 3rem;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        
+        letter-spacing: 0.025em;
+        
+        color: #E6E6E6;
+        }
+    // .careerForm div:nth-of-type(1){
+    //     // margin: 2rem;
+    // }
+
+    .career-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .career-row{
+        display: flex;
+        flex-direction: row;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    
+        
+}
+
+
+

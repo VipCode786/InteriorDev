@@ -1,0 +1,25 @@
+.header{
+    background-color:#383838 ;
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .right-header{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        margin: 1rem;
+        width: 60%;
+    }
+    }
+
+    img{
+        margin: 1rem;
+        width: 80%;
+    }
+}

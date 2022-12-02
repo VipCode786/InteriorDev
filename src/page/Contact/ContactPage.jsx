@@ -56,7 +56,19 @@ const ContactPage = () => {
             <input  type="text" placeholder='Message' />
             </label>
             </div>
-        <button>Submit</button>
+           
+            <input  type="file" placeholder='Message' />
+            <p>Please upload files upto 15 MB.<br/>
+                For larger files, you can discuss when our team contacts you.
+            </p>
+
+           
+            <div className='boxView'>
+                    <div className='boxButton'>
+                    Apply
+
+                    </div>
+                    </div>
             </div>
 
     </div>

@@ -60,6 +60,10 @@
                 color: #FFFFFF;
 
             }
+
+            // .contact-in{
+            //   height:40vh
+            // }
         }
         .social-media{
             display: flex;
@@ -74,8 +78,17 @@
     }
     .contactForm{
             background-color: #FFFFFF;
-            margin: 2rem;
+            margin: 3rem;
             padding: 5rem;
+            .error{
+              color: red;
+              font-size: 1vw;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+           
+            }
             input {
                 outline: 0;
                 border-width: 0 0 2px;
@@ -112,4 +125,33 @@
                 margin: 2rem;
               }
     }
+}
+
+.submitButton:hover{
+  background-color: #CB572C;
+  color:#FFFFFF;
+  cursor: pointer;
+}
+.submitButton{
+  box-sizing: border-box;
+
+  /* Auto layout */
+  
+      
+       padding: 16px 58px;
+       gap: 10px;
+
+      background: #FFFFFF;
+     border: 3px solid #CB572C;
+     border-radius: 50px;
+
+
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 25px;
+     line-height: 118%;
+
+
+     color: #000000;;
 }

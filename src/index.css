@@ -11,20 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+/* overflow-x: hidden; */
+/* ::-webkit-scrollbar {
+  display: none;
+  
+} */
 * {
   font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0%;
+  /* overflow-x: scroll; */
+    /* overflow-y: scroll; */
+    /* -ms-overflow-style: none;  
+    scrollbar-width: none;  */
+    /* height: 100%; */
+    /* width: 100% */
+    max-width: 100%;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+
+  
 }
 
 body{
   background: #F3F3F3;
-
+  margin: 0%;
   width: 100%;
 }
 
 .border{
-  height: 132px;
+  height: 52px;
   background-color: #ffffff;
   display: flex;
   flex: 1 0 0;
@@ -32,12 +48,14 @@ body{
   justify-content: space-between; 
   align-items: center;
   width: 100%;
+  overflow-x:hidden;
+  overflow-y: hidden;
   /* flex-wrap: nowrap; */
 }
 
 .borderSet{
   width: 278px;
-  height: 2rem; 
+  height: 1rem; 
   background-color: #959595 ;
   
 
@@ -54,7 +72,7 @@ body{
   
   font-style: normal;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 3vw;
   line-height: 118%;
 
 
@@ -70,9 +88,11 @@ body{
   margin: 1rem;
 }
 
-.boxButton:hover{
+.boxButton:hover {
   background-color: #CB572C;
-  color:#FFFFFF
+  color:#FFFFFF;
+  cursor: pointer;
+ 
 }
 .boxButton{
   box-sizing: border-box;
@@ -95,11 +115,12 @@ body{
      font-family: 'Poppins';
      font-style: normal;
      font-weight: 500;
-     font-size: 25px;
+     font-size: 20px;
      line-height: 118%;
 
 
      color: #000000;
+    
 }
 
 
@@ -130,6 +151,7 @@ body{
   
 
 }
+
 .cloumn-wrap{
   display: flex;
   flex-direction:column;
@@ -139,4 +161,18 @@ body{
 
 a{
   text-decoration: none;
+  color: #000000;
 }
+
+a:hover{
+  color:#ffffff;
+  background-color: #CB572C;
+}
+
+.main{
+  height: 70vh;
+}
+
+/* .imageRow{
+  margin-top: 10vh;
+} */

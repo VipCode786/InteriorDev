@@ -1,7 +1,64 @@
+import axios from 'axios';
 import React from 'react'
+import { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha';
+import { Link } from 'react-router-dom';
 import './ContactPage.scss'
 const ContactPage = () => {
+
+  const [FirstName, setFirstName] = useState();
+  const [LastName, setLastName] = useState();
+  const [Phone, setPhone] = useState();
+  const [Email, setEmail] = useState();
+  const [Message, setMessage] = useState();
+  const [file, setFile] = useState(null);
+  const [recaptcha, setRecaptcha] = useState();
+  const [error, setError] = useState();
+
+  function onChange(value) {
+   
+    console.log('Captcha value:', value);
+    setRecaptcha(value);
+
+  }
+  const upload = (e) => {
+    e.preventDefault();
+    let formData = new FormData();
+    formData.append("uploadedFile", file);
+    formData.append("FirstName",FirstName);
+    formData.append("LastName",LastName);
+    formData.append("Email",Email);
+    formData.append("Phone",Phone);
+    formData.append("Message",Message);
+    // formData.append("name",name);
+
+   
+    axios.post("/", formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    }).then((res) => {
+      console.log("Success ", res);
+      alert("Submitted")
+    });
+  
+  };
+
+  const handleFile = (e) =>{
+    if(e.target.files[0].size > 15728640)
+    {
+      alert("File size should be less than 15mb");
+    }
+
+    else{
+      setFile(e.target.files[0]);
+      console.log(file)
+    }
+  }
+
+
   return (
+    <div>
     <div className='contactPage'>
             <div className='contactInfo' >
               <h1>
@@ -22,7 +79,7 @@ const ContactPage = () => {
                 <div className='contactDetails'>
                 <img src="/contactUs/address.svg" alt="" /> <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
                 </div>
-                <div className="contact-in">
+                <div className="contact-in" style={{height:"50vh"}}>
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.5736955621933!2d77.3936937!3d28.5224711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce9d48b8267cd%3A0xb8ae7c7899c59509!2sInterior%20Craft!5e0!3m2!1sen!2sin!4v1667299088135!5m2!1sen!2sin"
                 width="90%"
@@ -42,34 +99,66 @@ const ContactPage = () => {
                 <img src="/contactUs/in.svg" alt="" />
                 </div>
             </div>
+           
             <div className='contactForm'>
+            <form onSubmit={(e)=>upload(e)}>
             <div>
-            <input  type="text" placeholder='FirstName' />
-            <input  type="text" placeholder='LastName' />
+            <input  type="text" placeholder='FirstName' 
+            required
+            onChange={(e) => {
+            setFirstName(e.target.value);
+            }}
+            />
+            <input  type="text" placeholder='LastName' required
+             onChange={(e) => {
+              setLastName(e.target.value);
+              }}
+            />
             </div>
             <div>
-            <input  type="text" placeholder='Email' />
-            <input  type="text" placeholder='Mobile Number' />
+            <input  type="text" placeholder='Email' required
+             onChange={(e) => {
+              setEmail(e.target.value);
+              }}
+            />
+            <input  type="text" placeholder='Mobile Number'
+             onChange={(e) => {
+              setPhone(e.target.value);
+              }}
+            />
             </div>
             <div>
             <label>Message <br/>
-            <input  type="text" placeholder='Message' />
+            <input  type="text" placeholder='Message' 
+            onChange={(e) => {
+              setMessage(e.target.value);
+              }}
+            />
             </label>
             </div>
            
-            <input  type="file" placeholder='Message' />
+            <input  type="file" placeholder='file'  onChange={(e) => {
+              handleFile(e)
+          // setFile(e.target.files[0]);
+        }}/>
             <p>Please upload files upto 15 MB.<br/>
                 For larger files, you can discuss when our team contacts you.
             </p>
 
+            <ReCAPTCHA
+        sitekey="6Lde71sjAAAAAAcAO7iuTAyHmjJmpDkORTH4JcGi"
+        onChange={onChange}
+        required
+      />
            
-            <div className='boxView'>
-                    <div className='boxButton'>
-                    Apply
-
-                    </div>
-                    </div>
+           {/* onClick={(e) => upload(e)} */}
+          
+            <button className="submitButton" type="Submit" disabled={recaptcha? false : true} >Apply </button>
+</form>
             </div>
+            
+    </div>
+    <Link to="/" style={{color:"#000000",textAlign:'center'}}><h3>Back To Home Page</h3></Link>
 
     </div>
   )

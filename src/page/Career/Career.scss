@@ -3,14 +3,17 @@
     .rowCareer{
             display: flex;
             flex-direction: row;
-            margin: 5rem;
-            justify-content: space-between;
+            //  margin-left: 2rem;
+            //  margin-right: 2rem;
+            margin:2rem;
+            justify-content:center;
             flex-wrap: wrap;
+            align-items: center;
     }
     .rowCareer p:first-of-type{
-                width: 417px;
-                height: 144px;
-
+                // width: 417px;
+                // height: 144px;
+                margin-top: 5rem;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 600;
@@ -22,9 +25,9 @@
 
                     div p:nth-of-type(2)   {
                         width: 652px;
-                height: 120px;
-                left: 792px;
-                top: 196px;
+                // height: 120px;
+                // left: 792px;
+                // top: 196px;
 
                 font-family: 'Poppins';
                 font-style: normal;
@@ -37,20 +40,21 @@
                 align-items: flex-end;
                 text-align: justify;
                 letter-spacing: -0.015em;
-
+                margin-top: 5rem;
                 color: #353535;
                     }
 
     .grey-bg{
-        width: 632px;
-        height: 448px;
+        // width: 50%;
+        //  height: 648px;
         background: #7A7A7A;
         border-radius: 37px;
-        
+        margin-top: 2rem;
+       
         .heading{
-            width: 494px;
-            height: 144px;
-            margin:2rem;
+            // width: 494px;
+            // height: 144px;
+             margin:2rem;
             font-style: normal;
             font-weight: 700;
             font-size: 48px;
@@ -62,16 +66,17 @@
     }
 
     .orange-bg{
-        width: 632px;
-        height: 448px;
-       
+            // width: 45%;
+  
+        // height: 648px;
+        margin-top: 2rem;
         
         background: #E37C56;
         border-radius: 37px;
 
         .heading{
-            width: 494px;
-            height: 144px;
+            // width:40%;
+            // height: 144px;
             
 
          
@@ -80,8 +85,8 @@
             font-size: 48px;
             line-height: 72px;
             /* identical to box height */
-
-           margin: 2rem;
+            
+            margin: 2rem;
             letter-spacing: 0.025em;
 
             color: #FFFFFF;
@@ -89,27 +94,35 @@
     }
 
     .careerForm{
-        width: 1512px;
-        height: 585px;
-
-        background: #383838;
-        
+        // width: 1512px;
+        // height: 585px;
+        margin-top: 2rem;
+        width: 100%;
+        div{
+            margin:1rem;
+            display:flex;
+            justify-content: center ;
+            // align-items: center;
+        }
      
         input{
-        
-            width:30vw;
+            // margin:1rem;
+            width:40vw;
             background: #FFFFFF;
             border: 1px solid #424242;
             border-radius: 8px;
-            height: 2rem;
+            height: 3rem;
             margin-top:0.5rem
             }
     
             textarea{
-                width: 60vw;
+                //   width: 40vw;
                 height: 8rem;
-                margin-left: 1rem;
-                margin-top:0.5rem
+                
+                 margin-top:2rem;
+                // margin-left: 3rem;
+                
+
             }
 
             span{
@@ -120,9 +133,9 @@
     }
 
     .careerForm p:nth-of-type(1){
-        width: 858px;
-        height: 96px;
-    
+        // width: 56vw;
+        // height: 96px;
+         margin:2rem;
     
         font-family: 'Poppins';
         font-style: normal;
@@ -138,15 +151,17 @@
         }
 
         .careerForm p:nth-of-type(2){
-            width: 478px;
+             width: 90%;
         
-        margin-top: 3rem;
-        
+           margin-top: -2rem;
+           margin-left: 2rem;
+           margin-right: 2rem;
+        //  margin:1rem;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 3vw;
+        line-height: 50px;
         
         letter-spacing: 0.025em;
         
@@ -165,11 +180,40 @@
     .career-row{
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
+        justify-content:end;
         flex-wrap: wrap;
+        // width: 80%;
+         margin-right:10%;
+         margin-left:10%;
+        // margin-top: -1rem;
+         
+        .attach{
+        
+            // align-items: center;
+            // padding: 1px 25px;
+            //  gap: 10px;
+            background-color: #383838;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            color: #FFFFFF;
+            border: 3px solid #FFFFFF;
+            border-radius: 71px;
+            // margin-left: 1rem;
+        }
+
+        .attach:hover{
+            background-color: #FFFFFF;
+            color: #383838;
+            cursor: pointer;
+        }
     }
 
-
+    .FromBG{
+        background: #383838;
+        // margin: 3rem;
+        
+    }
     
         
 }

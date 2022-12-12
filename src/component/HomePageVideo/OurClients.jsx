@@ -1,5 +1,6 @@
 import React from 'react'
-import './ourClients.scss'
+import { Link } from 'react-router-dom';
+ import './ourClients.scss'
 const OurClients = () => {
   return (
     <div>
@@ -9,131 +10,231 @@ const OurClients = () => {
             <div>
             
             
-            <div className='rowslide'>
-                <img src="/ourClients/Frame 151.png" alt=""/>
-                <img src="/ourClients/Frame 152.png" alt=""/>
-                <img src="/ourClients/Frame 153.png" alt=""/>
-                <img src="/ourClients/Frame 154.png" alt=""/>
-                <img src="/ourClients/Frame 155.png" alt=""/>
-                <img src="/ourClients/Frame 156.png" alt=""/>
-                <img src="/ourClients/Frame 157.png" alt=""/>
-                <img src="/ourClients/Frame 158.png" alt=""/>
-                <img src="/ourClients/Frame 159.png" alt=""/>
-                <img src="/ourClients/Frame 160.png" alt=""/>
-                <img src="/ourClients/Frame 161.png" alt=""/>
-                <img src="/ourClients/Frame 162.png" alt=""/>
-            </div>
-            <div className='rowslide  rowleft'>
-                <img src="/ourClients/Frame 163.png" alt=""/>
-                <img src="/ourClients/Frame 164.png" alt=""/>
-                <img src="/ourClients/Frame 165.png" alt=""/>
-                <img src="/ourClients/Frame 166.png" alt=""/>
-                <img src="/ourClients/Frame 167.png" alt=""/>
-                <img src="/ourClients/Frame 168.png" alt=""/>
-                <img src="/ourClients/Frame 169.png" alt=""/>
-                <img src="/ourClients/Frame 170.png" alt=""/>
-                <img src="/ourClients/Frame 172.png" alt=""/>
-                <img src="/ourClients/Frame 173.png" alt=""/>
-                <img src="/ourClients/Frame 174.png" alt=""/>
-                <img src="/ourClients/Frame 175.png" alt=""/>
-
-            </div>
-            <div className='rowslide marginTop'>
-                <img src="/ourClients/Frame 176.png" alt=""/>
-                <img src="/ourClients/Frame 177.png" alt=""/>
-                <img src="/ourClients/Frame 178.png" alt=""/>
-                <img src="/ourClients/Frame 179.png" alt=""/>
-                <img src="/ourClients/Frame 180.png" alt=""/>
-                <img src="/ourClients/Frame 181.png" alt=""/>
-                <img src="/ourClients/Frame 182.png" alt=""/>
-                <img src="/ourClients/Frame 183.png" alt=""/>
-                <img src="/ourClients/Frame 184.png" alt=""/>
-                <img src="/ourClients/Frame 185.png" alt=""/>
-                <img src="/ourClients/Frame 186.png" alt=""/>
-                <img src="/ourClients/Frame 187.png" alt=""/>
-
-            </div>
-            <div className='rowslide rowleft'>
-                <img src="/ourClients/Frame 188.png" alt=""/>
-                <img src="/ourClients/Frame 189.png" alt=""/>
-                <img src="/ourClients/Frame 190.png" alt=""/>
-                <img src="/ourClients/Frame 191.png" alt=""/>
-                <img src="/ourClients/Frame 192.png" alt=""/>
-                <img src="/ourClients/Frame 193.png" alt=""/>
-                <img src="/ourClients/Frame 194.png" alt=""/>
-                <img src="/ourClients/Frame 195.png" alt=""/>
-                <img src="/ourClients/Frame 196.png" alt=""/>
-                <img src="/ourClients/Frame 197.png" alt=""/>
-                <img src="/ourClients/Frame 198.png" alt=""/>
-
-            </div>
-            </div>
-
-
-            <div>
-            
             <div className='rowslide '>
-                <img src="/ourClients/Frame 151.png" alt=""/>
-                <img src="/ourClients/Frame 152.png" alt=""/>
-                <img src="/ourClients/Frame 153.png" alt=""/>
-                <img src="/ourClients/Frame 154.png" alt=""/>
-                <img src="/ourClients/Frame 155.png" alt=""/>
-                <img src="/ourClients/Frame 156.png" alt=""/>
-                <img src="/ourClients/Frame 157.png" alt=""/>
-                <img src="/ourClients/Frame 158.png" alt=""/>
-                <img src="/ourClients/Frame 159.png" alt=""/>
-                <img src="/ourClients/Frame 160.png" alt=""/>
-                <img src="/ourClients/Frame 161.png" alt=""/>
-                <img src="/ourClients/Frame 162.png" alt=""/>
+                <div className="size"> <img src="/ourClients/Frame151.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame152.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame153.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame154.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame155.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame156.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame157.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame158.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame159.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame160.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame161.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame162.png" alt=""/> </div>
+                 <div className="size"> <img src="/ourClients/Frame151.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame152.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame153.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame154.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame155.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame156.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame157.png" alt=""/> </div>
+               <div className="size"> <img src="/ourClients/Frame158.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame159.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame160.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame161.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame162.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame151.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame152.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame153.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame154.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame155.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame156.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame157.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame158.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame159.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame160.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame161.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame162.png" alt=""/> </div>
+                 <div className="size"> <img src="/ourClients/Frame151.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame152.png" alt=""/> </div>
+                {/*<div className="size"> <img src="/ourClients/Frame153.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame154.png" alt=""/> </div> */}
+                {/* <div className="size"> <img src="/ourClients/Frame155.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame156.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame157.png" alt=""/> </div> */}
+                {/* <div className="size"> <img src="/ourClients/Frame158.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame159.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame160.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame161.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame162.png" alt=""/> </div> */}
             </div>
             <div className='rowslide rowleft'>
-                <img src="/ourClients/Frame 163.png" alt=""/>
-                <img src="/ourClients/Frame 164.png" alt=""/>
-                <img src="/ourClients/Frame 165.png" alt=""/>
-                <img src="/ourClients/Frame 166.png" alt=""/>
-                <img src="/ourClients/Frame 167.png" alt=""/>
-                <img src="/ourClients/Frame 168.png" alt=""/>
-                <img src="/ourClients/Frame 169.png" alt=""/>
-                <img src="/ourClients/Frame 170.png" alt=""/>
-                <img src="/ourClients/Frame 172.png" alt=""/>
-                <img src="/ourClients/Frame 173.png" alt=""/>
-                <img src="/ourClients/Frame 174.png" alt=""/>
-                <img src="/ourClients/Frame 175.png" alt=""/>
+            <div className="size"> <img src="/ourClients/Frame177.png" alt=""/> </div>
+
+                <div className="size "> <img src="/ourClients/Frame163.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame164.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame165.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame166.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame167.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame168.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame169.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame170.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame172.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame173.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame174.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame175.png" alt=""/> </div> 
+                <div className="size "> <img src="/ourClients/Frame163.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame164.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame165.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame166.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame167.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame168.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame169.png" alt=""/> </div>
+                 <div className="size "> <img src="/ourClients/Frame170.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame172.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame173.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame174.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame175.png" alt=""/> </div> 
+                <div className="size "> <img src="/ourClients/Frame163.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame164.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame165.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame166.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame167.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame168.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame169.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame170.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame172.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame173.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame174.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame175.png" alt=""/> </div> 
+                <div className="size "> <img src="/ourClients/Frame163.png" alt=""/> </div>
+                {/* <div className="size "> <img src="/ourClients/Frame164.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame165.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame166.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame167.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame168.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame169.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame170.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame172.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame173.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame174.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame175.png" alt=""/> </div>  */}
 
             </div>
-            <div className='rowslide marginTop'>
-                <img src="/ourClients/Frame 176.png" alt=""/>
-                <img src="/ourClients/Frame 177.png" alt=""/>
-                <img src="/ourClients/Frame 178.png" alt=""/>
-                <img src="/ourClients/Frame 179.png" alt=""/>
-                <img src="/ourClients/Frame 180.png" alt=""/>
-                <img src="/ourClients/Frame 181.png" alt=""/>
-                <img src="/ourClients/Frame 182.png" alt=""/>
-                <img src="/ourClients/Frame 183.png" alt=""/>
-                <img src="/ourClients/Frame 184.png" alt=""/>
-                <img src="/ourClients/Frame 185.png" alt=""/>
-                <img src="/ourClients/Frame 186.png" alt=""/>
-                <img src="/ourClients/Frame 187.png" alt=""/>
+             <div className='rowslide marginTop'>
+                
+                <div className="size"> <img src="/ourClients/Frame176.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame177.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame178.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame179.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame180.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame181.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame182.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame183.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame184.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame185.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame186.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame187.png" alt=""/> </div>
+                 <div className="size"> <img src="/ourClients/Frame178.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame179.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame180.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame181.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame182.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame183.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame184.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame185.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame186.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame187.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame176.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame177.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame178.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame179.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame180.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame181.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame182.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame183.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame184.png" alt=""/> </div>
+             <div className="size"> <img src="/ourClients/Frame185.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame186.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame187.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame176.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame177.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame178.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame179.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame180.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame181.png" alt=""/> </div>
+                    {/*<div className="size"> <img src="/ourClients/Frame182.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame183.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame184.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame185.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame186.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame187.png" alt=""/> </div> */}
 
             </div>
             <div className='rowslide rowleft'>
-                <img src="/ourClients/Frame 188.png" alt=""/>
-                <img src="/ourClients/Frame 189.png" alt=""/>
-                <img src="/ourClients/Frame 190.png" alt=""/>
-                <img src="/ourClients/Frame 191.png" alt=""/>
-                <img src="/ourClients/Frame 192.png" alt=""/>
-                <img src="/ourClients/Frame 193.png" alt=""/>
-                <img src="/ourClients/Frame 194.png" alt=""/>
-                <img src="/ourClients/Frame 195.png" alt=""/>
-                <img src="/ourClients/Frame 196.png" alt=""/>
-                <img src="/ourClients/Frame 197.png" alt=""/>
-                <img src="/ourClients/Frame 198.png" alt=""/>
+                <div className="size"> <img src="/ourClients/Frame176.png" alt=""/> </div>
 
+                <div className="size"> <img src="/ourClients/Frame188.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame189.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame190.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame191.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame192.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame193.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame194.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame195.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame196.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame197.png" alt=""/> </div>
+                 <div className="size"> <img src="/ourClients/Frame188.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame189.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame190.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame191.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame192.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame193.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame194.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame195.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame196.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame197.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame198.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame188.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame189.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame190.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame191.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame192.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame193.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame194.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame195.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame196.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame197.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame188.png" alt=""/> </div>
+                 <div className="size"> <img src="/ourClients/Frame189.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame190.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame191.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame192.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame193.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame194.png" alt=""/> </div>
+                {/*<div className="size"> <img src="/ourClients/Frame195.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame196.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame197.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame188.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame189.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame190.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame191.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame192.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame193.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame194.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame195.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame196.png" alt=""/> </div>
+                <div className="size"> <img src="/ourClients/Frame197.png" alt=""/> </div> */}
+
+            </div> 
             </div>
-            </div>
+
+
+
+            
             </div>
         </div>
+
+        
+
+
+
+        
  </div>
+
+ {/* <Link to="/" style={{marginLeft:"45%",marginRight:"45%"}}>Back To Home Page</Link> */}
     </div>
   )
 }

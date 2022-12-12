@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './myTeam.scss'
 const MyTeam = () => {
   return (
@@ -16,31 +17,31 @@ const MyTeam = () => {
     <div>
         <p className='meetTheTeam'>Meet the Team</p>
         <div className='boxView'>
-            <button className='boxButton'>Join Our Team</button>
+                 <Link to="/career" >  <button className='boxButton'>Join Our Team</button></Link>
         </div>
     </div>
     
     <div className='row'>
         <div>
-        <img src="/MyTeam/image 53.png" alt="" />
+        <img src="/MyTeam/image53.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image 54.png" alt="" />
+        <img src="/MyTeam/image54.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image 55.png" alt="" />
+        <img src="/MyTeam/image55.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image 56.png" alt="" />
+        <img src="/MyTeam/image56.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
@@ -52,32 +53,33 @@ const MyTeam = () => {
     
     <div className='row'>
         <div >
-        <img src="/MyTeam/image 57.png" alt="" />
+        <img src="/MyTeam/image57.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image 58.png" alt="" />
+        <img src="/MyTeam/image58.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image 59.png" alt="" />
+        <img src="/MyTeam/image59.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image 60.png" alt="" />
+        <img src="/MyTeam/image60.png" alt="" />
         <p>Aadil Saifi</p>
         <p>(Designation)</p>
         </div>
     </div>
     <div className='boxView'>
-            <button className='boxButton'>Join Our Team</button>
+    <Link to="/career" >  <button className='boxButton'>Join Our Team</button></Link>
         </div>
+        <Link to="/" style={{color:"#000000",textAlign:'center'}}><h3>Back To Home Page</h3></Link>
     </div>
   )
 }

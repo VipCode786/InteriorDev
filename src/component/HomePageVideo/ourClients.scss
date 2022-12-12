@@ -1,5 +1,5 @@
 .slider{
-    height:100vh;
+    // height:45vh;
     margin: auto;
     position: relative;
     width: 100%;
@@ -7,12 +7,12 @@
     place-items: center;
     overflow: hidden;
     background: #FFFFFF;
-
+    
 
 .slide-track{
     display: flex;
     width: calc(250px * 18);
-    animation: scroll 40s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 .slide-track:hover{
     animation-play-state: paused;
@@ -29,16 +29,15 @@
     
 }
 .slide{
-    height: 200px;
-    width: 250px;
+    
     display: flex;
     align-items: center;
-    padding: 15px;
+    // padding: 15px;
     perspective: 100px;
 }
 img{
-    // width: 100%;  
-    transition: transform 1s;
+     width: 100%;  
+    transition: transform 20s;
 }
 img:hover{
     transform: translateZ(20px);
@@ -49,9 +48,9 @@ img:hover{
     background: linear-gradient(to right,rgba(255,255,255,1) 0%,
     rgba(255,255,255,0) 100%);
     content: "";
-    height: 100%;
+     height: 100%;
     position: absolute;
-    width: 15%;
+     width: 15%;
     z-index: 2;
 }
 .slider::before{
@@ -67,15 +66,28 @@ img:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    .size{
+        width:100px;
+        height:100px;
+        // margin-top:1rem;
+        // padding: 0.2rem;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        // margin: 0%;
+        
+    }
+}
+
+
 }
 
 .rowleft{
-    margin-left: 4%;
-    margin-top: -3%;
+     margin-left: -10rem;
+      margin-top: -1rem;
 }
-
 .marginTop{
-    margin-top: -3%;
+     margin-top: -1rem;
+}
 
-}
-}

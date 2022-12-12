@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setHeight{
+            display: block;
+        }
+        #video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="setHeight" id="setHeight">
+        <video src="IC20sec.mp4"  id="video"></video>
+    </div>
+    <script>
+        var frame=32, playback= 500,setHeight = document.getElementById("setHeight"),
+        vid=document.getElementById("video");
+
+        vid.addEventListener('loadedmetadata',(e)=>{
+            setHeight.style.height= Math.floor(vid.duration)*playback +"px";
+        });
+        function play(){
+            var frame = window.pageYOffset/playback;
+            vid.currenTime = frame;
+            window.requestAnimationFrame(play);
+        }
+        window.requestAnimationFrame(play);
+    </script>
+</body>
+</html>

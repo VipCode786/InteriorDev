@@ -1,20 +1,36 @@
 .header{
     background-color:#383838 ;
-    height: 7rem;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    .logo{
+        display: flex; 
+        // justify-content: center;
+        align-items: center;
+        height: 100%;
+        img{
+             width: 100%;
+            height: 80%;
+        }
+        
+        a{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
     .right-header{
         display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     img{
         margin: 1rem;
-        width: 60%;
+        width: 40%;
     }
     }
 
@@ -22,4 +38,84 @@
         margin: 1rem;
         width: 80%;
     }
+
 }
+
+.menuItems{
+    // width: 20vw;
+    width: 20%;
+	position: absolute;
+    z-index: 1000;
+	right: 0;
+	height: 25rem;
+    float: right;
+    background: rgba(203, 87, 44, 0.8);
+    border-bottom-left-radius: 50%;
+    margin-left:0;
+text-decoration: none;
+    font-weight: 400;
+font-size: 2.5vw;
+// line-height: 28px;
+/* identical to box height */
+
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+color: #FFFFFF;
+
+
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: end;
+  
+}
+
+a:hover{
+    color:#24201f;
+    // background-color: #fffffF;
+}
+ }
+ @media only screen and (max-width: 650px) {
+    .menuItems{
+
+        height: 20vh;
+        // line-height: 8rem;
+    }
+
+}
+
+//  #menu-visiblity{
+// 	display: none;
+	
+// }
+// .menu{
+// 	list-style: none;
+// 	background:$background;
+// 	justify-content: space-between;
+// 	width: 25%;
+// 	position: absolute;
+// 	right: 0;
+// 	height: 86.8vh;
+	
+// 	.menu-item{
+// 		margin-top: 29px;
+// 		font-family: $font;
+// 		text-align: left;
+// 		font-weight: 700;
+// 		color: white; 
+// 		text-decoration: none;
+// 		font-size: calc(0.1rem + 2vw); 
+		 
+// 		transform: translate(0em);
+// 		display: block;
+// 		transition: transform 0.8s ease-in-out, opacity 0.3s ease-in;
+// 	}
+// 	.menu-item:hover{
+// 		color: #cb572c;
+// 	}
+// }

@@ -35,21 +35,31 @@ let transporter = nodemailer.createTransport({
       ? console.log(err)
       : console.log(`=== Server is ready to take messages: ${success} ===`);
    });
+
+
+   //send email for query
    app.post("/", (req, res) => {
    
+    if(req.files != null)
+    {
     const docs = Object.keys(req.files).map(key => {
       return {
         filename: req.files[key].name,
         content: req.files[key].data
       }
     });
+  
+  
     let mailOptions = {
-      from: `${req.body.email}`,
+      from: `${req.body.Email}`,
       to: process.env.EMAIL,
-      subject: `Message from: ${req.body.email}`,
-      text: `MoBNo:${req.body.message}`,
+      subject: `Message from: ${req.body.Email}`,
+      text: `Phone:${req.body.Message} 
+            FirstName:${req.body.FirstName} LastName:${req.body.LastName}
+            Message:${req.body.Message}
+            `  ,
       
-       attachments: docs
+        attachments: docs
   
      };
   
@@ -65,6 +75,112 @@ let transporter = nodemailer.createTransport({
           });
       }
      });
+
+    }
+
+    if(req.files == null)
+    {
+  
+    let mailOptions = {
+      from: `${req.body.Email}`,
+      to: process.env.EMAIL,
+      subject: `Message from: ${req.body.Email}`,
+      text: `Phone:${req.body.Message} 
+            FirstName:${req.body.FirstName} LastName:${req.body.LastName}
+            Message:${req.body.Message}
+            `  ,
+  
+     };
+  
+     transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+          res.json({
+              status: "fail",
+            });
+      } else {
+          console.log("== Message Sent ==");
+          res.json({
+            status: "success",
+          });
+      }
+     });
+
+    }
+    // res.send(200);
+  });
+
+  //CAREER
+
+  app.post("/career", (req, res) => {
+   
+    if(req.files != null)
+    {
+    const docs = Object.keys(req.files).map(key => {
+      return {
+        filename: req.files[key].name,
+        content: req.files[key].data
+      }
+    });
+  
+  
+    let mailOptions = {
+      from: `${req.body.Email}`,
+      to: process.env.EMAIL,
+      subject: `Message from: ${req.body.Email}`,
+      text: `Phone:${req.body.Message} 
+            FirstName:${req.body.Name} 
+            Vacancy:${req.body.Vacancy}
+            Message:${req.body.Message}
+            `  ,
+      
+        attachments: docs
+  
+     };
+  
+     transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+          res.json({
+              status: "fail",
+            });
+      } else {
+          console.log("== Message Sent ==");
+          res.json({
+            status: "success",
+          });
+      }
+     });
+
+    }
+
+    if(req.files == null)
+    {
+  
+    let mailOptions = {
+      from: `${req.body.Email}`,
+      to: process.env.EMAIL,
+      subject: `Message from: ${req.body.Email}`,
+      text: `Phone:${req.body.Message} 
+            FirstName:${req.body.Name} 
+            Vacancy:${req.body.Vacancy}
+            Message:${req.body.Message}
+            `  ,
+  
+     };
+  
+     transporter.sendMail(mailOptions, function (err, data) {
+      if (err) {
+          res.json({
+              status: "fail",
+            });
+      } else {
+          console.log("== Message Sent ==");
+          res.json({
+            status: "success",
+          });
+      }
+     });
+
+    }
     // res.send(200);
   });
 

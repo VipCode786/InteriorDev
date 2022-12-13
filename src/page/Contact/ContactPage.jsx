@@ -33,7 +33,7 @@ const ContactPage = () => {
     // formData.append("name",name);
 
    
-    axios.post("/", formData, {
+    axios.post("https://funny-caramel-8a4b98.netlify.app/.netlify/functions/api", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },

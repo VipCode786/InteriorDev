@@ -24,7 +24,7 @@ const Career = () => {
         formData.append("Phone",Phone);
         formData.append("Message",Message);
     
-        axios.post("/career", formData, {
+        axios.post("https://funny-caramel-8a4b98.netlify.app/.netlify/functions/api/career1", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },

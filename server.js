@@ -10,7 +10,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
  // I don't know why
   app.use(express.urlencoded({ extended: true })); // But this is required. I dropped it

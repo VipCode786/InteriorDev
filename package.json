@@ -2,6 +2,7 @@
   "name": "interiordev",
   "version": "0.1.0",
   "private": true,
+  "main":"server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -13,6 +14,7 @@
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
     "gsap": "^3.11.3",
+    "netlify-lambda": "^2.0.15",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
@@ -29,15 +31,19 @@
     "react-video-scroll": "^1.0.1",
     "router": "^1.3.7",
     "sass": "^1.56.1",
+    "serverless-http": "^3.1.0",
     "url-loader": "^4.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "heroku-postbuild": "cd frontend && npm install --force && npm run build",
     "serve": "react-scripts start",
+    "pro": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src",
+    "dep":"NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start": "node server.js",
-    "build": "npm install --force && node server.js && react-scripts build  "
+    "start": "node server.js ",
+    "build": "npm install --force && npm run pro && react-scripts build"
   },
   "modules": {
     "loaders": [

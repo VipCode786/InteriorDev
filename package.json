@@ -1,7 +1,7 @@
 {
   "name": "interiordev",
   "version": "0.1.0",
-  "proxy": "http://127.0.0.1:3001",
+  
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -35,11 +35,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "serve": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "nodemon server.js"
+    "start": "node server.js",
+    "build": "npm install && npm run build"
   },
   "modules": {
     "loaders": [
@@ -69,5 +69,9 @@
   },
   "devDependencies": {
     "html-loader": "^4.2.0"
-  }
+  },
+
+  "engines": {
+    "node": "16.x"
+}
 }

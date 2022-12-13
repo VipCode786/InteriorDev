@@ -2,6 +2,7 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
 const cors = require("cors");
+const path  = require("path")
 const fileUpload = require("express-fileupload");
 require("dotenv").config();
 
@@ -9,6 +10,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
+const __dirname = path.resolve();
 
  // I don't know why
   app.use(express.urlencoded({ extended: true })); // But this is required. I dropped it
@@ -26,7 +28,7 @@ let transporter = nodemailer.createTransport({
       pass: process.env.WORD,
       clientId: process.env.OAUTH_CLIENTID,
       clientSecret: process.env.OAUTH_CLIENT_SECRET,
-      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+       refreshToken: process.env.OAUTH_REFRESH_TOKEN,
     },
    });
 
@@ -186,8 +188,18 @@ let transporter = nodemailer.createTransport({
 
 
 
+  app.use(express.static(path.join(__dirname, '/build')));
+  app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/build/index.html'))
+);
 
-const port = 3001;
+app.use((err, req, res, next) => {
+  res.status(500).send({ message: err.message });
+});
+//    "build": "react-scripts build",
+
+// const port = 3001;"proxy": "http://127.0.0.1:3001",
+const port = process.env.PORT || 3001;
 app.listen(port, () => {
  console.log(`Server is running on port: ${port}`);
 });

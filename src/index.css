@@ -35,12 +35,32 @@ code {
 
 html{
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 body{
   background: #F3F3F3;
   margin: 0%;
   width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
+
+/* @font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: local('Poppins'), url(./fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: local('Poppins'), url(./fonts/Poppins-Black.ttf) format('truetype');
+} */
+
 
 .border{
   height: 52px;

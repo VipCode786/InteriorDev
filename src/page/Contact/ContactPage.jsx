@@ -12,8 +12,8 @@ const ContactPage = () => {
   const [Email, setEmail] = useState();
   const [Message, setMessage] = useState();
   const [file, setFile] = useState(null);
-  const [recaptcha, setRecaptcha] = useState();
-  const [error, setError] = useState();
+  const [recaptcha, setRecaptcha] = useState(null);
+  const [error, setError] = useState(false);
 
   function onChange(value) {
    
@@ -23,6 +23,11 @@ const ContactPage = () => {
   }
   const upload = (e) => {
     e.preventDefault();
+    if(recaptcha===null)
+    {
+      setError(true)
+    }
+    else{
     let formData = new FormData();
     formData.append("uploadedFile", file);
     formData.append("FirstName",FirstName);
@@ -41,7 +46,7 @@ const ContactPage = () => {
       console.log("Success ", res);
       alert("Submitted")
     });
-  
+    }
   };
 
   const handleFile = (e) =>{
@@ -121,7 +126,7 @@ const ContactPage = () => {
               setEmail(e.target.value);
               }}
             />
-            <input  type="number" placeholder='Mobile Number'
+            <input  type="number" placeholder='Mobile Number' 
              onChange={(e) => {
               setPhone(e.target.value);
               }}
@@ -159,7 +164,7 @@ const ContactPage = () => {
         required
         style={{margin:"2rem"}}
       />
-           
+           {error ?   <p>Fill ReCaptcha</p>: ""}
            {/* onClick={(e) => upload(e)} */}
           
             <button className="submitButton" type="Submit" disabled={recaptcha? false : true} style={{padding:"0.5rem 1rem 0.5rem 1rem"}}> Submit </button>

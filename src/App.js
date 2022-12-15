@@ -55,6 +55,7 @@ function App() {
       <Header/>
           <Routes>
              <Route path="/" element={<Home/>} />
+             <Route path="*" element={<Home/>} />
              {/* <Route exact path="/" render={() => {}} /> */}
              <Route path="/about" element={<About/>} />
              <Route path="/myteam" element={<MyTeam/>} />

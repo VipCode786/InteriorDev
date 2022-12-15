@@ -39,6 +39,8 @@
     position: absolute;
     color: #333;
     cursor: pointer;
+    font-family: "Poppins";
+    font-style: normal;
     font-size: 2em;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -154,6 +156,8 @@
 }
 
 .testim .cont div p {
+    font-family: "Poppins";
+    font-style: normal;
     font-size: 1.15em;
     color: #333;
     width: 70%;
@@ -589,16 +593,22 @@
 
 @media all and (max-width: 300px) {
 	body {
+        font-family: "Poppins";
+    font-style: normal;
 		font-size: 14px;
 	}
 }
 
 @media all and (max-width: 500px) {
 	.testim .arrow {
+        font-family: "Poppins";
+    font-style: normal;
 		font-size: 1.5em;
 	}
 	
 	.testim .cont div p {
+        font-family: "Poppins";
+    font-style: normal;
 		line-height: 25px;
 	}
 

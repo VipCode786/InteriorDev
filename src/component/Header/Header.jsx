@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.scss'
 const Header = () => {
 
@@ -12,7 +12,7 @@ const Header = () => {
          
        <div className='header'>
        <div className='logo'>
-          <a href="/">  <img src="/headerImages/logo.svg" alt="" /></a>
+          <Link to="/">  <img src="/headerImages/logo.svg" alt="" /></Link>
        </div>
        <div className='right-header'>
         <div className='gmp'>
@@ -43,15 +43,15 @@ const Header = () => {
 >
   qwerty
 </NavLink> */}
-     <a href="/">Home</a>
-     <a href="/about">About Us</a>
-     <a href="/portfolio">Our Portfolio</a>
-     <a href="/myteam">Meet Our Team</a>
-     <a href="/career">Career</a>
-     <a href="/contactpage">Contact Us</a>
+     <Link to="/">Home</Link>
+     <Link to="/about">About Us</Link>
+     <Link to="/portfolio">Our Portfolio</Link>
+     <Link to="/myteam">Meet Our Team</Link>
+     <Link to="/career">Career</Link>
+     <Link to="/contactpage">Contact Us</Link>
      <br/>
-    {/* <a href="/about">About</a>
-     <a href="/about">Our Portfolio</a>
+    {/* <Link to="/about">About</Link>
+     <Link to="/about">Our Portfolio</Link>
       <ul>
           <li></li>
           <li></li>

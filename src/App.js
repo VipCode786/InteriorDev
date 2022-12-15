@@ -52,8 +52,9 @@ function App() {
       {loading?(<Loader/>):(<>
       
       <BrowserRouter>
-      <Header/>
+      
           <Routes>
+          <Header/>
              <Route path="/" element={<Home/>} />
              {/* <Route exact path="/" render={() => {}} /> */}
              <Route path="/about" element={<About/>} />
@@ -76,7 +77,7 @@ function App() {
              <Route path="/portfolio/Railing" exact element={<PortfolioSidebar/>} />
              <Route path="/portfolio/Staircase" exact element={<PortfolioSidebar/>} />
              <Route path="/hori" exact element={<HorizontalScroll/>} />
-
+             <Footer/>
           </Routes>
           <button
         onClick={() => {
@@ -96,7 +97,7 @@ function App() {
       >
         <img width="40vw" height="40vh" src="backtotop.png" />
       </button>
-      <Footer/>
+     
       </BrowserRouter>
       </>)
       }

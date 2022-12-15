@@ -50,9 +50,9 @@ function App() {
   return (
     <div>
       {loading?(<Loader/>):(<>
-      <Header/>
+      
       <BrowserRouter>
-
+      <Header/>
           <Routes>
              <Route path="/" element={<Home/>} />
              {/* <Route exact path="/" render={() => {}} /> */}
@@ -96,9 +96,9 @@ function App() {
       >
         <img width="40vw" height="40vh" src="backtotop.png" />
       </button>
-
+      <Footer/>
       </BrowserRouter>
-      <Footer/></>)
+      </>)
       }
     </div>
   );

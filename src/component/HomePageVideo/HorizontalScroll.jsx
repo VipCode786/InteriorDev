@@ -14,9 +14,9 @@ const HorizontalScroll = () => {
  
   {/* <h2 style={{position:"fixed"}} >Our 4D Approach</h2> */}
   
-  <h2 className='fixedHeader' style={{backgroundColor: "#959595"}}>Our 4D Approach</h2>
+  {/* <h2 className='fixedHeader' >Our 4D Approach</h2> */}
 
-  
+  <h2 className='fixHeader' >Our 4D Approach</h2>
   
     <div className="horizontal">
     

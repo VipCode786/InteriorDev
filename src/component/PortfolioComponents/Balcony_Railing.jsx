@@ -1,14 +1,46 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import './PortfolioComponents.scss'
 
 const Balcony_Railing = () => {
+    // function getWindowSize() {
+    //     const {innerWidth, innerHeight} = window;
+    //     return {innerWidth, innerHeight};
+    //   }
+    
+      const [showSlider, setShowSlider] = useState(true)
+    // const [windowSize, setWindowSize] = useState(getWindowSize());
+
+
+    // function show(){
+    //     console.log("windowSize.innerWidth",windowSize.innerWidth)
+    //     if(windowSize.innerWidth < 1000)
+    //     {
+    //         setShowSlider(false)
+    //     }
+    // }
+    useEffect(() => {
+    //   function handleWindowResize() {
+        // setWindowSize(getWindowSize());
+        if(window.innerWidth < 1000)
+        {
+            setShowSlider(false)
+        }
+    //   }
+  
+    //   window.addEventListener('resize', handleWindowResize);
+   
+    //   return () => {
+    //     window.removeEventListener('resize', handleWindowResize);
+    //   };
+    }, []);
+    
     
   return (
     <div>
 
-     
+{showSlider?(
 <div className='imageRow' > 
 <AwesomeSlider > 
 
@@ -116,7 +148,28 @@ const Balcony_Railing = () => {
     </div> 
 
     </AwesomeSlider>
-     </div>
+     </div>):(
+<div className='imageScroll'>
+<img src="/Balcony_Railing/11.jpg" alt="" />
+<img src="/Balcony_Railing/12.jpg" alt="" />
+<img src="/Balcony_Railing/13.jpg" alt="" />
+<img src="/Balcony_Railing/14.jpg" alt="" />
+<img src="/Balcony_Railing/21.jpg" alt="" />
+<img src="/Balcony_Railing/23.jpg" alt="" />
+<img src="/Balcony_Railing/24.jpg" alt="" />
+<img src="/Balcony_Railing/31.jpg" alt="" />
+<img src="/Balcony_Railing/32.jpg" alt="" />
+<img src="/Balcony_Railing/33.jpg" alt="" />
+<img src="/Balcony_Railing/34.jpg" alt="" />
+<img src="/Balcony_Railing/41.jpg" alt="" />
+<img src="/Balcony_Railing/42.jpg" alt="" />
+<img src="/Balcony_Railing/43.jpg" alt="" />
+
+</div>
+
+
+
+     )}
       </div>
   )
 }

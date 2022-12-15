@@ -15,15 +15,44 @@ import OurClients from "./component/HomePageVideo/OurClients";
 import { useEffect } from "react";
 import C_Channel from "./component/PortfolioComponents/C_Channel";
 import HorizontalScroll from "./component/HomePageVideo/HorizontalScroll";
+import { useState } from "react";
+import Loader from "./component/Loader/Loader";
 
 function App() {
+
+  const[loading,setLoading] = useState(true);
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
+  const onPageLoad = () => {
+    //  setTimeout(()=>{
+      setLoading(false)
+    //  },3000)
+    console.log('page loaded');
+    
+    // do something else
+  };
+  // This will run one time after the component mounts
+  useEffect(() => {
+    // callback function to call when event triggers
+    
+
+    // Check if the page has already loaded
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } 
+    else {
+      window.addEventListener('load', onPageLoad, false);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+  }, []);
   return (
     <div>
+      {loading?(<Loader/>):(<>
       <Header/>
       <BrowserRouter>
+
           <Routes>
              <Route path="/" element={<Home/>} />
              {/* <Route exact path="/" render={() => {}} /> */}
@@ -69,7 +98,8 @@ function App() {
       </button>
 
       </BrowserRouter>
-      <Footer/>
+      <Footer/></>)
+      }
     </div>
   );
 }

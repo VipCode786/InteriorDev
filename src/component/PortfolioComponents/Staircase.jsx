@@ -1,13 +1,24 @@
 import React from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import './PortfolioComponents.scss'
 
 const Staircase = () => {
+    const [showSlider, setShowSlider] = useState(true);
+    useEffect(() => {
+      
+          if(window.innerWidth < 1000)
+          {
+              setShowSlider(false)
+          }
+     
+      }, []);
   return (
     <div>
 
-     
+{showSlider?(  
 <div className='imageRow' > 
 <AwesomeSlider > 
 
@@ -83,7 +94,7 @@ const Staircase = () => {
             <br/>
 
             <div  className='imageBox'>
-            <img src="/Staircase/11.jpg" alt="" />
+            {/* <img src="/Staircase/11.jpg" alt="" /> */}
             </div>           
         </div>
     </div>
@@ -92,7 +103,25 @@ const Staircase = () => {
     
 
     </AwesomeSlider>
-     </div>
+     </div>):(
+<div className='imageScroll'>
+<img src="/Staircase/11.jpg" alt="" />
+<img src="/Staircase/12.jpg" alt="" />
+<img src="/Staircase/13.jpg" alt="" />
+<img src="/Staircase/14.jpg" alt="" />
+<img src="/Staircase/21.jpg" alt="" />
+<img src="/Staircase/23.jpg" alt="" />
+<img src="/Staircase/24.jpg" alt="" />
+<img src="/Staircase/31.jpg" alt="" />
+<img src="/Staircase/32.jpg" alt="" />
+<img src="/Staircase/33.jpg" alt="" />
+
+
+</div>
+
+
+
+     )}
       </div> )
 }
 

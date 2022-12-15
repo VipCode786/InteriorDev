@@ -3,12 +3,70 @@
     .rowCareer{
             display: flex;
             flex-direction: row;
-            //  margin-left: 2rem;
-            //  margin-right: 2rem;
-            margin:2rem;
-            justify-content:center;
+             margin-left: 4rem;
+             margin-right: 4rem;
+            // margin:2rem;
+            justify-content:space-between;
             flex-wrap: wrap;
             align-items: center;
+
+
+            .boxViewCareer{
+                display: flex;
+                justify-content: center;
+                margin: 1rem;
+              }
+              
+              
+              .boxButtonCareer{
+                box-sizing: border-box;
+              
+              /* Auto layout */
+              
+                  
+                //    padding: 16px 58px;
+                   gap: 10px;
+              
+                   
+                   /* height: 70px; */
+                  
+              
+                //    background: #FFFFFF;
+                   border: 3px solid #FFFFFF;
+                   border-radius: 50px;
+              
+              
+                   font-family: 'Poppins';
+                   font-style: normal;
+                   font-weight: 500;
+                   font-size: 20px;
+                   line-height: 118%;
+              
+              
+                   color: #FFFFFF;
+                  
+              }
+              
+              .boxButtonCareer > a{
+                color: #FFFFFF;
+                text-decoration: none;
+              }
+              
+              
+              
+              .boxButtonCareer:hover {
+                background-color: #FFFFFF;
+                 color:#000000;
+                cursor: pointer;
+               
+              }
+              
+              .boxButtonCareer:hover > a{
+                // background-color: #CB572C;
+                // color:#FFFFFF;
+                cursor: pointer;
+               
+              }
     }
     .rowCareer p:first-of-type{
                 // width: 417px;
@@ -19,7 +77,7 @@
                 font-weight: 600;
                 font-size: 48px;
                 line-height: 72px;
-                text-align: center;
+                text-align: justify;
                 color: #000000;
                     }
 
@@ -113,20 +171,48 @@
             border-radius: 8px;
             height: 3rem;
             margin-top:0.5rem
+
+           
             }
-    
+            input::placeholder {
+                 
+                /* Firefox, Chrome, Opera */
+                text-align: left;
+                margin-left: 30px;
+                text-indent: 1rem;
+            }
             textarea{
                 //   width: 40vw;
                 height: 8rem;
                 
                  margin-top:2rem;
                 // margin-left: 3rem;
-                
+                border: 1px solid #424242;
+                border-radius: 8px;
+
 
             }
-
+            textarea::placeholder {
+                 
+                /* Firefox, Chrome, Opera */
+                text-align: left;
+                margin-left: 30px;
+                text-indent: 2rem;
+                
+            }
             span{
-                width: 191px;
+                width: 291px;
+               
+
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                
+                letter-spacing: 0.025em;
+
+                color: #E0E0E0;
             }
 
 
@@ -151,7 +237,7 @@
         }
 
         .careerForm p:nth-of-type(2){
-             width: 90%;
+             width: 478px;
         
            margin-top: -2rem;
            margin-left: 2rem;
@@ -160,7 +246,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 3vw;
+        font-size: 20px;
         line-height: 50px;
         
         letter-spacing: 0.025em;
@@ -216,6 +302,14 @@
     }
     
         
+}
+
+@media only screen and (max-width:768px) {
+    .career{
+        .rowCareer{
+                flex-direction: column;
+        }
+    }
 }
 
 

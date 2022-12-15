@@ -19,6 +19,8 @@ import { useRef } from 'react'
 import { useScrollDirection } from '../../useScrollDirection'
 import Testimonials from '../../component/Testimonials/Testimonials'
 import Clients from '../../component/HomePageVideo/Clients'
+import Testimonials1 from '../../component/Testimonials/Testimonials1'
+import Slider from '../../component/Testimonials/Slider'
 
 // import index1 from './index1.html'
 const myHTML =
@@ -66,14 +68,92 @@ const Home = () => {
   const [flage2,setFlage2] = useState(false)
   const [counterOn, setCounterOn] = useState(false)
    console.log(scrollPosition);
+
+   const scroll = useRef(null);
+
+  const scrollClick = () => {
+    scroll.current?.scrollIntoView({behavior: 'smooth'});
+  };
    useEffect(()=>{
 
 
-     if(scrollPosition > 501 && scrollPosition < 644)
+     if(scrollPosition > 601 && scrollPosition < 610)
     {
-          setvalue(parseInt(scrollPosition))
+          setvalue(parseInt(510))
     }
-    
+
+    if(scrollPosition > 610 && scrollPosition < 620)
+    {
+          setvalue(parseInt(520))
+    }
+    if(scrollPosition > 620 && scrollPosition < 630)
+    {
+          setvalue(parseInt(530))
+    }
+    if(scrollPosition > 630 && scrollPosition < 640)
+    {
+          setvalue(parseInt(540))
+    }
+
+    if(scrollPosition > 640 && scrollPosition < 650)
+    {
+          setvalue(parseInt(550))
+    }
+
+    if(scrollPosition > 650 && scrollPosition < 660)
+    {
+          setvalue(parseInt(560))
+    }
+
+    if(scrollPosition > 660 && scrollPosition < 670)
+    {
+          setvalue(parseInt(570))
+    }
+
+    if(scrollPosition > 670 && scrollPosition < 680)
+    {
+          setvalue(parseInt(580))
+    }
+
+    if(scrollPosition > 680 && scrollPosition < 690)
+    {
+          setvalue(parseInt(590))
+    }
+
+    if(scrollPosition > 690 && scrollPosition < 700)
+    {
+          setvalue(parseInt(600))
+    }
+
+    if(scrollPosition > 670 && scrollPosition < 680)
+    {
+          setvalue(parseInt(580))
+    }
+    if(scrollPosition > 680 && scrollPosition < 690)
+    {
+          setvalue(parseInt(590))
+    }
+    if(scrollPosition > 690 && scrollPosition < 700)
+    {
+          setvalue(parseInt(600))
+    }
+    if(scrollPosition > 710 && scrollPosition < 720)
+    {
+          setvalue(parseInt(610))
+    }
+    if(scrollPosition > 720 && scrollPosition < 730)
+    {
+          setvalue(parseInt(620))
+    }
+    if(scrollPosition > 730 && scrollPosition < 740)
+    {
+          setvalue(parseInt(630))
+    }
+    if(scrollPosition > 740 && scrollPosition < 750)
+    {
+          setvalue(parseInt(640))
+    }
+   
     // if(scrollPosition > 900 && scrollPosition < 950)
     // {
     //      setvalue(15)
@@ -135,38 +215,38 @@ const Home = () => {
 //  console.log("value",value)
    },[scrollPosition])
    
-   const inputRef = useRef();
-   const scrollDirection = useScrollDirection(inputRef);
-   console.log("scrollDirection",scrollDirection)
+//    const inputRef = useRef();
+//    const scrollDirection = useScrollDirection(inputRef);
+//    console.log("scrollDirection",scrollDirection)
  
-   const scrollHandler = _ => {
-     console.log(inputRef.current.getBoundingClientRect());
+//    const scrollHandler = _ => {
+//      console.log(inputRef.current.getBoundingClientRect());
   
-     const rect=inputRef.current.getBoundingClientRect();
-     const isComponentInView = (
-                 rect.top <= (window.innerHeight || document.documentElement.clientHeight) && 
-                 rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
-             );
-     if(isComponentInView)
-     {
-             console.log("view is visibleuebicdbdb")
+//      const rect=inputRef.current.getBoundingClientRect();
+//      const isComponentInView = (
+//                  rect.top <= (window.innerHeight || document.documentElement.clientHeight) && 
+//                  rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+//              );
+//      if(isComponentInView)
+//      {
+//              console.log("view is visibleuebicdbdb")
             
 
-            //  inputRef.current.scrollLeft += 10000;
-            //  
-            //  inputRef.current.scrollTo({left: 1000})
-     }
-    };
+//             //  inputRef.current.scrollLeft += 10000;
+//             //  
+//             //  inputRef.current.scrollTo({left: 1000})
+//      }
+//     };
 
     // useEffect(()=>{
     //   inputRef.current.scrollLeft = 4000;
     // })
-   useEffect(() => {
-     window.addEventListener("scroll", scrollHandler, true);
-     return () => {
-       window.removeEventListener("scroll", scrollHandler, true);
-     };
-   }, []);
+//    useEffect(() => {
+//      window.addEventListener("scroll", scrollHandler, true);
+//      return () => {
+//        window.removeEventListener("scroll", scrollHandler, true);
+//      };
+//    }, []);
   //  const ref1 = useRef();
   //  const ctrRef =ref1;
   //  const rect=ref1.current.getBoundingClientRect();
@@ -190,8 +270,40 @@ const Home = () => {
 
   return (
       <div>
-        <HomeFirst/>
-       
+        {/* <HomeFirst/> */}
+        <div className='video'>
+       {/* <video width="100%" height="100%" class="videoInsert" loop autoPlay muted >
+      <source src="onVideo.mp4" type="video/mp4"/>
+     </video> */}
+      {/* <video id="background-video" loop autoplay>
+  <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+  <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video> */}
+      <div className='box'>
+        
+        <div className='mainHeading'>
+        
+        <div>The </div>
+        <div className='color'>Fabrication</div>
+        <div> Expert</div>
+        <div className='headingContent'>
+        Over 4 Decades of <br/>Innovative Metal Artistry.
+        </div>
+        
+        </div>
+        
+      </div>
+      <div className='centerScroll'>
+      <div className='arrow' onClick={scrollClick}>
+          <img src="/headerImages/arrow.svg" alt="arrow" />
+      </div>
+      <div className="scroll">
+          
+            <div className='scrollContent' onClick={scrollClick}>Scroll to Explore</div>
+      </div>
+      </div>
+    </div>
        
         
       <div className='border' >
@@ -204,7 +316,7 @@ const Home = () => {
       </div>
       <div className='home'>
       <div className='scrollImg'>
-      <div className='whatWeMake'>
+      <div ref={scroll} className='whatWeMake'>
       <p >What WE MAKE</p>
       </div>
       {/* <ParallaxText>A Wild Sheep Chase</ParallaxText> */}
@@ -272,7 +384,6 @@ const Home = () => {
       <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(true)}>
       {counterOn &&
       <div  className="count">
-      {/* <CountUp end={100} /> */}
       
          <CountUp  end={1000} duration={2}/> +
         
@@ -290,7 +401,6 @@ const Home = () => {
       <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(true)}>
       {counterOn &&
       <div  className="count">
-      {/* <CountUp end={100} /> */}
       
          <CountUp  end={1000} duration={2}/> +
         
@@ -307,7 +417,6 @@ const Home = () => {
       <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(true)}>
       {counterOn &&
       <div  className="count">
-      {/* <CountUp end={100} /> */}
       
          <CountUp  end={1000} duration={2}/> +
         
@@ -321,7 +430,10 @@ const Home = () => {
 
 
       <div className='testimonial'> 
-      <Testimonials/>
+      {/* <Testimonials/>
+
+      <Testimonials1/> */}
+      <Slider/>
       </div>
       
 
@@ -330,9 +442,10 @@ const Home = () => {
               <div className='heading'>
                     Our Team
               </div>
+              <br/>
               <div className='content'> 
                      <p>
-                    Being in the industry for over 4 decades,
+                    Being in the industry for over 4 <br/>decades,
                     
                      we have worked on designating a workforce who have the capabilities of delivering the best workmanship.
                     
@@ -340,8 +453,8 @@ const Home = () => {
 
                     </p>
                </div> 
-              <div className='boxView' style={{width:"65%"}}>
-              <button className='boxButton'><Link to="myteam" style={{fontSize:"2.2vw"}}> Meet The Team</Link></button>
+              <div className='boxView' >
+              <Link to="myteam"><button className='boxButton'> Meet The Team</button></Link>
               </div>
           
              
@@ -350,11 +463,12 @@ const Home = () => {
         {/* <div> */}
               <div className='imageOwner'>
               
-               <img src="AnisAhmed.png" alt="pic" />
-               <h2 style={{color:"#ffffff"}}>
-            Anish Ahmed <br/>
-            (Visionary & Founder)
-          </h2>
+            <div className='nameOwner'>
+            <div className="ownerName">Anish Ahmed </div>
+            <br/><div className="ownedesignation">(Visionary & Founder)</div>
+            </div>
+          <img src="AnisAhmed.png" alt="pic" />
+
             </div>
 
       </div>
@@ -381,7 +495,7 @@ const Home = () => {
               </div>
               <br/>
               <div className='boxView'>
-              <button className='boxButton'><Link to="portfolio"> View More </Link></button>
+              <Link to="portfolio"><button className='boxButton'> View More </button></Link>
               </div>
         </div>
       <br/>
@@ -389,7 +503,7 @@ const Home = () => {
           <div className='discussProjects'>
             <p>DISCUSS YOUR DREAM PROJECTS</p>
             <div className='boxView'>
-              <button className='boxButton'><Link to="contactpage"> CONTACT US</Link></button>
+            <Link to="contactpage">  <button className='boxButton'> CONTACT US</button></Link>
               </div>
           </div>
         </div>

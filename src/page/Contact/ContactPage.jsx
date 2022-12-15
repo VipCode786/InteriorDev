@@ -33,7 +33,7 @@ const ContactPage = () => {
     // formData.append("name",name);
 
    
-    axios.post("https://funny-caramel-8a4b98.netlify.app/.netlify/functions/api", formData, {
+    axios.post("https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -70,14 +70,14 @@ const ContactPage = () => {
                 </div>
 
                 <div className='contactDetails'>
-                    <img src="/contactUs/phone.svg" alt="" /> <p>0120-3110478</p>
+                    <img src="/contactUs/phone.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>0120-3110478</p>
                 </div>
 
                 <div className='contactDetails'>
-                <img src="/contactUs/email.svg" alt="" /> <p>info@interiorcraft.in</p>
+                <img src="/contactUs/email.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>info@interiorcraft.in</p>
                 </div>
                 <div className='contactDetails'>
-                <img src="/contactUs/address.svg" alt="" /> <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
+                <img src="/contactUs/address.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
                 </div>
                 <div className="contact-in" style={{height:"50vh"}}>
                 <iframe
@@ -116,12 +116,12 @@ const ContactPage = () => {
             />
             </div>
             <div>
-            <input  type="text" placeholder='Email' required
+            <input  type="email" placeholder='Email' required
              onChange={(e) => {
               setEmail(e.target.value);
               }}
             />
-            <input  type="text" placeholder='Mobile Number'
+            <input  type="number" placeholder='Mobile Number'
              onChange={(e) => {
               setPhone(e.target.value);
               }}
@@ -129,31 +129,40 @@ const ContactPage = () => {
             </div>
             <div>
             <label>Message <br/>
-            <input  type="text" placeholder='Message' 
+            <input  type="text" placeholder='Write Your Message' 
             onChange={(e) => {
               setMessage(e.target.value);
               }}
             />
             </label>
             </div>
-           
-            <input  type="file" placeholder='file'  onChange={(e) => {
+            <div>
+    <label for="files" class="uploadButton"><img src="Vector.png" /> &nbsp; Upload File
+    <input id="files" style={{visibility:"hidden",width:"0px"}} type="file"  onChange={(e) => {
               handleFile(e)
           // setFile(e.target.files[0]);
         }}/>
+    </label>
+    <span style={{marginLeft:"2rem"}}> {file?.name} </span>
+</div>
+            {/* <input  type="file" placeholder='file'  onChange={(e) => {
+              handleFile(e)
+          // setFile(e.target.files[0]);
+        }}/> */}
             <p>Please upload files upto 15 MB.<br/>
                 For larger files, you can discuss when our team contacts you.
             </p>
 
             <ReCAPTCHA
-        sitekey="6Lde71sjAAAAAAcAO7iuTAyHmjJmpDkORTH4JcGi"
+        sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
         onChange={onChange}
         required
+        style={{margin:"2rem"}}
       />
            
            {/* onClick={(e) => upload(e)} */}
           
-            <button className="submitButton" type="Submit" disabled={recaptcha? false : true} >Apply </button>
+            <button className="submitButton" type="Submit" disabled={recaptcha? false : true} style={{padding:"0.5rem 1rem 0.5rem 1rem"}}> Submit </button>
 </form>
             </div>
             

@@ -1,12 +1,23 @@
 import React from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import './PortfolioComponents.scss'
 
 const Pergola = () => {
+    const [showSlider, setShowSlider] = useState(true);
+    useEffect(() => {
+      
+          if(window.innerWidth < 1000)
+          {
+              setShowSlider(false)
+          }
+     
+      }, []);
   return (
 <div>
-
+{showSlider?(
 <div className='imageRow' > 
 <AwesomeSlider > 
 
@@ -38,7 +49,18 @@ const Pergola = () => {
         </div>
     </div> 
     </AwesomeSlider>
-     </div>
+     </div>):(
+<div className='imageScroll'>
+<img src="/Pergola/11.jpg" alt="" />
+<img src="/Pergola/12.jpg" alt="" />
+<img src="/Pergola/13.jpg" alt="" />
+
+
+</div>
+
+
+
+     )}
       </div>  )
 }
 

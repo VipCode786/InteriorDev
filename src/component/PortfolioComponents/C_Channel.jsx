@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import './PortfolioComponents.scss'
 
 const C_Channel = () => {
+  const [showSlider, setShowSlider] = useState(true);
+  useEffect(() => {
+    
+        if(window.innerWidth < 1000)
+        {
+            setShowSlider(false)
+        }
+   
+    }, []);
   return (
     <div>
 
-    <div className='imageRow' > 
+{showSlider?( <div className='imageRow' > 
     <AwesomeSlider > 
     
          <div className='image4'>
@@ -40,7 +49,16 @@ const C_Channel = () => {
         </div> 
     
         </AwesomeSlider>
-         </div>
+         </div>):(
+          <div className='imageScroll'>
+          <img src="/C_Channel/11.jpg" alt="" />
+          <img src="/C_Channel/12.jpg" alt="" />
+          <img src="/C_Channel/13.jpg" alt="" />
+          <img src="/C_Channel/14.jpg" alt="" />
+      
+          
+          </div>
+         )}
           </div>
   )
 }

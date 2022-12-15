@@ -12,7 +12,11 @@ const Career = () => {
     const [Phone, setPhone] = useState();
     const [Message, setMessage] = useState();
     const [File, setFile] = useState();
-    
+    const scroll = useRef(null);
+
+    const scrollClick = () => {
+      scroll.current?.scrollIntoView({behavior: 'smooth'});
+    };
 
     const upload = (e) => {
         e.preventDefault();
@@ -24,7 +28,7 @@ const Career = () => {
         formData.append("Phone",Phone);
         formData.append("Message",Message);
     
-        axios.post("https://funny-caramel-8a4b98.netlify.app/.netlify/functions/api/career1", formData, {
+        axios.post("https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api/career", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -44,40 +48,44 @@ const Career = () => {
     <div className='career'>
         <div className='rowCareer'>
             <p>
-                    Career at Interior Crafts
+                    Career at <br/>Interior Crafts
             </p>
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
 
             <p>
             As an ambitious business, Interior Craft seeks to hire talented and dedicated people who share our enthusiasm for high-quality work and excellent customer service. We take pride in our employee retention rate and in providing a friendly and excellent work atmosphere.
             </p>
         </div>
         <div className='rowCareer'>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                 <div className='grey-bg'>
                     <div className='heading'>
                     CNC Press Brake <br/> Operator
                     </div>
                     <br/>
-                    
-                    <div className='boxView'>
-                    <div className='boxButton'>
+                    <div className='rowCareer'>
+                    <div className='boxViewCareer' >
+                    <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"1rem"}}>
                     Job Description (Download)
+                    </div></Link>
                     </div>
-                    </div>
-                    <div className='boxView'>
-                    <div className='boxButton'>
+                    <div className='boxViewCareer' onClick={scrollClick}>
+                      <div className='boxButtonCareer'style={{padding:"1rem 2rem 1rem 2rem"}}>
                     Apply
                     </div>
                     
                     </div>
-                    
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
 
                 <div className='orange-bg'>
                     <div className='heading'>
@@ -87,21 +95,29 @@ const Career = () => {
                     <br/>
                     <br/>
                     <br/>
-                    <div className='boxView'>
-                    <div className='boxButton'>
+                    <br/>
+                    <div className='rowCareer'>
+                    <div className='boxViewCareer'>
+                    <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"1rem"}}>
                     Job Description (Download)
+                    </div></Link>
                     </div>
-                    </div>
-                    <div className='boxView'>
-                    <div className='boxButton'>
+                    <div className='boxViewCareer' onClick={scrollClick}>
+                      <div className='boxButtonCareer'style={{padding:"1rem 2rem 1rem 2rem"}}>
                     Apply
                     </div>
                     
                     </div>
+                    </div>
+                    
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                 </div>
         </div>
 
-        <div className='FromBG'>
+        <div className='FromBG' ref={scroll}>
         <div className='careerForm'>
             
             <p>Careers at Interior Crafts</p>
@@ -112,8 +128,8 @@ const Career = () => {
                 <div className='cloumn'>
                         <input className="formInput" type="text" required placeholder='Name'                  onChange={(e)=>setName(e.target.value)}   />
                         <input className="formInput" type="text" required placeholder='Vacancy Applied For'   onChange={(e)=>setVacancy(e.target.value)}/>
-                        <input className="formInput" type="text" required placeholder='Email Address'         onChange={(e)=>setEmail(e.target.value)}  />
-                        <input className="formInput" type="text"   placeholder='Phone Number'          onChange={(e)=>setPhone(e.target.value)}  />
+                        <input className="formInput" type="email" required placeholder='Email Address'         onChange={(e)=>setEmail(e.target.value)}  />
+                        <input className="formInput" type="number"   placeholder='Phone Number'          onChange={(e)=>setPhone(e.target.value)}  />
                 </div>
                 <div className='career-column'>
                         <textarea placeholder='Your Message' type="text"  onChange={(e)=>setMessage(e.target.value)}/>
@@ -123,11 +139,11 @@ const Career = () => {
                         </div>
                         <div>
 
-                        <button style={{display:"block",width:"120px", height:"50px" }} className="attach" onClick={handleClick}> Attach </button>
+                        <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" onClick={handleClick}> Attach </div>
                         <input type='file' id="getFile" style={{display:"none"}} ref={hiddenFileInput}   onChange={(e) => {
                             setFile(e.target.files[0]);
                             }} />&nbsp;&nbsp;
-                        <button type="submit" style={{display:"block",width:"120px", height:"50px" }} className="attach"> Submit </button>
+                        <button type="submit" style={{display:"block",width:"120px", height:"45px" }} className="attach"> Submit </button>
                        
                         {/* <input type="file" className='attach'  />
                         <button>Attach</button>

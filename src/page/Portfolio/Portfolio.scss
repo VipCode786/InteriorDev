@@ -6,7 +6,7 @@
 .container{
     display:flex;
     background:#FFFFFF;
-    width: 17vw;
+    // width: 17vw;
     // height: 100vh;
     
 
@@ -23,13 +23,13 @@
 .link{
     font-style: normal;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 3vw;
     line-height: 38px;
     text-align: justify;
     letter-spacing: 0.025em;
     color: #383838;
-    gap: 15px;
-    
+     gap: 15px;
+     white-space: nowrap
 }
 .link:hover{
    

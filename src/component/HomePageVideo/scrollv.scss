@@ -1,75 +1,75 @@
-.scrollDiv{
+// .scrollDiv{
   
-  .sticky-parent{
-    height: 400vh;
-  }
-  .sticky{
-    position: sticky;
-    top: 0px;
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .dim{
-    display: block;
-    min-width: 100vw;
-    height: 100vh;
-  }
+//   .sticky-parent{
+//     height: 400vh;
+//   }
+//   .sticky{
+//     position: sticky;
+//     top: 0px;
+//     max-height: 100vh;
+//     overflow-x: hidden;
+//     overflow-y: hidden;
+//   }
+//   .dim{
+//     display: block;
+//     min-width: 100vw;
+//     height: 100vh;
+//   }
 
-  .div1{
-    background-image: url('/Process/Group 44.png') ;
-    width: 100vw;
-    height: 100vh;
-  }
-  .div2{
-    background-image: url('/Process/Group 45.png') ;
-    width: 100vw;
-    height: 100vh;
-  }
-  .div3{
-    background-image: url('/Process/Group 67.png') ;
-    width: 100vw;
-    height: 100vh;
-  }
-  .div4{
-    background-image: url('/Process/Group 67.png') ;
-    width: 100vw;
-    height: 100vh;
-  }
-  .horizontal{
-    display: flex;
-  }
-  .br{
-    outline: solid;
-  }
+//   .div1{
+//     background-image: url('/Process/Group 44.png') ;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   .div2{
+//     background-image: url('/Process/Group 45.png') ;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   .div3{
+//     background-image: url('/Process/Group 67.png') ;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   .div4{
+//     background-image: url('/Process/Group 67.png') ;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   .horizontal{
+//     display: flex;
+//   }
+//   .br{
+//     outline: solid;
+//   }
   
-  @media (max-width: 620px) {
+//   @media (max-width: 620px) {
 
-    .sticky-parent{
-      height: 600vh;
-    }
-    .dim{
-      display: block;
-      min-width: 100vw;
-      height: 150vh;
-    }
-  }
+//     .sticky-parent{
+//       height: 600vh;
+//     }
+//     .dim{
+//       display: block;
+//       min-width: 100vw;
+//       height: 150vh;
+//     }
+//   }
   
-  p{
-    font-size: 10em;
-    text-align: center;
-  }
-}
+//   p{
+//     font-size: 10em;
+//     text-align: center;
+//   }
+// }
 
 
-.fixedHeader{
-  background: blue;
-  width: 100%;
-  height: 40px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  // z-index: -1;
-  color: white;
-  text-align: center;
-	}
+// .fixedHeader{
+//   background: blue;
+//   width: 100%;
+//   height: 40px;
+//   position: sticky;
+//   top: 0;
+//   left: 0;
+//   // z-index: -1;
+//   color: white;
+//   text-align: center;
+// 	}

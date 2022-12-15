@@ -100,6 +100,8 @@ const OurClients = () => {
                 <div className="size "> <img src="/ourClients/Frame174.png" alt=""/> </div>
                 <div className="size "> <img src="/ourClients/Frame175.png" alt=""/> </div> 
                 <div className="size "> <img src="/ourClients/Frame163.png" alt=""/> </div>
+                <div className="size "> <img src="/ourClients/Frame163.png" alt=""/> </div>
+
                 {/* <div className="size "> <img src="/ourClients/Frame164.png" alt=""/> </div>
                 <div className="size "> <img src="/ourClients/Frame165.png" alt=""/> </div>
                 <div className="size "> <img src="/ourClients/Frame166.png" alt=""/> </div>

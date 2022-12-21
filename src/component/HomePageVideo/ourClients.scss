@@ -12,7 +12,7 @@
 .slide-track{
     display: flex;
     width: calc(250px * 18);
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 .slide-track:hover{
     animation-play-state: paused;
@@ -37,7 +37,7 @@
 }
 img{
      width: 100%;  
-    transition: transform 20s;
+    transition: transform 30s;
 }
 img:hover{
     transform: translateZ(20px);

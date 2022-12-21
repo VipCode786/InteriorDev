@@ -3,9 +3,10 @@
     .rowCareer{
             display: flex;
             flex-direction: row;
-            
+            margin-left: 60px;
+            margin-right: 60px;
             // margin:2rem;
-            justify-content:space-around;
+            justify-content:space-between;
             flex-wrap: wrap;
             align-items: center;
 
@@ -13,7 +14,8 @@
             .boxViewCareer{
                 display: flex;
                 justify-content: center;
-                margin: 1rem;
+                // margin: 1rem;
+                //  margin-left: -2rem;
               }
               
               
@@ -67,10 +69,21 @@
                
               }
     }
-    .rowCareer p:first-of-type{
+
+    .rowCareerfirst{
+        display: flex;
+        flex-direction: row;
+        
+        // margin:2rem;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .rowCareerfirst p:first-of-type{
                 // width: 417px;
                 // height: 144px;
                 margin-top: 5rem;
+                margin-right: 1rem;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 600;
@@ -85,14 +98,14 @@
                 // height: 120px;
                 // left: 792px;
                 // top: 196px;
-
+                // margin: 5rem auto auto 10rem, ;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 118%;
                 /* or 24px */
-
+                
                 display: flex;
                 align-items: flex-end;
                 text-align: justify;
@@ -157,33 +170,36 @@
         // height: 585px;
         margin-top: 2rem;
         width: 100%;
+        margin-left: 60px;
+        margin-right: 60px;
         .cloumnForm{
             display: flex;
             flex-direction:column;
             flex-wrap:nowrap;
-            margin-top:-4rem;
+            margin-left: 30px
           }
           
           .row-wrapForm{
             display: flex;
             flex-direction:row;
+            // justify-content: space-between;
             flex-wrap: wrap;
-            
+           
           
           }
         div{
             //  margin-top: -1rem;
-             margin-left:1rem;
-             margin-right:1rem;
-             
+            //  margin-left:1rem;
+            //  margin-right:0.3rem;
+            //  margin: auto;
             display:flex;
-            justify-content: center ;
+            // justify-content: center ;
             // align-items: center;
         }
      
         input{
             // margin:1rem;
-            width:40vw;
+            width:20vw;
             background: #FFFFFF;
             border: 1px solid #424242;
             border-radius: 8px;
@@ -200,10 +216,10 @@
                 text-indent: 1rem;
             }
             textarea{
-                //   width: 40vw;
+                   width: 60vw;
                 height: 8rem;
-                
-                 margin-top:2rem;
+                margin-left: 3rem;
+                 margin-top:10px;
                  margin-bottom:2rem;
                 // margin-left: 3rem;
                 border: 1px solid #424242;
@@ -281,15 +297,16 @@
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: nowrap;
+        
     }
     .career-row{
         display: flex;
         flex-direction: row;
-        justify-content:end;
+        justify-content:space-between;
         flex-wrap: wrap;
         // width: 80%;
-         margin-right:10%;
-         margin-left:10%;
+        //  margin-right:10%;
+        margin-left: 50px;
         // margin-top: -1rem;
          
         .attach{
@@ -320,7 +337,12 @@
         // margin: 3rem;
         
     }
-    
+    .rowCareerButtonfix{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 2rem;
+    }   
         
 }
 
@@ -328,7 +350,8 @@
     .career{
         .rowCareer{
                 flex-direction: column;
-
+                margin-left: 0px;
+                margin-right: 0px;
                 .boxViewCareer{
                     display: flex;
                     justify-content: center;
@@ -357,7 +380,7 @@
                        font-family: 'Poppins';
                        font-style: normal;
                        font-weight: 500;
-                       font-size: 15px;
+                       font-size: 7px;
                        line-height: 118%;
                   
                   
@@ -367,11 +390,25 @@
                   
         }
         .careerForm p:nth-of-type(2){
-font-size: 14px;
+            font-size: 14px;
         }
         .careerForm{
+            margin-left: 0px; 
+    margin-right: 0px;
+    .career-row{
+        margin-left: 2rem;
+    }
             .cloumnForm{
                 margin-top: 0;
+            }
+
+            input{
+                width: 40vh;
+
+            }
+            textarea{
+                width:70vw;
+                margin-left: 2rem;
             }
         }
 
@@ -401,9 +438,31 @@ font-size: 14px;
             }
         }
 
-        
+        .rowCareerButtonfix{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-left: 0%;
+                } 
     }
+
+     
 }
 
-
+.message::-webkit-input-placeholder {
+    padding-top: 10px;
+ }
+ 
+ .message::-moz-input-placeholder {
+    padding-top: 10px;
+ }
+ 
+ .message:-moz-input-placeholder {
+    padding-top: 10px;
+ }
+ 
+ .message:-ms-input-placeholder {
+    padding-top: 10px;
+ }
 

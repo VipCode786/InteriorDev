@@ -23,7 +23,7 @@ const ContactPage = () => {
   }
   const upload = (e) => {
     e.preventDefault();
-    if(recaptcha===null)
+    if(recaptcha==null)
     {
       setError(true)
     }
@@ -38,7 +38,7 @@ const ContactPage = () => {
     // formData.append("name",name);
 
    
-    axios.post("https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api", formData, {
+    axios.post("https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api/", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },

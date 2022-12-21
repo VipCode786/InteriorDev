@@ -24,14 +24,21 @@ const Footer = () => {
     <br/>
     <a href="https://www.google.com/maps/place/Interior+Craft/@28.5225138,77.3935619,17z/data=!4m5!3m4!1s0x390ce9d48b8267cd:0xb8ae7c7899c59509!8m2!3d28.5233434!4d77.3962656">
       <div className='contactDetails'>
-      <img src="/contactUs/address.svg" alt="" /> &nbsp; &nbsp; <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
+      <img src="/contactUs/address.svg" alt="" /> &nbsp; &nbsp; <p>A-218, 219, Sector-83,<br/> Phase-II, Noida-201305</p>
       </div>
       </a>
       <br/>
       <div>
-        <a href='Interior_Design_Brochure.pdf' download> 
+      <div className='boxView' style={{justifyContent:"flex-start",margin:"0px"}} >
+                    <div className='boxButton row' style={{paddingTop:"5px",paddingBottom:"5px", paddingRight:"20px",paddingLeft:"20px"}}>
+                    <a href='Interior_Design_Brochure.pdf' download className='downloadImg'>Download Brochure</a>
+                    &nbsp;<img src="downloadImg.png" width="20px" alt="" />
+                    </div>
+      
+      </div>
+        {/* <a href='Interior_Design_Brochure.pdf' download> 
         <img width="70%" src="Download brochure.png" alt="" />
-        </a>
+        </a> */}
       </div>
  </div>
 
@@ -73,9 +80,9 @@ const Footer = () => {
    </a>
   </div>
    <img src="/Footer/logo.svg" className="ICLogo" alt="" />
- </div>
-</div>
-</div>
+  </div>
+  </div>
+  </div>
 
     </div>
   )

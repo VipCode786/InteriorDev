@@ -52,7 +52,7 @@ const Slider = () => {
               <p className="text">{quote}</p>
               <div style={{display:"flex", flexDirection:"row" , justifyContent:"center" ,alignItems:"center"}}>
               <img src={image} alt={name} className="person-img" />
-              <h4 className="nameTestimonial">{name}</h4>
+              &nbsp;&nbsp;&nbsp;&nbsp;<h4 className="nameTestimonial">{name}</h4>
               </div>
              
             </article>
@@ -74,6 +74,8 @@ const Slider = () => {
       <div  className="dot" onClick={()=>setIndex(3)}></div>
       <div  className="dot" onClick={()=>setIndex(4)}></div>
      </div>
+     <br/>
+     <br/>
      </div>
   );
 };

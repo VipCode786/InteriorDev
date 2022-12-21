@@ -14,15 +14,15 @@
     // padding: 1rem;
     // padding-top: 2rem;
     margin: 2rem 2rem 0rem 2rem;
-    padding: 1rem;
+    padding: 3rem 3rem 1rem 3rem;
  span{
     font-style: normal;
-font-weight: 700;
-font-size: 2vw;
-line-height: 45px;
-letter-spacing: 0.025em;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 45px;
+    letter-spacing: 0.025em;
 
-color: #2D2D2D;
+    color: #2D2D2D;
 
  }
  .contactDetails{
@@ -81,10 +81,36 @@ p{
         width: 15rem;
         // height: 15rem;
     }
+
+
+    // .downloadBroucher{
+        
+    //      font-size:1rem
+    // }
 }
 
+a{
+    text-decoration: none;
+    white-space: nowrap;
+}
 
+    .downloadImg{
+    font-size: 20px;
+    }
 
+    @media only screen and (max-width: 750px) {
+        
+    .downloadImg{
+        font-size: 17px;
+        }
+
+        .footer{
+            span{
+                font-size: 5vw;
+            }
+        }
+
+    }
 // @media only screen and (max-width: 650px) {
 //     .footer{
 //         .contactDetails{

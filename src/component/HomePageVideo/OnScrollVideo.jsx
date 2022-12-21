@@ -35,7 +35,7 @@ const OnScrollVideo = () => {
 		<div class="content">
 			<p></p>
  			<video width="600" muted preload>
-   			<source src="IC.mp4" type="video/mp4"/>
+   			<source src="ICEG.mp4" type="video/mp4"/>
     		<p>Your user agent does not support the HTML5 Video element.</p>
       </video>
 		</div>

@@ -21,8 +21,7 @@ import Testimonials from '../../component/Testimonials/Testimonials'
 import Clients from '../../component/HomePageVideo/Clients'
 import Testimonials1 from '../../component/Testimonials/Testimonials1'
 import Slider from '../../component/Testimonials/Slider'
-
-// import index1 from './index1.html'
+import $ from 'jquery';
 const myHTML =
 `<div class="container">
 <p>Page Container of a ugly example</p>
@@ -62,97 +61,294 @@ scrollAnimate({
 
 
 const Home = () => {
+
+     
   const scrollPosition = useScrollPosition();
-  const [value,setvalue] = useState(501);
+  const [value,setvalue] = useState(1);
   const [flage,setFlage] = useState(true)
   const [flage2,setFlage2] = useState(false)
+  const [isHovering, setIsHovering] = useState(false);
+  let er;
   const [counterOn, setCounterOn] = useState(false)
-   console.log(scrollPosition);
+   console.log("scrollPosition",scrollPosition);
+   $(".buttonHover").on('mouseenter',function(){
+      $(".discussProjects").css({ "background-size":" 0% 0%"});
+    });
+    $(".buttonHover").on('mouseleave',function(){
+      $(".discussProjects").css({ "background-size":" 100% 100%"});
+    });
+    $(".scrollImg").on( 'scroll', function(){
+      console.log('Event Fired');
+   });
 
+ 
+
+    $(window).on('scroll',function(){
+
+       er =  $('.scrollImg').offset().top;
+       let one =  $('.scrollImg').offset().top;
+       console.log("onenenenene",one)
+      console.log("er",er)
+
+      var dim = $('.scrollImg').is(":visible");
+      if(dim)
+      {
+           setFlage2(true) 
+      }
+      if (dim == false && setFlage2==true) {
+            $('html, body').animate({
+                  scrollTop: $("#myDiv").offset().top
+              }, 1000);
+              setFlage2(false)
+            }
+      if(scrollPosition>600 && scrollPosition <1900)
+      { console.log('Event Fired');
+            $(".scrollImg").css({ 
+                  "top": "0",
+                  "bottom":"0",
+                  "position":"sticky",
+                  "overflow-y":"hidden",
+                  "overflow-x":"hidden",
+                  "z-index": "10000",
+                 
+            });
+      }
+      if(scrollPosition>1900 || scrollPosition<600)
+      {
+            $(".scrollImg").css({ "position":"relative"});
+      }
+    });
+
+   const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+  
+    const handleMouseLeave = () => {
+      setIsHovering(false);
+    };
    const scroll = useRef(null);
 
   const scrollClick = () => {
     scroll.current?.scrollIntoView({behavior: 'smooth'});
   };
    useEffect(()=>{
+      if(scrollPosition > 1000 && scrollPosition < 1100)
+      {
+            setvalue(parseInt(2))
+      }
+  
+   
+  
+      if(scrollPosition > 1100 && scrollPosition < 1200)
+      {
+            setvalue(parseInt(5))
+      }
+      if(scrollPosition > 1200 && scrollPosition < 1300)
+      {
+            setvalue(parseInt(10))
+      }
+      if(scrollPosition > 1300 && scrollPosition < 1400)
+      {
+            setvalue(parseInt(15))
+      }
+  
+   
+  
+      if(scrollPosition > 1400 && scrollPosition < 1500)
+      {
+            setvalue(parseInt(20))
+      }
+  
+   
+  
+      if(scrollPosition > 1500 && scrollPosition < 1600)
+      {
+            setvalue(parseInt(25))
+      }
+  
+   
+  
+      if(scrollPosition > 1600 && scrollPosition < 1700)
+      {
+            setvalue(parseInt(30))
+      }
+  
+   
+  
+      if(scrollPosition > 1700 && scrollPosition < 1800)
+      {
+            setvalue(parseInt(30))
+      }
+  
+   
+  
+      if(scrollPosition > 1045 && scrollPosition < 1050)
+      {
+            setvalue(parseInt(30))
+      }
 
+      // xexjejhjhi
 
-     if(scrollPosition > 601 && scrollPosition < 610)
-    {
-          setvalue(parseInt(510))
-    }
-
-    if(scrollPosition > 610 && scrollPosition < 620)
-    {
-          setvalue(parseInt(520))
-    }
-    if(scrollPosition > 620 && scrollPosition < 630)
-    {
-          setvalue(parseInt(530))
-    }
-    if(scrollPosition > 630 && scrollPosition < 640)
-    {
-          setvalue(parseInt(540))
-    }
-
-    if(scrollPosition > 640 && scrollPosition < 650)
-    {
-          setvalue(parseInt(550))
-    }
-
-    if(scrollPosition > 650 && scrollPosition < 660)
-    {
-          setvalue(parseInt(560))
-    }
-
-    if(scrollPosition > 660 && scrollPosition < 670)
-    {
-          setvalue(parseInt(570))
-    }
-
-    if(scrollPosition > 670 && scrollPosition < 680)
-    {
-          setvalue(parseInt(580))
-    }
-
-    if(scrollPosition > 680 && scrollPosition < 690)
-    {
-          setvalue(parseInt(590))
-    }
-
-    if(scrollPosition > 690 && scrollPosition < 700)
-    {
-          setvalue(parseInt(600))
-    }
-
-    if(scrollPosition > 670 && scrollPosition < 680)
-    {
-          setvalue(parseInt(580))
-    }
-    if(scrollPosition > 680 && scrollPosition < 690)
-    {
-          setvalue(parseInt(590))
-    }
-    if(scrollPosition > 690 && scrollPosition < 700)
-    {
-          setvalue(parseInt(600))
-    }
-    if(scrollPosition > 710 && scrollPosition < 720)
-    {
-          setvalue(parseInt(610))
-    }
-    if(scrollPosition > 720 && scrollPosition < 730)
-    {
-          setvalue(parseInt(620))
-    }
-    if(scrollPosition > 730 && scrollPosition < 740)
-    {
-          setvalue(parseInt(630))
-    }
-    if(scrollPosition > 740 && scrollPosition < 750)
-    {
-          setvalue(parseInt(640))
-    }
+      // if(scrollPosition > 1000 && scrollPosition < 1005)
+      // {
+      //       setvalue(parseInt(2))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1005 && scrollPosition < 1015)
+      // {
+      //       setvalue(parseInt(3))
+      // }
+      // if(scrollPosition > 1015 && scrollPosition < 1020)
+      // {
+      //       setvalue(parseInt(4))
+      // }
+      // if(scrollPosition > 1020 && scrollPosition < 1025)
+      // {
+      //       setvalue(parseInt(5))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1025 && scrollPosition < 1030)
+      // {
+      //       setvalue(parseInt(6))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1030 && scrollPosition < 1035)
+      // {
+      //       setvalue(parseInt(7))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1035 && scrollPosition < 1040)
+      // {
+      //       setvalue(parseInt(8))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1040 && scrollPosition < 1045)
+      // {
+      //       setvalue(parseInt(9))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1045 && scrollPosition < 1050)
+      // {
+      //       setvalue(parseInt(10))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1050 && scrollPosition < 1055)
+      // {
+      //       setvalue(parseInt(11))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1055 && scrollPosition < 1060)
+      // {
+      //       setvalue(parseInt(12))
+      // }
+      // if(scrollPosition > 1060 && scrollPosition < 1065)
+      // {
+      //       setvalue(parseInt(13))
+      // }
+      // if(scrollPosition > 1065 && scrollPosition < 1070)
+      // {
+      //       setvalue(parseInt(14))
+      // }
+      // if(scrollPosition > 1070 && scrollPosition < 1075)
+      // {
+      //       setvalue(parseInt(15))
+      // }
+      // if(scrollPosition > 1075 && scrollPosition < 1080)
+      // {
+      //       setvalue(parseInt(16))
+      // }
+      // if(scrollPosition > 1080 && scrollPosition < 1085)
+      // {
+      //       setvalue(parseInt(17))
+      // }
+      // if(scrollPosition > 1085 && scrollPosition < 1090)
+      // {
+      //       setvalue(parseInt(18))
+      // }
+      // if(scrollPosition > 1090 && scrollPosition < 1095)
+      // {
+      //       setvalue(parseInt(19))
+      // }
+      // if(scrollPosition > 1095 && scrollPosition < 1100)
+      // {
+      //       setvalue(parseInt(20))
+      // }
+  
+      // if(scrollPosition > 1100 && scrollPosition < 1105)
+      // {
+      //       setvalue(parseInt(21))
+      // }
+      // if(scrollPosition > 1105 && scrollPosition < 1110)
+      // {
+      //       setvalue(parseInt(22))
+      // }
+  
+      // if(scrollPosition > 1110 && scrollPosition < 1115)
+      // {
+      //       setvalue(parseInt(23))
+      // }
+      // if(scrollPosition > 1115 && scrollPosition < 1120)
+      // {
+      //       setvalue(parseInt(24))
+      // }
+  
+      // if(scrollPosition > 1120 && scrollPosition < 1125)
+      // {
+      //       setvalue(parseInt(25))
+      // }
+      // if(scrollPosition > 1125 && scrollPosition < 1130)
+      // {
+      //       setvalue(parseInt(26))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1130 && scrollPosition < 1135)
+      // {
+      //       setvalue(parseInt(27))
+      // }
+  
+      // if(scrollPosition > 1135 && scrollPosition < 1140)
+      // {
+      //       setvalue(parseInt(28))
+      // }
+      // if(scrollPosition > 1140 && scrollPosition < 1145)
+      // {
+      //       setvalue(parseInt(29))
+      // }
+  
+   
+  
+      // if(scrollPosition > 1145 && scrollPosition < 1150)
+      // {
+      //       setvalue(parseInt(30))
+      // }
+  
+      // if(scrollPosition > 1150 && scrollPosition < 1155)
+      // {
+      //       setvalue(parseInt(31))
+      // }
+  
+   
+   
+   
+//     xhksxbjdbjksxjbxdjxdbj
    
     // if(scrollPosition > 900 && scrollPosition < 950)
     // {
@@ -295,9 +491,10 @@ const Home = () => {
         
       </div>
       <div className='centerScroll'>
-      <div className='arrow' onClick={scrollClick}>
+            <div className='arrowOne'></div>
+      {/* <div className='arrow' onClick={scrollClick}>
           <img src="/headerImages/arrow.svg" alt="arrow" />
-      </div>
+      </div> */}
       <div className="scroll">
           
             <div className='scrollContent' onClick={scrollClick}>Scroll to Explore</div>
@@ -315,13 +512,33 @@ const Home = () => {
           <div className='borderSet'></div>
       </div>
       <div className='home'>
-      <div className='scrollImg'>
+      <div className='scrollImg' style={{background:"#ffffff"}}>
       <div ref={scroll} className='whatWeMake'>
       <p >What WE MAKE</p>
       </div>
+      <br/>
+     
+     
       {/* <ParallaxText>A Wild Sheep Chase</ParallaxText> */}
-      <img   width="100%"   src={`/frames/${value}.jpg`} alt="" />
+      <img   width="100%" height="580vh"  src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
       
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       </div>
       {/* <div dangerouslySetInnerHTML={{ __html: myHTML }} />; */}
 
@@ -339,7 +556,7 @@ const Home = () => {
       {/* <img width="100%"  height="500vh" src={`/SCROLLFrame/${value}.jpg`} alt="" /> */}
       {/* <iframe height="600" width="100%" src="index1.html" ></iframe>  */}
       {/* <div dangerouslySetInnerHTML={{ __html: index1}} /> */}
-      <div className='border'>
+      <div className='border' id='myDiv'>
           <div className='borderSet'></div>
           <div className='borderText'>ELEGANCE</div>
           <div className='borderSet'></div>
@@ -364,7 +581,7 @@ const Home = () => {
       {/* <FourDProcess/> */}
       <div className='boxView'>
                     <div className='boxButton'>
-                    <Link to="/about">About</Link>
+                    <Link to="/about">About Us</Link>
                     </div>
       </div>
       <div className='border'>
@@ -453,10 +670,13 @@ const Home = () => {
 
                     </p>
                </div> 
+               
+               <div className='meetButton'>
               <div className='boxView' >
               <Link to="myteam"><button className='boxButton'> Meet The Team</button></Link>
               </div>
-          
+              </div>
+
              
               
         </div>
@@ -465,7 +685,7 @@ const Home = () => {
               
             <div className='nameOwner'>
             <div className="ownerName">Anish Ahmed </div>
-            <br/><div className="ownedesignation">(Visionary & Founder)</div>
+            <div className="ownedesignation">(Visionary & Founder)</div>
             </div>
           <img src="AnisAhmed.png" alt="pic" />
 
@@ -473,7 +693,24 @@ const Home = () => {
 
       </div>
 
+  <div className='ourClientsBack'>
+      <br/>
+      <br/>
+      <br/>
+<div className='ourClients_Heading'>
+      Our Clients
+</div>
+
+
       
+      <br/>
+<div className='ourClients_Text'>
+Worked with and Gained Trust of Market-Leading Companies
+
+</div>
+<br/>
+<br/>
+</div>
 
    {/* <Clients/>    */}
 <OurClients></OurClients>
@@ -499,10 +736,26 @@ const Home = () => {
               </div>
         </div>
       <br/>
-        <div>
-          <div className='discussProjects'>
-            <p>DISCUSS YOUR DREAM PROJECTS</p>
-            <div className='boxView'>
+        <div >
+          <div 
+             className='discussProjects '
+
+         
+          >
+            <p style={{
+           color: isHovering ? '#000000' : '',
+           
+            // backgroundColor: "white",
+          }}
+          
+         
+          >DISCUSS YOUR DREAM PROJECTS</p>
+            <div className='boxView buttonHover'
+                   onMouseEnter={() => setIsHovering(true)}
+                   onMouseLeave={() => setIsHovering(false)}>
+               
+              
+                  
             <Link to="contactpage">  <button className='boxButton'> CONTACT US</button></Link>
               </div>
           </div>

@@ -60,8 +60,8 @@ const Career = () => {
     
   return (
     <div className='career'>
-        <div className='rowCareer'>
-            <p>
+        <div className='rowCareerfirst'>
+            <p >
                     Career at <br/>Interior Crafts
             </p>
            {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -78,13 +78,13 @@ const Career = () => {
                     <div className='heading'>
                     CNC Press Brake <br/> Operator
                     </div>
-                    <br/>
-                    <div className='rowCareer'>
-                    <div className='boxViewCareer' >
+            
+                    <div className='rowCareerButtonfix'>
+                    <div className='boxViewCareer' style={{width:"20rem"}}>
                     <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"1rem"}}>
                     Job Description (Download)
                     </div></Link>
-                    </div>
+                    </div>&nbsp;&nbsp;
                     <div className='boxViewCareer' onClick={scrollClick}>
                       <div className='boxButtonCareer'style={{padding:"1rem 2rem 1rem 2rem"}}>
                     Apply
@@ -105,17 +105,20 @@ const Career = () => {
                     <div className='heading'>
                     Architect
                     </div>
+                    
                     <br/>
                     <br/>
                     <br/>
-                    <br/>
-                    <br/>
-                    <div className='rowCareer'>
+                    
+                    
+                   
+                    <div className='rowCareerButtonfix'>
                     <div className='boxViewCareer'>
                     <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"1rem"}}>
                     Job Description (Download)
                     </div></Link>
                     </div>
+                    &nbsp;&nbsp;
                     <div className='boxViewCareer' onClick={scrollClick}>
                       <div className='boxButtonCareer'style={{padding:"1rem 2rem 1rem 2rem"}}>
                     Apply
@@ -149,15 +152,16 @@ const Career = () => {
          
                 </div>
                 <div className='career-column'>
-                        <textarea placeholder='Your Message' type="text"  onChange={(e)=>setMessage(e.target.value)}/>
+                        <textarea placeholder='Your Message' type="text" className='message' onChange={(e)=>setMessage(e.target.value)}/>
+                        <div className='career-row' >  
                         <ReCAPTCHA
         sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
         onChange={onChange}
         required
-        // style={{margin:"2rem"}}
+         
       />
       
-                        <div className='career-row'  style={{marginTop:"1rem"}}>
+                       
                         <div>
                         <span>Max file size of 8mb, for larger enquiries please contact the team</span>
                         </div>

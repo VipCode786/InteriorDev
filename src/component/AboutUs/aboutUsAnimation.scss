@@ -21,7 +21,7 @@
         height: 30vh;
         font-style: italic;
        font-weight: 400;
-       font-size: 4vw;
+       font-size: 3.5vw;
        text-align: justify;
         margin-top: 10vh;
        color: #481010;
@@ -73,5 +73,19 @@
             }
         }
         
+    
+}
+
+@media only  screen and (max-width:"750px"){
+
+    .aboutUsAnimation{
+        p{
+        font-size: 20px;
+        img{
+            height: 25px;
+        }
+        }
+
+    }
     
 }

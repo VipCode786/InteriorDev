@@ -12,11 +12,12 @@ const About = () => {
     <div className='head'>
       
     </div>
-
+    <br/>
+    <br/>
     <div className='heading'>
       About Us
     </div>
-
+    <br/>
     <div className='aboutContent'>
     <p>
       Interior Craft was set up in the year 1977 to cater to a variety of Industrial sectors. Soon there was a huge boost in the demand of Metal fabrications. This prompted our founder Mr. Anis Ahmed to heavily invest in this field. Today, Interior Craft’s name is synonymous with metal fabrications of the highest caliber and craftsmanship of the best quality. We fabricate each and everything that can be crafted out of metal be it Gates, Staircases, Railings and much more. All the aspects of our projects are tailored to the clients’ needs. </p>
@@ -27,7 +28,7 @@ const About = () => {
     <br/>
     <div className='background1'>
       <div className='about1'>
-          <p>
+          <p className='margin3rem'>
           Interior Craft helps you with your project at every level, from designing and generating a prototype to detailing, manufacturing, and finally delivering the finished product to your site and facilitating a seamless installation in the least amount of time.
           </p>
           <img src="/AboutUs/pic1.png" alt="1" />
@@ -38,9 +39,9 @@ const About = () => {
     <br/>
     <br/>
     <div className='background2'>
-    <div className='about1'>
+    <div className="about2 mobileResponsive">
     <img src="/AboutUs/pic2.png" alt="2" />
-
+    &nbsp;&nbsp;
           <p>
           We currently run our business out of an 80,000 square foot premises in Noida, Uttar Pradesh. Our workforce of more than 250 artisans have been trained extensively in fabrication and carpentry to deliver the highest level of metal artistry.
           </p>

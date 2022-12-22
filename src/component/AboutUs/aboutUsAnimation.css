@@ -1,0 +1,78 @@
+.aboutUsAnimation {
+  background-color: bisque;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+.aboutUsAnimation .bottom-bg {
+  height: 10vh;
+  background-image: linear-gradient(#f87e51, #f87e51 100%);
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-animation: 2s ease-out 0s 1 moveInleft;
+          animation: 2s ease-out 0s 1 moveInleft;
+}
+.aboutUsAnimation p {
+  display: block;
+  width: 70vw;
+  height: 30vh;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3.5vw;
+  text-align: justify;
+  margin-top: 10vh;
+  color: #481010;
+  -webkit-animation: 2s ease-out 0s 1 moveInleft;
+          animation: 2s ease-out 0s 1 moveInleft;
+  text-align: center;
+}
+.aboutUsAnimation .aboutAnimationRow {
+  display: flex;
+  flex-direction: row;
+}
+.aboutUsAnimation .background-right {
+  background-color: #CB572C;
+  width: 100%;
+  -webkit-animation: 3s ease-out 0s 1 moveInleft;
+          animation: 3s ease-out 0s 1 moveInleft;
+}
+.aboutUsAnimation .background-right img {
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .aboutUsAnimation p {
+    font-size: 20px;
+  }
+  .aboutUsAnimation p img {
+    height: 25px;
+  }
+}/*# sourceMappingURL=aboutUsAnimation.css.map */

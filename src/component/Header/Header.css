@@ -1,0 +1,38 @@
+.header {
+  background-color: #383838;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header .logo img {
+  width: 100%;
+  height: 80%;
+}
+.header .logo a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .right-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header .right-header img {
+  margin-right: 2rem;
+  margin-left: -0.7rem;
+  width: 40%;
+}
+.header img {
+  margin: 1rem;
+  width: 80%;
+}/*# sourceMappingURL=Header.css.map */

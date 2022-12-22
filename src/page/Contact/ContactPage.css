@@ -1,0 +1,144 @@
+.contactPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFFFFF;
+  margin: 1rem;
+}
+.contactPage .contactInfo {
+  background: #383838;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.contactPage .contactInfo h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 138.7%;
+  letter-spacing: 0.025em;
+  margin: 2rem;
+  color: #FFFFFF;
+}
+.contactPage .contactInfo .contact-paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.7%;
+  /* or 28px */
+  letter-spacing: 0.055em;
+  color: #FFFFFF;
+  margin: 2rem;
+}
+.contactPage .contactInfo .contactDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 2rem;
+}
+.contactPage .contactInfo .contactDetails p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.contactPage .contactInfo .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contactPage .contactInfo .social-media img {
+  margin: 1rem;
+}
+.contactPage .contactForm {
+  background-color: #FFFFFF;
+}
+.contactPage .contactForm .error {
+  font-family: "Poppins";
+  font-style: normal;
+  color: red;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactPage .contactForm input {
+  width: 250px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #000000;
+  margin: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.025em;
+  color: #979797;
+}
+.contactPage .contactForm input:focus {
+  color: #000000;
+}
+.contactPage .contactForm label {
+  margin: 2rem;
+}
+.contactPage .contactForm p {
+  margin: 2rem;
+  width: 488px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 138.7%;
+  /* or 21px */
+  text-align: justify;
+  letter-spacing: 0.025em;
+  color: #393939;
+}
+.contactPage .contactForm .uploadButton {
+  width: 185px;
+  padding: 10px;
+  background: #EFEFEF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.contactPage .contactForm .uploadButton:hover {
+  cursor: pointer;
+}
+.contactPage .contactForm button {
+  margin: 2rem;
+  float: right;
+}
+
+.submitButton:hover {
+  background-color: #CB572C;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.submitButton {
+  box-sizing: border-box;
+  /* Auto layout */
+  padding: 16px 58px;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 3px solid #CB572C;
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 118%;
+  color: #000000;
+}/*# sourceMappingURL=ContactPage.css.map */

@@ -1,0 +1,267 @@
+.scrolling .four-d-process {
+  /* border: 2px solid white; */
+  width: 97vw;
+  height: 96vh;
+  display: flex;
+}
+.scrolling .four-d-process1 {
+  background: url("./background_image/design-background.png");
+  background-repeat: no-repeat;
+  background-size: 95% 90%;
+  margin-left: 5%;
+  margin-right: 5rem;
+}
+.scrolling .four-d-process2 {
+  background: url("./background_image/detail-background.png");
+  background-repeat: no-repeat;
+  background-size: 95% 90%;
+  margin-left: 5%;
+  margin-right: 5rem;
+}
+.scrolling .four-d-process3 {
+  background: url("./background_image/develop-background.png");
+  background-repeat: no-repeat;
+  background-size: 95% 90%;
+  margin-left: 5%;
+  margin-right: 5rem;
+}
+.scrolling .four-d-process4 {
+  background: url("./background_image/deliver-background.png");
+  background-repeat: no-repeat;
+  background-size: 95% 90%;
+  margin-left: 5%;
+  margin-right: 5rem;
+}
+.scrolling .four-d-process img {
+  margin-top: 20vh;
+  /* margin-left: 6px; */
+  width: 63%;
+  height: 49vh;
+  margin-left: 5vw;
+}
+.scrolling .four-d-process-column1 {
+  /* border: 2px solid green; */
+  width: 50%;
+}
+.scrolling .four-d-process-column1 h1 {
+  font-size: 4rem;
+  margin-left: 15rem;
+  margin-top: 6rem;
+}
+.scrolling .four-d-process-column1 span {
+  color: #CB572C;
+  font-size: 12.5rem;
+}
+.scrolling .four-d-process-column1 p {
+  text-align: justify;
+  font-size: 25px;
+  font-weight: 500px;
+  margin-left: 20rem;
+  margin-top: -2rem;
+}
+.scrolling .four-d-process-column2 {
+  /* border: 2px solid red;  */
+  width: 50%;
+}
+.scrolling .four-d-process-column2 h1 {
+  font-size: 6rem;
+  line-height: 2px;
+}
+.scrolling .four-d-process-column2 span {
+  font-size: 8rem;
+  color: #CB572C;
+  margin-left: 10px;
+}
+.scrolling .sticky-parent {
+  height: 400vh;
+}
+.scrolling .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.scrolling .dim {
+  display: block;
+  min-width: 100vw;
+  height: 100vh;
+  margin: 1rem;
+}
+.scrolling .div1 {
+  background-image: url("/Process/Group 44.png");
+  width: 100vw;
+  height: 100vh;
+}
+.scrolling .div2 {
+  background-image: url("/Process/Group 45.png");
+  width: 100vw;
+  height: 100vh;
+}
+.scrolling .div3 {
+  background-image: url("/Process/Group 67.png");
+  width: 100vw;
+  height: 100vh;
+}
+.scrolling .div4 {
+  background-image: url("/Process/Group 67.png");
+  width: 100vw;
+  height: 100vh;
+}
+.scrolling .horizontal {
+  display: flex;
+}
+.scrolling .br {
+  outline: solid;
+}
+.scrolling .fixHeader {
+  width: 100%;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 3rem;
+}
+
+.fixHeader {
+  width: 100%;
+  height: 67px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: #000000;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 168%;
+}
+
+.fixedHeader {
+  background: blue;
+  width: 100%;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .scrolling .four-d-process {
+    /* border: 2px solid white; */
+    width: 97vw;
+    height: 50vh;
+    display: flex;
+  }
+  .scrolling .four-d-process1 {
+    background: url("./background_image/design-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .scrolling .four-d-process2 {
+    background: url("./background_image/detail-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .scrolling .four-d-process3 {
+    background: url("./background_image/develop-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .scrolling .four-d-process4 {
+    background: url("./background_image/deliver-background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .scrolling .four-d-process img {
+    margin-top: 20vh;
+    /* margin-left: 6px; */
+    width: 63%;
+    height: 49vh;
+    margin-left: 5vw;
+  }
+  .scrolling .four-d-process-column1 {
+    /* border: 2px solid green; */
+    width: 50%;
+  }
+  .scrolling .four-d-process-column1 h1 {
+    text-align: right;
+    font-size: 2rem;
+    margin-top: 7rem;
+    margin-left: 1rem;
+  }
+  .scrolling .four-d-process-column1 span {
+    color: #CB572C;
+    font-size: 3rem;
+  }
+  .scrolling .four-d-process-column1 p {
+    text-align: right;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+  .scrolling .four-d-process-column2 {
+    /* border: 2px solid red;  */
+    width: 50%;
+  }
+  .scrolling .four-d-process-column2 h1 {
+    font-size: 6rem;
+    line-height: 2px;
+  }
+  .scrolling .four-d-process-column2 span {
+    font-size: 8rem;
+    color: #CB572C;
+    margin-left: 10px;
+  }
+  .scrolling .sticky-parent {
+    height: 400vh;
+  }
+  .scrolling .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .scrolling .dim {
+    display: block;
+    min-width: 100vw;
+    height: 100vh;
+    margin: 1rem;
+  }
+  .scrolling .div1 {
+    background-image: url("/Process/Group 44.png");
+    width: 100vw;
+    height: 100vh;
+  }
+  .scrolling .div2 {
+    background-image: url("/Process/Group 45.png");
+    width: 100vw;
+    height: 100vh;
+  }
+  .scrolling .div3 {
+    background-image: url("/Process/Group 67.png");
+    width: 100vw;
+    height: 100vh;
+  }
+  .scrolling .div4 {
+    background-image: url("/Process/Group 67.png");
+    width: 100vw;
+    height: 100vh;
+  }
+  .scrolling .horizontal {
+    display: flex;
+  }
+  .scrolling .br {
+    outline: solid;
+  }
+  .fixHeader {
+    position: -webkit-sticky;
+  }
+}/*# sourceMappingURL=Horizontal.css.map */

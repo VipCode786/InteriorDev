@@ -1,0 +1,58 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-info {
+  background: #383838;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.contact .contact-info .contact-heading {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 138.7%;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.contact .contact-info .contact-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 138.7%;
+  /* or 28px */
+  text-align: justify;
+  letter-spacing: 0.055em;
+  color: #FFFFFF;
+}
+.contact .contact-info .contactDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.contact .contact-info .contactDetails p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  /* identical to box height */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.contact .contact-info .social-media {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .contact-info .social-media img {
+  padding: 1rem;
+}
+.contact .contact-info .contact-in {
+  height: 300px;
+}/*# sourceMappingURL=contact.css.map */

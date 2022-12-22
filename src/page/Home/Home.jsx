@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import HomeFirst from '../../component/HomePageVideo/HomeFirst'
 import OnScrollVideo from '../../component/HomePageVideo/OnScrollVideo'
 import CountUp from "react-countup"
-
+import './scroll.scss'
 import './home.scss'
 // import Client from '../../component/HomePageVideo/Client'
 import OurClients from '../../component/HomePageVideo/OurClients'
@@ -82,25 +82,36 @@ const Home = () => {
    });
 
  
-
+     
+ 
+ 
     $(window).on('scroll',function(){
-
+    //   var wer = $('.heeloo').is(":visible");
+    //   if(wer)
+    //   {
+    //    $('html, body').animate({
+    //      scrollTop: $(".heeloo").offset().top
+    //  }, 1000)
+    //   }
        er =  $('.scrollImg').offset().top;
        let one =  $('.scrollImg').offset().top;
        console.log("onenenenene",one)
       console.log("er",er)
 
       var dim = $('.scrollImg').is(":visible");
-      if(dim)
-      {
-           setFlage2(true) 
-      }
-      if (dim == false && setFlage2==true) {
-            $('html, body').animate({
-                  scrollTop: $("#myDiv").offset().top
-              }, 1000);
-              setFlage2(false)
-            }
+      // if(dim)
+      // {
+      //   $('html, body').animate({
+      //     scrollTop: $("#myDiv").offset().top
+      // }, 1000);
+      //      setFlage2(true) 
+      // }
+      // if (dim == false && setFlage2==true) {
+      //       $('html, body').animate({
+      //             scrollTop: $("#myDiv").offset().top
+      //         }, 1000);
+      //         setFlage2(false)
+      //       }
       if(scrollPosition>600 && scrollPosition <1900)
       { console.log('Event Fired');
             $(".scrollImg").css({ 
@@ -501,16 +512,23 @@ const Home = () => {
       </div>
       </div>
     </div>
-       
-        
-      <div className='border' >
+    {/* <section class="Frist">
+    <h1 class="big-title">Text move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left right</h1>
+  </section> */}
+  <section class="First1" style={{background:"#ffffff"}}>
+      <div className='border big1' >
       
           <div className='borderSet'></div>
           <div className='borderText'>BESPOKE</div>
           <div className='borderSet'></div>
           <div className='borderText'>LUXE</div>
           <div className='borderSet'></div>
+          <div className='borderText'>BESPOKE</div>
+          <div className='borderSet'></div>
+          <div className='borderText'>LUXE</div>
+          <div className='borderSet'></div>
       </div>
+      </section>
       <div className='home'>
       <div className='scrollImg' style={{background:"#ffffff"}}>
       <div ref={scroll} className='whatWeMake'>
@@ -520,7 +538,7 @@ const Home = () => {
      
      
       {/* <ParallaxText>A Wild Sheep Chase</ParallaxText> */}
-      <img   width="100%" height="580vh"  src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
+      <img   width="80%" height="600vh" style={{marginLeft:"10%",marginRight:"10%"}} src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
       
       <br/>
       <br/>
@@ -556,13 +574,29 @@ const Home = () => {
       {/* <img width="100%"  height="500vh" src={`/SCROLLFrame/${value}.jpg`} alt="" /> */}
       {/* <iframe height="600" width="100%" src="index1.html" ></iframe>  */}
       {/* <div dangerouslySetInnerHTML={{ __html: index1}} /> */}
-      <div className='border' id='myDiv'>
+
+      <section class="First3" style={{background:"#ffffff"}}>
+      <div className='border big3' >
+      
+          <div className='borderSet'></div>
+          <div className='borderText'>ELEGANCE</div>
+          <div className='borderSet'></div>
+          <div className='borderText'>INGENIOUS</div>
           <div className='borderSet'></div>
           <div className='borderText'>ELEGANCE</div>
           <div className='borderSet'></div>
           <div className='borderText'>INGENIOUS</div>
           <div className='borderSet'></div>
       </div>
+      </section>
+
+      {/* <div className='border' id='myDiv'>
+          <div className='borderSet'></div>
+          <div className='borderText'>ELEGANCE</div>
+          <div className='borderSet'></div>
+          <div className='borderText'>INGENIOUS</div>
+          <div className='borderSet'></div>
+      </div> */}
       <div>
      
      
@@ -584,13 +618,28 @@ const Home = () => {
                     <Link to="/about">About Us</Link>
                     </div>
       </div>
-      <div className='border'>
+      
+      <section class="First2" style={{background:"#ffffff"}}>
+      <div className='border big2' >
+      
+          <div className='borderSet'></div>
+          <div className='borderText'>MODERNITY</div>
+          <div className='borderSet'></div>
+          <div className='borderText'>VOUGE</div>
           <div className='borderSet'></div>
           <div className='borderText'>MODERNITY</div>
           <div className='borderSet'></div>
           <div className='borderText'>VOUGE</div>
           <div className='borderSet'></div>
       </div>
+      </section>
+      {/* <div className='border'>
+          <div className='borderSet'></div>
+          <div className='borderText'>MODERNITY</div>
+          <div className='borderSet'></div>
+          <div className='borderText'>VOUGE</div>
+          <div className='borderSet'></div>
+      </div> */}
       
       
       <div className='counter'>
@@ -684,7 +733,7 @@ const Home = () => {
               <div className='imageOwner'>
               
             <div className='nameOwner'>
-            <div className="ownerName">Anish Ahmed </div>
+            <div className="ownerName">Anis Ahmed </div>
             <div className="ownedesignation">(Visionary & Founder)</div>
             </div>
           <img src="AnisAhmed.png" alt="pic" />
@@ -714,8 +763,10 @@ Worked with and Gained Trust of Market-Leading Companies
 
    {/* <Clients/>    */}
 <OurClients></OurClients>
-
+        <div className='heeloo'></div>
         <div className='featuredProjects'>
+        <br/>
+        <br/>
               <p>Featured Projects</p>
               <br/>
               <br/>
@@ -736,6 +787,8 @@ Worked with and Gained Trust of Market-Leading Companies
               </div>
         </div>
       <br/>
+      <br/>
+ 
         <div >
           <div 
              className='discussProjects '
@@ -763,6 +816,10 @@ Worked with and Gained Trust of Market-Leading Companies
             
       
       </div>
+      <Helmet>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='scriptTextMove.js'></script>
+    </Helmet> 
       </div>
     
   )

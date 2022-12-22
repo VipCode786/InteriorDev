@@ -1,5 +1,3 @@
-
-
 import {BrowserRouter,Routes,Route, Navigate} from "react-router-dom"
 import Home from './page/Home/Home';
 import Header from './component/Header/Header';
@@ -25,9 +23,9 @@ function App() {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }, []);
   const onPageLoad = () => {
-    //  setTimeout(()=>{
+      setTimeout(()=>{
       setLoading(false)
-    //  },3000)
+      },3000)
     console.log('page loaded');
     
     // do something else

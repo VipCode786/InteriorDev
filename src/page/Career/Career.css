@@ -1,0 +1,335 @@
+.career {
+  overflow-x: hidden;
+}
+.career .rowCareer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+  margin-right: 60px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.career .rowCareer .boxViewCareer {
+  display: flex;
+  justify-content: center;
+}
+.career .rowCareer .boxButtonCareer {
+  box-sizing: border-box;
+  /* Auto layout */
+  gap: 10px;
+  /* height: 70px; */
+  border: 3px solid #FFFFFF;
+  border-radius: 50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 118%;
+  color: #FFFFFF;
+}
+.career .rowCareer .boxButtonCareer > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.career .rowCareer .boxButtonCareer:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+}
+.career .rowCareer .boxButtonCareer:hover > a {
+  cursor: pointer;
+}
+.career .rowCareerfirst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.career .rowCareerfirst p:first-of-type {
+  margin-top: 5rem;
+  margin-right: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: justify;
+  color: #000000;
+}
+.career div p:nth-of-type(2) {
+  width: 652px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 118%;
+  /* or 24px */
+  display: flex;
+  align-items: flex-end;
+  text-align: justify;
+  letter-spacing: -0.015em;
+  margin-top: 5rem;
+  color: #353535;
+}
+.career .grey-bg {
+  width: 632px;
+  background: #7A7A7A;
+  border-radius: 37px;
+  margin-top: 2rem;
+}
+.career .grey-bg .heading {
+  margin: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.career .orange-bg {
+  width: 632px;
+  margin-top: 2rem;
+  background: #E37C56;
+  border-radius: 37px;
+}
+.career .orange-bg .heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+  margin: 2rem;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.career .careerForm {
+  margin-top: 2rem;
+  width: 100%;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.career .careerForm .cloumnForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+}
+.career .careerForm .row-wrapForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.career .careerForm div {
+  display: flex;
+}
+.career .careerForm input {
+  width: 20vw;
+  background: #FFFFFF;
+  border: 1px solid #424242;
+  border-radius: 8px;
+  height: 3rem;
+  margin-top: 0.5rem;
+}
+.career .careerForm input::-moz-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 1rem;
+}
+.career .careerForm input:-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 1rem;
+}
+.career .careerForm input::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 1rem;
+}
+.career .careerForm textarea {
+  width: 60vw;
+  height: 8rem;
+  margin-left: 3rem;
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #424242;
+  border-radius: 8px;
+}
+.career .careerForm textarea::-moz-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 2rem;
+}
+.career .careerForm textarea:-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 2rem;
+}
+.career .careerForm textarea::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 2rem;
+}
+.career .careerForm span {
+  width: 291px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  color: #E0E0E0;
+}
+.career .careerForm p:nth-of-type(1) {
+  margin: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  /* identical to box height */
+  letter-spacing: 0.025em;
+  color: #CB572C;
+}
+.career .careerForm p:nth-of-type(2) {
+  width: 478px;
+  margin-top: -2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.025em;
+  color: #E6E6E6;
+}
+.career .career-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.career .career-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.career .career-row .attach {
+  font-family: "Poppins";
+  font-style: normal;
+  background-color: #383838;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 71px;
+}
+.career .career-row .attach:hover {
+  background-color: #FFFFFF;
+  color: #383838;
+  cursor: pointer;
+}
+.career .FromBG {
+  background: #383838;
+}
+.career .rowCareerButtonfix {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .career .rowCareer {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .career .rowCareer .boxViewCareer {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .career .rowCareer .boxButtonCareer {
+    box-sizing: border-box;
+    /* Auto layout */
+    gap: 10px;
+    /* height: 70px; */
+    border: 3px solid #FFFFFF;
+    border-radius: 50px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7px;
+    line-height: 118%;
+    color: #FFFFFF;
+  }
+  .career .careerForm p:nth-of-type(2) {
+    font-size: 14px;
+  }
+  .career .careerForm {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .career .careerForm .career-row {
+    margin-left: 2rem;
+  }
+  .career .careerForm .cloumnForm {
+    margin-top: 0;
+  }
+  .career .careerForm input {
+    width: 40vh;
+  }
+  .career .careerForm textarea {
+    width: 70vw;
+    margin-left: 2rem;
+  }
+  .career .grey-bg {
+    width: 80vw;
+  }
+  .career .grey-bg .heading {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .career .orange-bg {
+    width: 80vw;
+  }
+  .career .orange-bg .heading {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .career .rowCareerButtonfix {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0%;
+  }
+}
+.message::-webkit-input-placeholder {
+  padding-top: 10px;
+}
+
+.message::-moz-input-placeholder {
+  padding-top: 10px;
+}
+
+.message:-moz-input-placeholder {
+  padding-top: 10px;
+}
+
+.message:-ms-input-placeholder {
+  padding-top: 10px;
+}/*# sourceMappingURL=Career.css.map */

@@ -1,0 +1,158 @@
+.toggleHeader{
+      .posAbslt{
+        position: absolute;
+      }
+
+    //   #Abs{
+    //     position: absolute;
+    //     z-index: 20000;
+    //   }
+
+      #menu {
+        margin-top: -1.5rem;
+       
+        z-index: 20000;
+         position: absolute;
+        
+
+      }
+      
+      #menu-bar {
+        width: 40px;
+        height: 40px;
+        margin: 50px 20px 20px 200px;
+        cursor: pointer;
+      }
+      
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #CB572C;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+      
+      #bar1 {
+        transform: translateY(-4px);
+      }
+      
+      #bar3 {
+        transform: translateY(4px);
+      }
+      
+      .nav {
+        transition: 0.3s ease;
+        display: none;
+      }
+      
+      .nav ul {
+        padding: 0 22px;
+      }
+      
+      .nav li {
+        list-style: none;
+        // padding: 12px 0;
+      }
+      
+      .nav li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      
+      .nav li a:hover {
+        font-weight: bold;
+      }
+      
+      .menu-bg, #menu {
+         top: 0;
+        right: 0;
+         position: absolute;
+      }
+      
+      .menu-bg {
+        z-index: 10;
+        width: 0;
+        height: 0;
+        margin: 30px 0 20px 20px;
+        background: radial-gradient(circle, #CB572C, #CB572C);
+        border-radius: 50%;
+        transition: 0.3s ease;
+        overflow-x:hidden;
+        
+      }
+      
+      .change {
+        display: block;
+
+      }
+      
+      .change .bar {
+        background-color: white;
+      }
+      
+      .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+      
+      .change #bar2 {
+        opacity: 0;
+      }
+      
+      .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+      
+      .change-bg {
+        width: 520px;
+        height: 460px;
+        transform: translate(54%,-30%);
+      }
+
+      
+
+      .menuItems{
+        // width: 20vw;
+        // width: 20%;
+        // padding: 1rem;
+        // position: absolute;
+        // z-index: 1000;
+        // right: 0;
+        // height: 25rem;
+        // float: right;
+        // background: rgba(203, 87, 44, 0.8);
+        // border-bottom-left-radius: 50%;
+        // margin-left:0;
+    text-decoration: none;
+        font-weight: 400;
+    font-size: 20px;
+    // line-height: 28px;
+    /* identical to box height */
+    font-family: "Poppins";
+        font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    color: #FFFFFF;
+    
+    
+    
+    
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: end;
+        transition: color 0.5s;
+        // margin-right: 1rem;
+      
+    }
+    
+    a:hover{
+        color:#24201f;
+        // background-color: #fffffF;
+    }
+}
+}

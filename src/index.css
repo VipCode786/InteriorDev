@@ -29,8 +29,7 @@ code {
     /* height: 100%; */
     /* width: 100% */
     max-width: 100%;
-    /* overflow-x: hidden; */
-    /* overflow-y: hidden; */
+    
 
   
 }
@@ -44,6 +43,9 @@ body{
   margin: 0%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+
 }
 
 /* @font-face {
@@ -66,16 +68,17 @@ body{
 
 .border{
   height: 52px;
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   display: flex;
   flex: 1 0 0;
   flex-direction: row;
   justify-content: space-between; 
   align-items: center;
-  width: 100%;
+  min-width: 200vw;
   overflow-x:hidden;
   overflow-y: hidden;
   padding: 60px 0px 60px 0px;
+  margin-left: -80vw;
   /* flex-wrap: nowrap; */
 }
 
@@ -140,7 +143,7 @@ body{
      font-size: 20px;
      line-height: 118%;
 
-
+     transition: color 1s;
      color: #000000;
     
 }

@@ -1,0 +1,73 @@
+.client-logo-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+}
+
+.client-logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.client-logo-left {
+  -webkit-animation: logomoveleft 10s linear infinite;
+          animation: logomoveleft 10s linear infinite;
+}
+
+.client-logo-right {
+  -webkit-animation: logomoveright 10s linear infinite;
+          animation: logomoveright 10s linear infinite;
+}
+
+.client-logo li {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px !important;
+  height: 100px;
+  width: 220px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px;
+}
+
+/*
+.second-row{ 
+  top: 150px;
+}*/
+@-webkit-keyframes logomoveleft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-30%, 0);
+  }
+}
+@keyframes logomoveleft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-30%, 0);
+  }
+}
+@-webkit-keyframes logomoveright {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+@keyframes logomoveright {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}/*# sourceMappingURL=Clients.css.map */

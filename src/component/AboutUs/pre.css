@@ -1,0 +1,109 @@
+.aboutUsAnimation {
+  background-color: bisque;
+}
+.aboutUsAnimation .head {
+  height: 496px;
+  background-color: bisque;
+}
+.aboutUsAnimation .bottom-bg {
+  background-image: linear-gradient(blue, blue 100%);
+  background-size: 80% 200px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-animation: 2s ease-out 0s 1 slideInFromLeft;
+          animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+.aboutUsAnimation .right-bg {
+  height: 100vh;
+  background-image: linear-gradient(rgb(28, 28, 39), rgb(5, 5, 16) 100%);
+  background-size: 30% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.aboutUsAnimation p {
+  display: block;
+  width: 80vw;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 4vw;
+  line-height: 86px;
+  padding-top: 6rem;
+  text-align: justify;
+  color: #481010;
+  -webkit-animation-name: moveInleft;
+          animation-name: moveInleft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes moveInRight {
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+}
+@keyframes moveInRight {
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+}/*# sourceMappingURL=pre.css.map */

@@ -90,7 +90,8 @@ function App() {
           border:"none",
           // color: '#fff',
           textAlign: 'center',
-          background:"none"
+          background:"none",
+          cursor:"pointer",
         }}
       >
         <img width="40vw" height="40vh" src="backtotop.png" />

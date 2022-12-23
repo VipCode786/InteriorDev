@@ -15,10 +15,13 @@ const MyTeam = () => {
     </div>
 
     <div>
+        <br/>
         <p className='meetTheTeam'>Meet the Team</p>
+        <br/>
         <div className='boxView'>
                  <Link to="/career" >  <button className='boxButton'>Join Our Team</button></Link>
         </div>
+        <br/>
     </div>
     
     <div className='row'>
@@ -76,10 +79,13 @@ const MyTeam = () => {
         <p>(Designation)</p>
         </div>
     </div>
+    <br/>
     <div className='boxView'>
     <Link to="/career" >  <button className='boxButton'>Join Our Team</button></Link>
         </div>
+        <br/>
         <Link to="/" style={{color:"#000000",textAlign:'center'}}><h3>Back To Home Page</h3></Link>
+        <br/>
     </div>
   )
 }

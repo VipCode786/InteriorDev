@@ -6,7 +6,13 @@ import './about.scss'
 const About = () => {
   return (
     <div>
-    <AboutUsAnimation/>
+
+<div class="video-wrapper">
+  <video autoPlay muted  playsinline preload="metadata" >
+	  <source src="aboutpage.mp4" type="video/mp4" />
+  </video>
+</div>
+    {/* <AboutUsAnimation/> */}
     {/* <Pre/> */}
     <div className='about'>
     <div className='head'>

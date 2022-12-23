@@ -645,51 +645,51 @@ const Home = () => {
       <div className='counter'>
      
       <div className='counter-box'>
-      <p> Worked with us</p>
+      <p> Worked with </p>
       <div className='text-right'>
       <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(true)}>
       {counterOn &&
       <div  className="count">
       
-         <CountUp  end={1000} duration={2}/> +
+         <CountUp  end={5000} duration={2}/> +
         
       </div>
        }
        </ScrollTrigger>
-      <p>hello</p>
+      <p>Clients</p>
       </div>
       </div>
      
 
       <div className='counter-box'>
-      <p> Worked wit us</p>
+      <p>Delivered</p>
       <div className='text-right'>
       <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(true)}>
       {counterOn &&
       <div  className="count">
       
-         <CountUp  end={1000} duration={2}/> +
+         <CountUp  end={8000} duration={2}/> +
         
       </div>
        }
        </ScrollTrigger>
-      <p>hello</p>
+      <p>Projects</p>
       </div>
       </div>
 
       <div className='counter-box'>
-      <p> Worked wit us</p>
+      <p> Delivered & installed in</p>
       <div className='text-right'>
       <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(true)}>
       {counterOn &&
       <div  className="count">
       
-         <CountUp  end={1000} duration={2}/> +
+         <CountUp  end={6} duration={2}/> 
         
       </div>
        }
        </ScrollTrigger>
-      <p>hello</p>
+      <p>Countries</p>
       </div>
       </div>
       </div>

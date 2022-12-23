@@ -163,7 +163,7 @@ const Career = () => {
       
                        
                         <div>
-                        <span>Max file size of 8mb, for larger enquiries please contact the team</span>
+                        <span>Max file size of 8mb</span>
                         </div>
                         <div>
 

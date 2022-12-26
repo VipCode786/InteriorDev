@@ -90,12 +90,12 @@
         }
 
 .counter{
-   margin: 1rem;
+   margin: 2rem;
    display: flex;
    flex-direction: row;
    justify-content: center;
    flex-wrap: nowrap;
-   height: 300px;
+   // height: 300px;
     align-items: center;
         .counter-box{
 
@@ -224,7 +224,7 @@
          font-family: "Poppins";
          font-style: normal;
          font-weight: 600;
-       font-size: 40px;
+       font-size: 60px;
          line-height: 118%;
          /* or 47px */
 
@@ -243,10 +243,11 @@
          font-family: "Poppins";
          font-style: normal;
          font-weight: 400;
-         font-size: 20px;
+         font-size: 25px;
          line-height: 158%;
          letter-spacing: 0.025em;
          color: #606060;
+         text-align: justify;
          // margin: 500px;
          width: 559px;
          align-items: center;
@@ -266,7 +267,8 @@
          // }
 
          .nameOwner{
-            margin-top: 70%;
+            margin-top: 85%;
+            margin-right: 10px;
             .ownerName{
                font-family: 'Poppins';
                font-style: normal;
@@ -403,7 +405,8 @@
           align-items: center;
           background-image: linear-gradient(#E37C56, #E37C56);
           background-repeat: no-repeat;
-          transition: background-size .8s,   color .8s;
+          transition: background-size .8s,   color .8s, border-radius 1s;
+            
          p{
             margin: 2rem;
                font-family: 'Poppins';
@@ -449,6 +452,7 @@
       display: flex;
       justify-content: flex-start;
       margin-left: 60px;
+      
    }
 }
 
@@ -499,22 +503,26 @@ main {
 }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
 
    .home{
      .ourTeam{
+      .heading{
+         margin: 1rem;
+      }
       p{
          width: auto;
          font-size: 20px;
          font-family: "Poppins";
          font-style: normal;
+         margin: 1rem;
       }
      
 
      .imageOwner{
       display: flex;
       flex-direction: column-reverse;
-      
+      height: auto;
       img{
          width: 100%;
          height: 417px;
@@ -537,6 +545,23 @@ main {
    .meetButton{
       margin-right:"0"
    }
+   .counter{
+         
+      .counter-box{
+         flex-direction: column;
+         margin-left: 1rem;
+         p{
+            font-size: 15px;
+         }
+         .count{
+            font-size: 15px;
+            span{
+               font-size: 22px;
+            }
+         }
+      }
+     
+ }
    }}
   
 @media only screen and (max-width: 1150px) {

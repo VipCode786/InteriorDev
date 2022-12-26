@@ -12,8 +12,8 @@
         display: flex;
         flex-direction: column;
         margin-top: 2rem;
-        
-        //  margin: 1rem;
+        max-width: 500px;
+          // margin: 1rem;
         h1{
           font-family: "Poppins";
           font-style: normal;
@@ -22,7 +22,8 @@
             line-height: 138.7%;
 
             letter-spacing: 0.025em;
-            margin:2rem;
+            margin:0.5rem;
+            margin-left: 1rem;
             color: #FFFFFF;
         }
         .contact-paragraph{
@@ -34,13 +35,14 @@
             //  font-size: 2vw;
             line-height: 138.7%;
             /* or 28px */
-            
+             margin-left: 1rem;
             
             // text-align: justify;
             letter-spacing: 0.055em;
             
             color: #FFFFFF;
-              margin:2rem;
+              // margin:2rem;
+              // margin-left: 0.5rem;
         }
 
         .contactDetails{
@@ -53,7 +55,7 @@
               font-family: "Poppins";
               font-style: normal;
                 font-weight: 400;
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 40px;
                 /* identical to box height */
 
@@ -66,8 +68,10 @@
             }
 
             // .contact-in{
-            //   height:40vh
-            // }
+            //   .fitmap{
+            //     margin:2rem
+            //   }
+            //  }
         }
         .social-media{
             display: flex;
@@ -167,6 +171,12 @@
                 margin: 2rem;
                 float: right;
               }
+
+              // span{
+              //   padding-left: 1rem;
+              // }
+
+             
     }
 }
 
@@ -197,4 +207,16 @@
 
 
      color: #000000;;
+}
+
+@media screen and (max-width:"750px") {
+  .contactPage{
+    .content1{
+      margin-left: 2rem;
+    }
+    .content1::after{
+      content: "\a";
+      white-space: pre;
+  }
+  }
 }

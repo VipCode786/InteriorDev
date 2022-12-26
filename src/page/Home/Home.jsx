@@ -4,6 +4,7 @@ import OnScrollVideo from '../../component/HomePageVideo/OnScrollVideo'
 import CountUp from "react-countup"
 import './scroll.scss'
 import './home.scss'
+import './home23.scss'
 // import Client from '../../component/HomePageVideo/Client'
 import OurClients from '../../component/HomePageVideo/OurClients'
 import FourDProcess from '../../component/HomePageVideo/FourDProcess'
@@ -22,6 +23,7 @@ import Clients from '../../component/HomePageVideo/Clients'
 import Testimonials1 from '../../component/Testimonials/Testimonials1'
 import Slider from '../../component/Testimonials/Slider'
 import $ from 'jquery';
+import Process from '../../component/Process/Process'
 const myHTML =
 `<div class="container">
 <p>Page Container of a ugly example</p>
@@ -69,8 +71,11 @@ const Home = () => {
   const [flage2,setFlage2] = useState(false)
   const [isHovering, setIsHovering] = useState(false);
   let er;
-  const [counterOn, setCounterOn] = useState(false)
-   console.log("scrollPosition",scrollPosition);
+  const [counterOn, setCounterOn] = useState(false);
+  const [sub , setSub] = useState(null);
+
+
+  //  console.log("scrollPosition",scrollPosition);
    $(".buttonHover").on('mouseenter',function(){
       $(".discussProjects").css({ "background-size":" 0% 0%"});
     });
@@ -78,12 +83,14 @@ const Home = () => {
       $(".discussProjects").css({ "background-size":" 100% 100%"});
     });
     $(".scrollImg").on( 'scroll', function(){
-      console.log('Event Fired');
+      // console.log('Event Fired');
    });
 
  
      
- 
+ useEffect(()=>{
+  console.log("sub",sub)
+ },[sub])
  
     $(window).on('scroll',function(){
     //   var wer = $('.heeloo').is(":visible");
@@ -95,8 +102,8 @@ const Home = () => {
     //   }
        er =  $('.scrollImg').offset().top;
        let one =  $('.scrollImg').offset().top;
-       console.log("onenenenene",one)
-      console.log("er",er)
+      //  console.log("onenenenene",one)
+      // console.log("er",er)
 
       var dim = $('.scrollImg').is(":visible");
       // if(dim)
@@ -113,7 +120,8 @@ const Home = () => {
       //         setFlage2(false)
       //       }
       if(scrollPosition>600 && scrollPosition <1900)
-      { console.log('Event Fired');
+      {
+        //  console.log('Event Fired');
             $(".scrollImg").css({ 
                   "top": "0",
                   "bottom":"0",
@@ -130,13 +138,15 @@ const Home = () => {
       }
     });
 
-   const handleMouseEnter = () => {
-      setIsHovering(true);
-    };
+  //  const handleMouseEnter = () => {
+  //     setIsHovering(true);
+  //     setSub("sub-2")
+  //   };
   
-    const handleMouseLeave = () => {
-      setIsHovering(false);
-    };
+  //   const handleMouseLeave = () => {
+  //     setIsHovering(false);
+  //     setSub(null)
+  //   };
    const scroll = useRef(null);
 
   const scrollClick = () => {
@@ -607,9 +617,11 @@ const Home = () => {
   
       
       </div>
-      <HorizontalScroll/>
+      <Process/>
+      {/* <HorizontalScroll/> */}
       {/* <Scrollv/>  */}
       <div className='Our4dProcess'> 
+      {/* <Process/> */}
       {/* <Scrollv/>  */}
       </div>
       {/* <FourDProcess/> */}
@@ -651,7 +663,7 @@ const Home = () => {
       {counterOn &&
       <div  className="count">
       
-         <CountUp  end={5000} duration={2}/> +
+         <CountUp  end={5000} duration={2}/>+
         
       </div>
        }
@@ -722,7 +734,7 @@ const Home = () => {
                
                <div className='meetButton'>
               <div className='boxView' >
-              <Link to="myteam"><button className='boxButton'> Meet The Team</button></Link>
+              <Link to="myteam"><button className='boxButton' style={{fontSize: "25px",padding:"12px 20px 12px 20px"}}> Meet The Team</button></Link>
               </div>
               </div>
 
@@ -788,31 +800,41 @@ Worked with and Gained Trust of Market-Leading Companies
         </div>
       <br/>
       <br/>
- 
-        <div >
+      {/* hovicon effect-2 sub-b */}
+      <div className= {isHovering ? "hovicon effect-2 sub-b" : "hovicon effect-2"}>
+          <div className='dream' style={{
+           color: isHovering ? '#000000' : '',
+          }}>
+          DISCUSS YOUR DREAM PROJECTS
+          </div>
+          
+          <Link to="contactpage" className='center'  onMouseEnter={() => (setIsHovering(true),setSub("sub-b"))}
+                   onMouseLeave={() => (setIsHovering(false))}>  <button className='boxButton'> CONTACT US</button></Link>
+        </div>
+
+
+
+
+        {/* <div >
           <div 
              className='discussProjects '
-
-         
           >
             <p style={{
            color: isHovering ? '#000000' : '',
-           
-            // backgroundColor: "white",
           }}
-          
-         
           >DISCUSS YOUR DREAM PROJECTS</p>
             <div className='boxView buttonHover'
-                   onMouseEnter={() => setIsHovering(true)}
-                   onMouseLeave={() => setIsHovering(false)}>
+                   onMouseEnter={() => (setIsHovering(true),setSub("sub-b"))}
+                   onMouseLeave={() => (setIsHovering(false))}
+                   
+                   >
                
               
                   
             <Link to="contactpage">  <button className='boxButton'> CONTACT US</button></Link>
               </div>
           </div>
-        </div>
+        </div> */}
             
       
       </div>

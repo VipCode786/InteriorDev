@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Link } from 'react-router-dom';
@@ -61,6 +61,10 @@ const ContactPage = () => {
     }
   }
 
+  useEffect(() => {
+    console.log(file)
+  }, [file])
+  
 
   return (
     <div>
@@ -73,7 +77,7 @@ const ContactPage = () => {
               <div className='contact-paragraph'>
                 Please fill out the form and our team will contact you within 2 business days.
                 </div>
-
+                <br/>
                 <div className='contactDetails'>
                     <img src="/contactUs/phone.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>0120-3110478</p>
                 </div>
@@ -84,13 +88,14 @@ const ContactPage = () => {
                 <div className='contactDetails'>
                 <img src="/contactUs/address.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
                 </div>
-                <div className="contact-in" style={{height:"50vh"}}>
+                <div className="contact-in" style={{height:"30vh"}}>
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.5736955621933!2d77.3936937!3d28.5224711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce9d48b8267cd%3A0xb8ae7c7899c59509!2sInterior%20Craft!5e0!3m2!1sen!2sin!4v1667299088135!5m2!1sen!2sin"
                 width="90%"
                 height="100%"
                 frameBorder={0}
-                style={{ border: 0 , margin:"2rem"}}
+                className="fitmap"
+                // style={{ border: 0 , margin:"2rem"}}
                 allowFullScreen=""
                 aria-hidden="false"
                 tabIndex={0}
@@ -143,12 +148,17 @@ const ContactPage = () => {
             </div>
             <div>
     <label for="files" class="uploadButton"><img src="Vector.png" /> &nbsp; Upload File
-    <input id="files" style={{visibility:"hidden",width:"0px"}} type="file"  onChange={(e) => {
+    <input id="files" accept=".jpg,.jpeg,.png,.pdf,.dwg" style={{visibility:"hidden",width:"0px"}} type="file" onChange={(e) => {
               handleFile(e)
           // setFile(e.target.files[0]);
         }}/>
+      
     </label>
-    <span style={{marginLeft:"2rem"}}> {file?.name} </span>
+    <span className="content1"></span>
+    <span  className="content1">.dwg, .jpeg, .pdf, .png</span>
+    <span style={{marginLeft:"2rem"}} className="content2"> {file?.name} </span>
+    
+   
 </div>
             {/* <input  type="file" placeholder='file'  onChange={(e) => {
               handleFile(e)

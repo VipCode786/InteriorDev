@@ -27,6 +27,7 @@ const Slider = () => {
 
   return (
     <div>
+       
     <section className="section">
       <div className="title">
         <h2 className="testimonialHeader">Client Testimonials</h2>
@@ -75,7 +76,7 @@ const Slider = () => {
       <div  className="dot" onClick={()=>setIndex(4)}></div>
      </div>
      <br/>
-     <br/>
+    
      </div>
   );
 };

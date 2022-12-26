@@ -46,15 +46,16 @@ const Header = () => {
          </div> */}
        <div className='header'>
        <div className='logo'>
-          <Link to="/">  <img src="/headerImages/logo.svg" alt="" /></Link>
+          <Link to="/">  <img src="/headerImages/IC_2.png" alt="" /></Link>
        </div>
        <div className='right-header'>
         <div className='gmp'>
-            <img src="/headerImages/gmp.svg" alt="" />
+            <img src="/headerImages/gmp.png" alt="" />
        </div>
        <div className='iso'>
             <img src="/headerImages/iso.svg" alt="" />
        </div>
+       
        {/* <div className='menu' onClick={handle}>
             <img src="/headerImages/menu.svg" alt="" />
            

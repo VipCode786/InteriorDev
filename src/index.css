@@ -120,7 +120,7 @@ body{
 
 
 .boxButton{
-  box-sizing: border-box;
+    box-sizing: border-box;
 
 /* Auto layout */
 
@@ -320,3 +320,36 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.marginTop5{
+  margin-top: 5rem;
+ }
+
+ .marginTop-6{
+  margin-top: -6rem;
+ }
+
+ .marginTop-2{
+  margin-top: -2rem;
+ }
+ .marginLeft-10{
+  margin-left: 10rem;
+ }
+
+ .marginLeft-13{
+  margin-left: 13rem;
+ }
+
+ .marginLeft-35{
+  margin-left: 35rem;
+ }
+
+ .fitmap{
+  margin: 2rem;
+ }
+
+ @media screen  and (max-width:750px){
+  .fitmap{
+    margin: 1rem;
+   }
+ }

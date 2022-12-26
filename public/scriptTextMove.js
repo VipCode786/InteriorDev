@@ -22,7 +22,7 @@ letterCarousel('.Fristssss','.big-title');
 						
 					 }
 					 else {
-						img_scroll = scroll_slow * 150 /100;
+						img_scroll = scroll_slow * 100 /100;
 						
 					 }
 

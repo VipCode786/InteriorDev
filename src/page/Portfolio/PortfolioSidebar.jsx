@@ -15,7 +15,7 @@ import Staircase from '../../component/PortfolioComponents/Staircase';
 import Jaali from '../../component/PortfolioComponents/Jaali';
 
 
-import './Portfolio.scss'
+import './PortfolioSidebar.scss'
 const PortfolioSidebar = () => {
   const navigate = useNavigate()
   const [path , setPath] = useState(<Gate/>)

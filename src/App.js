@@ -15,6 +15,7 @@ import C_Channel from "./component/PortfolioComponents/C_Channel";
 import HorizontalScroll from "./component/HomePageVideo/HorizontalScroll";
 import { useState } from "react";
 import Loader from "./component/Loader/Loader";
+import Portfolio from "./page/Portfolio/Portfolio";
 
 function App() {
 
@@ -60,7 +61,8 @@ function App() {
              <Route path="/career" element={<Career/>} />
              <Route path="/contact" element={<Contact/>} />
              <Route path="/contactpage" element={<ContactPage/>} />
-             <Route path="/portfolio" element={<Navigate to="/portfolio/Gate" />} />
+             <Route path="/portfolio" element={<Portfolio/>} />
+             {/* <Route path="/portfolio" element={<Navigate to="/portfolio/Gate" />} />
              <Route path="/portfolio/Gate" exact element={<PortfolioSidebar/>} />
              <Route path="/portfolio/Canopy" exact element={<PortfolioSidebar/>} />
              <Route path="/portfolio/C_Channel" exact element={<PortfolioSidebar/>} />
@@ -74,7 +76,7 @@ function App() {
              <Route path="/portfolio/Pergola" exact element={<PortfolioSidebar/>} />
              <Route path="/portfolio/Railing" exact element={<PortfolioSidebar/>} />
              <Route path="/portfolio/Staircase" exact element={<PortfolioSidebar/>} />
-             <Route path="/hori" exact element={<HorizontalScroll/>} />
+             <Route path="/hori" exact element={<HorizontalScroll/>} /> */}
 
           </Routes>
           <button

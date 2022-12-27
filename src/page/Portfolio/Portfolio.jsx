@@ -1,6 +1,17 @@
 import React from 'react'
 import './portfolio.scss'
+import {useRef} from 'react';
 const Portfolio = () => {
+  const gate = useRef(null);
+  const canopy = useRef(null);
+  const staircase = useRef(null);
+  const railing = useRef(null);
+  const pergola = useRef(null);
+  const otherProjects = useRef(null);
+  const handleClick = (a) => {
+    a.current?.scrollIntoView({behavior: 'smooth'});
+  };
+  
   return (
     <div className='portfolio'>
         <div className='background'>
@@ -10,16 +21,31 @@ const Portfolio = () => {
         <img src="/portfolio/portfolio.png" alt="" />
         <div style={{overflow:"hidden", height:"699px"}}>
         <div className='whiteCircle'>
-          <p className='portfolioName'>
-              Gates<br/>
-              Canopy<br/>
-              Railing<br/>
-              C channels
-            </p>
+        <div className='portfolioName'>
+        <div className='ref' onClick={()=>handleClick(gate)}>Gates</div>
+        <div className='ref' onClick={()=>handleClick(canopy)}>Canopy</div>
+        <a className='ref' onClick={()=>handleClick(staircase)}>Staircase</a>
+        <a className='ref' onClick={()=>handleClick(railing)}>Railing</a>
+        <a className='ref' onClick={()=>handleClick(pergola)}>Pergola</a>
+        <a className='ref' onClick={()=>handleClick(otherProjects)}>Other Projects</a>
+
         </div>
+
+              {/* Gates<br/>
+              Canopy<br/>
+              Staircase<br/>
+              Railing<br/>
+              Pergola<br/>
+              OtherProjects<br/>
+              
+
+            </p> */}
+          
+        </div>
+        
         </div>
        </div>
-
+       <div ref={gate}></div>
         <p className='portfolioNameMob'>
               Gates<br/>
               Canopy<br/>
@@ -29,9 +55,9 @@ const Portfolio = () => {
 
       <br/>
       <br/>
-      <div>
+      <div >
         <div >
-      <div className='gates'>
+      <div className='gates' >
         <div className='gate'><p>Gates</p></div>
         {/* <img src="/portfolio/portfolio.png" alt=""  /> */}
         {/* <div className='start' > */}
@@ -46,7 +72,7 @@ const Portfolio = () => {
       
       </div>
     <br/>
-      <div className='canopy'>
+      <div className='canopy' ref={canopy}>
         <p className="mobileView">Canopy</p>
         <div className='rowCanopy'>
         <img src="/portfolio/canopy1.jpg" alt="" className='canopy1'  />
@@ -63,7 +89,7 @@ const Portfolio = () => {
        </div>
       </div>
       
-      <div className='staircase'>
+      <div className='staircase' ref={staircase}>
         <p>StairCase</p>
       <div className='rowCanopy'>
       <img src="/portfolio/staircase1.jpg" alt="" className='staircase1'  />
@@ -78,7 +104,7 @@ const Portfolio = () => {
       </div>
       </div>
 
-      <div className='railing'>
+      <div className='railing' ref={railing} >
         <p>Railing</p>
       <div className='rowCanopy'>
       <img src="/portfolio/railing11.jpg" alt="" className='railing1'  />
@@ -94,7 +120,7 @@ const Portfolio = () => {
       </div>
 
 
-      <div className='pergola '>
+      <div className='pergola ' ref={pergola}>
       
       <div className='columnCanopy marginTop2'>
         <p style={{marginTop:"0px"}}>Pergola</p>
@@ -110,6 +136,7 @@ const Portfolio = () => {
       <br/>
       <br/>
       <br/>
+      <div ref={otherProjects}></div>
       <div className='rowCanopy  '>
       <img src="/portfolio/other1.jpg" className='other1' alt="" />
       <img src="/portfolio/other2.jpg" className='other2' alt="" />

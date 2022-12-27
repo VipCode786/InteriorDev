@@ -67,12 +67,25 @@
         //    z-index: -11;
 
         .portfolioName{
-            margin-top: 303px;
-            margin-left: 169px;
-            color: #000000;
-            font-family: 'Poppins';
-            font-style: normal;
-        //    align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 203px;
+            margin-left: 300px;
+             .ref{
+                
+            
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 139.1%;
+                
+                letter-spacing: 0.025em;
+                
+                color: #000000;
+          
+        }
         }
         }
     }

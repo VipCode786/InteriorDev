@@ -42,13 +42,19 @@ const Footer = () => {
       </div>
  </div>
 
-<div>
+<div className='resource'>
  <span>Resources</span>
- 
+ <p>Railing</p>
+ <p>Staircase</p>
+ <p>Pergolas</p>
+ <p>Canopy</p>
+ <p>Gates</p>
+ <p>Lift jambs</p>
 </div>
 <div>
   <span>Instagram</span>
-
+<br/>
+<br/>
 <div className='row'>
  <div>
  <div className='resoucesBox'> 
@@ -68,6 +74,8 @@ const Footer = () => {
 </div>
 <div>
  <div className='footerLogo ' >
+  <br/>
+  <br/>
    <div className='row'>
     <a href='https://instagram.com/best.interior.designer?igshid=N2ZiY2E3YmU='>
    <img src="/Footer/Vector (5).svg" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;
@@ -79,7 +87,16 @@ const Footer = () => {
    <img src="/Footer/Vector (9).svg" alt="" />
    </a>
   </div>
-   <img src="/Footer/logo.svg" className="ICLogo" alt="" />
+  <br/>
+  <div className='fab'>#TheFabExperts</div>
+  <br/>
+  <p className='fabInfo'>
+      Copyright Interior Craft 2022<br/>
+      All Rights Reserved<br/>
+      All Regular Disclaimer Apply<br/>
+      Privacy Policy
+</p>
+   {/* <img src="/Footer/logo.svg" className="ICLogo" alt="" /> */}
   </div>
   </div>
   </div>

@@ -542,7 +542,7 @@ const Home = () => {
       <div className='home'>
       <div className='scrollImg' style={{background:"#ffffff"}}>
       <div ref={scroll} className='whatWeMake'>
-      <p >What WE MAKE</p>
+      <p class="aniheader">What WE MAKE</p>
       </div>
       <br/>
      

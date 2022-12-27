@@ -96,7 +96,7 @@ function App() {
           cursor:"pointer",
         }}
       >
-        <img width="40vw" height="40vh" src="backtotop.png" />
+        <img width="40vw" height="40vh" src="/backtotop.png" />
       </button>
       <Footer/>
       </BrowserRouter>

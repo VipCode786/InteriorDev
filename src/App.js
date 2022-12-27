@@ -16,6 +16,7 @@ import HorizontalScroll from "./component/HomePageVideo/HorizontalScroll";
 import { useState } from "react";
 import Loader from "./component/Loader/Loader";
 import Portfolio from "./page/Portfolio/Portfolio";
+import Loader2 from "./component/Loader/Loader2";
 
 function App() {
 
@@ -48,7 +49,7 @@ function App() {
   }, []);
   return (
     <div>
-      {loading?(<Loader/>):(<>
+      {loading?(<Loader2/>):(<>
       
       <BrowserRouter>
       <Header/>

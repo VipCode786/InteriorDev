@@ -388,10 +388,14 @@ from{
 }
 
 .mobileView{
-  display: block;
+  display: none;
   
 }
 
 .desktopView{
-  display: none;
+  display: block;
+}
+
+a:hover{
+ cursor: pointer;
 }

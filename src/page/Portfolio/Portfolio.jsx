@@ -148,6 +148,9 @@ const Portfolio = () => {
       <div className='rowCanopy  '>
       <img src="/portfolio/other1.jpg" className='other1' alt="" />
       <img src="/portfolio/other2.jpg" className='other2' alt="" />
+      <br/>
+      <br/>
+      <br/>
       <p style={{marginLeft:"20%"}} className="desktopView">OTHER <br/>
          PROJECTS</p>
       </div>

@@ -3,6 +3,7 @@ import './portfolio.scss'
 import {useRef} from 'react';
 const Portfolio = () => {
   const gate = useRef(null);
+  const mobgate = useRef(null);
   const canopy = useRef(null);
   const staircase = useRef(null);
   const railing = useRef(null);
@@ -22,8 +23,8 @@ const Portfolio = () => {
         <div style={{overflow:"hidden", height:"699px"}}>
         <div className='whiteCircle'>
         <div className='portfolioName'>
-        <div className='ref' onClick={()=>handleClick(gate)}>Gates</div>
-        <div className='ref' onClick={()=>handleClick(canopy)}>Canopy</div>
+        <a className='ref' onClick={()=>handleClick(gate)}>Gates</a>
+        <a className='ref' onClick={()=>handleClick(canopy)}>Canopy</a>
         <a className='ref' onClick={()=>handleClick(staircase)}>Staircase</a>
         <a className='ref' onClick={()=>handleClick(railing)}>Railing</a>
         <a className='ref' onClick={()=>handleClick(pergola)}>Pergola</a>
@@ -45,18 +46,21 @@ const Portfolio = () => {
         
         </div>
        </div>
+       <div className='portfolioNameMob'>
+       <a className='ref' onClick={()=>handleClick(mobgate)}>Gates</a>
+        <a className='ref' onClick={()=>handleClick(canopy)}>Canopy</a>
+        <a className='ref' onClick={()=>handleClick(staircase)}>Staircase</a>
+        <a className='ref' onClick={()=>handleClick(railing)}>Railing</a>
+        <a className='ref' onClick={()=>handleClick(pergola)}>Pergola</a>
+        <a className='ref' onClick={()=>handleClick(otherProjects)}>Other Projects</a>
+            </div>
        <div ref={gate}></div>
-        <p className='portfolioNameMob'>
-              Gates<br/>
-              Canopy<br/>
-              Railing<br/>
-              C channels
-            </p>
+        
 
       <br/>
       <br/>
       <div >
-        <div >
+        <div ><div ref={mobgate}></div>
       <div className='gates' >
         <div className='gate'><p>Gates</p></div>
         {/* <img src="/portfolio/portfolio.png" alt=""  /> */}
@@ -136,11 +140,15 @@ const Portfolio = () => {
       <br/>
       <br/>
       <br/>
-      <div ref={otherProjects}></div>
+      <div ref={otherProjects}>
+      <p  className="mobileView marginLeft-20 marginTop-4">OTHER <br/>
+         PROJECTS</p>
+      
+      </div>
       <div className='rowCanopy  '>
       <img src="/portfolio/other1.jpg" className='other1' alt="" />
       <img src="/portfolio/other2.jpg" className='other2' alt="" />
-      <p style={{marginLeft:"20%"}}>OTHER <br/>
+      <p style={{marginLeft:"20%"}} className="desktopView">OTHER <br/>
          PROJECTS</p>
       </div>
       <div className='rowCanopy'>

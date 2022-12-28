@@ -74,7 +74,19 @@ const Home = () => {
   const [counterOn, setCounterOn] = useState(false);
   const [sub , setSub] = useState(null);
 
-
+  const startAnimation = (entries, observer) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("tracking-in-contract", entry.isIntersecting);
+    });
+  };
+  
+  const observer = new IntersectionObserver(startAnimation);
+  const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+  
+  const elements = document.querySelectorAll('.textInAnimation');
+  elements.forEach(el => {
+    observer.observe(el, options);
+  });
   //  console.log("scrollPosition",scrollPosition);
    $(".buttonHover").on('mouseenter',function(){
       $(".discussProjects").css({ "background-size":" 0% 0%"});
@@ -542,7 +554,7 @@ const Home = () => {
       <div className='home'>
       <div className='scrollImg' style={{background:"#ffffff"}}>
       <div ref={scroll} className='whatWeMake'>
-      <p class="aniheader">What WE MAKE</p>
+      <p class="aniheader textInAnimation">What WE MAKE</p>
       </div>
       <br/>
      
@@ -620,7 +632,7 @@ const Home = () => {
       <Process/>
       {/* <HorizontalScroll/> */}
       {/* <Scrollv/>  */}
-      <div className='Our4dProcess'> 
+      <div className='Our4dProcess textInAnimation'> 
       {/* <Process/> */}
       {/* <Scrollv/>  */}
       </div>
@@ -717,7 +729,7 @@ const Home = () => {
 
       <div className='ourTeam'>
         <div className='ourteamInfo'>
-              <div className='heading'>
+              <div className='heading textInAnimation'>
                     Our Team
               </div>
               <br/>
@@ -758,7 +770,7 @@ const Home = () => {
       <br/>
       <br/>
       <br/>
-<div className='ourClients_Heading'>
+<div className='ourClients_Heading textInAnimation'>
       Our Clients
 </div>
 
@@ -779,7 +791,7 @@ Worked with and Gained Trust of Market-Leading Companies
         <div className='featuredProjects'>
         <br/>
         <br/>
-              <p>Featured Projects</p>
+              <p className='textInAnimation'>Featured Projects</p>
               <br/>
               <br/>
               <div className='picRow'>
@@ -802,7 +814,7 @@ Worked with and Gained Trust of Market-Leading Companies
       <br/>
       {/* hovicon effect-2 sub-b */}
       <div className= {isHovering ? "hovicon effect-2 sub-b" : "hovicon effect-2"}>
-          <div className='dream' style={{
+          <div className='dream textInAnimation' style={{
            color: isHovering ? '#000000' : '',
           }}>
           DISCUSS YOUR DREAM PROJECTS

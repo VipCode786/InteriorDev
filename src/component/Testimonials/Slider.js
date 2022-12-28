@@ -30,7 +30,7 @@ const Slider = () => {
        
     <section className="section">
       <div className="title">
-        <h2 className="testimonialHeader">Client Testimonials</h2>
+        <h2 className="testimonialHeader textInAnimation">Client Testimonials</h2>
         <div className="subtestimonialHeader">What do our client says?</div>
       </div>
       <div className="section-center">

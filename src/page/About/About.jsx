@@ -4,6 +4,20 @@ import AboutUsAnimation from '../../component/AboutUs/AboutUsAnimation'
 // import Pre from '../../component/AboutUs/Pre'
 import './about.scss'
 const About = () => {
+  const startAnimation = (entries, observer) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("tracking-in-contract", entry.isIntersecting);
+    });
+  };
+  
+  const observer = new IntersectionObserver(startAnimation);
+  const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+  
+  const elements = document.querySelectorAll('.textInAnimation');
+  elements.forEach(el => {
+    observer.observe(el, options);
+  });
+  
   return (
     <div>
 
@@ -20,7 +34,7 @@ const About = () => {
     </div>
     <br/>
     <br/>
-    <div className='heading'>
+    <div className='heading textInAnimation'>
       About Us
     </div>
     <br/>

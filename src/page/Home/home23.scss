@@ -162,8 +162,12 @@
       
   .dream{
    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
        font-size: 30px;
        margin-bottom: 50px;
+       white-space: nowrap;
        
  }
 

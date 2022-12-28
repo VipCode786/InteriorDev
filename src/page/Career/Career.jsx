@@ -15,6 +15,23 @@ const Career = () => {
     const [File, setFile] = useState();
     const [recaptcha, setRecaptcha] = useState(null);
 
+
+
+    const startAnimation = (entries, observer) => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle("tracking-in-contract", entry.isIntersecting);
+      });
+    };
+    
+    const observer = new IntersectionObserver(startAnimation);
+    const options = { root: null, rootMargin: '0px', threshold: 1 }; 
+    
+    const elements = document.querySelectorAll('.textInAnimation');
+    elements.forEach(el => {
+      observer.observe(el, options);
+    });
+    
+
     const scroll = useRef(null);
 
     const scrollClick = () => {
@@ -102,7 +119,7 @@ const Career = () => {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
 
                 <div className='orange-bg'>
-                    <div className='heading'>
+                    <div className='heading '>
                     Architect
                     </div>
                     
@@ -137,7 +154,7 @@ const Career = () => {
         <div className='FromBG' ref={scroll}>
         <div className='careerForm'>
             
-            <p>Careers at Interior Crafts</p>
+            <p className='textInAnimation'>Careers at Interior Crafts</p>
             <br/>
             <p>If you'd like to join our team, please fill out <br/>
             the short form below. Don't forget to include<br/> a copy of your resume.</p>

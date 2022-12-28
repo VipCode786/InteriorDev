@@ -881,7 +881,7 @@ main {
 
 @media  only screen and (max-height: 450px) {
    .video{
-      min-height: 100rem;
+      min-height: 750px;
       .box{
         
          width: 40%;
@@ -891,10 +891,10 @@ main {
 
       .centerScroll{
          .arrowOne{
-            top:1450px
+            top:650px
          }
          .scroll{
-            top:1500px
+            top:700px
          }
       }
    }

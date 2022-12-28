@@ -1,6 +1,9 @@
 import React from 'react'
-import './portfolio.scss'
 import {useRef} from 'react';
+
+import './portfolio.scss'
+
+
 const Portfolio = () => {
   const gate = useRef(null);
   const mobgate = useRef(null);

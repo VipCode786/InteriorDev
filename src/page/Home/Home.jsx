@@ -11,7 +11,7 @@ import FourDProcess from '../../component/HomePageVideo/FourDProcess'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import Scrollv from '../../component/HomePageVideo/Scrollv'
-import gsap from "gsap";
+// import gsap from "gsap";
 import ScrollTrigger  from "react-scroll-trigger";
 
 import useScrollPosition from "./useScrollPosition";

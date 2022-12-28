@@ -1,7 +1,7 @@
 import React from 'react'
 import './FourD.scss'
 import data from './mockData'
-import HorizontalScroll from "react-scroll-horizontal";
+// import HorizontalScroll from "react-scroll-horizontal";
 
 import { useHorizontalScroll } from './useSlideScroll';
 // import ScriptTag from 'react-script-tag';

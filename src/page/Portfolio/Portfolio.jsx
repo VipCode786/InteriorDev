@@ -1,7 +1,7 @@
 import React from 'react'
 import {useRef} from 'react';
 
-import './portfolio.scss'
+import './Portfolio.scss'
 
 
 const Portfolio = () => {

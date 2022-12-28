@@ -37,10 +37,10 @@
     }
     }
 
-    img{
-        margin: 1rem;
-        width: 80%;
-    }
+    // img{
+    //     margin: 1rem;
+    //     width: 80%;
+    // }
 
 }
 
@@ -76,11 +76,13 @@
         flex-direction: row;
          justify-content: space-between;
         align-items: center;
+        // height: 10vh;
         //  margin-left: -5rem;
         img{
             // margin-right: 2rem;
             // margin-left: -1rem;
-             width: 60%;
+              width: 40%;
+         
         }
          }
     
@@ -134,3 +136,4 @@
 // }
 //  }
  
+

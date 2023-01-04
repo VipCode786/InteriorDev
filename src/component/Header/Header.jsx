@@ -49,7 +49,7 @@ const Header = () => {
           <Link to="/">  <img src="/headerImages/IC_2.png" alt="" /></Link>
        </div>
        <div className='right-header'>
-        <div className='gmp'>
+        <div className='gmp marginR'>
             <img src="/headerImages/gmp.png" alt="" />
        </div>
        <div className='iso'>

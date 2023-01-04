@@ -193,7 +193,8 @@ body{
   /* Auto layout */
   
       
-       padding: 16px 58px;
+       /* padding: 16px 58px; */
+       padding: 5px 15px;
        gap: 10px;
   
        
@@ -396,6 +397,15 @@ from{
   display: block;
 }
 
+
+@media screen and (max-width:800px) {
+  .mobileView{
+    display: flex;
+  }
+  .desktopView{
+    display: none;
+  } 
+}
 a:hover{
  cursor: pointer;
 }
@@ -433,3 +443,8 @@ a:hover{
     opacity: 1;
   }
 }
+
+.textInAnimation{
+  white-space: nowrap;
+}
+

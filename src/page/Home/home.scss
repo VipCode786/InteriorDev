@@ -16,7 +16,7 @@
          font-size: 40px;
          line-height: 118%;
          /* or 47px */
-         
+         white-space: nowrap;
          text-align: center;
          letter-spacing: 0.075em;
          color: #000000;
@@ -846,65 +846,143 @@ main {
 
 
 
-@media only screen and (max-width: 500px) {
-  .video{
+// @media only screen and (max-width: 550px) {
+//   .video{
      
-   .box{
-      .mainHeading{
-         margin-left: 2px;
-         //  padding: 1px;
-         font-size: 50px;
-         .headingContent{
-            font-size: 20px;
-            padding: 0%
+//    .centerScroll{
+//       .arrowOne{
+//          margin-left: -20px;
+//          top:46vh
+//       }
+//       .scroll{
+//          top:53vh
+//       }
+//    }
+//   }
+
+// }
+@media  only screen and (max-width: 799px) {
+
+   .home{
+      .ourTeam{
+         .heading{
+            font-size: 32px;
+         }
+
+         p{
+            font-size: 16px;
+            line-height: 20px;
+         }
+      }
+
+      .ourClients_Heading{
+         font-size: 32px;
+      }
+      
+      .ourClients_Text{
+         font-size: 16px;
+
+      }
+
+      .featuredProjects p {
+         font-size: 32px;
+      }
+      .hideMobile{
+         display: none;
+      }
+      .counter{
+         flex-direction: column;
+
+         .counter-box{
+            width: 60%;
+    height: 70px;
+    margin-bottom: 1rem;
          }
       }
    }
-  }
-
-}
-@media  only screen and (max-width: 750px) {
+   .First1{display: none;}
    .video{
-      .box{
-         width: 40%;
-         font-size: 70px;
-         background-color: rgba(0, 0, 0, 0.4);
-      }
-
-      .centerScroll{
-         .scroll{
-            top:90vh
-         }
-      }
-   }
-}
-
-@media  only screen and (max-height: 450px) {
-   .video{
-      min-height: 750px;
+      height: 100vw;
       .box{
         
          width: 40%;
          font-size: 70px;
-         // background-color: rgba(0, 0, 0, 0.4);
+         background-color: rgba(0, 0, 0, 0.4);
+         .mainHeading{
+            margin-top: -13vh;
+
+            margin-left: 2px;
+            //  padding: 1px;
+            font-size: 40px;
+
+            .headingContent{
+               font-size: 20px;
+               padding: 0%
+            }
+         }
       }
 
       .centerScroll{
+         display: none;
          .arrowOne{
-            top:650px
+            width: 1em;
+            height: 1em;
+            margin-left: -20px;
+            top:97vw;
+           
          }
          .scroll{
-            top:700px
+            top:105vw;
+            width: 200px;
+            height: 40px;
+            .scrollContent{
+               font-size: 18px;
+               padding-top: 4px;
+            }
          }
       }
    }
 }
-@media  only screen and (min-width: 1082px) {
+
+// @media  only screen and (max-height: 450px) {
+//    .video{
+//       min-height: 450px;
+//       .box{
+        
+//          width: 40%;
+//          font-size: 70px;
+//          // background-color: rgba(0, 0, 0, 0.4);
+//       }
+
+//       .centerScroll{
+//          .arrowOne{
+//             top:650px
+//          }
+//          .scroll{
+//             top:700px
+//          }
+//       }
+//    }
+// }
+// @media  only screen and (min-width: 1082px) {
+//    .video{
+//       .box{
+//          width: 40%;
+//          font-size: 70px;
+//          // background-color: rgba(0, 0, 0, 0.4);
+//       }
+//    }
+// }
+
+@media  only screen and (min-width: 800px  ) and (max-width:1020px) {
    .video{
-      .box{
-         width: 40%;
-         font-size: 70px;
-         // background-color: rgba(0, 0, 0, 0.4);
+      .centerScroll{
+         .arrowOne{
+            top:90vh;
+         }
+         .scroll{
+            top:95vh;
+         }
       }
    }
 }

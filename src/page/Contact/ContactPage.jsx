@@ -4,6 +4,8 @@ import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Link } from 'react-router-dom';
 import './ContactPage.scss'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 const ContactPage = () => {
 
   const [FirstName, setFirstName] = useState();
@@ -131,11 +133,20 @@ const ContactPage = () => {
               setEmail(e.target.value);
               }}
             />
-            <input  type="number" placeholder='Mobile Number' 
+            {/* <input  type="number" placeholder='Mobile Number' 
              onChange={(e) => {
               setPhone(e.target.value);
               }}
-            />
+            /> */}
+              <PhoneInput
+                disabled={false}
+                containerClass={"containerClass"}
+                countryCode="in"
+                country={'in'}
+                value={Phone}
+                onChange={setPhone}
+                placeholder={"placeholder"}
+              />
             </div>
             <div>
             <label>Message <br/>

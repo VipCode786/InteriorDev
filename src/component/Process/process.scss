@@ -223,3 +223,20 @@ text-align: center;
 }
 
 }
+
+@media screen and (max-width:799px) {
+
+  .process{
+    .header4d{
+      font-size: 32px;
+    }
+
+    .columnProcess{
+      p{
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+  
+}

@@ -4,6 +4,10 @@ import { useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Link } from 'react-router-dom';
 import './Career.scss'
+
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+
 const Career = () => {
 
 
@@ -46,10 +50,10 @@ const Career = () => {
     }
     const upload = (e) => {
         e.preventDefault();
-        if(recaptcha==null){
-            console.log("fill recapchta")
-        }
-        else{
+        // if(recaptcha==null){
+        //     console.log("fill recapchta")
+        // }
+        // else{
         let formData = new FormData();
         formData.append("File", File);
         formData.append("Vacancy",Vacancy);
@@ -66,7 +70,7 @@ const Career = () => {
           console.log("Success ", res);
           alert("Submitted")
         });
-      }
+      // }
       };
 
     const hiddenFileInput = useRef(null);
@@ -154,7 +158,7 @@ const Career = () => {
         <div className='FromBG' ref={scroll}>
         <div className='careerForm'>
             
-            <p className='textInAnimation'>Careers at Interior Crafts</p>
+            <p >Careers at Interior Crafts</p>
             <br/>
             <p>If you'd like to join our team, please fill out <br/>
             the short form below. Don't forget to include<br/> a copy of your resume.</p>
@@ -165,8 +169,27 @@ const Career = () => {
                         <input className="formInput" type="text" required placeholder='Name'                  onChange={(e)=>setName(e.target.value)}   />
                         <input className="formInput" type="text" required placeholder='Vacancy Applied For'   onChange={(e)=>setVacancy(e.target.value)}/>
                         <input className="formInput" type="email" required placeholder='Email Address'         onChange={(e)=>setEmail(e.target.value)}  />
-                        <input className="formInput" type="number"   placeholder='Phone Number'          onChange={(e)=>setPhone(e.target.value)}  />
-         
+                        {/* <input className="formInput" type="number"   placeholder='Phone Number'          onChange={(e)=>setPhone(e.target.value)}  /> */}
+                        
+                        <PhoneInput
+  disabled={false}
+  containerClass={"containerClass"}
+  countryCode="in"
+  country={'in'}
+  value={Phone}
+                      onChange={setPhone}
+  placeholder={"placeholder"}
+/>
+                        {/* <PhoneInput
+          country={'us'}
+          value={Phone}
+          onChange={(e)=>setPhone(e.target.value)}
+        /> */}
+                        {/*<PhoneInput
+                        
+                      defaultCountry="IN"
+                      value={Phone}
+                      onChange={setPhone}/> */}
                 </div>
                 <div className='career-column'>
                         <textarea placeholder='Your Message' type="text" className='message' onChange={(e)=>setMessage(e.target.value)}/>
@@ -186,7 +209,7 @@ const Career = () => {
 
                         <div className='marginButton'>
                         <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" onClick={handleClick}> Attach </div>
-                        <input type='file' id="getFile" style={{display:"none"}} ref={hiddenFileInput}   onChange={(e) => {
+                        <input type='file' id="getFile"  accept=".docs , .pdf" style={{display:"none"}} ref={hiddenFileInput}   onChange={(e) => {
                             setFile(e.target.files[0]);
                             }} />&nbsp;&nbsp;
                         <button type="submit" style={{display:"block",width:"120px", height:"45px" }} className="attach"> Submit </button>

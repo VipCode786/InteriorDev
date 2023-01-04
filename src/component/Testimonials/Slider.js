@@ -19,11 +19,13 @@ const Slider = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 5000);
+    }, 80000);
     return () => {
       clearInterval(slider);
     };
   }, [index]);
+  let position;
+  
 
   return (
     <div>
@@ -36,7 +38,7 @@ const Slider = () => {
       <div className="section-center">
         {people.map((item, indexPeople) => {
           const { id, image, name, title, quote } = item;
-          let position = "nextSlide";
+           position = "nextSlide";
           if (indexPeople === index) {
             position = "activeSlide";
           }
@@ -49,13 +51,19 @@ const Slider = () => {
           return (
             <article className={position} key={id}>
               
-              {/* <p className="title">{title}</p> */}
+              {/* <p className="title">{id}</p> */}
               <p className="text">{quote}</p>
               <div style={{display:"flex", flexDirection:"row" , justifyContent:"center" ,alignItems:"center"}}>
               <img src={image} alt={name} className="person-img" />
               &nbsp;&nbsp;&nbsp;&nbsp;<h4 className="nameTestimonial">{name}</h4>
               </div>
-             
+              <div style={{ marginLeft:"30px",display:"flex", flexDirection:"row" , justifyContent:"center" ,alignItems:"center"}}>
+            <div  className={id == 1 ? "dot dotBG" : "dot"} onClick={() => setIndex(0)} ></div>
+            <div  className={id == 2 ? "dot dotBG" : "dot"}  onClick={() => setIndex(1)} ></div>
+            <div  className={id == 3 ? "dot dotBG" : "dot"} onClick={() => setIndex(2)}></div>
+            <div className={id == 4 ? "dot dotBG" : "dot"} onClick={() => setIndex(3)}></div>
+          </div>  
+          <br/>
             </article>
           );
         })}
@@ -63,18 +71,13 @@ const Slider = () => {
         <div className="prev" onClick={() => setIndex(index - 1)}>
           <img src="/images/LeftArrow.png" style={{marginLeft:"1rem"}}/>
           </div>
-        <div className="next" onClick={() => setIndex(index + 1)}>
+        <div className="next" style={{marginLeft:"30px",}} onClick={() => setIndex(index + 1)}>
         <img src="/images/RightArrow.png" />
           </div>
           </div>
-        
+         
     </section>
-      <div style={{ display:"flex", flexDirection:"row" , justifyContent:"center" ,alignItems:"center"}}>
-      <div  className="dot" onClick={()=>setIndex(1)}></div>
-      <div  className="dot" onClick={()=>setIndex(2)}></div>
-      <div  className="dot" onClick={()=>setIndex(3)}></div>
-      <div  className="dot" onClick={()=>setIndex(4)}></div>
-     </div>
+ 
      <br/>
     
      </div>

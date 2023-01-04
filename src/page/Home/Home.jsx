@@ -523,7 +523,7 @@ const Home = () => {
         </div>
         
       </div>
-      <div className='centerScroll'>
+      <div className='centerScroll hideMobile'>
             <div className='arrowOne'></div>
       {/* <div className='arrow' onClick={scrollClick}>
           <img src="/headerImages/arrow.svg" alt="arrow" />
@@ -552,7 +552,7 @@ const Home = () => {
       </div>
       </section>
       <div className='home'>
-      <div className='scrollImg' style={{background:"#ffffff"}}>
+      <div className='scrollImg hideMobile' style={{background:"#ffffff"}}>
       <div ref={scroll} className='whatWeMake'>
       <p class="aniheader textInAnimation">What WE MAKE</p>
       </div>
@@ -633,6 +633,7 @@ const Home = () => {
       {/* <HorizontalScroll/> */}
       {/* <Scrollv/>  */}
       <div className='Our4dProcess textInAnimation'> 
+     
       {/* <Process/> */}
       {/* <Scrollv/>  */}
       </div>
@@ -729,7 +730,7 @@ const Home = () => {
 
       <div className='ourTeam'>
         <div className='ourteamInfo'>
-              <div className='heading textInAnimation'>
+              <div className='heading'>
                     Our Team
               </div>
               <br/>
@@ -770,7 +771,7 @@ const Home = () => {
       <br/>
       <br/>
       <br/>
-<div className='ourClients_Heading textInAnimation'>
+<div className='ourClients_Heading textInAnimation' >
       Our Clients
 </div>
 

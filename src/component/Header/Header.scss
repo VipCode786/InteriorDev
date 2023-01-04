@@ -76,12 +76,16 @@
         flex-direction: row;
          justify-content: space-between;
         align-items: center;
+        margin-right: 4rem;
         // height: 10vh;
         //  margin-left: -5rem;
+        .marginR {
+            margin-right: -15px;
+       };
         img{
             // margin-right: 2rem;
             // margin-left: -1rem;
-              width: 40%;
+            width: 70%
          
         }
          }

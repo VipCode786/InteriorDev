@@ -30,9 +30,9 @@ const Footer = () => {
       <br/>
       <div>
       <div className='boxView' style={{justifyContent:"flex-start",margin:"0px"}} >
-                    <div className='boxButton row' style={{paddingTop:"5px",paddingBottom:"5px", paddingRight:"20px",paddingLeft:"20px"}}>
+                    <div className='boxButton row' style={{paddingTop:"5px",paddingBottom:"5px", paddingRight:"15px",paddingLeft:"18px"}}>
                     <a href='Interior_Design_Brochure.pdf' download className='downloadImg'>Download Brochure</a>
-                    &nbsp;<img src="downloadImg.png" width="20px" alt="" />
+                    <img src="downloadImg.png" width="20px" alt="" />
                     </div>
       
       </div>

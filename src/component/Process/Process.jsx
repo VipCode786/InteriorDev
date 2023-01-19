@@ -1,5 +1,5 @@
 import React from 'react'
-import './process.scss'
+import './process.css'
 const Process = () => {
 
     window.onscroll = function() {

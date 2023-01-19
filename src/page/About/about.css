@@ -1,3 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.video-wrapper {
+  height: 350px;
+  width: 100%;
+}
+.video-wrapper video {
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 110%;
+  height: 100%;
+}
+
 .about .heading {
   font-family: "Poppins";
   font-style: normal;
@@ -9,7 +27,9 @@
   color: #3E3E3E;
 }
 .about .aboutContent {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 15%;
   margin-right: 15%;
   font-family: "Poppins";
@@ -17,9 +37,16 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: justify;
   letter-spacing: 0.03em;
   word-spacing: 0.5em;
@@ -43,10 +70,19 @@
 .about .about1 {
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about .about1 p {
   max-width: 466px;
@@ -56,8 +92,12 @@
   font-size: 20px;
   line-height: 139.18%;
   /* or 45px */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: justify;
   letter-spacing: 0.06em;
   color: #000000;
@@ -70,10 +110,19 @@
 .about .about2 {
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about .about2 p {
   max-width: 466px;
@@ -84,8 +133,12 @@
   line-height: 139.18%;
   /* or 45px */
   margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: justify;
   letter-spacing: 0.06em;
   color: #000000;
@@ -103,14 +156,16 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 32px;
     line-height: 87px;
     text-align: center;
     letter-spacing: 0.025em;
     color: #3E3E3E;
   }
   .about .aboutContent {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 15%;
     margin-right: 15%;
     font-family: "Poppins";
@@ -118,9 +173,16 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: justify;
     color: #747474;
   }
@@ -128,24 +190,36 @@
     height: 20%;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: -12%;
   }
   .about .background2 {
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: -5%;
     height: 20%;
   }
   .about .background3 {
     height: 20%;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: -5%;
   }
   .about .about1 {
     -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 2vh;
   }
   .about .about1 p {
@@ -156,8 +230,12 @@
     font-size: 15px;
     line-height: 139.18%;
     /* or 45px */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: justify;
     letter-spacing: 0.06em;
     color: #000000;
@@ -168,10 +246,19 @@
   .about .about2 {
     -webkit-backdrop-filter: blur(50px);
             backdrop-filter: blur(50px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 2vh;
   }
   .about .about2 p {
@@ -182,8 +269,12 @@
     font-size: 15px;
     line-height: 139.18%;
     /* or 45px */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     text-align: justify;
     letter-spacing: 0.06em;
     color: #000000;
@@ -194,4 +285,4 @@
   .margin3rem {
     margin-top: 0;
   }
-}/*# sourceMappingURL=about.css.map */
+}

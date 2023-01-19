@@ -50,20 +50,20 @@
             // transform: translate(-50%, -50%);
             // height: 100px;
             // width: 200px;
-            border-radius: 50%;
+            // border-radius: 50%;
             // background-color: green;
 
             background: linear-gradient(180deg, #ffffff 59%, #cb572c 40%);
 
             // position: absolute;
-            width: 1027px;
+            width: 627px;
             height: 1027px;
-            left: 796px;
+            left: 70%;
             top: 148px;
-
+            border-radius: 1027px 0 0 1027px;
             // background: #D9D9D9;
 
-            border-radius: 50%;
+            // border-radius: 50%;
         //    z-index: -11;
 
         .portfolioName{
@@ -84,6 +84,7 @@
                 letter-spacing: 0.025em;
                 
                 color: #000000;
+                margin-left: -8rem;
           
         }
         a:hover{
@@ -477,20 +478,21 @@ color: #FFFFFF;
             // transform: translate(-50%, -50%);
             // height: 100px;
             // width: 200px;
-            border-radius: 50%;
+            // border-radius: 50%;
             // background-color: green;
 
             background: linear-gradient(180deg, #ffffff 58.5%, #cb572c 40%);
 
             // position: absolute;
-            width: 1027px;
+            width: 527px;
             height: 1027px;
             left: 796px;
             top: 148px;
 
             // background: #D9D9D9;
 
-            border-radius: 50%;
+            // border-radius: 50%;
+            border-radius: 1027px 0 0 1027px;
         //    z-index: -11;
 
         .portfolioName{

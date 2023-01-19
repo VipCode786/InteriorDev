@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import './Header.scss'
-import'./headerToggle.scss'
+import './Header.css'
+import'./headerToggle.css'
 const Header = () => {
 
      const[show,setShow] = useState(false);
@@ -52,7 +52,7 @@ const Header = () => {
         <div className='gmp marginR'>
             <img src="/headerImages/gmp.png" alt="" />
        </div>
-       <div className='iso'>
+       <div className='iso marginR'>
             <img src="/headerImages/iso.svg" alt="" />
        </div>
        

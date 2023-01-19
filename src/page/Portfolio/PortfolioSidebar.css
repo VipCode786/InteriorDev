@@ -1,0 +1,41 @@
+.portfolioSidebar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.portfolioSidebar .container {
+  display: flex;
+  background: #FFFFFF;
+}
+.portfolioSidebar .container .sidebar {
+  color: rgb(7, 6, 6);
+  height: 100vh;
+  width: 100%;
+  transition: all 0.5s;
+  margin-left: 1rem;
+}
+.portfolioSidebar .container .link {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 38px;
+  text-align: justify;
+  letter-spacing: 0.025em;
+  color: #383838;
+  gap: 15px;
+  white-space: nowrap;
+}
+.portfolioSidebar .container .link:hover {
+  color: #CB572C;
+  transition: all 0.5s;
+}
+.portfolioSidebar .container .active {
+  color: #CB572C;
+}
+.portfolioSidebar .main {
+  width: 70vw;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=PortfolioSidebar.css.map */

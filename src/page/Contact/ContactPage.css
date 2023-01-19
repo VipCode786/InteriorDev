@@ -1,17 +1,38 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .contactPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #FFFFFF;
   margin: 1rem;
 }
 .contactPage .contactInfo {
   background: #383838;
   border-radius: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2rem;
+  max-width: 500px;
 }
 .contactPage .contactInfo h1 {
   font-family: "Poppins";
@@ -19,7 +40,8 @@
   font-weight: 700;
   line-height: 138.7%;
   letter-spacing: 0.025em;
-  margin: 2rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
   color: #FFFFFF;
 }
 .contactPage .contactInfo .contact-paragraph {
@@ -28,32 +50,48 @@
   font-weight: 400;
   line-height: 138.7%;
   /* or 28px */
+  margin-left: 1rem;
   letter-spacing: 0.055em;
   color: #FFFFFF;
-  margin: 2rem;
 }
 .contactPage .contactInfo .contactDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-left: 2rem;
 }
 .contactPage .contactInfo .contactDetails p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
 .contactPage .contactInfo .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2rem;
 }
 .contactPage .contactInfo .social-media img {
@@ -67,10 +105,19 @@
   font-style: normal;
   color: red;
   font-size: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contactPage .contactForm input {
   width: 250px;
@@ -78,6 +125,7 @@
   border-width: 0 0 2px;
   border-color: #000000;
   margin: 2rem;
+  border-radius: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -110,7 +158,8 @@
   width: 185px;
   padding: 10px;
   background: #EFEFEF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 .contactPage .contactForm .uploadButton:hover {
@@ -120,6 +169,36 @@
   margin: 2rem;
   float: right;
 }
+.contactPage .containerClass .special-label {
+  display: none;
+  margin-top: 12px;
+  margin-left: -100%;
+  z-index: none;
+}
+.contactPage .react-tel-input {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.contactPage .react-tel-input .flag-dropdown {
+  margin-left: -2px;
+  width: 41px;
+  border: none;
+}
+.contactPage .react-tel-input .flag-dropdown.open {
+  z-index: 2;
+  background: #fff;
+  width: 300px;
+  border-radius: 3px 0 0 0;
+}
+.contactPage .react-tel-input .form-control {
+  border-radius: 0%;
+  margin-left: 0px;
+}
 
 .submitButton:hover {
   background-color: #CB572C;
@@ -128,7 +207,8 @@
 }
 
 .submitButton {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* Auto layout */
   padding: 16px 58px;
   gap: 10px;
@@ -141,4 +221,24 @@
   font-size: 25px;
   line-height: 118%;
   color: #000000;
-}/*# sourceMappingURL=ContactPage.css.map */
+}
+
+@media screen and (max-width: 750px) {
+  .contactPage .content1 {
+    margin-left: 2rem;
+  }
+  .contactPage .content1::after {
+    content: "\a";
+    white-space: pre;
+  }
+  .contactPage .contactForm button {
+    margin: 2rem;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .contactPage .contactForm p {
+    width: auto;
+  }
+}

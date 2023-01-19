@@ -1,9 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .footer {
   background: #C1C1C1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffffff;
   margin: 2rem 2rem 0rem 2rem;
   padding: 3rem 3rem 1rem 3rem;
@@ -17,9 +32,15 @@
   color: #2D2D2D;
 }
 .footer .contactDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: 2px;
 }
 .footer .contactDetails p {
@@ -27,19 +48,35 @@
   font-weight: 400;
   font-size: 20px;
   /* identical to box height */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   letter-spacing: 0.025em;
-  color: #FFFFFF;
+  color: #000000;
 }
 @media only screen and (max-width: 750px) {
   .footer .contactDetails p {
     font-size: 5vw;
   }
 }
+.footer .resource p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
 .footer .resoucesBox {
   width: 7.813vw;
-  height: 10vh;
   background: #D9D9D9;
 }
 @media only screen and (max-width: 750px) {
@@ -51,8 +88,40 @@
   width: 100%;
   height: 100%;
 }
+.footer .footerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .footer .ICLogo {
   width: 15rem;
+}
+.footer .fab {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  text-align: left;
+  letter-spacing: 0.025em;
+  color: #2D2D2D;
+}
+.footer .fabInfo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  color: #2D2D2D;
 }
 
 a {
@@ -62,6 +131,8 @@ a {
 
 .downloadImg {
   font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 750px) {
@@ -71,4 +142,9 @@ a {
   .footer span {
     font-size: 5vw;
   }
-}/*# sourceMappingURL=Footer.css.map */
+}
+@media only screen and (max-width: 650px) {
+  .footer {
+    margin: auto;
+  }
+}

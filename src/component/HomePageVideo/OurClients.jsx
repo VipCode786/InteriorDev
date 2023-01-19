@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
- import './ourClients.scss'
+ import './ourClients.css'
 const OurClients = () => {
   return (
     <div>

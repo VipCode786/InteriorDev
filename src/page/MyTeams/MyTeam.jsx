@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './myTeam.scss'
+import './myTeam.css'
 const MyTeam = () => {
   return (
     <div className='myTeam'>

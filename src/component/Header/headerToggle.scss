@@ -26,7 +26,7 @@
       
       .bar {
         height: 7px;
-        width: 100%;
+         width: 100%;
         background-color: #CB572C;
         display: block;
         border-radius: 5px;
@@ -147,6 +147,7 @@
         width: 100%;
         text-align: end;
         transition: color 0.5s;
+        padding-left: 10px;
         // margin-right: 1rem;
       
     }

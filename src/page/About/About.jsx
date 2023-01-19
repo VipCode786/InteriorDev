@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import AboutUsAnimation from '../../component/AboutUs/AboutUsAnimation'
 // import Pre from '../../component/AboutUs/Pre'
-import './about.scss'
+import './about.css'
 const About = () => {
   const startAnimation = (entries, observer) => {
     entries.forEach(entry => {

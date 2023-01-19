@@ -10,6 +10,7 @@
   font-size: 40px;
   line-height: 118%;
   /* or 47px */
+  white-space: nowrap;
   text-align: center;
   letter-spacing: 0.075em;
   color: #000000;
@@ -28,10 +29,10 @@
 .home .whatWeMake {
   display: flex;
   justify-content: center;
-  background-color: rgb(209, 209, 209);
 }
 .home .whatWeMake p {
   height: 47px;
+  white-space: nowrap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -50,16 +51,14 @@
   height: 100vh;
 }
 .home .counter {
-  margin: 1rem;
+  margin: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
-  height: 300px;
   align-items: center;
 }
 .home .counter .counter-box {
-  width: 20%;
   height: 150px;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.25);
@@ -123,7 +122,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 118%;
   /* or 47px */
   color: #333333;
@@ -132,10 +131,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 158%;
   letter-spacing: 0.025em;
   color: #606060;
+  text-align: justify;
   width: 559px;
   align-items: center;
   margin-left: 5rem;
@@ -143,13 +143,11 @@
 .home .ourTeam .imageOwner {
   display: flex;
   flex-direction: row;
-}
-.home .ourTeam .imageOwner img {
-  width: 303px;
-  height: 450px;
+  height: 100vh;
 }
 .home .ourTeam .imageOwner .nameOwner {
-  margin-top: 70%;
+  margin-top: 85%;
+  margin-right: 10px;
 }
 .home .ourTeam .imageOwner .nameOwner .ownerName {
   font-family: "Poppins";
@@ -200,7 +198,7 @@
 }
 .home .featuredProjects .picRow img {
   width: 20rem;
-  height: 25rem;
+  height: 15rem;
   margin: 1rem;
 }
 .home .discussProjects {
@@ -211,9 +209,7 @@
   align-items: center;
   background-image: linear-gradient(#E37C56, #E37C56);
   background-repeat: no-repeat;
-  border-radius: 50px;
-  border-radius: inherit;
-  transition: background-size 0.8s, color 0.8s;
+  transition: background-size 0.8s, color 0.8s, border-radius 1s;
 }
 .home .discussProjects p {
   margin: 2rem;
@@ -275,16 +271,21 @@ section:nth-child(even) {
     height: 617px;
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
+  .home .ourTeam .heading {
+    margin: 1rem;
+  }
   .home .ourTeam p {
     width: auto;
     font-size: 20px;
     font-family: "Poppins";
     font-style: normal;
+    margin: 1rem;
   }
   .home .ourTeam .imageOwner {
     display: flex;
     flex-direction: column-reverse;
+    height: auto;
   }
   .home .ourTeam .imageOwner img {
     width: 100%;
@@ -301,6 +302,19 @@ section:nth-child(even) {
   }
   .home .meetButton {
     margin-right: "0";
+  }
+  .home .counter .counter-box {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .home .counter .counter-box p {
+    font-size: 15px;
+  }
+  .home .counter .counter-box .count {
+    font-size: 15px;
+  }
+  .home .counter .counter-box .count span {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 1150px) {
@@ -319,7 +333,7 @@ section:nth-child(even) {
 }
 .video .box .mainHeading {
   position: absolute;
-  top: 10rem;
+  top: 25vh;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
@@ -404,6 +418,7 @@ section:nth-child(even) {
   width: 250px;
   height: 61px;
   top: 90vh;
+  cursor: pointer;
   border: 4px solid #FFFFFF;
   border-radius: 47px;
   /* Scroll to Explore */
@@ -423,27 +438,78 @@ section:nth-child(even) {
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
+  .home .ourTeam .heading {
+    font-size: 32px;
+  }
+  .home .ourTeam p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .home .ourClients_Heading {
+    font-size: 32px;
+  }
+  .home .ourClients_Text {
+    font-size: 16px;
+  }
+  .home .featuredProjects p {
+    font-size: 32px;
+  }
+  .home .hideMobile {
+    display: none;
+  }
+  .home .counter {
+    flex-direction: column;
+  }
+  .home .counter .counter-box {
+    width: 60%;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+  .First1 {
+    display: none;
+  }
+  .video {
+    height: 100vw;
+  }
+  .video .box {
+    width: 40%;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
   .video .box .mainHeading {
+    margin-top: -13vh;
     margin-left: 2px;
-    font-size: 50px;
+    font-size: 40px;
   }
   .video .box .mainHeading .headingContent {
     font-size: 20px;
     padding: 0%;
   }
-}
-@media only screen and (max-width: 650px) {
-  .video .box {
-    width: 40%;
-    font-size: 70px;
-    background-color: rgba(0, 0, 0, 0.4);
+  .video .centerScroll {
+    display: none;
+  }
+  .video .centerScroll .arrowOne {
+    width: 1em;
+    height: 1em;
+    margin-left: -20px;
+    top: 97vw;
+  }
+  .video .centerScroll .scroll {
+    top: 105vw;
+    width: 200px;
+    height: 40px;
+  }
+  .video .centerScroll .scroll .scrollContent {
+    font-size: 18px;
+    padding-top: 4px;
   }
 }
-@media only screen and (min-width: 1082px) {
-  .video .box {
-    width: 40%;
-    font-size: 70px;
-    background-color: rgba(0, 0, 0, 0.4);
+@media only screen and (min-width: 750px) and (max-width: 1020px) {
+  .video .centerScroll .arrowOne {
+    top: 90vh;
+  }
+  .video .centerScroll .scroll {
+    top: 95vh;
   }
 }/*# sourceMappingURL=home.css.map */

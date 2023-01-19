@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Link } from 'react-router-dom';
-import './ContactPage.scss'
+import './ContactPage.css'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 const ContactPage = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './aboutUsAnimation.scss'
+import './aboutUsAnimation.css'
 
 const AboutUsAnimation = () => {
   return (

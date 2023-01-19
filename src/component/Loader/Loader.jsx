@@ -1,7 +1,7 @@
 import React , {CSSProperties} from 'react'
 
 
-import './Loader.scss'
+import './Loader.css'
 
 const Loader = () => {
 //   const listStylus1: CSSProperties= {

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Link } from 'react-router-dom';
-import './Career.scss'
+import './Career.css'
 
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'

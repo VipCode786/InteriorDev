@@ -1,5 +1,5 @@
 import React from 'react'
-import './pre.scss'
+import './pre.css'
 
 const Pre = () => {
   return (

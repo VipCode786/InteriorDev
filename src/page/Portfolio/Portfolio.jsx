@@ -1,7 +1,7 @@
 import React from 'react'
 import {useRef} from 'react';
 
-import './Portfolio.scss'
+import './Portfolio.css'
 
 
 const Portfolio = () => {
@@ -19,10 +19,12 @@ const Portfolio = () => {
   return (
     <div className='portfolio'>
         <div className='background'>
-       <p> Our portfolio consists of projects
+        <div>
+        <p> Our portfolio consists of projects
           from all over the globe
         </p>
         <img src="/portfolio/portfolio.png" alt="" />
+        </div>
         <div style={{overflow:"hidden", height:"699px"}}>
         <div className='whiteCircle'>
         <div className='portfolioName'>

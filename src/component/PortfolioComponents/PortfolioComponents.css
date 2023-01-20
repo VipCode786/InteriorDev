@@ -1,27 +1,12 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .imageRow {
   background-color: antiquewhite;
   margin-top: 10vh;
 }
 .imageRow .image4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 .imageRow .image4 .imageBox {
   background-color: antiquewhite;
@@ -40,4 +25,4 @@
 
 .awssld__content {
   background-color: #F3F3F3;
-}
+}/*# sourceMappingURL=PortfolioComponents.css.map */

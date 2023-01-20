@@ -1,36 +1,16 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .contactPage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #FFFFFF;
   margin: 1rem;
 }
 .contactPage .contactInfo {
   background: #383838;
   border-radius: 19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 2rem;
   max-width: 500px;
 }
@@ -55,15 +35,9 @@
   color: #FFFFFF;
 }
 .contactPage .contactInfo .contactDetails {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin-left: 2rem;
 }
 .contactPage .contactInfo .contactDetails p {
@@ -73,25 +47,15 @@
   font-size: 20px;
   line-height: 40px;
   /* identical to box height */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
 .contactPage .contactInfo .social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 .contactPage .contactInfo .social-media img {
@@ -105,19 +69,10 @@
   font-style: normal;
   color: red;
   font-size: 1vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .contactPage .contactForm input {
   width: 250px;
@@ -158,8 +113,7 @@
   width: 185px;
   padding: 10px;
   background: #EFEFEF;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 .contactPage .contactForm .uploadButton:hover {
@@ -207,8 +161,7 @@
 }
 
 .submitButton {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* Auto layout */
   padding: 16px 58px;
   gap: 10px;
@@ -241,4 +194,4 @@
   .contactPage .contactForm p {
     width: auto;
   }
-}
+}/*# sourceMappingURL=ContactPage.css.map */

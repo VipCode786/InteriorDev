@@ -1,30 +1,13 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .portfolio {
   background-color: #FFFFFF;
 }
 .portfolio .columnCanopy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .portfolio .rowCanopy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 .portfolio .background {
   background: #cb572c;
@@ -44,12 +27,8 @@
   font-size: 36px;
   line-height: 139.1%;
   /* or 50px */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
@@ -61,8 +40,6 @@
 }
 .portfolio .background .whiteCircle {
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(59%, #ffffff), color-stop(40%, #cb572c));
-  background: -o-linear-gradient(top, #ffffff 59%, #cb572c 40%);
   background: linear-gradient(180deg, #ffffff 59%, #cb572c 40%);
   width: 627px;
   height: 1027px;
@@ -71,16 +48,9 @@
   border-radius: 1027px 0 0 1027px;
 }
 .portfolio .background .whiteCircle .portfolioName {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   margin-top: 203px;
   margin-left: 300px;
 }
@@ -103,18 +73,13 @@
 .portfolio .portfolioNameMob {
   margin-top: 10px;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  flex-direction: column-reverse;
   color: #000000;
   position: relative;
   font-family: "Poppins";
   font-style: normal;
 }
 .portfolio .gates {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cb572c), to(#cb572c));
-  background-image: -o-linear-gradient(#cb572c, #cb572c);
   background-image: linear-gradient(#cb572c, #cb572c);
   background-repeat: no-repeat;
   background-size: 416px 433px;
@@ -129,12 +94,8 @@
   line-height: 139.1%;
   /* identical to box height, or 67px */
   padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
@@ -178,12 +139,8 @@
   /* identical to box height, or 67px */
   margin-left: 3rem;
   display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
@@ -195,15 +152,9 @@
   line-height: 139.1%;
   /* identical to box height, or 67px */
   margin-left: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
@@ -229,9 +180,7 @@
 .portfolio .staircase {
   background: url("triangle.png"), #D9D9D9;
   background-repeat: no-repeat;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 5rem;
   padding-right: 4rem;
 }
@@ -313,18 +262,10 @@
   margin-top: -0.2rem;
 }
 .portfolio .pergola {
-  background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(48%, #383838), color-stop(40%, #D9D9D9));
-  background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 48%, #D9D9D9 40%);
   background: url("./paragolaBG.png") right no-repeat, linear-gradient(180deg, #383838 48%, #D9D9D9 40%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .portfolio .pergola p {
   font-family: "Poppins";
@@ -396,21 +337,12 @@
   }
   .portfolio .columnCanopy {
     display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .portfolio .rowCanopy {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .portfolio .background {
     background: #cb572c;
@@ -429,12 +361,8 @@
     font-size: 24px;
     line-height: 139.1%;
     /* or 50px */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     letter-spacing: 0.025em;
     color: #FFFFFF;
   }
@@ -446,8 +374,6 @@
   }
   .portfolio .background .whiteCircle {
     position: absolute;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.5%, #ffffff), color-stop(40%, #cb572c));
-    background: -o-linear-gradient(top, #ffffff 58.5%, #cb572c 40%);
     background: linear-gradient(180deg, #ffffff 58.5%, #cb572c 40%);
     width: 527px;
     height: 1027px;
@@ -468,18 +394,9 @@
     font-size: 36px;
     line-height: 139.1%;
     /* or 50px */
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     letter-spacing: 0.025em;
     color: #000000;
@@ -488,8 +405,6 @@
     color: #cb572c;
   }
   .portfolio .gates {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#cb572c), to(#cb572c));
-    background-image: -o-linear-gradient(#cb572c, #cb572c);
     background-image: linear-gradient(#cb572c, #cb572c);
     background-repeat: no-repeat;
     background-size: 416px 133px;
@@ -504,12 +419,8 @@
     line-height: 139.1%;
     /* identical to box height, or 67px */
     padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     letter-spacing: 0.025em;
     color: #FFFFFF;
   }
@@ -554,15 +465,9 @@
     line-height: 139.1%;
     /* identical to box height, or 67px */
     margin-left: 0rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 0.025em;
     color: #FFFFFF;
   }
@@ -575,12 +480,8 @@
     /* identical to box height, or 67px */
     margin-left: 3rem;
     display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 0.025em;
     color: #FFFFFF;
   }
@@ -716,18 +617,10 @@
     margin-left: 0rem;
   }
   .portfolio .pergola {
-    background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(48%, #383838), color-stop(40%, #D9D9D9));
-    background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 48%, #D9D9D9 40%);
     background: url("./paragolaBG.png") right no-repeat, linear-gradient(180deg, #383838 48%, #D9D9D9 40%);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .portfolio .pergola p {
     font-family: "Poppins";
@@ -816,4 +709,4 @@
   .portfolio .marginLeft-20 {
     margin-left: 0%;
   }
-}
+}/*# sourceMappingURL=Portfolio.css.map */

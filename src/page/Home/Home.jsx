@@ -808,7 +808,7 @@ Worked with and Gained Trust of Market-Leading Companies
               </div>
               <br/>
               <div className='boxView'>
-              <Link to="portfolio"><button className='boxButton'> View More </button></Link>
+              <Link to="portfolio" onClick={() => window.scrollTo(0, 0)}><button className='boxButton'> View More </button></Link>
               </div>
         </div>
       <br/>

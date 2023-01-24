@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import {useRef} from 'react';
 
 import './Portfolio.css'
@@ -15,7 +16,9 @@ const Portfolio = () => {
   const handleClick = (a) => {
     a.current?.scrollIntoView({behavior: 'smooth'});
   };
-  
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, []);
   return (
     <div className='portfolio'>
         <div className='background'>
@@ -69,13 +72,19 @@ const Portfolio = () => {
       <div className='gates' >
         <div className='gate'><p>Gates</p></div>
         {/* <img src="/portfolio/portfolio.png" alt=""  /> */}
-        {/* <div className='start' > */}
+        <div  className='best'>
+        <div className='start' >
 
-       <img src="/portfolio/gate1.jpg" alt="" className='img1 start'  />
-       <img src="/portfolio/gate2.jpg" alt="" className='img2 start' />
+        <div className='rowCanopy'>
+       <img src="/portfolio/gate1.jpg" alt="" className='img1 '  />
+       <img src="/portfolio/gate2.jpg" alt="" className='img2 ' />
+       </div>
+       <div className='rowCanopy'>
        <img src="/portfolio/gate3.jpg" alt="" className='img3 '  />
        <img src="/portfolio/gate4.jpg" alt="" className='img4 ' />
-       {/* </div> */}
+       </div>
+       </div>
+       </div>
       </div>
       </div>
       
@@ -85,7 +94,7 @@ const Portfolio = () => {
         <p className="mobileView">Canopy</p>
         <div className='rowCanopy'>
         <img src="/portfolio/canopy1.jpg" alt="" className='canopy1'  />
-        <div className='columnCanopy marginLeft2'>
+        <div className='columnCanopy ' >
         <div className='rowCanopy '>
          <img src="/portfolio/canopy2.jpg" alt="" className='canopy2' />
          <p>Canopy</p>
@@ -132,7 +141,7 @@ const Portfolio = () => {
       <div className='pergola ' ref={pergola}>
       
       <div className='columnCanopy marginTop2'>
-        <p style={{marginTop:"0px"}}>Pergola</p>
+        <div style={{marginTop:"0px"}} className="pergolatext">Pergola</div>
       <div className='rowCanopy'>
       <div className='columnCanopy'>
       <img src="/portfolio/pergola1.jpg" className='paragola1' alt="" />
@@ -143,21 +152,23 @@ const Portfolio = () => {
      
       <br/>
       <br/>
-      <br/>
-      <br/>
+      {/* <br/>
+      <br/> */}
       <div ref={otherProjects}>
-      <p  className="mobileView marginLeft-20 marginTop-4">OTHER <br/>
-         PROJECTS</p>
+      {/* <p  className="mobileView marginLeft-20 marginTop-4">OTHER <br/>
+         PROJECTS</p> */}
       
       </div>
-      <div className='rowCanopy  '>
+      <p className="desktopView">OTHER <br/>
+         PROJECTS</p>
+      <div className='rowCanopy' style={{marginRight:"30rem",marginTop:"-8rem"}}>
       <img src="/portfolio/other1.jpg" className='other1' alt="" />
       <img src="/portfolio/other2.jpg" className='other2' alt="" />
       <br/>
       <br/>
       <br/>
-      <p style={{marginLeft:"20%"}} className="desktopView">OTHER <br/>
-         PROJECTS</p>
+      {/* <p style={{marginLeft:"20%"}} className="desktopView">OTHER <br/>
+         PROJECTS</p> */}
       </div>
       <div className='rowCanopy'>
       <img src="/portfolio/other3.jpg" className='other3' alt="" />

@@ -259,15 +259,15 @@
       .imageOwner{
          display: flex;
          flex-direction: row;
-         height: 100vh;
+          height: 620px;
          // img{
-         //    width: 303px;
-         //    height: 450px;
+         //    // width: 303px;
+         //    height: 100%;
             
          // }
 
          .nameOwner{
-            margin-top: 85%;
+            margin-top: auto;
             margin-right: 10px;
             .ownerName{
                font-family: 'Poppins';
@@ -543,7 +543,8 @@ main {
    }}
 
    .meetButton{
-      margin-right:"0"
+      display: flex;
+      justify-content: center;
    }
    .counter{
          

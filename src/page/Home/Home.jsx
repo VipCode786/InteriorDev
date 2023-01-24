@@ -73,7 +73,9 @@ const Home = () => {
   let er;
   const [counterOn, setCounterOn] = useState(false);
   const [sub , setSub] = useState(null);
-
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, []);
   const startAnimation = (entries, observer) => {
     entries.forEach(entry => {
       entry.target.classList.toggle("tracking-in-contract", entry.isIntersecting);

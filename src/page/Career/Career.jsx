@@ -7,6 +7,7 @@ import './Career.css'
 
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { useEffect } from 'react';
 
 const Career = () => {
 
@@ -19,7 +20,9 @@ const Career = () => {
     const [File, setFile] = useState();
     const [recaptcha, setRecaptcha] = useState(null);
 
-
+    useEffect(() => {
+      window.scrollTo(0,0)
+    }, []);
 
     const startAnimation = (entries, observer) => {
       entries.forEach(entry => {
@@ -198,7 +201,8 @@ const Career = () => {
         sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
         onChange={onChange}
         required
-         
+         style={{marginTop:"-0.5rem"}}
+         className="captchaa"
       />
       
                        

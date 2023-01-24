@@ -6,7 +6,7 @@
             margin-left: 60px;
             margin-right: 60px;
             // margin:2rem;
-            justify-content:space-between;
+            justify-content:center;
             flex-wrap: wrap;
             align-items: center;
 
@@ -119,7 +119,7 @@
         //  height: 648px;
         background: #7A7A7A;
         border-radius: 37px;
-        margin-top: 2rem;
+        margin: 2rem;
         // padding: 3rem;
         .heading{
             // width: 494px;
@@ -140,7 +140,7 @@
         width: 632px;
   
         // height: 648px;
-        margin-top: 2rem;
+        margin: 2rem;
         // padding: 3rem;
         background: #E37C56;
         border-radius: 37px;
@@ -341,7 +341,8 @@
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-margin-left: 2rem;
+justify-content: center;
+// margin-left: 2rem;
     }   
     .containerClass{
         .special-label{
@@ -439,8 +440,8 @@ margin-left: 2rem;
             font-size: 14px;
         }
         .careerForm{
-            margin-left: 0px; 
-    margin-right: 0px;
+            margin-left: auto;
+            margin-right: auto;
 
     span{
         align-items: center;
@@ -448,20 +449,22 @@ margin-left: 2rem;
     justify-content: center;
     }
     .career-row{
-        margin-left: 2rem;
-        justify-content:center;
+        display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
     }
             .cloumnForm{
                 margin-top: 0;
             }
 
             input{
-                width: 45vh;
+                width:80vw;
                 
 
             }
             textarea{
-                width:45vh;
+                width:80vw;
                 margin-left: 2rem;
             }
         }

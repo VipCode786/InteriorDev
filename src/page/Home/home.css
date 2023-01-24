@@ -143,10 +143,10 @@
 .home .ourTeam .imageOwner {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 620px;
 }
 .home .ourTeam .imageOwner .nameOwner {
-  margin-top: 85%;
+  margin-top: auto;
   margin-right: 10px;
 }
 .home .ourTeam .imageOwner .nameOwner .ownerName {
@@ -301,7 +301,8 @@ section:nth-child(even) {
     text-align: center;
   }
   .home .meetButton {
-    margin-right: "0";
+    display: flex;
+    justify-content: center;
   }
   .home .counter .counter-box {
     flex-direction: column;

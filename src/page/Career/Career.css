@@ -6,7 +6,7 @@
   flex-direction: row;
   margin-left: 60px;
   margin-right: 60px;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -77,7 +77,7 @@
   width: 632px;
   background: #7A7A7A;
   border-radius: 37px;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 .career .grey-bg .heading {
   margin: 2rem;
@@ -91,7 +91,7 @@
 }
 .career .orange-bg {
   width: 632px;
-  margin-top: 2rem;
+  margin: 2rem;
   background: #E37C56;
   border-radius: 37px;
 }
@@ -248,7 +248,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 2rem;
+  justify-content: center;
 }
 .career .containerClass .special-label {
   display: none;
@@ -320,8 +320,8 @@
     font-size: 14px;
   }
   .career .careerForm {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .career .careerForm span {
     align-items: center;
@@ -329,17 +329,19 @@
     justify-content: center;
   }
   .career .careerForm .career-row {
-    margin-left: 2rem;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: center;
   }
   .career .careerForm .cloumnForm {
     margin-top: 0;
   }
   .career .careerForm input {
-    width: 45vh;
+    width: 80vw;
   }
   .career .careerForm textarea {
-    width: 45vh;
+    width: 80vw;
     margin-left: 2rem;
   }
   .career .grey-bg {

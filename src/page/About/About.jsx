@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AboutUsAnimation from '../../component/AboutUs/AboutUsAnimation'
 // import Pre from '../../component/AboutUs/Pre'
@@ -17,13 +17,16 @@ const About = () => {
   elements.forEach(el => {
     observer.observe(el, options);
   });
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, []);
   
   return (
     <div>
 
 <div class="video-wrapper">
   <video autoPlay muted  playsinline preload="metadata" >
-	  <source src="aboutpage.mp4" type="video/mp4" />
+	  <source src="about12.mp4" type="video/mp4" width="100vw"/>
   </video>
 </div>
     {/* <AboutUsAnimation/> */}

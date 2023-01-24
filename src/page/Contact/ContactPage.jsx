@@ -16,7 +16,9 @@ const ContactPage = () => {
   const [file, setFile] = useState(null);
   const [recaptcha, setRecaptcha] = useState(null);
   const [error, setError] = useState(false);
-
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, []);
   function onChange(value) {
    
     console.log('Captcha value:', value);

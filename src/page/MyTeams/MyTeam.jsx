@@ -1,7 +1,11 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import './myTeam.css'
 const MyTeam = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, []);
   return (
     <div className='myTeam'>
     <div className='myTeamhead'>

@@ -154,8 +154,6 @@
     margin-top: -5%;
   }
   .about .about1 {
-    -webkit-backdrop-filter: blur(50px);
-            backdrop-filter: blur(50px);
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -180,8 +178,6 @@
     width: 80%;
   }
   .about .about2 {
-    -webkit-backdrop-filter: blur(50px);
-            backdrop-filter: blur(50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

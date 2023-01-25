@@ -143,8 +143,8 @@ letter-spacing: 0.025em;
 color: #FFFFFF;
         }
        .img1{
-        width: 36.84%;// 566px; //36.84895833333333%
-        height: 320px;
+        width: 36.84%;
+        height: 32vh;
         padding: 1rem;
         // left: 20.25rem;
         // top: -300px;
@@ -154,8 +154,8 @@ color: #FFFFFF;
 
        }
        .img2{
-        width: 35.38%;//542px;//35.28%
-        height: 378px;
+        width: 35.38%;
+        height: 37.8vh;
         padding: 1rem;
         // left: 22.5rem;
         // top: -240px;
@@ -163,8 +163,8 @@ color: #FFFFFF;
 
        .img3{
         //width: 695px; 
-        width:45.24%;
-        height: 400px;
+        width: 45.24%;
+        height: 40vh;
         margin-right: 15rem;
         margin-top: -3rem;
         // margin-left: 8.5rem;
@@ -173,8 +173,8 @@ color: #FFFFFF;
 
        .img4{
         // width: 600px; 
-        width:39.06%;
-        height: 335px;
+        width: 39.06%;
+        height: 33.5vh;
         margin-left: -11rem;
         // margin-left: 2rem;
         // margin-top: -280px;
@@ -258,28 +258,26 @@ color: #FFFFFF;
         .canopy1{
             // position: absolute;
         //    width: 505px; 
-            width:32.87%;
-            height: 635px;
-            
-            left: 0px;
-            top: 0px;
+        width: 32.87%;
+        height: 85.5vh;
+        left: 0px;
+        top: 0px;
         }
         .canopy2{
-            //width: 505px; //
-            width:62.87%;
-            height: 317px;
-            // margin-left:2rem;
+            width: 62.87%;
+            height: 38.7vh;
+            padding-left: 1rem;
             top: 0px;
         }
         .canopy3{
             // width: 410px; //
             width:43.69%;
-            height: 317px;
+            height: 38.7vh;
         }
         .canopy4{
             // width: 390px; //
             width:42.39%;
-            height: 317px;
+            height: 38.7vh;
         }
     }
 
@@ -302,36 +300,37 @@ color: #FFFFFF;
             color: #FFFFFF;
         }
         .staircase1{
-            // margin-top: 9rem;
             padding: 1rem;
-            width: 508px; //33.07
-            height: 544px;
+            /* width: 508px;
+            height: 544px; */
+            width: 30.8%;
+              height: 69.4vh
             
         }
 
         .staircase2{
-            width: 367px; //2389
-            height: 367px;
+            width: 100%;
+            height: 43.7vh;
             padding: 1rem;
             margin-top: -7rem;
         }
         .staircase3{
-            width: 348px; //22.65
-            height: 332px;
+            width: 100%;
+            height: 40.2vh;
             padding: 1rem;
             
         }
         .staircase4{
-            width: 328px; //21.35
-            height: 328px;
+            width: 100%;
+            height: 38.8vh;
             padding: 1rem;
             margin-top: -7rem;
             padding-left: 3rem;
         }
         .staircase5{
-            width: 370px; //24.04
-            height: 370px;
-            padding: 1rem;
+            width: 100%;
+            height: 44vh;
+            padding: 2rem;
         }
 
     }
@@ -358,32 +357,32 @@ color: #FFFFFF;
         }
     .railing1{
         //width: 361px; //
-        width:23.50%;
-        height: 733px;
-        padding: 1rem;
-        margin-top: -5rem;
+        width: 23.5%;
+  height: 80.3vh;
+  padding: 1rem;
+        // margin-top: -5rem;
     }
     .railing2{
         // width: 478px; //
-        width:48.11%;
-        height: 323px;
+        width: 48.11%;
+        height: 36.3vh;
         padding: 1rem;
         margin-top: -3rem;
         // padding-top: 7rem;
     }
     .railing3{
         // width: 489px; //
-        width:50.83%;
-        height: 307px;
+        width: 50.83%;
+        height: 34.7vh;
         padding: 1rem;
         margin-top: -1.2rem;
         // padding-top: 7rem;
     }
     .railing4{
         // width: 999px;//
-        width:100%;
-        height: 352px;
-        margin-top: -0.2rem;
+        width: 100%;
+  height: 40.2vh;
+  margin-bottom: -1.5rem;
     }
     }
 
@@ -434,29 +433,34 @@ color: #FFFFFF;
         
         .paragola1{
             // width: 507px; //
-            width:95%;
-            height: 254px;
+            width: 95%;
+            height: 38.4vh;
             padding: 1rem;
         }
 
         .paragola2{
             // width: 473px;
-            width:88%;
-            height: 296px;
+            width: 88%;
+            height:35.6vh;
             padding: 1rem;
             margin-left: 2.1rem;
         }
         .paragola3{
             // width: 869px; //
-            width:56.57%;
-            height: 494px;
+            width: 56.57%;
+            height: 60.4vh;
             padding: 1rem;
+            margin-top: 5rem;
                    }
-        
+                   .otherMar{
+                    margin-right: 30%;
+                    margin-top: -8rem;
+                    
+                  }
         .other1{
             // width: 541px; //
             width:40.2%;
-            height: 304px;
+            height: 30.4vh;
             padding: 0.5rem;
             // margin-top: 8rem;
         }
@@ -464,20 +468,20 @@ color: #FFFFFF;
         .other2{
             // width: 363px; //
             width:45.63%;
-            height: 272px;
+            height: 27.2vh;
             padding: 0.5rem;
         }
         .other3{
             //width: 368px; // 
             width:23.9%;
-            height: 415px;
+            height: 41.5vh;
             padding: 0.5rem;
             margin-top: 1rem;
         }
         .other4{
             // width: 203px; //
             width:13.21%;
-            height: 415px; 
+            height: 41.5vh; 
             padding: 0.5rem;
             margin-top: 1rem;
             padding-left: 1.2rem;
@@ -485,18 +489,18 @@ color: #FFFFFF;
         .other5{
             // width: 296px; //
             width:20%;
-            height: 444px;
+            height: 44.4vh;
             padding: 0.5rem;
             padding-left: 1rem;
             margin-top: -1rem;
         }
         .other6{
-            // width: 459px; //
-            width:29.88;
-            height: 612px;
-            padding: 0.5rem;
-            margin-top: -11.5rem;
-            margin-left: 1rem;
+            width: 29.88%;
+  height: 61.2vh;
+  padding: 0.5rem;
+   margin-top: -8rem;
+  margin-left: 1rem;
+  float: right;
         }
 
     }

@@ -1,11 +1,25 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .aboutUsAnimation {
   background-color: bisque;
   height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .aboutUsAnimation .bottom-bg {
   height: 10vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f87e51), to(#f87e51));
+  background-image: -o-linear-gradient(#f87e51, #f87e51 100%);
   background-image: linear-gradient(#f87e51, #f87e51 100%);
   background-size: 100% 200px;
   background-repeat: no-repeat;
@@ -28,8 +42,13 @@
   text-align: center;
 }
 .aboutUsAnimation .aboutAnimationRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .aboutUsAnimation .background-right {
   background-color: #CB572C;
@@ -44,27 +63,33 @@
 @-webkit-keyframes moveInleft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 @keyframes moveInleft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
@@ -75,4 +100,4 @@
   .aboutUsAnimation p img {
     height: 25px;
   }
-}/*# sourceMappingURL=aboutUsAnimation.css.map */
+}

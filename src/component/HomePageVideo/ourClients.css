@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .slider {
   margin: auto;
   position: relative;
   width: 100%;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -9,6 +17,8 @@
   /* Gradient Shadows */
 }
 .slider .slide-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 4500px;
   -webkit-animation: scroll 30s linear infinite;
@@ -20,34 +30,50 @@
 }
 @-webkit-keyframes scroll {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(-2250px);
+    -webkit-transform: translateX(-2250px);
+            transform: translateX(-2250px);
   }
 }
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    transform: translateX(-2250px);
+    -webkit-transform: translateX(-2250px);
+            transform: translateX(-2250px);
   }
 }
 .slider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  perspective: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 100px;
+          perspective: 100px;
 }
 .slider img {
   width: 100%;
+  -webkit-transition: -webkit-transform 30s;
+  transition: -webkit-transform 30s;
+  -o-transition: transform 30s;
   transition: transform 30s;
+  transition: transform 30s, -webkit-transform 30s;
 }
 .slider img:hover {
-  transform: translateZ(20px);
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
 }
 .slider .slider::before,
 .slider .slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(left, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100%;
@@ -64,9 +90,15 @@
   top: 0;
 }
 .slider .rowslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .slider .rowslide .size {
   width: 100px;
@@ -84,4 +116,4 @@
 
 .marginTop {
   margin-top: -1rem;
-}/*# sourceMappingURL=ourClients.css.map */
+}

@@ -1,9 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .myTeam .myTeamhead {
   height: 501px;
   background-image: url("../../images/myteamBackground.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .myTeam .myTeamhead .myTeamborder {
   height: 415px;
@@ -34,10 +47,18 @@
   color: #3E3E3E;
 }
 .myTeam .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .myTeam .row div {
   margin: 0.5rem;
@@ -75,4 +96,4 @@
   .myTeam .meetTheTeam {
     font-size: 32px;
   }
-}/*# sourceMappingURL=myTeam.css.map */
+}

@@ -50,7 +50,7 @@ const Header = () => {
        </div>
        <div className='right-header'>
         <div className='gmp marginR'>
-            <img src="/headerImages/gmp.png" alt="" />
+            <img src="/headerImages/gmp.svg" alt="" />
        </div>
        <div className='iso marginR'>
             <img src="/headerImages/iso.svg" alt="" />

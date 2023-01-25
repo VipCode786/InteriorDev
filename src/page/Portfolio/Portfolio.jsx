@@ -142,16 +142,19 @@ const Portfolio = () => {
       
       <div className='columnCanopy marginTop2'>
         <div style={{marginTop:"0px"}} className="pergolatext">Pergola</div>
+        
       <div className='rowCanopy'>
       <div className='columnCanopy'>
       <img src="/portfolio/pergola1.jpg" className='paragola1' alt="" />
       <img src="/portfolio/pergola2.jpg" className='paragola2' alt="" />
       </div>
+      <br/>
+      <br/>
       <img src="/portfolio/pergola3.jpg" className='paragola3' alt="" />
       </div>
-     
       <br/>
       <br/>
+      
       {/* <br/>
       <br/> */}
       <div ref={otherProjects}>
@@ -161,7 +164,7 @@ const Portfolio = () => {
       </div>
       <p className="desktopView">OTHER <br/>
          PROJECTS</p>
-      <div className='rowCanopy' style={{marginRight:"30rem",marginTop:"-8rem"}}>
+      <div className='rowCanopy otherMar' >
       <img src="/portfolio/other1.jpg" className='other1' alt="" />
       <img src="/portfolio/other2.jpg" className='other2' alt="" />
       <br/>

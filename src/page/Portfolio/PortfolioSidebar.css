@@ -1,9 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .portfolioSidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .portfolioSidebar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #FFFFFF;
 }
@@ -11,6 +26,8 @@
   color: rgb(7, 6, 6);
   height: 100vh;
   width: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
   margin-left: 1rem;
 }
@@ -28,6 +45,8 @@
 }
 .portfolioSidebar .container .link:hover {
   color: #CB572C;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 .portfolioSidebar .container .active {
@@ -38,4 +57,4 @@
   height: 70vh;
   margin-left: auto;
   margin-right: auto;
-}/*# sourceMappingURL=PortfolioSidebar.css.map */
+}

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* #bound-one {
   background: #d0d8db;
 }
@@ -17,13 +24,21 @@
 .scroll-bound .content {
   height: 120vh;
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .scroll-bound video {
@@ -117,4 +132,4 @@
     margin-top: 80px;
     margin-bottom: 210px;
   }
-}/*# sourceMappingURL=videoOnScroll.css.map */
+}

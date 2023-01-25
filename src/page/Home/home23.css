@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .row {
   float: left;
   width: 100%;
@@ -10,9 +17,15 @@
 }
 
 .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: -20px;
 }
 
@@ -21,7 +34,6 @@
   /* border: 3px solid green; */
   text-align: center;
   margin-top: 50px;
-  margin-left: 1%;
   position: absolute;
 }
 
@@ -34,12 +46,18 @@
   line-height: 118%;
   letter-spacing: -0.005em;
   color: #FFFFFF;
+  -webkit-transition: color 2s;
+  -o-transition: color 2s;
   transition: color 2s;
 }
 
 .hovicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 45px;
   line-height: 90px;
   cursor: pointer;
@@ -62,7 +80,8 @@
   height: 100%;
   border-radius: 50px;
   content: "";
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .hovicon:before {
@@ -86,14 +105,24 @@
   padding: 2px;
   z-index: -1;
   background: #E37C56;
+  -webkit-transition: opacity 2s, -webkit-transform 2s;
+  transition: opacity 2s, -webkit-transform 2s;
+  -o-transition: transform 2s, opacity 2s;
   transition: transform 2s, opacity 2s;
+  transition: transform 2s, opacity 2s, -webkit-transform 2s;
 }
 
 /* Effect 2b */
 .hovicon.effect-2.sub-b:hover:after {
-  transform: scale(0);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   opacity: 10;
+  -webkit-transition: opacity 2s, -webkit-transform 2s;
+  transition: opacity 2s, -webkit-transform 2s;
+  -o-transition: transform 2s, opacity 2s;
   transition: transform 2s, opacity 2s;
+  transition: transform 2s, opacity 2s, -webkit-transform 2s;
 }
 
 /* .hovicon.effect-2.sub-b:hover, .hovicon.effect-2.sub-b:hover {
@@ -132,11 +161,17 @@
     position: absolute;
   }
   .dream {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     font-size: 20px;
     margin-bottom: 50px;
     white-space: nowrap;
   }
-}/*# sourceMappingURL=home23.css.map */
+}

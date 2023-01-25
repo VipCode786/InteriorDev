@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .testim {
   background-color: #FFEBD9;
   width: 50vw;
@@ -6,6 +13,8 @@
 }
 
 .testimonial-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 30vw;
   margin-top: 2vh;
@@ -33,7 +42,11 @@
   font-style: normal;
   font-size: 2em;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 5px;
   z-index: 22222222;
@@ -75,6 +88,8 @@
   border: 1px solid green;
   margin: 0 10px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
 }
@@ -168,110 +183,134 @@
 
 @-webkit-keyframes testim-scale {
   0% {
-    box-shadow: 0px 0px 0px 0px #eee;
+    -webkit-box-shadow: 0px 0px 0px 0px #eee;
+            box-shadow: 0px 0px 0px 0px #eee;
   }
   35% {
-    box-shadow: 0px 0px 10px 5px #eee;
+    -webkit-box-shadow: 0px 0px 10px 5px #eee;
+            box-shadow: 0px 0px 10px 5px #eee;
   }
   70% {
-    box-shadow: 0px 0px 10px 5px #ea830e;
+    -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ea830e;
   }
   100% {
-    box-shadow: 0px 0px 0px 0px #ea830e;
+    -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ea830e;
   }
 }
 @keyframes testim-scale {
   0% {
-    box-shadow: 0px 0px 0px 0px #eee;
+    -webkit-box-shadow: 0px 0px 0px 0px #eee;
+            box-shadow: 0px 0px 0px 0px #eee;
   }
   35% {
-    box-shadow: 0px 0px 10px 5px #eee;
+    -webkit-box-shadow: 0px 0px 10px 5px #eee;
+            box-shadow: 0px 0px 10px 5px #eee;
   }
   70% {
-    box-shadow: 0px 0px 10px 5px #ea830e;
+    -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
+            box-shadow: 0px 0px 10px 5px #ea830e;
   }
   100% {
-    box-shadow: 0px 0px 0px 0px #ea830e;
+    -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+            box-shadow: 0px 0px 0px 0px #ea830e;
   }
 }
 @-webkit-keyframes testim-content-in {
   from {
     opacity: 0;
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes testim-content-in {
   from {
     opacity: 0;
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes testim-content-out {
   from {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 @keyframes testim-content-out {
   from {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 @-webkit-keyframes testim-show {
   from {
     opacity: 0;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes testim-show {
   from {
     opacity: 0;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @-webkit-keyframes testim-hide {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 0;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 @keyframes testim-hide {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 0;
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
 }
 @media all and (max-width: 300px) {
@@ -292,4 +331,4 @@
     font-style: normal;
     line-height: 25px;
   }
-}/*# sourceMappingURL=testimonials.css.map */
+}

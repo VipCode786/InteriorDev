@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .client-logo-wrap {
   position: relative;
   overflow: hidden;
@@ -10,6 +17,8 @@
   left: 0px;
   overflow: hidden;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -29,9 +38,15 @@
   padding: 20px !important;
   height: 100px;
   width: 220px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0px 5px;
 }
 
@@ -41,33 +56,41 @@
 }*/
 @-webkit-keyframes logomoveleft {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(-30%, 0);
+    -webkit-transform: translate(-30%, 0);
+            transform: translate(-30%, 0);
   }
 }
 @keyframes logomoveleft {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(-30%, 0);
+    -webkit-transform: translate(-30%, 0);
+            transform: translate(-30%, 0);
   }
 }
 @-webkit-keyframes logomoveright {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(30%, 0);
+    -webkit-transform: translate(30%, 0);
+            transform: translate(30%, 0);
   }
 }
 @keyframes logomoveright {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(30%, 0);
+    -webkit-transform: translate(30%, 0);
+            transform: translate(30%, 0);
   }
-}/*# sourceMappingURL=Clients.css.map */
+}

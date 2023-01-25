@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .toggleHeader .posAbslt {
   position: absolute;
 }
@@ -18,15 +25,23 @@
   background-color: #CB572C;
   display: block;
   border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .toggleHeader #bar1 {
-  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 .toggleHeader #bar3 {
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 .toggleHeader .nav {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
   display: none;
 }
@@ -53,8 +68,11 @@
   width: 0;
   height: 0;
   margin: 30px 0 20px 20px;
+  background: -o-radial-gradient(circle, #CB572C, #CB572C);
   background: radial-gradient(circle, #CB572C, #CB572C);
   border-radius: 50%;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease;
   overflow-x: hidden;
 }
@@ -65,18 +83,24 @@
   background-color: white;
 }
 .toggleHeader .change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
+  -webkit-transform: translateY(4px) rotateZ(-45deg);
+      -ms-transform: translateY(4px) rotate(-45deg);
+          transform: translateY(4px) rotateZ(-45deg);
 }
 .toggleHeader .change #bar2 {
   opacity: 0;
 }
 .toggleHeader .change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
+  -webkit-transform: translateY(-6px) rotateZ(45deg);
+      -ms-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotateZ(45deg);
 }
 .toggleHeader .change-bg {
   width: 520px;
   height: 460px;
-  transform: translate(54%, -30%);
+  -webkit-transform: translate(54%, -30%);
+      -ms-transform: translate(54%, -30%);
+          transform: translate(54%, -30%);
 }
 .toggleHeader .menuItems {
   text-decoration: none;
@@ -85,9 +109,16 @@
   /* identical to box height */
   font-family: "Poppins";
   font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   color: #FFFFFF;
 }
 .toggleHeader .menuItems a {
@@ -96,6 +127,8 @@
   color: #FFFFFF;
   width: 100%;
   text-align: end;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
   transition: color 0.5s;
   padding-left: 10px;
 }
@@ -107,4 +140,4 @@
   .toggleHeader .menuItems a {
     font-size: 20px;
   }
-}/*# sourceMappingURL=headerToggle.css.map */
+}

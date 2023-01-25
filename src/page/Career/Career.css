@@ -1,21 +1,43 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .career {
   overflow-x: hidden;
 }
 .career .rowCareer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: 60px;
   margin-right: 60px;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .career .rowCareer .boxViewCareer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .career .rowCareer .boxButtonCareer {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* Auto layout */
   gap: 10px;
   /* height: 70px; */
@@ -41,11 +63,21 @@
   cursor: pointer;
 }
 .career .rowCareerfirst {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .career .rowCareerfirst p:first-of-type {
   margin-top: 5rem;
@@ -66,8 +98,12 @@
   font-size: 20px;
   line-height: 118%;
   /* or 24px */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   text-align: justify;
   letter-spacing: -0.015em;
   margin-top: 5rem;
@@ -113,17 +149,31 @@
   margin-right: 60px;
 }
 .career .careerForm .cloumnForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-left: 30px;
 }
 .career .careerForm .row-wrapForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .career .careerForm div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .career .careerForm input {
@@ -141,6 +191,18 @@
   text-indent: 1rem;
 }
 .career .careerForm input:-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 1rem;
+}
+.career .careerForm input::-webkit-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 1rem;
+}
+.career .careerForm input::-ms-input-placeholder {
   /* Firefox, Chrome, Opera */
   text-align: left;
   margin-left: 30px;
@@ -168,6 +230,18 @@
   text-indent: 2rem;
 }
 .career .careerForm textarea:-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 2rem;
+}
+.career .careerForm textarea::-webkit-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 2rem;
+}
+.career .careerForm textarea::-ms-input-placeholder {
   /* Firefox, Chrome, Opera */
   text-align: left;
   margin-left: 30px;
@@ -213,16 +287,32 @@
   color: #E6E6E6;
 }
 .career .career-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .career .career-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 50px;
 }
 .career .career-row .attach {
@@ -245,10 +335,18 @@
   background: #383838;
 }
 .career .rowCareerButtonfix {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .career .containerClass .special-label {
   display: none;
@@ -275,17 +373,25 @@
 
 @media only screen and (max-width: 768px) {
   .career .rowCareer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
   }
   .career .rowCareer .boxViewCareer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 1rem;
   }
   .career .rowCareer .boxButtonCareer {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     /* Auto layout */
     gap: 10px;
     /* height: 70px; */
@@ -324,15 +430,25 @@
     margin-right: auto;
   }
   .career .careerForm span {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .career .careerForm .career-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .career .careerForm .cloumnForm {
     margin-top: 0;
@@ -359,10 +475,18 @@
     line-height: 38px;
   }
   .career .rowCareerButtonfix {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: 0%;
   }
 }
@@ -380,4 +504,4 @@
 
 .message:-ms-input-placeholder {
   padding-top: 10px;
-}/*# sourceMappingURL=Career.css.map */
+}

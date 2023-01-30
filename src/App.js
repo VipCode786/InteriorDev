@@ -17,7 +17,7 @@ import { useState } from "react";
 import Loader from "./component/Loader/Loader";
 import Portfolio from "./page/Portfolio/Portfolio";
 import Loader2 from "./component/Loader/Loader2";
-
+import Policy from "./page/Policy/Policy";
 function App() {
 
   const[loading,setLoading] = useState(true);
@@ -63,6 +63,7 @@ function App() {
              <Route path="/contact" element={<Contact/>} />
              <Route path="/contactpage" element={<ContactPage/>} />
              <Route path="/portfolio" element={<Portfolio/>} />
+             <Route path="/policy" element={<Policy/>} />
              {/* <Route path="/portfolio" element={<Navigate to="/portfolio/Gate" />} />
              <Route path="/portfolio/Gate" exact element={<PortfolioSidebar/>} />
              <Route path="/portfolio/Canopy" exact element={<PortfolioSidebar/>} />

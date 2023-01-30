@@ -554,7 +554,7 @@ const Home = () => {
       </div>
       </section>
       <div className='home'>
-      <div className='scrollImg hideMobile' style={{background:"#ffffff"}}>
+      <div className='scrollImg hideMobile' style={{background:"#ffffff"}} >
       <div ref={scroll} className='whatWeMake'>
       <p class="aniheader textInAnimation">What WE MAKE</p>
       </div>

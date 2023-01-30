@@ -49,10 +49,10 @@ const Header = () => {
           <Link to="/">  <img src="/headerImages/IC_2.png" alt="" /></Link>
        </div>
        <div className='right-header'>
-        <div className='gmp marginR'>
+        <div className='gmp '>
             <img src="/headerImages/gmp.svg" alt="" />
        </div>
-       <div className='iso marginR'>
+       <div className='iso '>
             <img src="/headerImages/iso.svg" alt="" />
        </div>
        
@@ -77,6 +77,7 @@ const Header = () => {
 <Link to="/myteam"  onClick={()=>menuOnClick()}>Meet Our Team &nbsp;</Link>
 <Link to="/career"  onClick={()=>menuOnClick()}>Career &nbsp;</Link>
 <Link to="/contactpage"  onClick={()=>menuOnClick()}>Contact Us &nbsp;</Link>
+<Link to="/policy"  onClick={()=>menuOnClick()}>Policy &nbsp;</Link>
 <br/>
 
 

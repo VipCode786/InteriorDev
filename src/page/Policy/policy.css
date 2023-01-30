@@ -10,6 +10,15 @@
     color: #CB572C;
     padding: 40px 40px;
     background-color: #f3f3f3;
+
+   
+    
+  }
+
+  @media screen and (max-width: 750px) {
+    .privacy{
+        font-size: 32px;
+    }
   }
   .accordion {
     display: flex;

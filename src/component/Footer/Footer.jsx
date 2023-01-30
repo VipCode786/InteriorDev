@@ -44,12 +44,28 @@ const Footer = () => {
 
 <div className='resource'>
  <span>Resources</span>
+ <Link to="portfolio" state={{ from: "railing" }}>
  <p>Railing</p>
+    </Link>
+<Link to="portfolio" state={{ from: "staircase" }}>
  <p>Staircase</p>
+ </Link>
+
+ <Link to="portfolio" state={{ from: "pergola" }}>
  <p>Pergolas</p>
+ </Link>
+
+ <Link to="portfolio" state={{ from: "canopy" }}>
  <p>Canopy</p>
+ </Link>
+
+ <Link to="portfolio" state={{ from: "gate" }}>
  <p>Gates</p>
- <p>Lift jambs</p>
+ </Link>
+
+ <Link to="portfolio" state={{ from: "otherProjects" }}>
+ <p>Other Projects</p>
+ </Link>
 </div>
 <div>
   <span>Instagram</span>

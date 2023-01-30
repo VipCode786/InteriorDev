@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import {useRef} from 'react';
+import { useLocation } from 'react-router-dom'
 
 import './Portfolio.css'
 
@@ -13,12 +14,61 @@ const Portfolio = () => {
   const railing = useRef(null);
   const pergola = useRef(null);
   const otherProjects = useRef(null);
+  const propRef = useRef(railing)
+  const location = useLocation();
+  let  from 
+
+  useEffect(()=>{
+    if(location.state !== null)
+    {
+      from  = location.state
+      console.log("from",from)
+       let a = from.from
+      console.log("type of a",a)
+      
+      if (a == "railing")
+      {
+        railing.current?.scrollIntoView({behavior: 'smooth'});
+      }
+
+      else if(a=="canopy"){
+        canopy.current?.scrollIntoView({behavior: 'smooth'});
+      }
+      else if(a=="staircase"){
+        staircase.current?.scrollIntoView({behavior: 'smooth'});
+      }
+      else if(a=="pergola"){
+        pergola.current?.scrollIntoView({behavior: 'smooth'});
+      }
+      else if(a=="otherProjects"){
+        otherProjects.current?.scrollIntoView({behavior: 'smooth'});
+      }
+      else if(a=="gate"){
+        otherProjects.current?.scrollIntoView({behavior: 'smooth'});
+      }
+      else{
+        window.scrollTo(0,0)
+      }
+      // if(a)
+      // {
+      //   propRef.current=a;
+      //   console.log("type of a",propRef)
+      // }
+      // propRef?.scrollIntoView({behavior: 'smooth'});
+    }
+  })
+  
+  //
+  
+
+
   const handleClick = (a) => {
     a.current?.scrollIntoView({behavior: 'smooth'});
   };
-  useEffect(() => {
-    window.scrollTo(0,0)
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0,0)
+  // }, []);
+  
   return (
     <div className='portfolio'>
         <div className='background'>
@@ -55,7 +105,7 @@ const Portfolio = () => {
         </div>
        </div>
        <div className='portfolioNameMob'>
-       <a className='ref' onClick={()=>handleClick(mobgate)}>Gates</a>
+       <a className='ref' onClick={()=>handleClick(gate)}>Gates</a>
         <a className='ref' onClick={()=>handleClick(canopy)}>Canopy</a>
         <a className='ref' onClick={()=>handleClick(staircase)}>Staircase</a>
         <a className='ref' onClick={()=>handleClick(railing)}>Railing</a>
@@ -68,7 +118,7 @@ const Portfolio = () => {
       <br/>
       <br/>
       <div >
-        <div ><div ref={mobgate}></div>
+        <div ><div ref={gate}></div>
       <div className='gates' >
         <div className='gate'><p>Gates</p></div>
         {/* <img src="/portfolio/portfolio.png" alt=""  /> */}

@@ -206,10 +206,8 @@ const Career = () => {
       />
       
                        
-                        <div>
-                        <span>Max file size of 8mb</span>
-                        </div>
-                        <div>
+                      
+                        <div className='careerFIx'>
 
                         <div className='marginButton'>
                         <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" onClick={handleClick}> Attach </div>
@@ -222,10 +220,14 @@ const Career = () => {
                         <button>Attach</button>
                         &nbsp;&nbsp;
                         <button className='attach'>Submit</button> */}
+                          <div className='careerFIx'>
+                        <span>Max file size of 8mb</span>
+                        <span> {File?.name} </span>
+                        </div>
                 </div>
                         
             </div>
-             <span style={{marginLeft:"2rem"}}> {File?.name} </span>
+             
                 </div>
             </div>
             <br/>

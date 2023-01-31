@@ -258,10 +258,11 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.025em;
   color: #E0E0E0;
+  margin-left: 3rem;
 }
 .career .careerForm p:nth-of-type(1) {
   margin: 2rem;
@@ -488,6 +489,18 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: 0%;
+  }
+
+  .career .careerForm span {
+    width: 291px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.025em;
+    color: #E0E0E0;
+    margin-left: 0rem;
   }
 }
 .message::-webkit-input-placeholder {

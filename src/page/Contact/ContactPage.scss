@@ -5,7 +5,7 @@
     //   align-items: center;
      justify-content: center;
      background-color: #FFFFFF;
-    margin:1rem;
+     padding: 2rem;
     .contactInfo{
         background: #383838;
         border-radius: 19px;
@@ -134,7 +134,7 @@
               p{
                 // color: #393939;
                 // font-size: 0.5vw;
-                 margin: 2rem;
+                 margin-left: 2rem;
 
                 width: 488px;
 // height: 63px;
@@ -168,8 +168,8 @@
 
               }
               button{
-                margin: 2rem;
-                float: right;
+                margin-left: 2rem;
+                // float: right;
               }
 
               // span{

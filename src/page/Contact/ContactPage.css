@@ -19,7 +19,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #FFFFFF;
-  margin: 1rem;
+  padding: 2rem;
 }
 .contactPage .contactInfo {
   background: #383838;
@@ -142,7 +142,7 @@
   margin: 2rem;
 }
 .contactPage .contactForm p {
-  margin: 2rem;
+  margin-left: 2rem;
   width: 488px;
   font-family: "Poppins";
   font-style: normal;
@@ -166,8 +166,8 @@
   cursor: pointer;
 }
 .contactPage .contactForm button {
-  margin: 2rem;
-  float: right;
+  margin-left: 2rem;
+  /* float: right; */
 }
 .contactPage .containerClass .special-label {
   display: none;

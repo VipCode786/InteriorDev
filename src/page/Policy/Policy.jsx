@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Accordion from './Accordin'
 import { accordionData } from './content'
@@ -16,6 +17,10 @@ const Policy = () => {
     const [isActive10, setIsActive10] = useState(false);
     const [isActive11, setIsActive11] = useState(false);
     const [isActive12, setIsActive12] = useState(false);
+
+    useEffect(() => {
+      window.scrollTo(0,0)
+    }, []);
   return (
     <div>
       <h1 className='privacy'>PRIVACY POLICY</h1>

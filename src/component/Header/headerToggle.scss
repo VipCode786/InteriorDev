@@ -168,3 +168,15 @@
         }
       }}
 }
+
+@media screen and (max-width: 360px)
+{
+.toggleHeader .menuItems a {
+    font-size: 18px;
+}
+.toggleHeader .change-bg {
+    width: 520px;
+    height: 350px;
+    transform: translate(45%, -30%);
+}
+}

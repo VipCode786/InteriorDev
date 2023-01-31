@@ -31,7 +31,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 25vw;
+  width: 20vw;
 }
 .header .logo img {
   width: 100%;
@@ -103,6 +103,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 25vw;
   }
   .header .right-header {
     display: -webkit-box;

@@ -110,7 +110,7 @@ const Footer = () => {
       Copyright Interior Craft 2022<br/>
       All Rights Reserved<br/>
       All Regular Disclaimer Apply<br/>
-      Privacy Policy
+      <Link to="/policy">Privacy Policy &nbsp;</Link>
 </p>
    {/* <img src="/Footer/logo.svg" className="ICLogo" alt="" /> */}
   </div>

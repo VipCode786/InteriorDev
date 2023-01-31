@@ -77,7 +77,7 @@ const Header = () => {
 <Link to="/myteam"  onClick={()=>menuOnClick()}>Meet Our Team &nbsp;</Link>
 <Link to="/career"  onClick={()=>menuOnClick()}>Career &nbsp;</Link>
 <Link to="/contactpage"  onClick={()=>menuOnClick()}>Contact Us &nbsp;</Link>
-<Link to="/policy"  onClick={()=>menuOnClick()}>Policy &nbsp;</Link>
+
 <br/>
 
 

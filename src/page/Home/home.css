@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 .home{
  
-   overflow-x:hidden;
+   max-width: 100vw;
 }
 .home .ourClientsBack {
   background-color: #FFFFFF;

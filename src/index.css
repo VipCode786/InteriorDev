@@ -44,7 +44,7 @@ body{
   background: #F3F3F3;
   
   margin: 0%;
-  width: 100%;
+  width: 100vw;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   /* overflow-y: scroll; */

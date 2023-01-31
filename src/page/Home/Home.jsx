@@ -748,8 +748,8 @@ const Home = () => {
                </div> 
                
                <div className='meetButton'>
-              <div className='boxView marginthree' >
-              <Link to="myteam"><button className='boxButton ' style={{fontSize: "25px",padding:"12px 20px 12px 20px"}}> Meet The Team</button></Link>
+              <div className='boxView' >
+              <Link to="myteam"><button className='boxButton' style={{fontSize: "25px",padding:"12px 20px 12px 20px"}}> Meet The Team</button></Link>
               </div>
               </div>
 

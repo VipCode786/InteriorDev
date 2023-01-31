@@ -4,7 +4,9 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
+.process{
+  max-width: 100vw;
+}
 .process .header4d {
   font-family: "Poppins";
   font-style: normal;

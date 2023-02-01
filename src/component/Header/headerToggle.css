@@ -147,9 +147,15 @@
 .toggleHeader .menuItems a {
     font-size: 18px;
 }
-.toggleHeader .change-bg {
+/* .toggleHeader .change-bg {
     width: 520px;
     height: 350px;
     transform: translate(45%, -30%);
+} */
+
+.toggleHeader .change-bg {
+  width: 420px;
+  height: 320px;
+  transform: translate(55%, -30%);
 }
 }

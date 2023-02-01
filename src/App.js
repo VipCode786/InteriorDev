@@ -48,7 +48,7 @@ function App() {
     }
   }, []);
   return (
-    <div style={{overflowX:"hidden",msOverflowX:"-moz-hidden-unscrollable"}}>
+    <div >
       {loading?(<Loader2/>):(<>
       
       <BrowserRouter>

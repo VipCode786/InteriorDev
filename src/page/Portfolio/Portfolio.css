@@ -326,6 +326,7 @@
   width: 23.5%;
   height: 80.3vh;
   padding: 1rem;
+  
   /* margin-top: -5rem; */
 }
 .portfolio .railing .railing2 {
@@ -479,7 +480,8 @@
   .portfolio .background p {
     width: 495px;
     height: 100px;
-    margin-left: 0rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
     font-family: "Poppins";
     font-style: normal;
@@ -520,7 +522,7 @@
   }
   .portfolio .portfolioNameMob {
     margin-top: 0px;
-    margin-bottom: -8rem;
+    margin-bottom: -6rem;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -658,7 +660,9 @@
     position: relative;
     width: 100%;
     height: auto;
-    margin-left: 0px;
+    display: contents;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
   }
   .portfolio .canopy .canopy3 {
@@ -721,7 +725,9 @@
     position: relative;
     width: 100%;
     height: auto;
-    margin-left: 0px;
+    display: contents;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
   }
   .portfolio .railing {
@@ -744,7 +750,7 @@
   .portfolio .railing .railing1 {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 90vh;
     margin-left: 0px;
     margin-top: 0px;
   }
@@ -768,6 +774,7 @@
     height: auto;
     margin-left: 1rem;
     margin-top: 0px;
+    margin-bottom: 2rem
   }
   .portfolio .marginTop2 {
     margin-top: 2rem;
@@ -842,9 +849,10 @@
   }
   .portfolio .pergola .other1 {
     position: relative;
-    width: 100vh;
+    width: 100vw;
     height: 60vh;
-    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 70px;
     padding: 0%;
   }

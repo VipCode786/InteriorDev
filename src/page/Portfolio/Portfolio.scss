@@ -530,7 +530,8 @@ color: #FFFFFF;
         p{
             width: 495px;
             height: 100px;
-            margin-left: 0rem;
+            margin-left: auto;
+            margin-right: auto;
             padding: 1rem;
 
             font-family: 'Poppins';
@@ -539,7 +540,7 @@ color: #FFFFFF;
             font-size: 24px;
             line-height: 139.1%;
             /* or 50px */
-
+            margin-left: 3rem;
             display: flex;
             align-items: flex-end;
             letter-spacing: 0.025em;
@@ -590,7 +591,7 @@ color: #FFFFFF;
     }
     .portfolioNameMob{
         margin-top: 0px;
-        margin-bottom: -8rem;
+        margin-bottom: -6rem;
         // margin-left: 169px;
         font-family: 'Poppins';
         font-style: normal;
@@ -747,7 +748,9 @@ color: #FFFFFF;
             position: relative;
         width: 100%;
         height: auto;
-        margin-left: 0px;
+        display: contents;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 10px;
         }
         .canopy3{
@@ -822,7 +825,9 @@ color: #FFFFFF;
             position: relative;
             width: 100%;
             height: auto;
-            margin-left: 0px;
+            display: contents;
+            margin-left: auto;
+            margin-right: auto;
             margin-top: 0px;
         }
 
@@ -851,7 +856,7 @@ color: #FFFFFF;
     .railing1{
         position: relative;
         width: 100%;
-        height: auto;
+        height: 90vh;
         margin-left: 0px;
         margin-top: 0px;
     }
@@ -875,6 +880,7 @@ color: #FFFFFF;
         height: auto;
         margin-left: 1rem;
         margin-top: 0px;
+        margin-bottom: 2rem
     }
     }
 

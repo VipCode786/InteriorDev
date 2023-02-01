@@ -187,7 +187,11 @@ height: 100%;
 
 
 @media only screen and (max-width:850px){
-    
+    .video-wrapper video {
+        object-fit: fill;
+        width: 105%;
+        height: 30vh;
+    }
     .about{
    
         .heading{
@@ -353,3 +357,18 @@ height: 100%;
      }
     
 }
+
+@media screen and (max-width:1200px) {
+  
+
+    .about .about1 p {
+      font-size: 14px;
+    }
+    
+    
+    .about .about2 p {
+      font-size: 14px;
+    }
+    
+    
+    }

@@ -1,4 +1,8 @@
 .myTeam{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .myTeamhead{
         height: 501px;;
         //  background-image: url('/MyTeam/myTeamBackground.jpg');
@@ -112,5 +116,28 @@
         .meetTheTeam{
             font-size: 32px;
         }
+        .myTeamhead {
+            height: 250px;
+            .myTeamborder {
+                height: auto;
+                border: 1px solid #FFFFFF;
+                p {
+                    width: 80vw;
+                    height: auto;
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 5vw;
+                    line-height: 86px;
+                    padding-top: 0rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                  }
+              }
+            }
     }
+   
+      
+   
+      
+    
   }

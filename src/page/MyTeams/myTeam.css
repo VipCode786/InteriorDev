@@ -4,7 +4,11 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
-
+.myTeam{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .myTeam .myTeamhead {
   height: 501px;
   background-image: url("../../images/myteamBackground.jpg");
@@ -69,6 +73,7 @@
   margin: 1rem;
 }
 @media only screen and (max-width: 650px) {
+
   .myTeam .row img {
     width: 50vw;
   }
@@ -93,7 +98,47 @@
 }
 
 @media only screen and (max-width: 850px) {
+
+    .myTeam .myTeamhead {
+  height: 250px;
+  }
+
+  .myTeam .myTeamhead .myTeamborder {
+  height: auto;
+  border: 1px solid #FFFFFF;
+}
+
+.myTeam .myTeamhead .myTeamborder p {
+  width: 80vw;
+  height: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 86px;
+  padding-top: 0rem;
+  text-align: center;
+  color: #FFFFFF;
+}
   .myTeam .meetTheTeam {
     font-size: 32px;
+  }
+
+  .myTeam .row div p:nth-of-type(1) {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    /* identical to box height */
+    color: #000000;
+  }
+  .myTeam .row div p:nth-of-type(2) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 44px;
+    /* identical to box height */
+    text-align: center;
+    color: #000000;
   }
 }

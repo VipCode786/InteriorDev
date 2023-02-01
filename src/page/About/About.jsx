@@ -74,9 +74,10 @@ const About = () => {
 
     <br/>
     <br/>
-
+   
     <div className='background3'>
     <div className='about1'>
+   
           <p>
           To ensure that we provide the best quality we have a practice of utilizing our capital in buying new tech that helps us to have an edge in the market. Our factory is equipped with: -
            <br/> 1) Multiple CNC Machines

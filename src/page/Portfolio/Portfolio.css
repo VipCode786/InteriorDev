@@ -478,7 +478,7 @@
     margin-top: 10px;
   }
   .portfolio .background p {
-    width: 495px;
+    width: 100vw;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -486,7 +486,7 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 139.1%;
     /* or 50px */
     display: -webkit-box;

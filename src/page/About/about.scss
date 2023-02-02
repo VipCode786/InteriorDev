@@ -190,7 +190,7 @@ height: 100%;
     .video-wrapper video {
         object-fit: fill;
         width: 105%;
-        height: 30vh;
+        height: 200px;
     }
     .about{
    
@@ -206,7 +206,7 @@ height: 100%;
             letter-spacing: 0.025em;
     
             color: #3E3E3E;
-    
+            margin-top: -12rem;
         }
     
         .aboutContent{
@@ -223,7 +223,7 @@ height: 100%;
             justify-content: center;
             text-align: justify;
             // letter-spacing: 0.025em;
-    
+            margin-top: -2rem;
             color: #747474;
             // @media only screen and (max-width: 750px) {
             //     font-size: 32px;}

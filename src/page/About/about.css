@@ -151,7 +151,7 @@
   .video-wrapper video {
     object-fit: fill;
     width: 105%;
-    height: 250px;
+    height: 200px;
 }
   .about .heading {
     font-family: "Poppins";
@@ -162,6 +162,7 @@
     text-align: center;
     letter-spacing: 0.025em;
     color: #3E3E3E;
+    margin-top: -12rem;
   }
   .about .aboutContent {
     -webkit-box-align: center;
@@ -186,6 +187,7 @@
             justify-content: center;
     text-align: justify;
     color: #747474;
+    margin-top: -2rem;
   }
   .about .background1 {
     height: 20%;

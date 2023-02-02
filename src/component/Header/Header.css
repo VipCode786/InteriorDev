@@ -142,13 +142,14 @@
   .header .right-header .gmp img {
     height: 90%;
     width: 100%;
+    margin-left: 25px;
   }
   .header .right-header .iso {
     height: 10vh;
     width: 10vw;
   }
   .header .right-header .iso img {
-    margin-left: -5px;
+    margin-left: 25px;
     width: 100%;
     height: 90%;
   }

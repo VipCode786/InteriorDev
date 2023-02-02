@@ -67,7 +67,7 @@
       
       .menu-bg, #menu {
         //  top: 0;
-        right: 0;
+       right: 0;
          position: absolute;
       }
       
@@ -178,5 +178,43 @@
     width: 520px;
     height: 350px;
     transform: translate(45%, -30%);
+}
+}
+
+@media screen and (max-width: 1050px) {
+  
+
+  .menu-bg, #menu {
+  
+   right: -30px;
+     position: absolute;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  
+
+  .toggleHeader .menu-bg, .toggleHeader #menu {
+  
+   right: -30px;
+     position: absolute;
+  }
+
+  .toggleHeader .bar {
+    height: 5px;
+    width: 85%;
+    background-color: #CB572C;
+    display: block;
+    border-radius: 5px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .toggleHeader #menu-bar {
+    width: 50px;
+    height: 50px;
+    margin: 63px 30px 20px 120px;
+    cursor: pointer;
 }
 }

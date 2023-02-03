@@ -272,7 +272,7 @@
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 570px) {
 .Vector{
   max-width: 80vw;
 }
@@ -281,12 +281,14 @@
   position: absolute;
   margin-left: 60vw;
   margin-top: 110px;
+  display: none;
 }
 
 .process .gear9 {
   position: absolute;
   margin-left: 60vw;
   margin-top: 110px;
+  display: none;
 }
 .process .gear10 {
   position: absolute;

@@ -35,7 +35,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
                 <img src="gear.png" alt="" className='gear2' id="js-logo2"/>
                 <img src="gear.png" alt="" className='gear3' id="js-logo3"/>
 
-                <img src="rightVector.png" alt="" />
+                <img className='Vector' src="rightVector.png" alt="" />
             </div>
         </div>
 
@@ -45,7 +45,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
                 <img src="gear.png" alt="" className='gear4' id="js-logo4"  />
                 <img src="gear.png" alt="" className='gear5' id="js-logo5"/>
                 <img src="gear.png" alt="" className='gear6' id="js-logo6"/>
-                <img src="leftVector.png" alt="" />
+                <img className='Vector' src="leftVector.png" alt="" />
             </div>
             <div className='columnProcess '>
             <img src="detail.png" alt="" />
@@ -68,7 +68,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
                 <img src="gear.png" alt="" className='gear9' id="js-logo9"/>
                 <img src="gear.png" alt="" className='gear10' id="js-logo10"/>
 
-                <img src="rightVector.png"  alt="" />
+                <img className='Vector' src="rightVector.png"  alt="" />
             </div>
         </div>
 

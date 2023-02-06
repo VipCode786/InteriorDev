@@ -597,6 +597,8 @@ section:nth-child(even) {
   .home{
     max-width: 100vw;
     overflow-x:hidden;
+    position: relative;
+    /* overflow-y: scroll; */
   }
   .home .ourTeam .heading {
     font-size: 32px;

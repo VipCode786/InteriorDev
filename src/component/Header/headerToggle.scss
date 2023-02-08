@@ -182,25 +182,21 @@
 }
 
 @media screen and (max-width: 1050px) {
+
+}
+
+
+@media screen and (max-width: 1050px) {
   .toggleHeader .menuItems a {
     font-size: 20px;
     margin-right: 25px; 
 }
 
-  .menu-bg, #menu {
-  
-   right: -30px;
-     position: absolute;
-  }
-}
 
-
-@media screen and (max-width: 1050px) {
-  
 
   .toggleHeader .menu-bg, .toggleHeader #menu {
   
-   right: -30px;
+   right: 0px;
      position: absolute;
   }
 
@@ -213,6 +209,7 @@
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease;
+    margin-left: 30px;
   }
   .toggleHeader #menu-bar {
     width: 50px;

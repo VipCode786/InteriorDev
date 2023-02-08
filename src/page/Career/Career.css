@@ -374,7 +374,7 @@
   border-radius: 3px 0 0 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 934px) {
   .marginButton {
     display: flex;
     flex-direction: column;
@@ -460,6 +460,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
   }
   .career .careerForm .cloumnForm {
     margin-top: 0;
@@ -548,3 +552,13 @@
   padding-top: 10px;
 }
 
+
+@media screen and (max-width:1250) {
+  .career .career-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: -1rem;
+}
+}

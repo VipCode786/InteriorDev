@@ -25,7 +25,9 @@ const About = () => {
     <div>
 
 <div class="video-wrapper">
-  <video autoPlay muted  playsinline preload="metadata" >
+  {/* <video autoPlay muted  playsinline preload="metadata" > */}
+  <video autoPlay muted  >
+
 	  <source src="about12.mp4" type="video/mp4" width="100vw"/>
   </video>
 </div>

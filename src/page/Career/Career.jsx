@@ -195,12 +195,12 @@ const Career = () => {
                         <textarea placeholder='Your Message' type="text" className='message' onChange={(e)=>setMessage(e.target.value)}/>
                         <div className='career-row' >  
                         <ReCAPTCHA
-        sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
-        onChange={onChange}
-        required
-         style={{marginTop:"-0.5rem"}}
-         className="captchaa"
-      />
+                          sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
+                          onChange={onChange}
+                          required
+                          style={{marginTop:"-0.5rem"}}
+                          className="captchaa"
+                        />
       
                        
                       

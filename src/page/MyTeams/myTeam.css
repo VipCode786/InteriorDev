@@ -75,7 +75,10 @@
 @media only screen and (max-width: 650px) {
 
   .myTeam .row img {
-    width: 50vw;
+    /* width: 50vw; */
+    width: 200px;
+    height: 250px;
+
   }
 }
 .myTeam .row div p:nth-of-type(1) {
@@ -100,8 +103,8 @@
 @media only screen and (max-width: 850px) {
 
     .myTeam .myTeamhead {
-  height: 250px;
-  }
+      height: 150px;
+      }
 
   .myTeam .myTeamhead .myTeamborder {
   height: auto;
@@ -114,10 +117,11 @@
   font-style: italic;
   font-weight: 400;
   font-size: 5vw;
-  line-height: 86px;
+  line-height: 32px;
   padding-top: 0rem;
   text-align: center;
   color: #FFFFFF;
+  padding: 5px;
 }
   .myTeam .meetTheTeam {
     font-size: 32px;
@@ -142,3 +146,4 @@
     color: #000000;
   }
 }
+

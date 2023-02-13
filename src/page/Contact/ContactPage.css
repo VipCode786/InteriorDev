@@ -20,6 +20,7 @@
           justify-content: center;
   background-color: #FFFFFF;
   padding: 2rem;
+  
 }
 .contactPage .contactInfo {
   background: #383838;
@@ -224,6 +225,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .contactPage{
+    overflow-x: hidden;
+  }
   .contactPage .content1 {
     margin-left: 2rem;
   }
@@ -239,6 +243,28 @@
     display: block;
   }
   .contactPage .contactForm p {
-    width: auto;
+    width: 80vw;
   }
+  .contactPage .contactForm {
+
+    max-width: 100vw;
+  }
+
+  .contactPage .contactForm input {
+    width: 70vw;
+  }
+  .contactPage .react-tel-input {
+   width: 70vw;
+  }
+
+  .rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {
+    border: 1px solid #d3d3d3;
+    width: 60vw;
+}
+  /* div iframe {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  } */
 }

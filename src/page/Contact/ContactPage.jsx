@@ -115,7 +115,7 @@ const ContactPage = () => {
             </div>
            
             <div className='contactForm'>
-            <form onSubmit={(e)=>upload(e)}>
+             <form onSubmit={(e)=>upload(e)}>
             <div>
             <input  type="text" placeholder='FirstName' 
             required
@@ -135,11 +135,7 @@ const ContactPage = () => {
               setEmail(e.target.value);
               }}
             />
-            {/* <input  type="number" placeholder='Mobile Number' 
-             onChange={(e) => {
-              setPhone(e.target.value);
-              }}
-            /> */}
+          
               <PhoneInput
                 disabled={false}
                 containerClass={"containerClass"}
@@ -150,15 +146,15 @@ const ContactPage = () => {
                 placeholder={"placeholder"}
               />
             </div>
-            <div>
-            <label>Message <br/>
+           <div>
+            <label>Message </label><br/>
             <input  type="text" placeholder='Write Your Message' 
             onChange={(e) => {
               setMessage(e.target.value);
               }}
             />
-            </label>
-            </div>
+            
+              </div>
             <div>
     <label for="files" class="uploadButton"><img src="Vector.png" /> &nbsp; Upload File
     <input id="files" accept=".jpg,.jpeg,.png,.pdf,.dwg" style={{visibility:"hidden",width:"0px"}} type="file" onChange={(e) => {
@@ -173,25 +169,21 @@ const ContactPage = () => {
     
    
 </div>
-            {/* <input  type="file" placeholder='file'  onChange={(e) => {
-              handleFile(e)
-          // setFile(e.target.files[0]);
-        }}/> */}
-            <p>Please upload files upto 15 MB.<br/>
+          
+           <p>Please upload files upto 15 MB.<br/>
                 For larger files, you can discuss when our team contacts you.
-            </p>
+            </p> 
 
             <ReCAPTCHA
         sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
         onChange={onChange}
         required
-        style={{margin:"2rem"}}
+        style={{margin:"2rem",maxWidth:"70vw" }}
       />
            {error ?   <p>Fill ReCaptcha</p>: ""}
-           {/* onClick={(e) => upload(e)} */}
           
             <button className="submitButton" type="Submit" disabled={recaptcha? false : true} style={{padding:"0.5rem 1rem 0.5rem 1rem"}}> Submit </button>
-</form>
+</form> 
             </div>
             
     </div>

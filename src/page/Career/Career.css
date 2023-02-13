@@ -582,6 +582,9 @@
 
 @media  screen and (max-width:935px){
 
+  .career{
+    overflow-x: hidden;
+  }
   .captchaa{
     margin-right: auto;
     margin-left: auto;
@@ -625,4 +628,12 @@
   display: flex;
   margin-top: 5px;
 }
+/* div iframe {
+  transform:scale(0.77);
+  -webkit-transform:scale(0.77);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+} */
+
+
 }

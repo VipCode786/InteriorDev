@@ -175,22 +175,21 @@ const Portfolio = () => {
       <div className='railing' ref={railing} >
         <p>Railing</p>
       <div className='rowCanopy'>
-      <img src="/portfolio/railing11.jpg" alt="" className='railing1 railing1hide'  />
-      <img src="/portfolio/pic2srcset.jpg" alt="" className='railing1 railing2hide'  />
-      {/* <img 
+      {/* <img src="/portfolio/pic2srcset.jpg" alt="" className='railing1'  /> */}
+      <img 
    alt="alt text image" 
    src="/portfolio/railing11.jpg" 
    srcset=" 
-   /portfolio/railing11.jpg 640w, 
-      medium.jpg 916w, 
-      large.jpg 1030w 
+   /portfolio/railing11.jpg 1050w, 
+   /portfolio/pic2srcset.jpg 550w, 
+      
    " 
    sizes=" 
       (min-width: 1366px) 916px, 
       (min-width: 1536px) 1030px, 
       100vw
    " 
-></img> */}
+></img>
       <div className='columnCanopy'>
       <div className='rowCanopy'>
       <img src="/portfolio/railing2.jpg" alt="" className='railing2'  />

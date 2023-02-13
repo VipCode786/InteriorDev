@@ -322,6 +322,12 @@
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
+.portfolio .railing .railing1hide{
+  display: show;
+}
+.portfolio .railing .railing2hide{
+  display: none;
+}
 .portfolio .railing .railing1 {
   width: 23.5%;
   height: 80.3vh;
@@ -329,6 +335,7 @@
   
   /* margin-top: -5rem; */
 }
+
 .portfolio .railing .railing2 {
   width: 48.11%;
   height: 36.3vh;
@@ -608,7 +615,7 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 20px;
   }
   .portfolio .gates .start {
     position: relative;
@@ -676,7 +683,7 @@
     width: 100%;
     height: auto;
     margin-left: 0px;
-    margin-top: 10px;
+    margin-top: -20px
   }
   .portfolio .canopy .canopy4 {
     position: relative;
@@ -755,12 +762,17 @@
   }
   .portfolio .railing .railing1 {
     position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    /* position: relative;
     width: 75vw;
     height: 85vw;
     margin-left: 5%;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
     /* margin-left: 0px; */
-    margin-top: 0px;
+    margin-top: 0px; 
   }
   .portfolio .railing .railing2 {
     position: relative;
@@ -781,7 +793,8 @@
     width: 100%;
     height: auto;
     margin-left: 1rem;
-    margin-top: 0px;
+    margin-top: 20px;
+
     margin-bottom: 2rem
   }
   .portfolio .marginTop2 {
@@ -846,7 +859,7 @@
     width: 100%;
     height: auto;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: -50px;
     padding: 0%;
   }
 
@@ -907,17 +920,30 @@
   .portfolio .marginLeft-20 {
     margin-left: 0%;
   }
+
+  .margin80{
+    margin-top: -80px;
+  }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:950px) {
   .portfolio .railing .railing1 {
-    position: relative;
-    width: 75vw;
+    /* position: relative;
+    width: 77vw;
     height: 75vw;
     margin-left: 0%;
-    transform: rotate(90deg);
+    transform: none;
     /* margin-left: 0px; */
-    margin-top: 0px;
+    margin-top: 0px; 
+  }
+
+  .portfolio .railing .railing1hide{
+    display: none;
+  }
+
+  .portfolio .railing .railing2hide{
+    display: flex;
   }
   
 }
+

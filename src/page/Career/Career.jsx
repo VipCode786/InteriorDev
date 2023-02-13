@@ -207,10 +207,16 @@ const Career = () => {
                         <div className='careerFIx'>
 
                         <div className='marginButton'>
+                       
                         <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" onClick={handleClick}> Attach </div>
+                        <div className='careerFIx2'>
+                        <div className='c2'>Max file size of 8mb</div><br/>
+                        <div className='c2'> {File?.name} </div>
+                        </div>
                         <input type='file' id="getFile"  accept=".docs , .pdf" style={{display:"none"}} ref={hiddenFileInput}   onChange={(e) => {
                             setFile(e.target.files[0]);
                             }} />&nbsp;&nbsp;
+                            
                         <button type="submit" style={{display:"block",width:"120px", height:"45px" }} className="attach"> Submit </button>
                         </div>
                         {/* <input type="file" className='attach'  />
@@ -218,8 +224,8 @@ const Career = () => {
                         &nbsp;&nbsp;
                         <button className='attach'>Submit</button> */}
                           <div className='careerFIx'>
-                        <span>Max file size of 8mb</span>
-                        <span> {File?.name} </span>
+                        <span >Max file size of 8mb</span>
+                        <span > {File?.name} </span>
                         </div>
                 </div>
                         

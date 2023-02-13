@@ -556,7 +556,7 @@ align-items: center;
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:935px) {
   .careerFIx{
     display: flex;
     flex-direction: column;
@@ -565,6 +565,10 @@ align-items: center;
     align-items: center;
     padding: 1rem;
     }
+    
+
+
+    
 }
 
 /* @media screen and (max-width:850px) {

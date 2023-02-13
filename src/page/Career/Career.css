@@ -62,6 +62,7 @@
 .career .rowCareer .boxButtonCareer:hover > a {
   cursor: pointer;
 }
+
 .career .rowCareerfirst {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,6 +176,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+ 
+}
+
+.careerFIx2 .c2 {
+  display: none;
 }
 .career .careerForm input {
   width: 20vw;
@@ -366,6 +372,7 @@
 }
 .career .react-tel-input .flag-dropdown {
   width: 40px;
+  margin-left: -3px
 }
 .career .react-tel-input .flag-dropdown.open {
   z-index: 2;
@@ -373,7 +380,13 @@
   width: 300px;
   border-radius: 3px 0 0 0;
 }
+.careerFIx2 .c2{
+  display: none;
+}
 
+#root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(1){
+  display: none;
+}
 @media only screen and (max-width: 934px) {
   .marginButton {
     display: flex;
@@ -455,8 +468,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -464,6 +477,8 @@
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
             flex-direction: column;
+            margin-left: 9px;
+            
   }
   .career .careerForm .cloumnForm {
     margin-top: 0;
@@ -517,6 +532,7 @@
     letter-spacing: 0.025em;
     color: #E0E0E0;
     margin-left: 0rem;
+    display: none;
   }
 }
 
@@ -560,5 +576,53 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-left: -1rem;
+}
+}
+
+
+@media  screen and (max-width:935px){
+
+  .captchaa{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .containerClass{
+    margin-left: 3px;
+  }
+
+  .react-tel-input .flag-dropdown {
+      border-radius: 8px 0px 0px 8px;
+  }
+  .career .careerForm .row-wrapForm {
+    justify-content: center;
+  }
+
+  .career .careerForm textarea{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .career .career-column {
+   
+    margin-left: 28px;
+}
+
+.careerFIx2{
+  color: #FFFFFF;
+  max-width: 291px;
+  /* margin-left: -15px; */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.025em;
+  color: #E0E0E0;
+  display: flex;
+  flex-direction: column;
+}
+#root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(1){
+  display: flex;
+  margin-top: 5px;
 }
 }

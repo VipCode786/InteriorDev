@@ -369,8 +369,12 @@ h1 {
 section {
   /*   min-width: 100vw;
     min-height: 100vh; */
-  min-width: 100vw;
+  /* min-width: 100vw; */
+
+  min-width: 80vw;
+    overflow-x: hidden;
 }
+
 
 section:nth-child(even) {
   background-color: teal;

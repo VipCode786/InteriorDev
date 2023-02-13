@@ -567,9 +567,9 @@ align-items: center;
     }
 }
 
-@media screen and (max-width:850px) {
+/* @media screen and (max-width:850px) {
   .border{
     display: none;
   }
   
-}
+} */

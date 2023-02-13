@@ -14,6 +14,8 @@
 .home .ourClientsBack {
   background-color: #FFFFFF;
   background-color: #FFFFFF;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 .home .ourClients_Heading {
   font-family: "Poppins";
@@ -254,6 +256,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          max-width: 100vw;
+    overflow-x: hidden;
 }
 .home .featuredProjects p {
   margin-top: 1rem;
@@ -594,9 +598,9 @@ section:nth-child(even) {
 
 @media only screen and (max-width: 750px) {
   .home{
-    max-width: 100vw;
+    /* max-width: 100vw;
     overflow-x:hidden;
-    position: relative;
+     position: relative; */
     /* overflow-y: scroll; */
   }
   .home .ourTeam .heading {

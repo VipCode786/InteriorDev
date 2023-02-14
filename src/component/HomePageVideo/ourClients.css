@@ -24,10 +24,10 @@
   -webkit-animation: scroll 30s linear infinite;
           animation: scroll 30s linear infinite;
 }
-.slider .slide-track:hover {
+/* .slider .slide-track:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-}
+} */
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);
@@ -66,10 +66,10 @@
   transition: transform 30s;
   transition: transform 30s, -webkit-transform 30s;
 }
-.slider img:hover {
+/* .slider img:hover {
   -webkit-transform: translateZ(20px);
           transform: translateZ(20px);
-}
+} */
 .slider .slider::before,
 .slider .slider::after {
   background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));

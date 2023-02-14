@@ -20,6 +20,8 @@ const Career = () => {
     const [File, setFile] = useState();
     const [recaptcha, setRecaptcha] = useState(null);
 
+
+    
     useEffect(() => {
       window.scrollTo(0,0)
     }, []);
@@ -79,8 +81,27 @@ const Career = () => {
     const hiddenFileInput = useRef(null);
     const handleClick = event => {
         hiddenFileInput.current.click();
+        
       };
 
+    const AttachColor = useRef()
+    const attachClick = () => {
+      AttachColor.current.style.color="#383838"
+      AttachColor.current.style.backgroundColor="#ffffff"
+      setTimeout(() => {
+        AttachColor.current.style.color="#ffffff"
+        AttachColor.current.style.backgroundColor="#383838"
+        console.log("tire")
+      }, 2000);
+    };
+    const submitColor = useRef()
+    // const submitClick = () => {
+    //  // setTimeout(() => {
+    //     AttachColor.current.style.color="#ffffff"
+    //     AttachColor.current.style.backgroundColor="#383838"
+    //   //   console.log("tire")
+    //   // }, 2000);
+    // };
     
   return (
     <div className='career'>
@@ -208,7 +229,7 @@ const Career = () => {
 
                         <div className='marginButton'>
                        
-                        <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" onClick={handleClick}> Attach </div>
+                        <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" ref={AttachColor} onClick={()=>{handleClick(); attachClick(); }}> Attach </div>
                         <div className='careerFIx2'>
                         <div className='c2'>Max file size of 8mb</div><br/>
                         <div className='c2'> {File?.name} </div>
@@ -217,7 +238,7 @@ const Career = () => {
                             setFile(e.target.files[0]);
                             }} />&nbsp;&nbsp;
                             
-                        <button type="submit" style={{display:"block",width:"120px", height:"45px" }} className="attach"> Submit </button>
+                        <button type="submit" style={{display:"block",width:"120px", height:"45px" }} className="attach" > Submit </button>
                         </div>
                         {/* <input type="file" className='attach'  />
                         <button>Attach</button>

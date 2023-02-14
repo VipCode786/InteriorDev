@@ -339,6 +339,17 @@
   color: #383838;
   cursor: pointer;
 }
+/* .career .career-row .attach:focus {
+  font-family: "Poppins";
+  font-style: normal;
+  background-color: #383838;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 71px;
+} */
 .career .FromBG {
   background: #383838;
 }
@@ -353,9 +364,10 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start;
+          margin-left: 2rem;
 }
 .career .containerClass .special-label {
   display: none;
@@ -634,6 +646,13 @@
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
 } */
-
-
 }
+/* 
+@media (hover: hover) { */
+  .career .career-row .attach:active {
+    background-color: #383838 !important;;
+    color: #ffffff !important;
+    cursor: pointer;
+  }
+/* } */
+

@@ -19,9 +19,43 @@ const Career = () => {
     const [Message, setMessage] = useState();
     const [File, setFile] = useState();
     const [recaptcha, setRecaptcha] = useState(null);
+    const [show , setShow] = useState(false); 
+    const windowWidth = useRef(window.innerWidth);
+    const windowHeight = useRef(window.innerHeight);
+  
+    console.log('width: ', windowWidth.current);
+    console.log('height: ', windowWidth.current);
+    const [windowSize, setWindowSize] = useState(getWindowSize());
 
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
 
-    
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+    useEffect(() => {
+      const sizew= windowSize.innerWidth ;
+      if(sizew < 935)
+      {
+        setShow(true)
+      }
+      // if(sizew > 935)
+      // {
+      //   setShow(true)
+      // }
+      
+    }, []);
+
+    function getWindowSize() {
+      const {innerWidth, innerHeight} = window;
+      return {innerWidth, innerHeight};
+    }
+
     useEffect(() => {
       window.scrollTo(0,0)
     }, []);
@@ -198,8 +232,9 @@ const Career = () => {
   countryCode="in"
   country={'in'}
   value={Phone}
-                      onChange={setPhone}
+  onChange={setPhone}
   placeholder={"placeholder"}
+ style={{textIndent:"0"}}
 />
                         {/* <PhoneInput
           country={'us'}
@@ -230,10 +265,12 @@ const Career = () => {
                         <div className='marginButton'>
                        
                         <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" ref={AttachColor} onClick={()=>{handleClick(); attachClick(); }}> Attach </div>
-                        <div className='careerFIx2'>
+                       {show &&
+                        <div className='careerFIx2' id="fix2">
                         <div className='c2'>Max file size of 8mb</div><br/>
                         <div className='c2'> {File?.name} </div>
                         </div>
+                        }
                         <input type='file' id="getFile"  accept=".docs , .pdf" style={{display:"none"}} ref={hiddenFileInput}   onChange={(e) => {
                             setFile(e.target.files[0]);
                             }} />&nbsp;&nbsp;

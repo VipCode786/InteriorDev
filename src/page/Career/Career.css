@@ -179,9 +179,7 @@
  
 }
 
-.careerFIx2 .c2 {
-  display: none;
-}
+
 .career .careerForm input {
   width: 20vw;
   background: #FFFFFF;
@@ -189,9 +187,12 @@
   border-radius: 8px;
   height: 3rem;
   margin-top: 0.5rem;
+  text-indent: 1rem;
 }
-
-.career .careerForm input::-moz-placeholder {
+.career .careerForm input[type=tel]{
+  text-indent: 0rem;
+}
+.career .careerForm input[type=text]::-moz-placeholder {
   /* Firefox, Chrome, Opera */
   text-align: left;
   margin-left: 30px;
@@ -229,6 +230,8 @@
   margin-bottom: 2rem;
   border: 1px solid #424242;
   border-radius: 8px;
+  text-indent: 1rem;
+  
 }
 .career .careerForm textarea::-moz-placeholder {
   /* Firefox, Chrome, Opera */
@@ -244,6 +247,7 @@
 }
 .career .careerForm textarea::-webkit-input-placeholder {
   /* Firefox, Chrome, Opera */
+ 
   text-align: left;
   margin-left: 30px;
   text-indent: 2rem;
@@ -339,6 +343,7 @@
   color: #383838;
   cursor: pointer;
 }
+
 /* .career .career-row .attach:focus {
   font-family: "Poppins";
   font-style: normal;
@@ -384,7 +389,7 @@
 }
 .career .react-tel-input .flag-dropdown {
   width: 40px;
-  margin-left: -3px
+  /* margin-left: -3px */
 }
 .career .react-tel-input .flag-dropdown.open {
   z-index: 2;
@@ -395,7 +400,9 @@
 .careerFIx2 .c2{
   display: none;
 }
-
+.careerFIx2 .c2 {
+  display: none;
+}
 #root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(1){
   display: none;
 }
@@ -489,11 +496,14 @@
             -webkit-box-direction: normal;
             -ms-flex-direction: column;
             flex-direction: column;
-            margin-left: 9px;
+            /* margin-left: 9px; */
+            margin-left: auto;
+    margin-right: auto;
             
   }
   .career .careerForm .cloumnForm {
     margin-top: 0;
+    margin-left: 0;
   }
   .career .careerForm input {
     width: 80vw;
@@ -619,7 +629,7 @@
   }
   .career .career-column {
    
-    margin-left: 28px;
+    margin-left: 0px;
 }
 
 .careerFIx2{
@@ -656,3 +666,9 @@
   }
 /* } */
 
+
+@media  screen and (max-width:20000000px){
+  .careerFIx2{
+    display: none;
+  }
+}

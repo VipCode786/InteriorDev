@@ -149,7 +149,7 @@ const Home = () => {
       if(scrollPosition>1900 || scrollPosition<600)
       {
             $(".scrollImg").css({ "position":"relative"});
-            scroll.current?.scrollIntoView({behavior: 'smooth'});
+          
       }
     });
 

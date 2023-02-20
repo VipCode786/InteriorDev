@@ -600,13 +600,10 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   /* Scroll to Explore */
-}
-.video .centerScroll .scroll .scrollContent {
-  position: absolute;
-  
+
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 26px;
   line-height: 136%;
   /* identical to box height, or 44px */
@@ -615,6 +612,26 @@ section:nth-child(even) {
   padding-top: 5px;
   color: #FFFFFF;
 }
+
+.video .centerScroll .scroll:hover {
+  /* color: #CB572C; */
+  /* border: 4px solid #CB572C; */
+  background-color: #524f4f;
+}
+
+/* .video .centerScroll .scroll .scrollContent {
+  position: absolute;
+  
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 136%;
+  
+  letter-spacing: -0.025em;
+  padding-top: 5px;
+  color: #FFFFFF;
+} */
 
 @media only screen and (min-width: 750px) and (max-width: 1020px) {
   .video .centerScroll .arrowOne {

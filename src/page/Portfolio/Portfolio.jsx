@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import {useRef} from 'react';
 import { useLocation } from 'react-router-dom'
 
-import './Portfolio.css'
+import './Portfolio12.css'
 
 
 const Portfolio = () => {
@@ -246,9 +246,7 @@ const Portfolio = () => {
         <figure class="railing__item railing__item--5">
             <img src="/portfolio/railing4.jpg" alt="railing image 5" class="railing__img" />
         </figure>
-        {/*<figure class="railing__item railing__item--6">
-            <img src="/portfolio/railing5.jpg" alt="railing image 3" class="railing__img" style={{zIndex:"1000"}}/>
-        </figure> */}
+        
        
       
     </div>
@@ -273,16 +271,8 @@ const Portfolio = () => {
         <figure class="pergola__item pergola__item--4">
             <img src="/portfolio/pergola3.jpg" alt="pergola image 4" class="pergola__img" />
         </figure>
-        {/*<figure class="pergola__item pergola__item--5">
-            <img src="/portfolio/pergola4.jpg" alt="pergola image 5" class="pergola__img" />
-        </figure> */}
-        {/*<figure class="pergola__item pergola__item--6">
-            <img src="/portfolio/pergola5.jpg" alt="pergola image 3" class="pergola__img" style={{zIndex:"1000"}}/>
-        </figure> */}
-       
       
-    {/* </div>*/}
-    {/* <div class="other" >  */}
+   
     <figure class="other__item other__item--0"  >
             
         </figure>
@@ -314,7 +304,7 @@ const Portfolio = () => {
       
     </div>
 </div>
-        // </div>
+       
  
   )
 }

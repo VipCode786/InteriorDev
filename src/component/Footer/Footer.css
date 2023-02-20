@@ -20,7 +20,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #ffffff;
-  margin: 2rem 2rem 0rem 2rem;
+  /* margin: 2rem 2rem 0rem 2rem; */
   padding: 3rem 3rem 1rem 3rem;
 }
 .footer span {

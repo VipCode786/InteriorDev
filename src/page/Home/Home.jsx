@@ -84,7 +84,7 @@ const Home = () => {
   
   const observer = new IntersectionObserver(startAnimation);
   const options = { root: null, rootMargin: '0px', threshold: 1 }; 
-  
+  const FourDProcess = useRef(null);
   const elements = document.querySelectorAll('.textInAnimation');
   elements.forEach(el => {
     observer.observe(el, options);
@@ -149,6 +149,7 @@ const Home = () => {
       if(scrollPosition>1900 || scrollPosition<600)
       {
             $(".scrollImg").css({ "position":"relative"});
+            scroll.current?.scrollIntoView({behavior: 'smooth'});
       }
     });
 
@@ -220,6 +221,7 @@ const Home = () => {
       if(scrollPosition > 1045 && scrollPosition < 1050)
       {
             setvalue(parseInt(30))
+            FourDProcess.current?.scrollIntoView({behavior: 'smooth'});
       }
 
       // xexjejhjhi
@@ -525,7 +527,7 @@ const Home = () => {
         </div>
         
       </div>
-      <div className='centerScroll hideMobile'>
+      <div className='centerScroll '>
             <div className='arrowOne'></div>
       {/* <div className='arrow' onClick={scrollClick}>
           <img src="/headerImages/arrow.svg" alt="arrow" />
@@ -554,7 +556,7 @@ const Home = () => {
       </div>
       </section>
       <div className='home'>
-      <div className='scrollImg hideMobile' style={{background:"#ffffff"}} >
+      <div className='scrollImg ' style={{background:"#ffffff"}} >
       <div ref={scroll} className='whatWeMake'>
       <p class="aniheader textInAnimation">What WE MAKE</p>
       </div>
@@ -631,6 +633,7 @@ const Home = () => {
   
       
       </div>
+      <div ref={FourDProcess}></div>
       <Process/>
       {/* <HorizontalScroll/> */}
       {/* <Scrollv/>  */}
@@ -738,7 +741,7 @@ const Home = () => {
               <br/>
               <div className='content'> 
                      <p>
-                    Being in the industry for over 4 <br/>decades,
+                    Being in the industry for over 4 decades,
                     
                      we have worked on designating a workforce who have the capabilities of delivering the best workmanship.
                     
@@ -748,7 +751,7 @@ const Home = () => {
                </div> 
                
                <div className='meetButton'>
-              <div className='boxView marginLeft3' >
+              <div className='boxView ' style={{marginLeft:"0px",marginTop:"1rem"}} >
               <Link to="myteam"><button className='boxButton' style={{fontSize: "25px",padding:"12px 20px 12px 20px"}}> Meet The Team</button></Link>
               </div>
               </div>

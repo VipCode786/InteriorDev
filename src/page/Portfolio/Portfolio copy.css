@@ -1,0 +1,949 @@
+
+
+.portfolio {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+.portfolio .columnCanopy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .rowCanopy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .background {
+  background: #cb572c;
+  width: 100vw;
+  height: 635px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.portfolio .background p {
+  width: 495px;
+  height: 100px;
+  margin-left: 11rem;
+  padding-top: 3rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 139.1%;
+  /* or 50px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.portfolio .background img {
+  margin-left: 11rem;
+  padding-top: 2rem;
+  width: 475px;
+  height: 388px;
+}
+.portfolio .background .whiteCircle {
+  position: absolute;
+  right: 0%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(59%, #ffffff), color-stop(40%, #cb572c));
+  background: -o-linear-gradient(top, #ffffff 59%, #cb572c 40%);
+  background: linear-gradient(180deg, #ffffff 59%, #cb572c 40%);
+  width: 627px;
+  height: 1027px;
+  top: 17vh;
+  border-radius: 1027px 0 0 1027px;
+}
+.portfolio .background .whiteCircle .portfolioName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 203px;
+  margin-left: 300px;
+}
+.portfolio .background .whiteCircle .portfolioName .ref {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 139.1%;
+  letter-spacing: 0.025em;
+  color: #000000;
+  margin-left: -8rem;
+}
+.portfolio .background .whiteCircle .portfolioName a:hover {
+  color: #cb572c;
+}
+.portfolio .background .whiteCircle .portfolioName a:active {
+  color: #cb572c;
+}
+.portfolio .portfolioNameMob {
+  margin-top: 10px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  color: #000000;
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.portfolio .gates {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cb572c), to(#cb572c));
+  background-image: -o-linear-gradient(#cb572c, #cb572c);
+  background-image: linear-gradient(#cb572c, #cb572c);
+  background-repeat: no-repeat;
+  background-size: 416px 433px;
+  color: #ffffff;
+  margin-top: 14vh;
+}
+.portfolio .gates p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  /* identical to box height, or 67px */
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.portfolio .gates .img1 {
+  width: 36.84%;
+  height: 32vh;
+  padding: 1rem;
+}
+.portfolio .gates .img2 {
+  width: 35.38%;
+  height: 37.8vh;
+  padding: 1rem;
+}
+.portfolio .gates .img3 {
+  width: 45.24%;
+  height: 40vh;
+  margin-right: 15rem;
+  margin-top: -3rem;
+}
+.portfolio .gates .img4 {
+  width: 39.06%;
+  height: 33.5vh;
+  margin-left: -11rem;
+}
+.portfolio .gates .best {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .gates .best .start {
+  position: relative;
+  margin-top: -12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15rem;
+  width: 100vw;
+}
+.portfolio .canopy {
+  background: #383838;
+  padding: 4rem;
+}
+.portfolio .canopy .mobileView {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  /* identical to box height, or 67px */
+  margin-left: 3rem;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.portfolio .canopy .rowCanopy p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  /* identical to box height, or 67px */
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.portfolio .canopy .canopy1 {
+  width: 32.87%;
+  height: 85.5vh;
+  left: 0px;
+  top: 0px;
+}
+.portfolio .canopy .canopy2 {
+  width: 62.87%;
+  height: 38.7vh;
+  padding-left: 1rem;
+  top: 0px;
+}
+.portfolio .canopy .canopy3 {
+  width: 43.69%;
+  height: 38.7vh;
+}
+.portfolio .canopy .canopy4 {
+  width: 42.39%;
+  height: 38.7vh;
+}
+.portfolio .staircase {
+  background: url("triangle.png"), #D9D9D9;
+  background-repeat: no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5rem;
+  padding-right: 4rem;
+}
+.portfolio .staircase p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  padding: 2rem;
+  color: #FFFFFF;
+}
+.portfolio .staircase .staircase1 {
+  padding: 1rem;
+  /* width: 508px;
+  height: 544px; */
+  width: 30.8%;
+    height: 69.4vh
+}
+.portfolio .staircase .staircase2 {
+  width: 100%;
+  height: 43.7vh;
+  padding: 1rem;
+  margin-top: -7rem;
+}
+.portfolio .staircase .staircase3 {
+  width: 100%;
+    height: 40.2vh;
+    padding: 1rem;
+}
+.portfolio .staircase .staircase4 {
+  width: 100%;
+  height: 38.8vh;
+  padding: 1rem;
+  margin-top: -7rem;
+  padding-left: 3rem;
+}
+.portfolio .staircase .staircase5 {
+  width: 100%;
+  height: 44vh;
+  padding: 2rem;
+}
+.portfolio .railing {
+  background: url("./rail.png") top right, #ffffff;
+  background-repeat: no-repeat;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.portfolio .railing p {
+  padding-top: 2rem;
+  text-align: right;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.portfolio .railing .railing1hide{
+  display: show;
+}
+.portfolio .railing .railing2hide{
+  display: none;
+}
+.portfolio .railing .railing1 {
+  width: 23.5%;
+  height: 80.3vh;
+  padding: 1rem;
+  
+  /* margin-top: -5rem; */
+}
+
+.portfolio .railing .railing2 {
+  width: 48.11%;
+  height: 36.3vh;
+  padding: 1rem;
+  margin-top: -3rem;
+}
+.portfolio .railing .railing3 {
+  width: 50.83%;
+  height: 34.7vh;
+  padding: 1rem;
+  margin-top: -1.2rem;
+}
+.portfolio .railing .railing4 {
+  width: 100%;
+  height: 40.2vh;
+  margin-bottom: -1.5rem;
+}
+.portfolio .pergola {
+  background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(52%, #383838), color-stop(45%, #D9D9D9));
+  background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 52%, #D9D9D9 45%);
+  background: url("./paragolaBG.png") right no-repeat, linear-gradient(180deg, #383838 52%, #D9D9D9 45%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .pergola .columnCanopy p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.portfolio .pergola .columnCanopy .pergolatext {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 139.1%;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  text-align: center;
+}
+.portfolio .pergola .paragola1 {
+  width: 95%;
+  height: 38.4vh;
+  padding: 1rem;
+}
+.portfolio .pergola .paragola2 {
+  width: 88%;
+  height:35.6vh;
+  padding: 1rem;
+  margin-left: 2.1rem;
+}
+.portfolio .pergola .paragola3 {
+  width: 56.57%;
+  height: 60.4vh;
+  padding: 1rem;
+  margin-top: 5rem;
+  
+}
+.portfolio .otherMar{
+  margin-right: 30%;
+  margin-top: -8rem;
+  
+}
+.portfolio .pergola .other1 {
+  width: 40.2%;
+  height: 30.4vh;
+  padding: 0.5rem;
+}
+.portfolio .pergola .other2 {
+  width: 45.63%;
+  height: 27.2vh;
+  padding: 0.5rem;
+}
+.portfolio .pergola .other3 {
+  width: 23.9%;
+  height: 41.5vh;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.portfolio .pergola .other4 {
+  width: 13.21%;
+  height: 41.5vh;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+.portfolio .pergola .other5 {
+  width: 20%;
+  height: 44.4vh;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin-top: -1rem;
+}
+.portfolio .pergola .other6 {
+  width: 29.88%;
+  height: 61.2vh;
+  padding: 0.5rem;
+   margin-top: -8rem;
+  margin-left: 1rem;
+  float: right;
+}
+
+@media screen and (max-width: 950px) {
+  .portfolio {
+    background-color: #FFFFFF;
+  }
+  .portfolio .columnCanopy {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolio .rowCanopy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .background {
+    background: #cb572c;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .portfolio .background p {
+    width: 100vw;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 139.1%;
+    /* or 50px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+  }
+  .portfolio .background img {
+    margin-left: 0rem;
+    padding-top: 2rem;
+    width: 100vw;
+    height: 388px;
+  }
+  .portfolio .background .whiteCircle {
+    display: none;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.5%, #ffffff), color-stop(40%, #cb572c));
+    background: -o-linear-gradient(top, #ffffff 58.5%, #cb572c 40%);
+    background: linear-gradient(180deg, #ffffff 58.5%, #cb572c 40%);
+    width: 527px;
+    height: 1027px;
+    left: 796px;
+    top: 148px;
+    border-radius: 1027px 0 0 1027px;
+  }
+  .portfolio .background .whiteCircle .portfolioName {
+    margin-left: 169px;
+    color: #000000;
+  }
+  .portfolio .portfolioNameMob {
+    margin-top: 0px;
+    margin-bottom: -6rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 139.1%;
+    /* or 50px */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    letter-spacing: 0.025em;
+    color: #000000;
+  }
+  .portfolio .portfolioNameMob a:active {
+    color: #cb572c;
+  }
+  .portfolio .gates {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#cb572c), to(#cb572c));
+    background-image: -o-linear-gradient(#cb572c, #cb572c);
+    background-image: linear-gradient(#cb572c, #cb572c);
+    background-repeat: no-repeat;
+    background-size: 416px 133px;
+    color: #ffffff;
+    margin-top: 14vh;
+  }
+  .portfolio .gates .best .start {
+    margin-left: 0rem;
+    margin-top: 2rem;
+  }
+  .portfolio .gates p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 139.1%;
+    /* identical to box height, or 67px */
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+  }
+  .portfolio .gates .img1 {
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+  }
+  .portfolio .gates .img2 {
+    width: 90vw;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio .gates .img3 {
+    position: relative;
+    width: 90vw;
+    height: auto;
+   
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio .gates .img4 {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .portfolio .gates .start {
+    position: relative;
+  }
+  .portfolio .canopy {
+    background: #383838;
+    padding: 4rem;
+  }
+  .portfolio .canopy .mobileView {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 139.1%;
+    /* identical to box height, or 67px */
+    margin-left: 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+  }
+  .portfolio .canopy .rowCanopy p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 139.1%;
+    /* identical to box height, or 67px */
+    margin-left: 3rem;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+  }
+  .portfolio .canopy .canopy1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .portfolio .canopy .canopy2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: contents;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .portfolio .canopy .canopy3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -20px
+  }
+  .portfolio .canopy .canopy4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .portfolio .staircase {
+    background: url("triangle.png"), #D9D9D9;
+    background-repeat: no-repeat;
+    margin-left: -3rem;
+  }
+  .portfolio .staircase p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 139.1%;
+    padding: 2rem;
+    color: #FFFFFF;
+  }
+  .portfolio .staircase .staircase1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .portfolio .staircase .staircase2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .portfolio .staircase .staircase3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .portfolio .staircase .staircase4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: -2rem;
+    margin-top: 0px;
+  }
+  .portfolio .staircase .staircase5 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: contents;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+  .portfolio .railing {
+    background: url("./rail.png") top right, #ffffff;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+  .portfolio .railing p {
+    padding-top: 2rem;
+    text-align: right;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 139.1%;
+    letter-spacing: 0.025em;
+    color: #FFFFFF;
+  }
+  .portfolio .railing .railing1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    /* position: relative;
+    width: 75vw;
+    height: 85vw;
+    margin-left: 5%;
+    /* transform: rotate(90deg); */
+    /* margin-left: 0px; */
+    margin-top: 0px; 
+  }
+  .portfolio .railing .railing2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .portfolio .railing .railing3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .portfolio .railing .railing4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 20px;
+
+    margin-bottom: 2rem
+  }
+  .portfolio .marginTop2 {
+    margin-top: 2rem;
+  }
+  .portfolio .marginLeft-10 {
+    margin-left: 0rem;
+  }
+  .portfolio .marginLeft2 {
+    margin-left: 0rem;
+  }
+  .portfolio .pergola {
+    background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(48%, #383838), color-stop(40%, #D9D9D9));
+    background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 48%, #D9D9D9 40%);
+    background: url("./paragolaBG.png") right no-repeat, linear-gradient(180deg, #383838 48%, #D9D9D9 40%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio .pergola .columnCanopy p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 139.1%;
+    letter-spacing: 0.025em;
+    margin-left: 0rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    color: #FFFFFF;
+  }
+  .portfolio .pergola .paragola1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0rem;
+    margin-top: 0px;
+    padding: 0%;
+  }
+  .portfolio .pergola .paragola2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0%;
+  }
+  .portfolio .pergola .paragola3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -50px;
+    padding: 0%;
+  }
+
+  .portfolio .otherMar{
+    margin-right: 0%;
+    /* margin-top: 1rem; */
+    
+  }
+  .portfolio .pergola .other1 {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    padding: 0%;
+  }
+  .portfolio .pergola .other2 {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    padding: 0%;
+    margin-top: 10px;
+  }
+  .portfolio .pergola .rowCanopy .other3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin-bottom: 10px;
+  }
+  .portfolio .pergola .rowCanopy .other4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .portfolio .pergola .rowCanopy .other5 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .portfolio .pergola .rowCanopy .other6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  .portfolio .marginLeft-20 {
+    margin-left: 0%;
+  }
+
+  .margin80{
+    margin-top: -80px;
+  }
+}
+
+@media screen and (max-width:950px) {
+  .portfolio .railing .railing1 {
+    /* position: relative;
+    width: 77vw;
+    height: 75vw;
+    margin-left: 0%;
+    transform: none;
+    /* margin-left: 0px; */
+    margin-top: 0px; 
+  }
+
+  .portfolio .railing .railing1hide{
+    display: none;
+  }
+
+  .portfolio .railing .railing2hide{
+    display: flex;
+  }
+  
+}
+

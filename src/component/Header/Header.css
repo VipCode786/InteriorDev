@@ -32,6 +32,7 @@
           align-items: center;
   height: 100%;
   width: 12vw;
+  margin-left: 0.5rem;
 }
 .header .logo img {
   width: 100%;

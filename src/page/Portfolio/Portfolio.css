@@ -1,5 +1,3 @@
-
-
 .portfolio {
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -41,19 +39,21 @@
 .portfolio .background {
   background: #cb572c;
   width: 100vw;
-  height: 635px;
+  /* height: 635px; */
   overflow: hidden;
   margin-top: 10px;
 }
 .portfolio .background p {
-  width: 495px;
-  height: 100px;
+  /* width: 495px; */
+  width: 32.227vw;
+  /* height: 100px; */
   margin-left: 11rem;
   padding-top: 3rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 2.083vw;
   line-height: 139.1%;
   /* or 50px */
   display: -webkit-box;
@@ -68,19 +68,22 @@
 .portfolio .background img {
   margin-left: 11rem;
   padding-top: 2rem;
-  width: 475px;
-  height: 388px;
+  /* width: 475px; */
+  width: 30.924vw;
+  height: 25.260vw;
 }
 .portfolio .background .whiteCircle {
   position: absolute;
   right: 0%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(59%, #ffffff), color-stop(40%, #cb572c));
-  background: -o-linear-gradient(top, #ffffff 59%, #cb572c 40%);
-  background: linear-gradient(180deg, #ffffff 59%, #cb572c 40%);
-  width: 627px;
-  height: 1027px;
-  top: 17vh;
-  border-radius: 1027px 0 0 1027px;
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(59%, #ffffff), color-stop(40%, #cb572c)); */
+  /* background: -o-linear-gradient(top, #ffffff 59%, #cb572c 40%); */
+  background: linear-gradient(180deg, #ffffff 35vw, #cb572c 50vh);
+  /* width: 627px; */
+  width: 40.87vw;
+  /* height: 1027px; */
+  height: 66.862vw;
+  top: 7vw;
+  border-radius: 66.862vw 0 0 66.862vw;
 }
 .portfolio .background .whiteCircle .portfolioName {
   display: -webkit-box;
@@ -100,7 +103,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 2.08vw;
   line-height: 139.1%;
   letter-spacing: 0.025em;
   color: #000000;
@@ -124,826 +127,746 @@
   font-family: "Poppins";
   font-style: normal;
 }
-.portfolio .gates {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#cb572c), to(#cb572c));
-  background-image: -o-linear-gradient(#cb572c, #cb572c);
-  background-image: linear-gradient(#cb572c, #cb572c);
-  background-repeat: no-repeat;
-  background-size: 416px 433px;
-  color: #ffffff;
-  margin-top: 14vh;
+
+
+.container {
+  width: 100%;
+  /* height: 100vh; */
+  /* margin: 2rem auto;  */
 }
-.portfolio .gates p {
+
+.gate {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(32, 1.8vw);
+  grid-gap: 1.250rem; 
+  margin-top: -2.8vw;
+  
+}
+
+.gate__img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.gate0_item--1{
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 2;
+  grid-row-end: 25;
+  /* background: url("./bgport.png"); */
+  /* background-color:#CB572C; */
+}
+.gateScroll{
+  grid-column-start: 20;
+  grid-column-end: 21;
+  grid-row-start: 17;
+  grid-row-end: 18;
+  /* background: url("./bgport.png"); */
+  /* background-color:#CB572C; */
+}
+.gate0_item--link{
+  grid-column-start: 14;
+  grid-column-end: 18;
+  grid-row-start: 7;
+  grid-row-end: 17;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 2.08vw;
   line-height: 139.1%;
-  /* identical to box height, or 67px */
-  padding: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+.gate0_item--link a:hover{
+  cursor: pointer;
+  color: #CB572C;
+}
+.gate0_item--p{
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 139.1%;
   letter-spacing: 0.025em;
   color: #FFFFFF;
 }
-.portfolio .gates .img1 {
-  width: 36.84%;
-  height: 32vh;
-  padding: 1rem;
+
+.gate0_item--img{
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 16;
+  
 }
-.portfolio .gates .img2 {
-  width: 35.38%;
-  height: 37.8vh;
-  padding: 1rem;
+
+.gate0_item--circle{
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 5;
+  grid-row-end: 16;
+  width: 40.87vw;
+  height: 66.862vw;
+  top: 7vw;
+  border-radius: 66.862vw 0 0 66.862vw; 
+  
 }
-.portfolio .gates .img3 {
-  width: 45.24%;
-  height: 40vh;
-  margin-right: 15rem;
-  margin-top: -3rem;
-}
-.portfolio .gates .img4 {
-  width: 39.06%;
-  height: 33.5vh;
-  margin-left: -11rem;
-}
-.portfolio .gates .best {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
+.gate__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 20;
+  grid-row-end: 27;
+  background-color:#CB572C;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 139.1%;
+  
 }
-.portfolio .gates .best .start {
+
+
+
+.gate__item--2 {
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 18;
+  grid-row-end: 25;
+  z-index: 100;
+  
+}
+
+.gate__item--3 {
+  grid-column-start: 12;
+  grid-column-end: 20;
+  grid-row-start: 18;
+  grid-row-end: 26;
   position: relative;
-  margin-top: -12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 15rem;
-  width: 100vw;
-}
-.portfolio .canopy {
-  background: #383838;
-  padding: 4rem;
-}
-.portfolio .canopy .mobileView {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 139.1%;
-  /* identical to box height, or 67px */
-  margin-left: 3rem;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.025em;
-  color: #FFFFFF;
-}
-.portfolio .canopy .rowCanopy p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 139.1%;
-  /* identical to box height, or 67px */
-  margin-left: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.025em;
-  color: #FFFFFF;
-}
-.portfolio .canopy .canopy1 {
-  width: 32.87%;
-  height: 85.5vh;
-  left: 0px;
-  top: 0px;
-}
-.portfolio .canopy .canopy2 {
-  width: 62.87%;
-  height: 38.7vh;
-  padding-left: 1rem;
-  top: 0px;
-}
-.portfolio .canopy .canopy3 {
-  width: 43.69%;
-  height: 38.7vh;
-}
-.portfolio .canopy .canopy4 {
-  width: 42.39%;
-  height: 38.7vh;
-}
-.portfolio .staircase {
-  background: url("triangle.png"), #D9D9D9;
-  background-repeat: no-repeat;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 5rem;
-  padding-right: 4rem;
-}
-.portfolio .staircase p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 139.1%;
-  padding: 2rem;
-  color: #FFFFFF;
-}
-.portfolio .staircase .staircase1 {
-  padding: 1rem;
-  /* width: 508px;
-  height: 544px; */
-  width: 30.8%;
-    height: 69.4vh
-}
-.portfolio .staircase .staircase2 {
-  width: 100%;
-  height: 43.7vh;
-  padding: 1rem;
-  margin-top: -7rem;
-}
-.portfolio .staircase .staircase3 {
-  width: 100%;
-    height: 40.2vh;
-    padding: 1rem;
-}
-.portfolio .staircase .staircase4 {
-  width: 100%;
-  height: 38.8vh;
-  padding: 1rem;
-  margin-top: -7rem;
-  padding-left: 3rem;
-}
-.portfolio .staircase .staircase5 {
-  width: 100%;
-  height: 44vh;
-  padding: 2rem;
-}
-.portfolio .railing {
-  background: url("./rail.png") top right, #ffffff;
-  background-repeat: no-repeat;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-.portfolio .railing p {
-  padding-top: 2rem;
-  text-align: right;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 139.1%;
-  letter-spacing: 0.025em;
-  color: #FFFFFF;
-}
-.portfolio .railing .railing1hide{
-  display: show;
-}
-.portfolio .railing .railing2hide{
-  display: none;
-}
-.portfolio .railing .railing1 {
-  width: 23.5%;
-  height: 80.3vh;
-  padding: 1rem;
-  
-  /* margin-top: -5rem; */
+ 
 }
 
-.portfolio .railing .railing2 {
-  width: 48.11%;
-  height: 36.3vh;
-  padding: 1rem;
-  margin-top: -3rem;
-}
-.portfolio .railing .railing3 {
-  width: 50.83%;
-  height: 34.7vh;
-  padding: 1rem;
-  margin-top: -1.2rem;
-}
-.portfolio .railing .railing4 {
-  width: 100%;
-  height: 40.2vh;
-  margin-bottom: -1.5rem;
-}
-.portfolio .pergola {
-  background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(52%, #383838), color-stop(45%, #D9D9D9));
-  background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 52%, #D9D9D9 45%);
-  background: url("./paragolaBG.png") right no-repeat, linear-gradient(180deg, #383838 52%, #D9D9D9 45%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.portfolio .pergola .columnCanopy p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 139.1%;
-  letter-spacing: 0.025em;
-  color: #FFFFFF;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-.portfolio .pergola .columnCanopy .pergolatext {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 139.1%;
-  letter-spacing: 0.025em;
-  color: #FFFFFF;
-  text-align: center;
-}
-.portfolio .pergola .paragola1 {
-  width: 95%;
-  height: 38.4vh;
-  padding: 1rem;
-}
-.portfolio .pergola .paragola2 {
-  width: 88%;
-  height:35.6vh;
-  padding: 1rem;
-  margin-left: 2.1rem;
-}
-.portfolio .pergola .paragola3 {
-  width: 56.57%;
-  height: 60.4vh;
-  padding: 1rem;
-  margin-top: 5rem;
+.gate__item--4 {
+  grid-column-start: 4;
+  grid-column-end: 11;
+  grid-row-start: 25;
+  grid-row-end: 33;
+
   
 }
-.portfolio .otherMar{
-  margin-right: 30%;
-  margin-top: -8rem;
+
+.gate__item--5 {
+  grid-column-start: 11;
+  grid-column-end: 20;
+  grid-row-start: 26;
+  grid-row-end: 33;
+
   
 }
-.portfolio .pergola .other1 {
-  width: 40.2%;
-  height: 30.4vh;
-  padding: 0.5rem;
-}
-.portfolio .pergola .other2 {
-  width: 45.63%;
-  height: 27.2vh;
-  padding: 0.5rem;
-}
-.portfolio .pergola .other3 {
-  width: 23.9%;
-  height: 41.5vh;
-  padding: 0.5rem;
-  margin-top: 1rem;
-}
-.portfolio .pergola .other4 {
-  width: 13.21%;
-  height: 41.5vh;
-  padding: 0.5rem;
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-}
-.portfolio .pergola .other5 {
-  width: 20%;
-  height: 44.4vh;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  margin-top: -1rem;
-}
-.portfolio .pergola .other6 {
-  width: 29.88%;
-  height: 61.2vh;
-  padding: 0.5rem;
-   margin-top: -8rem;
-  margin-left: 1rem;
-  float: right;
-}
 
-@media screen and (max-width: 950px) {
-  .portfolio {
-    background-color: #FFFFFF;
-  }
-  .portfolio .columnCanopy {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portfolio .rowCanopy {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .portfolio .background {
-    background: #cb572c;
-    width: 100vw;
-    overflow: hidden;
-    margin-top: 10px;
-  }
-  .portfolio .background p {
-    width: 100vw;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 139.1%;
-    /* or 50px */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    letter-spacing: 0.025em;
-    color: #FFFFFF;
-  }
-  .portfolio .background img {
-    margin-left: 0rem;
-    padding-top: 2rem;
-    width: 100vw;
-    height: 388px;
-  }
-  .portfolio .background .whiteCircle {
-    display: none;
-    position: absolute;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.5%, #ffffff), color-stop(40%, #cb572c));
-    background: -o-linear-gradient(top, #ffffff 58.5%, #cb572c 40%);
-    background: linear-gradient(180deg, #ffffff 58.5%, #cb572c 40%);
-    width: 527px;
-    height: 1027px;
-    left: 796px;
-    top: 148px;
-    border-radius: 1027px 0 0 1027px;
-  }
-  .portfolio .background .whiteCircle .portfolioName {
-    margin-left: 169px;
-    color: #000000;
-  }
-  .portfolio .portfolioNameMob {
-    margin-top: 0px;
-    margin-bottom: -6rem;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 139.1%;
-    /* or 50px */
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    letter-spacing: 0.025em;
-    color: #000000;
-  }
-  .portfolio .portfolioNameMob a:active {
-    color: #cb572c;
-  }
-  .portfolio .gates {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#cb572c), to(#cb572c));
-    background-image: -o-linear-gradient(#cb572c, #cb572c);
-    background-image: linear-gradient(#cb572c, #cb572c);
-    background-repeat: no-repeat;
-    background-size: 416px 133px;
-    color: #ffffff;
-    margin-top: 14vh;
-  }
-  .portfolio .gates .best .start {
-    margin-left: 0rem;
-    margin-top: 2rem;
-  }
-  .portfolio .gates p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 139.1%;
-    /* identical to box height, or 67px */
-    padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    letter-spacing: 0.025em;
-    color: #FFFFFF;
-  }
-  .portfolio .gates .img1 {
-    width: 90vw;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0px;
-  }
-  .portfolio .gates .img2 {
-    width: 90vw;
-    height: auto;
-    left: 0px;
-    top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .portfolio .gates .img3 {
-    position: relative;
-    width: 90vw;
-    height: auto;
-   
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .portfolio .gates .img4 {
-    position: relative;
-    width: 90vw;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-  }
-  .portfolio .gates .start {
-    position: relative;
-  }
-  .portfolio .canopy {
-    background: #383838;
-    padding: 4rem;
-  }
-  .portfolio .canopy .mobileView {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 139.1%;
-    /* identical to box height, or 67px */
-    margin-left: 0rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    letter-spacing: 0.025em;
-    color: #FFFFFF;
-  }
-  .portfolio .canopy .rowCanopy p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 139.1%;
-    /* identical to box height, or 67px */
-    margin-left: 3rem;
-    display: none;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    letter-spacing: 0.025em;
-    color: #FFFFFF;
-  }
-  .portfolio .canopy .canopy1 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .portfolio .canopy .canopy2 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: contents;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-  }
-  .portfolio .canopy .canopy3 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: -20px
-  }
-  .portfolio .canopy .canopy4 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .portfolio .staircase {
-    background: url("triangle.png"), #D9D9D9;
-    background-repeat: no-repeat;
-    margin-left: -3rem;
-  }
-  .portfolio .staircase p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 139.1%;
-    padding: 2rem;
-    color: #FFFFFF;
-  }
-  .portfolio .staircase .staircase1 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  .portfolio .staircase .staircase2 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  .portfolio .staircase .staircase3 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  .portfolio .staircase .staircase4 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: -2rem;
-    margin-top: 0px;
-  }
-  .portfolio .staircase .staircase5 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: contents;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-  }
-  .portfolio .railing {
-    background: url("./rail.png") top right, #ffffff;
-    background-repeat: no-repeat;
-    padding-left: 2rem;
-    padding-right: 4rem;
-  }
-  .portfolio .railing p {
-    padding-top: 2rem;
-    text-align: right;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 139.1%;
-    letter-spacing: 0.025em;
-    color: #FFFFFF;
-  }
-  .portfolio .railing .railing1 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-    /* position: relative;
-    width: 75vw;
-    height: 85vw;
-    margin-left: 5%;
-    /* transform: rotate(90deg); */
-    /* margin-left: 0px; */
-    margin-top: 0px; 
-  }
-  .portfolio .railing .railing2 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  .portfolio .railing .railing3 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-  .portfolio .railing .railing4 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 1rem;
-    margin-top: 20px;
 
-    margin-bottom: 2rem
-  }
-  .portfolio .marginTop2 {
-    margin-top: 2rem;
-  }
-  .portfolio .marginLeft-10 {
-    margin-left: 0rem;
-  }
-  .portfolio .marginLeft2 {
-    margin-left: 0rem;
-  }
-  .portfolio .pergola {
-    background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(48%, #383838), color-stop(40%, #D9D9D9));
-    background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 48%, #D9D9D9 40%);
-    background: url("./paragolaBG.png") right no-repeat, linear-gradient(180deg, #383838 48%, #D9D9D9 40%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .portfolio .pergola .columnCanopy p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 139.1%;
-    letter-spacing: 0.025em;
-    margin-left: 0rem;
-    text-align: center;
-    padding-bottom: 5rem;
-    color: #FFFFFF;
-  }
-  .portfolio .pergola .paragola1 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0rem;
-    margin-top: 0px;
-    padding: 0%;
-  }
-  .portfolio .pergola .paragola2 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: 0px;
-    padding: 0%;
-  }
-  .portfolio .pergola .paragola3 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-    margin-top: -50px;
-    padding: 0%;
-  }
-
-  .portfolio .otherMar{
-    margin-right: 0%;
-    /* margin-top: 1rem; */
-    
-  }
-  .portfolio .pergola .other1 {
-    position: relative;
-    width: 100vw;
-    height: 60vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-    padding: 0%;
-  }
-  .portfolio .pergola .other2 {
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    padding: 0%;
-    margin-top: 10px;
-  }
-  .portfolio .pergola .rowCanopy .other3 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0%;
-    margin-bottom: 10px;
-  }
-  .portfolio .pergola .rowCanopy .other4 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0%;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-  .portfolio .pergola .rowCanopy .other5 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0%;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-  }
-  .portfolio .pergola .rowCanopy .other6 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0px;
-    margin-left: 0rem;
-    margin-top: 0rem;
-  }
-  .portfolio .marginLeft-20 {
-    margin-left: 0%;
-  }
-
-  .margin80{
-    margin-top: -80px;
-  }
-}
-
-@media screen and (max-width:950px) {
-  .portfolio .railing .railing1 {
-    /* position: relative;
-    width: 77vw;
-    height: 75vw;
-    margin-left: 0%;
-    transform: none;
-    /* margin-left: 0px; */
-    margin-top: 0px; 
-  }
-
-  .portfolio .railing .railing1hide{
-    display: none;
-  }
-
-  .portfolio .railing .railing2hide{
-    display: flex;
-  }
+/* .gate {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(32, 1.8vw);
+  grid-gap: 1.250rem; 
   
+}
+
+.gate__img {
+  width: 100%;
+  height: 100%;
+ 
+  
+}
+
+.gate__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 11;
+  background-color:#CB572C;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 139.1%;
+ 
+}
+
+
+
+.gate__item--2 {
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 9;
+  z-index: 100;
+ 
+}
+
+.gate__item--3 {
+  grid-column-start: 12;
+  grid-column-end: 20;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  position: relative;
+ 
+}
+
+.gate__item--4 {
+  grid-column-start: 4;
+  grid-column-end: 11;
+  grid-row-start: 9;
+  grid-row-end: 17;
+
+  
+}
+
+.gate__item--5 {
+  grid-column-start: 11;
+  grid-column-end: 20;
+  grid-row-start: 10;
+  grid-row-end: 17;
+
+} */
+
+.canopy {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(16, 1.8vw);
+  grid-gap: 1.250rem; 
+  
+}
+
+.canopy__img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  display: block;  */
+  
+}
+.canopyScroll{
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* background: url("./bgport.png"); */
+  /* background-color:#CB572C; */
+}
+.canopy__item--1 {
+  grid-column-start: 16;
+  grid-column-end: 20;
+  grid-row-start: 2;
+  grid-row-end: 9;
+  /* background-color:#CB572C; */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 139.1%;
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+
+
+.canopy__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 16;
+  z-index: 100;
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.canopy__item--3 {
+  grid-column-start: 9;
+  grid-column-end: 16;
+  grid-row-start: 2;
+  grid-row-end: 9;
+  position: relative;
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.canopy__item--4 {
+  grid-column-start: 9;
+  grid-column-end: 15;
+  grid-row-start: 9;
+  grid-row-end: 16;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.canopy__item--5 {
+  grid-column-start: 15;
+  grid-column-end: 20;
+  grid-row-start: 9;
+  grid-row-end: 16;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.staircase {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(16, 1.8vw);
+  grid-gap: 1.250rem; 
+  background-color:#636363;
+  
+}
+
+.staircase__img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  display: block;  */
+  
+}
+
+.staircaseScroll{
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* background: url("./bgport.png"); */
+  /* background-color:#CB572C; */
+}
+.staircase__item--0 {
+  grid-column-start: 1;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 5;
+ 
+  border-top: 26.042vw solid #CB572C;
+  border-right: 45.573vw solid transparent;
+}
+.staircase__item--1 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 139.1%;
+    /* text-align: end; */
+}
+
+
+
+.staircase__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 15;
+  z-index: 100;
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.staircase__item--3 {
+  grid-column-start: 9;
+  grid-column-end: 15;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  position: relative;
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.staircase__item--4 {
+  grid-column-start: 9;
+  grid-column-end: 15;
+  grid-row-start: 10;
+  grid-row-end: 16;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.staircase__item--5 {
+  grid-column-start: 15;
+  grid-column-end: 20;
+  grid-row-start: 8;
+  grid-row-end: 16;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.staircase__item--6 {
+  grid-column-start: 15;
+  grid-column-end: 20;
+  grid-row-start: 2;
+  grid-row-end: 8;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.railing {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(16, 1.8vw);
+  grid-gap: 1.250rem; 
+  
+  
+}
+.railingScroll{
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.railing__img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  display: block;  */
+  
+}
+.railing__item--0 {
+  grid-column-start: 17;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 3;
+ 
+  width: 19.531vw;
+  height: 19.531vw;
+  background: #CB572C;
+  border-radius: 0 0 0 19.531vw;
+  -moz-border-radius: 0 0 0 19.531vw;
+  -webkit-border-radius: 0 0 0 19.531vw
+}
+.railing__item--1 {
+  grid-column-start: 13;
+  grid-column-end: 20;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ color: #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 139.1%;
+    /* text-align: end; */
+}
+
+
+
+.railing__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 16;
+  z-index: 100;
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.railing__item--3 {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 9;
+  position: relative;
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.railing__item--4 {
+  grid-column-start: 13;
+  grid-column-end: 20;
+  grid-row-start: 3;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.railing__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 20;
+  grid-row-start: 9;
+  grid-row-end: 16;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+
+.pergola {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(32, 1.8vw);
+  grid-gap: 1.250rem; 
+  /* background: -webkit-linear-gradient(top, #383838 50%, #D9D9D9 50%); */
+  /* background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(52%, #383838), color-stop(45%, #D9D9D9));
+  background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 52%, #D9D9D9 45%); */
+  background: url("./paragolaBG.png") right  no-repeat, linear-gradient(180deg, #383838 52%, #D9D9D9 45%);
+  background-size: 30vw
+  
+}
+
+.pergola__img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  display: block;  */
+  
+}
+/* .pergola__item--0 {
+  grid-column-start: 17;
+  grid-column-end: 22;
+  grid-row-start: 3;
+  grid-row-end: 28;
+  width: 15vw;
+  height: 30vw;
+  background-color: #48abe0;
+  /* border-radius: 15rem 0rem 0 15rem; */
+  /* width: 25vw;
+  height: 70vw;
+  background: #CB572C;
+  border-radius: 0 0 0 75vw; */
+  /* -moz-border-radius: 0 0 0 25vw;
+  -webkit-border-radius: 0 0 0 25vw 
+}*/
+.pergolaScroll{
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.pergola__item--1 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ color: #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 139.1%;
+    /* text-align: end; */
+}
+
+
+
+.pergola__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 9;
+  z-index: 100;
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.pergola__item--3 {
+  grid-column-start: 2;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 16;
+  position: relative;
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.pergola__item--4 {
+  grid-column-start: 9;
+  grid-column-end: 20;
+  grid-row-start: 4;
+  grid-row-end: 15;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.pergola__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 20;
+  grid-row-start: 9;
+  grid-row-end: 16;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+
+/* .other {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(16, 1.8vw);
+  grid-gap: 1.250rem; 
+  
+  
+} */
+
+.other__img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;
+  display: block;  */
+  
+}
+/* .other__item--0 {
+  position: absolute;
+  margin-left: auto;
+  display: block;
+  /* justify-content: flex-end; */
+  /* grid-column-start: 19;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 3; 
+  width: 15vw;
+  height: 70vw;
+  background-color: #48abe0;
+  background-size: 15vw 70vh;
+  border-radius: 15vw 0rem 0 15vw;
+  /* width: 25vw;
+  height: 70vw;
+  background: #CB572C;
+  border-radius: 0 0 0 19.531vw;
+  -moz-border-radius: 0 0 0 19.531vw;
+  -webkit-border-radius: 0 0 0 19.531vw
+} */
+
+.otherScroll{
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start:1;
+  grid-row-end: 2;
+}
+
+.other__item--1 {
+  grid-column-start: 17;
+  grid-column-end: 20;
+  grid-row-start:18;
+  grid-row-end: 21;
+ color: #FFFFFF;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 139.1%;
+    /* text-align: end; */
+}
+
+
+
+.other__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 18;
+  grid-row-end: 24;
+  z-index: 100;
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.other__item--3 {
+  grid-column-start: 10;
+  grid-column-end: 16;
+  grid-row-start: 18;
+  grid-row-end: 23;
+  position: relative;
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.other__item--4 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 24;
+  grid-row-end: 32;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.other__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 24;
+  grid-row-end: 32;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.other__item--6 {
+  grid-column-start: 11;
+  grid-column-end: 16;
+  grid-row-start: 23;
+  grid-row-end: 32;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+
+.other__item--7 {
+  grid-column-start: 16;
+  grid-column-end: 20;
+  grid-row-start: 21;
+  grid-row-end: 32;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
 }
 

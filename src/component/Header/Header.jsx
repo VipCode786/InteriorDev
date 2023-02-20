@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 import'./headerToggle.css'
+import OutsideClickHandler from 'react-outside-click-handler';
+
 const Header = () => {
 
      const[show,setShow] = useState(false);
@@ -22,6 +24,13 @@ const Header = () => {
         setChangeBG(!changeBG)
         setPositionChange(!positionChange)
     }
+
+    function outsideOnClick(){
+      setChangeShow(false)
+      setChangeNav(false)
+      setChangeBG(false)
+      setPositionChange(false)
+  }
 
   return (
      <div>
@@ -60,6 +69,11 @@ const Header = () => {
             <img src="/headerImages/menu.svg" alt="" />
            
        </div> */}
+       <OutsideClickHandler
+      onOutsideClick={() => {
+        outsideOnClick();
+      }}
+    >
        <div className='toggleHeader' >
          <div id="menu" >
         <div id="menu-bar" className={changeShow ? "change" : "null"} onClick={()=>menuOnClick()}>
@@ -67,9 +81,10 @@ const Header = () => {
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>
         </div>
+        
         <nav class={changeNav ? "nav change" : "nav"} id="nav">
         <div className='menuItems'>
-
+        
 
 <Link to="/" onClick={()=>menuOnClick()}>Home &nbsp;</Link>
 <Link to="/about"  onClick={()=>menuOnClick()}>About Us &nbsp;</Link>
@@ -83,11 +98,12 @@ const Header = () => {
 
 </div>
   </nav> 
+ 
 </div>
 
 <div class={changeNav ? "menu-bg change-bg posAbslt" : "menu-bg"} id="menu-bg" ></div>
          </div>
-
+         </OutsideClickHandler>
        </div>
 
     </div>

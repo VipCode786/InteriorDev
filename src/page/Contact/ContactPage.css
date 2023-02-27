@@ -47,6 +47,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
+  font-size: 20px;
   line-height: 138.7%;
   /* or 28px */
   margin-left: 1rem;
@@ -64,13 +65,14 @@
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin-left: 2rem;
+  margin-top: 1rem;
 }
 .contactPage .contactInfo .contactDetails p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 40px;
   margin-top: 1rem;
   /* identical to box height */
   display: -webkit-box;
@@ -261,6 +263,17 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
+.contactPage .contactInfo .contact-paragraph {
+  
+  font-size: 15px;
+}
+.contactPage .contactInfo .contactDetails p {
+  /* font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 16px;
+  line-height: 20px;
+}
   .contactPage .content1 {
     margin-left: 2rem;
   }
@@ -284,14 +297,14 @@
   }
 
   .contactPage .contactForm input {
-    width: 70vw;
+    width: 80vw;
     /* max-width: 500px */
   }
   #root > div > div:nth-child(2) > div > div.contactForm > form > div:nth-child(4) > label > input{
-    width: 70vw;
+    width: 80vw;
   }
   .contactPage .react-tel-input {
-    width: 70vw;
+    width: 80vw;
   }
 
   /* .rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {

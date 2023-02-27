@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 /* .process{
   max-width: 100vw;
   height: auto;
@@ -36,6 +31,8 @@
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+      margin-left: 4rem;
+      margin-right: 4rem;
 }
 .process .rowProcess1 {
   display: -webkit-box;
@@ -54,14 +51,31 @@
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
       margin-left: 15rem;
+      margin-right: 4rem;
 }
 
 .process .rowProcess3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-left: 45rem;
-  margin-top: -6rem;
+
+
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+        flex-direction: row;
+/* justify-content: center;
+margin-left: 45rem;
+margin-top: -6rem; */
+/* justify-content: flex-end;
+margin-top: -6rem;
+margin-right: 4rem; */
+margin-left: 59rem;
+margin-top: -6rem;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+      justify-content: center;
+
 }
 
 
@@ -114,8 +128,12 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 22px;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: flex-end;
+-webkit-box-align: end;
+    -ms-flex-align: end;
+        align-items: flex-end;
 text-align: center;
 letter-spacing: 0.025em;
 max-width: 477px;
@@ -124,21 +142,21 @@ color: #858585;
 }
 
 .bgVector1{
-  background: url("newRightVector.png");
+  background: url("bg1.png");
   background-size:contain;
   background-repeat: no-repeat;
-  width: 469px;
- height: 336px;
- margin-right: 15rem;
+  width: 769px;
+  height: 336px;
+  margin-right: 15rem;
 }
 
 .bgVector2{
-  background: url("newLeftVector.png");
+  background: url("bg2.png");
   background-size:contain;
   background-repeat: no-repeat;
-  width: 469px;
- height: 336px;
- margin-top: 10rem;
+  width: 769px;
+  height: 336px;
+  margin-top: 10rem;
 }
 .process .gear1 {
   position: absolute;
@@ -255,11 +273,21 @@ max-width: 90vw;
 
 @media screen and (max-width: 1250px) {
   .process .rowProcess {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
 }
 
 .bgVector1 {
@@ -270,12 +298,26 @@ margin-right: 0rem;
 }
 
 .process .rowProcess1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction:column-reverse;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin-left: 0rem;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:reverse;
+      -ms-flex-direction:column-reverse;
+          flex-direction:column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* flex-wrap: nowrap;
+  margin-left: 0rem; */
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 .bgVector2 {
@@ -283,9 +325,16 @@ margin-top: 2rem;
 }
 
 .process .rowProcess3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 0rem;
   margin-top: -6rem;
 }

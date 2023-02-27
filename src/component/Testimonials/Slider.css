@@ -66,8 +66,9 @@
 .section-center {
   margin: 0 auto;
   width: 100vw;
+  /*  */
   height: 360px;
-  /* max-width: 1400px; */
+  max-width: 1600px;
   /* max-width: 1066px; */
   text-align: center;
   position: relative;
@@ -256,16 +257,44 @@ article h4 {
     font-size: 15px;
   }
   .prev, .next {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .home .ourTeam .ourteamInfo {
     margin-left: 0rem;
 }
 
+.home .featuredProjects .picRow {
+  
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.home .featuredProjects .picRow img {
+  /* width: 27rem;
+  height: 20rem;
+  width: 24.312rem;
+  height: 24.312rem; */
+  margin: 1rem;
+  width: 18.312rem;
+height: 18.312rem;
+}
+
+.dream{
+  font-size: 38px;
+}
 .prev,
 .next {
   
-  margin-top: 200px;
+  margin-top: 220px;
+}
+.prev,
+.next img{
+  
+  height: 30px;
+}
+.prev img{
+  
+  height: 30px;
 }
 } 

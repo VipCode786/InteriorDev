@@ -153,8 +153,10 @@
 .career .careerForm {
   margin-top: 2rem;
   width: 100%;
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
+  margin-left: 4.5rem;
+  margin-right: 4rem;
 }
 .career .careerForm .cloumnForm {
   display: -webkit-box;
@@ -236,7 +238,7 @@
   text-indent: 1rem;
 }
 .career .careerForm textarea {
-  width: 60vw;
+  width: 63vw;
   height: 8rem;
   margin-left: 3rem;
   margin-top: 10px;
@@ -287,6 +289,7 @@
   letter-spacing: 0.025em;
   color: #E0E0E0;
   margin-left: 3rem;
+  
 }
 .career .careerForm p:nth-of-type(1) {
   margin: 2rem;

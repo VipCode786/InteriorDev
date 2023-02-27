@@ -69,8 +69,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 1rem;
   /* identical to box height */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +146,10 @@
   /* identical to box height */
   letter-spacing: 0.025em;
   color: #979797;
+}
+
+#root > div > div:nth-child(2) > div > div.contactForm > form > div:nth-child(4) > label > input{
+  width: 90%;
 }
 .contactPage .contactForm input:focus {
   color: #000000;
@@ -282,14 +287,17 @@
     width: 70vw;
     /* max-width: 500px */
   }
+  #root > div > div:nth-child(2) > div > div.contactForm > form > div:nth-child(4) > label > input{
+    width: 70vw;
+  }
   .contactPage .react-tel-input {
     width: 70vw;
   }
 
-  .rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {
+  /* .rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {
     border: 1px solid #d3d3d3;
     width: 60vw;
-}
+} */
   /* div iframe {
     transform:scale(0.77);
     -webkit-transform:scale(0.77);

@@ -157,9 +157,12 @@ const ContactPage = () => {
             <br/>
            <div>
             <label >Message <br/>
-            <input  style={{
+            <input className='messageStyle' 
+            style={{
               marginLeft:'2rem',
-             width:"90%" }} type="text" placeholder='Write Your Message' 
+            //  width:"90%" 
+            }} 
+             type="text" placeholder='Write Your Message' 
             onChange={(e) => {
               setMessage(e.target.value);
               }}
@@ -191,7 +194,7 @@ const ContactPage = () => {
         onChange={onChange}
         required
         // className='recaptcha'
-        style={{maxWidth:"70vw" ,margin: "2rem"}}
+        style={{margin: "2rem"}}
       />
       {/* </div> */}
            {error ?   <p>Fill ReCaptcha</p>: ""}

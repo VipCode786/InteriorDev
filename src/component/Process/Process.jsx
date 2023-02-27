@@ -44,7 +44,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
             </div>
         </div>
 
-        <div className='rowProcess1  marginTop-6' >
+        <div className='rowProcess1 ' >
            
             <div className='images  bgVector2' >
             <i class = "fa fa-cog fa-5x slow-spin gear3"></i>
@@ -55,7 +55,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
                 <img src="gear.png" alt="" className='gear6' id="js-logo6"/> */}
                 {/* <img className='Vector' src="leftVector.png" alt="" /> */}
             </div>
-            <div className='columnProcess '>
+            <div className='columnProcess mobMargin1'>
             <img src="detail.png" alt="" />
                 <div className='heading'>Detail</div>
                 <p>Our team of architects and designers then work on creating a structure and implementing the
@@ -64,7 +64,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
         </div>
 
         <div className='rowProcess' >
-            <div className='columnProcess '>
+            <div className='columnProcess mobMargin2'>
             <img src="develop.png" alt="" />
                 <div className='heading'>Develop</div>
                 <p>We start the fabrication of your product once we’ve agreed on the project’s specifics and
@@ -95,7 +95,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
         <div className='rowProcess3' >
            
             
-            <div className='columnProcess ' >
+            <div className='columnProcess mobMargin3' >
             <img src="deliver.png" alt="" />
                 <div className='heading'>Deliver</div>
                 <p>Our team of architects and designers then work on creating a structure and implementing the

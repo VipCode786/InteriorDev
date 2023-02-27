@@ -478,7 +478,8 @@ section:nth-child(even) {
   }
   .home .ourTeam .imageOwner .nameOwner {
     margin-top: 0%;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    margin-left: 23%;
   }
   .home .ourTeam .imageOwner .nameOwner .ownerName {
     text-align: center;

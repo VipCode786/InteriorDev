@@ -173,7 +173,7 @@
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 50px;
     white-space: nowrap;
   }

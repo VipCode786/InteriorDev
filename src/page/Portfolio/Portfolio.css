@@ -874,7 +874,7 @@
 
 
 @media only screen and (max-width: 550px) {
-  .gate{
+  /* .gate{
     grid-gap: 0.5rem; 
   }
   .canopy{
@@ -891,7 +891,7 @@
   .staircase{
     grid-gap: 0.5rem; 
   }
- 
+  */
 
 
   
@@ -899,7 +899,7 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(55, 1.8vw);
-  grid-gap: 1.250rem; 
+  grid-gap: 0.8rem; 
   margin-top: -2.8vw;
   
 }
@@ -1104,7 +1104,7 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(45, 1.8vw);
-  grid-gap: 1.250rem; 
+  grid-gap: 0.8rem; 
   
 }
 
@@ -1192,7 +1192,7 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(78, 1.8vw);
-  grid-gap: 1.250rem; 
+  grid-gap: 0.8rem; 
   background-color:#636363;
   
 }
@@ -1299,8 +1299,7 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(54, 1.8vw);
-  grid-gap: 1.250rem; 
-  
+  grid-gap: 0.8rem; 
   
 }
 .railingScroll{
@@ -1397,7 +1396,7 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(150, 1.8vw);
-  grid-gap: 1.250rem; 
+  grid-gap: 0.8rem; 
   background: none;
   /* background: -webkit-linear-gradient(top, #383838 50%, #D9D9D9 50%); */
   /* background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(52%, #383838), color-stop(45%, #D9D9D9));

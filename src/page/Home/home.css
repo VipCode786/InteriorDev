@@ -455,8 +455,13 @@ section:nth-child(even) {
   }
   
   .home .ourTeam .imageOwner img {
-    width: 100%;
+    width: 80%;
     height: 417px;
+    height: 417px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+
   }
   .home .ourTeam .imageOwner .nameOwner {
     margin-top: 0%;
@@ -464,6 +469,8 @@ section:nth-child(even) {
   }
   .home .ourTeam .imageOwner .nameOwner .ownerName {
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
   .home .ourTeam .imageOwner .nameOwner .ownedesignation {
     text-align: center;

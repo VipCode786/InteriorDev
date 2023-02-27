@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 .contactPage {
   display: -webkit-box;
@@ -19,7 +14,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #FFFFFF;
-  padding: 2rem;
+  /* padding: 2rem; */
+  margin: 2rem 10rem 2rem 10rem;
+  border-radius: 13px;
+  padding-bottom: 1rem;
   
 }
 .contactPage .contactInfo {
@@ -93,7 +91,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 2rem;
+          margin-top: 2rem;
 }
 .contactPage .contactInfo .social-media img {
   margin: 1rem;
@@ -101,6 +99,18 @@
 .contactPage .contactForm {
   background-color: #FFFFFF;
 }
+.contactPage .contactForm .flName{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .contactPage .contactForm .error {
   font-family: "Poppins";
   font-style: normal;
@@ -125,7 +135,7 @@
   outline: 0;
   border-width: 0 0 2px;
   border-color: #000000;
-  margin: 2rem;
+  margin: 1rem 0;
   border-radius: none;
   font-family: "Poppins";
   font-style: normal;
@@ -140,7 +150,7 @@
   color: #000000;
 }
 .contactPage .contactForm label {
-  margin: 2rem;
+  margin: 2rem 2rem 1rem 2rem;
 }
 .contactPage .contactForm p {
   margin-left: 2rem;
@@ -168,7 +178,7 @@
 }
 .contactPage .contactForm button {
   margin-left: 2rem;
-  /* float: right; */
+  float: right;
 }
 .contactPage .containerClass .special-label {
   display: none;
@@ -181,9 +191,11 @@
   font-size: 15px;
   position: relative;
   width: 100%;
-  margin-top: 10px;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  /* margin-top: 10px;
+  margin: 1.5rem 0rem */
+  /* margin-left: 2rem; */
+  /* margin-bottom: 2rem; */
 }
 .contactPage .react-tel-input .flag-dropdown {
   margin-left: -2px;
@@ -223,11 +235,27 @@
   line-height: 118%;
   color: #000000;
 }
-
-@media screen and (max-width: 750px) {
+.contactPage .contactForm .recaptcha{
+  /* margin:"2rem"; */
+  max-width:"70vw";
+  margin: "2rem";
+}
+@media screen and (max-width: 950px) {
   .contactPage{
-    overflow-x: hidden;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 1rem;
   }
+  .contactPage .contactForm .flName {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
   .contactPage .content1 {
     margin-left: 2rem;
   }
@@ -243,7 +271,7 @@
     display: block;
   }
   .contactPage .contactForm p {
-    width: 80vw;
+    width: 70vw;
   }
   .contactPage .contactForm {
 
@@ -252,9 +280,10 @@
 
   .contactPage .contactForm input {
     width: 70vw;
+    /* max-width: 500px */
   }
   .contactPage .react-tel-input {
-   width: 70vw;
+    width: 70vw;
   }
 
   .rc-anchor-light.rc-anchor-normal, .rc-anchor-light.rc-anchor-compact {

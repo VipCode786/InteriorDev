@@ -71,7 +71,7 @@ const ContactPage = () => {
   
 
   return (
-    <div>
+    <div  s>
     <div className='contactPage'>
             <div className='contactInfo' >
               <h1>
@@ -90,9 +90,9 @@ const ContactPage = () => {
                 <img src="/contactUs/email.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>info@interiorcraft.in</p>
                 </div>
                 <div className='contactDetails'>
-                <img src="/contactUs/address.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
+                <img src="/contactUs/address.svg" alt="" style={{lineHeight :"22px"}} /> &nbsp; &nbsp; &nbsp; <p>A-218, 219, Sector-83, Phase-II, Noida-201305</p>
                 </div>
-                <div className="contact-in" style={{height:"30vh"}}>
+                <div className="contact-in" style={{height:"40vh"}}>
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3505.5736955621933!2d77.3936937!3d28.5224711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce9d48b8267cd%3A0xb8ae7c7899c59509!2sInterior%20Craft!5e0!3m2!1sen!2sin!4v1667299088135!5m2!1sen!2sin"
                 width="90%"
@@ -116,26 +116,33 @@ const ContactPage = () => {
            
             <div className='contactForm'>
              <form onSubmit={(e)=>upload(e)}>
-            <div>
-            <input  type="text" placeholder='FirstName' 
+            
+            <div  className='flName'>
+            <label>FirstName<br/>
+            <input  type="text" 
             required
             onChange={(e) => {
             setFirstName(e.target.value);
             }}
-            />
-            <input  type="text" placeholder='LastName' required
+            /></label>
+            
+             <label>LastName<br/>
+            <input  type="text" required
              onChange={(e) => {
               setLastName(e.target.value);
               }}
-            />
+            /></label>
             </div>
-            <div>
-            <input  type="email" placeholder='Email' required
+
+            <div className='flName'>
+              <label>Email <br/>
+            <input  type="email"  required
              onChange={(e) => {
               setEmail(e.target.value);
               }}
             />
-          
+          </label>
+          <label>Phone
               <PhoneInput
                 disabled={false}
                 containerClass={"containerClass"}
@@ -145,14 +152,18 @@ const ContactPage = () => {
                 onChange={setPhone}
                 placeholder={"placeholder"}
               />
+              </label>
             </div>
+            <br/>
            <div>
-            <label>Message </label><br/>
-            <input  type="text" placeholder='Write Your Message' 
+            <label >Message <br/>
+            <input  style={{
+              marginLeft:'2rem',
+             width:"90%" }} type="text" placeholder='Write Your Message' 
             onChange={(e) => {
               setMessage(e.target.value);
               }}
-            />
+            /></label>
             
               </div>
             <div>
@@ -174,12 +185,15 @@ const ContactPage = () => {
                 For larger files, you can discuss when our team contacts you.
             </p> 
 
+{/* <div  className='recaptcha'> */}
             <ReCAPTCHA
         sitekey="6Lckg3cjAAAAAAPGpyDl4BrPM0F_4GvahyHyJWQh"
         onChange={onChange}
         required
-        style={{margin:"2rem",maxWidth:"70vw" }}
+        // className='recaptcha'
+        style={{maxWidth:"70vw" ,margin: "2rem"}}
       />
+      {/* </div> */}
            {error ?   <p>Fill ReCaptcha</p>: ""}
           
             <button className="submitButton" type="Submit" disabled={recaptcha? false : true} style={{padding:"0.5rem 1rem 0.5rem 1rem"}}> Submit </button>

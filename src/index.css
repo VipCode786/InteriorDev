@@ -394,7 +394,9 @@ input[type=number] {
 .marginTop5{
   margin-top: 5rem;
  }
-
+ .marginTop10{
+  margin-top: 10rem;
+ }
  .marginTop-6{
   margin-top: -6rem;
  }
@@ -547,29 +549,7 @@ a:hover{
 }
 
 
-.careerFIx{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-items: center;
 
-}
-
-@media screen and (max-width:935px) {
-  .careerFIx{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
-    padding: 1rem;
-    }
-    
-
-
-    
-}
 
 /* @media screen and (max-width:850px) {
   .border{
@@ -577,3 +557,19 @@ align-items: center;
   }
   
 } */
+
+@media screen and (max-width:950px) {
+
+  .height{
+    height:20vh;
+    width: 100vw;
+    background-color: #FFF2F2;
+  }
+
+}
+
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+  color: #CB572C;
+}

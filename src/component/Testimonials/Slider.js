@@ -68,16 +68,26 @@ const Slider = () => {
           );
         })}
  
+ <div style={{maxWidth:"90vw"}}>
         <div className="prev" onClick={() => setIndex(index - 1)}>
-          <img src="/images/LeftArrow.png" style={{marginLeft:"1rem"}}/>
+          <img src="/images/LeftArrow.png" />
           </div>
-        <div className="next" style={{marginLeft:"30px",}} onClick={() => setIndex(index + 1)}>
+        <div className="next"  onClick={() => setIndex(index + 1)}>
         <img src="/images/RightArrow.png" />
+          </div>
           </div>
           </div>
          
     </section>
- 
+    {/* <div className="arrowWidth">
+          <div className="prev" onClick={() => setIndex(index - 1)}>
+          <img src="/images/LeftArrow.png" />
+          </div>
+        <div className="next"  onClick={() => setIndex(index + 1)}>
+        <img src="/images/RightArrow.png" />
+          </div>
+    </div> */}
+
      <br/>
     
      </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-import './process.css'
+import './process.css';
+
 const Process = () => {
 
     window.onscroll = function() {
@@ -30,22 +31,29 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
                 <p>We build you a concept and a solution that addresses your unique needs.</p>
             </div>
             
-            <div className='images marginTop5 '>
-                <img src="gear.png" alt="" className='gear1' id="js-logo1"  />
-                <img src="gear.png" alt="" className='gear2' id="js-logo2"/>
-                <img src="gear.png" alt="" className='gear3' id="js-logo3"/>
+            <div className='images marginTop10 bgVector1'>
+            <i class = "fa fa-cog fa-5x slow-spin gear1"></i>
+            <i class = "fa fa-cog fa-5x slow-spin gear2"></i>
+            
 
-                <img className='Vector' src="rightVector.png" alt="" />
+                {/* <img src="gear.png" alt="" className='gear1' id="js-logo1"  />
+                <img src="gear.png" alt="" className='gear2' id="js-logo2"/>
+                <img src="gear.png" alt="" className='gear3' id="js-logo3"/>*/}
+
+                {/* <img className='Vector' src="rightVector.png" alt="" />  */}
             </div>
         </div>
 
-        <div className='rowProcess1 marginLeft-13 marginTop-2' >
+        <div className='rowProcess1  marginTop-6' >
            
-            <div className='images margin123' >
-                <img src="gear.png" alt="" className='gear4' id="js-logo4"  />
+            <div className='images  bgVector2' >
+            <i class = "fa fa-cog fa-5x slow-spin gear3"></i>
+            <i class = "fa fa-cog fa-5x slow-spin gear4"></i>
+            
+                {/* <img src="gear.png" alt="" className='gear4' id="js-logo4"  />
                 <img src="gear.png" alt="" className='gear5' id="js-logo5"/>
-                <img src="gear.png" alt="" className='gear6' id="js-logo6"/>
-                <img className='Vector' src="leftVector.png" alt="" />
+                <img src="gear.png" alt="" className='gear6' id="js-logo6"/> */}
+                {/* <img className='Vector' src="leftVector.png" alt="" /> */}
             </div>
             <div className='columnProcess '>
             <img src="detail.png" alt="" />
@@ -56,27 +64,37 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
         </div>
 
         <div className='rowProcess' >
-            <div className='columnProcess marginTop-6 '>
+            <div className='columnProcess '>
             <img src="develop.png" alt="" />
                 <div className='heading'>Develop</div>
                 <p>We start the fabrication of your product once we’ve agreed on the project’s specifics and
                     have finalized the specifications.</p>
             </div>
-            <div className='images margin123'>
+
+            <div className='images  bgVector1'>
+            <i class = "fa fa-cog fa-5x slow-spin gear5"></i>
+            <i class = "fa fa-cog fa-5x slow-spin gear6"></i>
+            <i class = "fa fa-cog fa-5x slow-spin gear7"></i>
+
+                {/* <img src="gear.png" alt="" className='gear1' id="js-logo1"  />
+                <img src="gear.png" alt="" className='gear2' id="js-logo2"/>
+                <img src="gear.png" alt="" className='gear3' id="js-logo3"/>*/}
+
+                {/* <img className='Vector' src="rightVector.png" alt="" />  */}
+            </div>
+            {/* <div className='images margin123'>
                  <img src="gear.png" alt="" className='gear7' id="js-logo7"  />
                 <img src="gear.png" alt="" className='gear8' id="js-logo8"/>
                 <img src="gear.png" alt="" className='gear9' id="js-logo9"/>
                 <img src="gear.png" alt="" className='gear10' id="js-logo10"/>
 
                 <img className='Vector' src="rightVector.png"  alt="" />
-            </div>
+            </div> */}
         </div>
 
-        <div className='rowProcess1 marginLeft-35 marginTop-2' >
+        <div className='rowProcess3' >
            
-            {/* <div style={{background:"none",   width: "279px" ,height: "205px"}}>
-              
-            </div> */}
+            
             <div className='columnProcess ' >
             <img src="deliver.png" alt="" />
                 <div className='heading'>Deliver</div>

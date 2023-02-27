@@ -21,11 +21,11 @@ const MyTeam = () => {
     <div>
         <br/>
         <p className='meetTheTeam'>Meet the Team</p>
-        <br/>
+       
         <div className='boxView'>
                  <Link to="/career" >  <button className='boxButton'>Join Our Team</button></Link>
         </div>
-        <br/>
+       
     </div>
     
     <div className='row'>

@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 /* 
@@ -147,8 +141,13 @@
 .home .counter .counter-box .count {
   width: 13rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Aldrich";
   font-style: normal;
   font-weight: 400;
@@ -223,11 +222,17 @@
       -ms-flex-direction: row;
           flex-direction: row;
   height: 620px;
+  margin-right: 4rem;
+
+}
+.home .ourTeam .ourteamInfo{
+  margin-left: 4rem;
 }
 .home .ourTeam .imageOwner .nameOwner {
   margin-top: auto;
-  margin-right: 10px;
-  margin-bottom: 15px
+  margin-right: 100px;
+  margin-bottom: 15px;
+  max-width: 233px;
 }
 .home .ourTeam .imageOwner .nameOwner .ownerName {
   font-family: "Poppins";
@@ -297,13 +302,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+ /* margin-left: 4rem;
+    margin-right: 4rem; */
+
 }
 .home .featuredProjects .picRow img {
-  width: 20rem;
-  height: 15rem;
-  margin: 1rem;
+  /* width: 27rem;
+  height: 20rem; */
+  width: 24.312rem;
+  height: 24.312rem;
+  margin: 2rem;
 }
 .home .discussProjects {
   width: 100%;
@@ -320,8 +328,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#E37C56), to(#E37C56));
   background-image: -o-linear-gradient(#E37C56, #E37C56);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E37C56), to(#E37C56));
   background-image: linear-gradient(#E37C56, #E37C56);
   background-repeat: no-repeat;
   -webkit-transition: background-size 0.8s, color 0.8s, border-radius 1s;
@@ -342,8 +350,8 @@
   transition: color 1s;
 }
 .home .fillColor2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e79e), to(#e7e79e));
   background-image: -o-linear-gradient(#e7e79e, #e7e79e);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e7e79e), to(#e7e79e));
   background-image: linear-gradient(#e7e79e, #e7e79e);
   background-repeat: no-repeat;
   -webkit-transition: background-size 0.8s, color 0.8s;
@@ -413,14 +421,26 @@ section:nth-child(even) {
 @media only screen and (max-width: 850px) {
  
   .home .ourTeam .heading {
-    margin: 1rem;
+    /* margin: 1rem; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0%;
+    margin-left: 0% ;
+
   }
   .home .ourTeam p {
     width: auto;
     font-size: 20px;
     font-family: "Poppins";
     font-style: normal;
-    margin: 1rem;
+    margin: 0rem 2rem;
   }
   .home .ourTeam .imageOwner {
     display: -webkit-box;
@@ -431,13 +451,16 @@ section:nth-child(even) {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     height: auto;
+    margin-right: -10%;
   }
+  
   .home .ourTeam .imageOwner img {
     width: 100%;
     height: 417px;
   }
   .home .ourTeam .imageOwner .nameOwner {
     margin-top: 0%;
+    margin-left: 10%;
   }
   .home .ourTeam .imageOwner .nameOwner .ownerName {
     text-align: center;
@@ -597,8 +620,12 @@ section:nth-child(even) {
   cursor: pointer;
   border: 4px solid #FFFFFF;
   border-radius: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* Scroll to Explore */
 
   font-family: "Poppins";
@@ -613,11 +640,13 @@ section:nth-child(even) {
   color: #FFFFFF;
 }
 
-.video .centerScroll .scroll:hover {
-  /* color: #CB572C; */
-  /* border: 4px solid #CB572C; */
-  background-color: #524f4f;
+@media screen and (min-width:1000px) {
+  .video .centerScroll .scroll:hover {
+ 
+    background-color: #524f4f;
+  }
 }
+
 
 /* .video .centerScroll .scroll .scrollContent {
   position: absolute;
@@ -634,7 +663,7 @@ section:nth-child(even) {
 } */
 
 @media only screen and (min-width: 750px) and (max-width: 1020px) {
-  .video .centerScroll .arrowOne {
+  /* .video .centerScroll .arrowOne {
     top: 90vh;
   }
   .video .centerScroll .scroll {
@@ -642,7 +671,7 @@ section:nth-child(even) {
   }
   .video .centerScroll .scroll .scrollContent {
       font-size: 15px;
-  }
+  } */
 }
 @media only screen and (max-width: 950px) {
 
@@ -657,17 +686,16 @@ section:nth-child(even) {
   .video .box .mainHeading .headingContent {
     margin-top: 17vh
 }
-.video .centerScroll .arrowOne {
+ .video .centerScroll .arrowOne {
   width: 1em;
   height: 1em;
-  /* margin-left: -20px; */
-  top: 97vw;
+  top: 90vw;
 }
 .video .centerScroll .scroll {
-  top: 105vw;
-  width: 200px;
-  height: 40px;
-}
+  top: 95vw;
+  /* width: 200px;
+  height: 40px; */
+} 
 }
 @media only screen and (max-width:1350px) {
   .home .ourTeam {
@@ -687,7 +715,7 @@ section:nth-child(even) {
      position: relative; */
     /* overflow-y: scroll; */
   }
-  .home .ourTeam .heading {
+  /* .home .ourTeam .heading {
     font-size: 32px;
   }
   .home .ourTeam p {
@@ -699,7 +727,7 @@ section:nth-child(even) {
   }
   .home .ourClients_Text {
     font-size: 16px;
-  }
+  } */
   .home .featuredProjects p {
     font-size: 32px;
   }
@@ -721,7 +749,7 @@ section:nth-child(even) {
     display: none;
   } */
   .video {
-    height: 100vw;
+    height: 105vw;
   }
   .video .box {
     width: 40%;
@@ -744,17 +772,18 @@ section:nth-child(even) {
   .video .centerScroll .arrowOne {
     width: 1em;
     height: 1em;
-    margin-left: -20px;
+    margin-left: 0px;
     top: 97vw;
   }
   .video .centerScroll .scroll {
     top: 105vw;
     width: 200px;
-    height: 40px;
+    height: 50px
+    /* width: 200px;
+    height: 40px; */
   }
-  .video .centerScroll .scroll .scrollContent {
+   .video .centerScroll .scroll .scrollContent {
     font-size: 18px;
-    padding-top: 4px;
   }
   .video .box .mainHeading .headingContent {
     margin-top: 71px;
@@ -767,27 +796,36 @@ section:nth-child(even) {
 
 @media screen and (orientation:landscape) {
   .video {
-    height: 100vh;
+    height: 90vh;
   }
   .video .box .mainHeading{
     font-size: 30px;
   }
   .video .centerScroll .arrowOne {
-    top: 80vh;
+    top: 82vh;
+}
+.video .centerScroll .scroll {
+  top: 90vh;
 }
 }
 
 @media screen and (min-width:1350px) {
-  .video {
+  /* .video {
     height: 100vh;
-  }
+  } */
   .video .box .mainHeading{
     font-size: 70px;
   }
-  .video .centerScroll .scroll {
+  /* .video .centerScroll .scroll {
     top: 100vh;
   }
   .video .centerScroll .arrowOne {
     top: 93vh;
+} */
 }
+
+@media screen and (max-width:720px) {
+  .home .featuredProjects .picRow img {
+    max-width: 90vw;
+  }
 }

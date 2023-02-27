@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .career {
   overflow-x: hidden;
 }
@@ -82,7 +89,7 @@
 }
 .career .rowCareerfirst p:first-of-type {
   margin-top: 5rem;
-  margin-right: 1rem;
+  margin-right: 5rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -92,7 +99,7 @@
   color: #000000;
 }
 .career div p:nth-of-type(2) {
-  width: 652px;
+  max-width: 899px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -129,7 +136,7 @@
 .career .orange-bg {
   width: 632px;
   margin: 2rem;
-  background: #E37C56;
+  background: #CB572C;
   border-radius: 37px;
 }
 .career .orange-bg .heading {
@@ -211,6 +218,12 @@
   text-indent: 1rem;
 }
 .career .careerForm input::-ms-input-placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: left;
+  margin-left: 30px;
+  text-indent: 1rem;
+}
+.career .careerForm input::-moz-placeholder {
   /* Firefox, Chrome, Opera */
   text-align: left;
   margin-left: 30px;
@@ -397,19 +410,58 @@
   width: 300px;
   border-radius: 3px 0 0 0;
 }
-.careerFIx2 .c2{
+/* .careerFIx2 .c2{
   display: none;
 }
 .careerFIx2 .c2 {
   display: none;
-}
+} */
 #root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(1){
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #ffffff;
+max-width: 218px;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+#root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(2){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #ffffff;
+max-width: 218px;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 @media only screen and (max-width: 934px) {
   .marginButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1rem;
   }
   .career .rowCareer {
     -webkit-box-orient: vertical;
@@ -456,9 +508,11 @@
   .career .rowCareerfirst p:first-of-type {
     font-size: 32px;
     line-height: 38px;
-    text-align: justify;
+    text-align: center;
     color: #000000;
+    margin-right: 0;
   }
+  
   .career .careerForm p:nth-of-type(1) {
     font-size: 32px;
     padding-top: 2rem;
@@ -560,7 +614,8 @@
 
 @media screen and (max-width: 320){
   .career .rowCareer .boxButtonCareer {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       gap: 10px;
       height: auto;
       border: 3px solid #FFFFFF;
@@ -593,10 +648,18 @@
 
 @media screen and (max-width:1250) {
   .career .career-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin-left: -1rem;
 }
 }
@@ -620,7 +683,9 @@
       border-radius: 8px 0px 0px 8px;
   }
   .career .careerForm .row-wrapForm {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .career .careerForm textarea{
@@ -643,11 +708,20 @@
   line-height: 14px;
   letter-spacing: 0.025em;
   color: #E0E0E0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(1){
-  display: flex;
+  display: none;
+  margin-top: 5px;
+}
+#root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div.marginButton > div.careerFIx2 > div:nth-child(2){
+  display: none;
   margin-top: 5px;
 }
 /* div iframe {
@@ -668,7 +742,62 @@
 
 
 @media  screen and (max-width:20000000px){
-  .careerFIx2{
+  #root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div > div.careerFIx{
     display: none;
   }
+
 }
+
+
+.careerFIx{
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  
+  }
+  
+  @media screen and (max-width:935px) {
+    /* .careerFIx{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      padding: 1rem;
+      } */
+      
+      #root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div > div.careerFIx{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        display: flex;
+        color: #ffffff;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        font-size: 12px;
+      }
+  
+      #root > div > div.career > div.FromBG > div > form > div > div.career-column > div > div.careerFIx > div > div.careerFIx > span:nth-child(1)
+      {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        
+      }      
+  }

@@ -160,12 +160,12 @@ const Career = () => {
             
                     <div className='rowCareerButtonfix'>
                     <div className='boxViewCareer' style={{width:"20rem"}}>
-                    <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"1rem"}}>
+                    <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"0.5rem"}}>
                     Job Description (Download)
                     </div></Link>
                     </div>&nbsp;&nbsp;
                     <div className='boxViewCareer' onClick={scrollClick}>
-                      <div className='boxButtonCareer'style={{padding:"1rem 2rem 1rem 2rem"}}>
+                      <div className='boxButtonCareer'style={{padding:"0.5rem 1rem 0.5rem 1rem"}}>
                     Apply
                     </div>
                     
@@ -190,13 +190,13 @@ const Career = () => {
                    
                     <div className='rowCareerButtonfix'>
                     <div className='boxViewCareer'>
-                    <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"1rem"}}>
+                    <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"0.5rem"}}>
                     Job Description (Download)
                     </div></Link>
                     </div>
                     &nbsp;&nbsp;
                     <div className='boxViewCareer' onClick={scrollClick}>
-                      <div className='boxButtonCareer'style={{padding:"1rem 2rem 1rem 2rem"}}>
+                      <div className='boxButtonCareer'style={{padding:"0.5rem 1rem 0.5rem 1rem"}}>
                     Apply
                     </div>
                     
@@ -227,15 +227,15 @@ const Career = () => {
                         {/* <input className="formInput" type="number"   placeholder='Phone Number'          onChange={(e)=>setPhone(e.target.value)}  /> */}
                         
                         <PhoneInput
-  disabled={false}
-  containerClass={"containerClass"}
-  countryCode="in"
-  country={'in'}
-  value={Phone}
-  onChange={setPhone}
-  placeholder={"placeholder"}
- style={{textIndent:"0"}}
-/>
+                        disabled={false}
+                        containerClass={"containerClass"}
+                        countryCode="in"
+                        country={'in'}
+                        value={Phone}
+                        onChange={setPhone}
+                        placeholder={"placeholder"}
+                        style={{textIndent:"0"}}
+                      />
                         {/* <PhoneInput
           country={'us'}
           value={Phone}
@@ -258,33 +258,33 @@ const Career = () => {
                           className="captchaa"
                         />
       
-                       
+ 
                       
                         <div className='careerFIx'>
 
                         <div className='marginButton'>
-                       
-                        <div style={{display:"block",width:"120px", height:"40px",marginTop:"-0.1rem" ,textAlign:"center" }} className="attach" ref={AttachColor} onClick={()=>{handleClick(); attachClick(); }}> Attach </div>
-                       {show &&
-                        <div className='careerFIx2' id="fix2">
-                        <div className='c2'>Max file size of 8mb</div><br/>
+                        <div className='careerFIx2' id="fix2" style={{display:"block"}} >
+                        <div className='c2'>Max file size of 8mb, for larger enquiries please contact the team</div>
                         <div className='c2'> {File?.name} </div>
                         </div>
-                        }
+                        <div style={{display:"flex",width:"120px", height:"40px",alignItems:"center",justifyContent:"center",marginLeft:"auto",marginRight:"auto" }} className="attach" ref={AttachColor} onClick={()=>{handleClick(); attachClick(); }}> Attach </div>
+                       {/* {show && */}
+                       <div className='careerFIx'>
+                       <div className='c2'>Max file size of 8mb, for larger enquiries please contact the team</div><br/>
+                        <div className='c2'> {File?.name} </div>
+                        </div>
+                        {/* } */}
                         <input type='file' id="getFile"  accept=".docs , .pdf" style={{display:"none"}} ref={hiddenFileInput}   onChange={(e) => {
                             setFile(e.target.files[0]);
                             }} />&nbsp;&nbsp;
                             
-                        <button type="submit" style={{display:"block",width:"120px", height:"45px" }} className="attach" > Submit </button>
+                        <button type="submit" style={{display:"flex",width:"120px", height:"45px",alignItems:"center",justifyContent:"center",marginLeft:"auto",marginRight:"auto"}} className="attach" > Submit </button>
                         </div>
                         {/* <input type="file" className='attach'  />
                         <button>Attach</button>
                         &nbsp;&nbsp;
                         <button className='attach'>Submit</button> */}
-                          <div className='careerFIx'>
-                        <span >Max file size of 8mb</span>
-                        <span > {File?.name} </span>
-                        </div>
+                         
                 </div>
                         
             </div>

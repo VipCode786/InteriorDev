@@ -24,6 +24,8 @@ import Testimonials1 from '../../component/Testimonials/Testimonials1'
 import Slider from '../../component/Testimonials/Slider'
 import $ from 'jquery';
 import Process from '../../component/Process/Process'
+import Pulse from 'react-reveal/Pulse';
+
 const myHTML =
 `<div class="container">
 <p>Page Container of a ugly example</p>
@@ -100,7 +102,7 @@ const Home = () => {
       // console.log('Event Fired');
    });
 
- 
+  
      
  useEffect(()=>{
   console.log("sub",sub)
@@ -163,9 +165,18 @@ const Home = () => {
   //     setSub(null)
   //   };
    const scroll = useRef(null);
-
+   const scrollBG = useRef(null)
   const scrollClick = () => {
+    
+    scrollBG.current.style.backgroundColor="#383838";
+    scrollBG.current.style.backgroundColor=null
+    // setTimeout(() => {
+      
+      
+    // }, 1000);
     scroll.current?.scrollIntoView({behavior: 'smooth'});
+    
+
   };
    useEffect(()=>{
       if(scrollPosition > 1000 && scrollPosition < 1100)
@@ -221,9 +232,13 @@ const Home = () => {
       if(scrollPosition > 1045 && scrollPosition < 1050)
       {
             setvalue(parseInt(30))
-            FourDProcess.current?.scrollIntoView({behavior: 'smooth'});
+    //         document
+    // .getElementById("sec2")
+    // .scrollIntoView({ behavior: "smooth" });
+            // FourDProcess.current?.scrollIntoView({behavior: 'smooth'});
       }
 
+     
       // xexjejhjhi
 
       // if(scrollPosition > 1000 && scrollPosition < 1005)
@@ -527,14 +542,14 @@ const Home = () => {
         </div>
         
       </div>
-      <div className='centerScroll '>
+      <div className='centerScroll ' >
             <div className='arrowOne'></div>
       {/* <div className='arrow' onClick={scrollClick}>
           <img src="/headerImages/arrow.svg" alt="arrow" />
       </div> */}
-      <div className="scroll">
+      <div className="scroll" ref={scrollBG}>
           
-            <div className='scrollContent' onClick={scrollClick}>Scroll to Explore</div>
+            <div className='scrollContent'  onClick={scrollClick}>Scroll to Explore</div>
       </div>
       </div>
     </div>
@@ -601,7 +616,7 @@ const Home = () => {
       {/* <iframe height="600" width="100%" src="index1.html" ></iframe>  */}
       {/* <div dangerouslySetInnerHTML={{ __html: index1}} /> */}
 
-      <section class="First3" style={{background:"#ffffff"}}>
+      <section class="First3" id='sec2' style={{background:"#ffffff"}}>
       <div className='border big3' >
       
           <div className='borderSet'></div>
@@ -635,6 +650,7 @@ const Home = () => {
       </div>
       <div ref={FourDProcess}></div>
       <Process/>
+      
       {/* <HorizontalScroll/> */}
       {/* <Scrollv/>  */}
       <div className='Our4dProcess textInAnimation'> 
@@ -801,15 +817,27 @@ Worked with and Gained Trust of Market-Leading Companies
               <br/>
               <br/>
               <div className='picRow'>
+              <Pulse>
                 <img src="/FeaturedProjects/gate.png" alt="gate" />
+              </Pulse>
+              <Pulse>
                 <img src="/FeaturedProjects/outdoor.png" alt="outdoor" />
+              </Pulse>
+              <Pulse>
                 <img src="/FeaturedProjects/railing.png" alt="railing" />
+              </Pulse>
               {/* </div>
               <br/>
               <div className='picRow' > */}
+              <Pulse>
                 <img src="/FeaturedProjects/pergola.png" alt="pergola" />
+                </Pulse>
+                <Pulse>
                 <img src="/FeaturedProjects/stairs.png" alt="stairs" />
+                </Pulse>
+                <Pulse>
                 <img src="/FeaturedProjects/door.png" alt="door" />
+                </Pulse>
               </div>
               <br/>
               <div className='boxView'>

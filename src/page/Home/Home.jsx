@@ -495,7 +495,7 @@ const Home = () => {
                
                <div className='meetButton'>
               <div className='boxView ' style={{marginLeft:"0px",marginTop:"1rem"}} >
-              <Link to="myteam"><button className='boxButton' style={{fontSize: "25px",padding:"12px 20px 12px 20px"}}> Meet The Team</button></Link>
+              <Link to="myteam"><button className='boxButton'> Meet The Team</button></Link>
               </div>
               </div>
 

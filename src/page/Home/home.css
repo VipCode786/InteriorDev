@@ -263,7 +263,7 @@
 
 .home .ourTeam .imageOwner img{
   /* width:482px */
-  width: 70%;
+  width: 60%;
 }
 .home .featuredProjects {
   display: -webkit-box;
@@ -438,7 +438,7 @@ section:nth-child(even) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 0%;
+            margin-top: 3rem;
     margin-left: 0% ;
     font-size: 40px;
 
@@ -479,8 +479,8 @@ section:nth-child(even) {
   }
   .home .ourTeam .imageOwner .nameOwner {
     margin-top: 0%;
-    /* margin-left: 10%; */
-    margin-left: 23%;
+    margin-left: 10%;
+    /* margin-left: 23%; */
   }
   .home .ourTeam .imageOwner .nameOwner .ownerName {
     text-align: center;
@@ -872,4 +872,11 @@ section:nth-child(even) {
   .home .featuredProjects .picRow img {
     max-width: 90vw;
   }
+}
+
+@media screen and (max-width:1450px) {
+  .home .ourTeam .imageOwner .nameOwner {
+margin-right: 0;
+  }
+  
 }

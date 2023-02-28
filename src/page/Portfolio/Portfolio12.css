@@ -1489,9 +1489,9 @@
 .other__item--0 {
   grid-column-start: 1;
   grid-column-end: 10;
-  grid-row-start: 45;
+  grid-row-start: 46;
   grid-row-end: 54;
-  margin-top: 0.9rem;
+  margin-top: -3.3vw;
   border-top: 26.042vw solid #CB572C;
   border-right: 45.573vw solid transparent;
 }

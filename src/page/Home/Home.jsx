@@ -164,6 +164,7 @@ const Home = () => {
   //     setIsHovering(false);
   //     setSub(null)
   //   };
+
    const scroll = useRef(null);
    const scrollBG = useRef(null)
   const scrollClick = () => {
@@ -178,6 +179,12 @@ const Home = () => {
     
 
   };
+  useEffect(()=>{
+   
+    const imgScroll =  scroll.current.offsetTop ;
+     console.log("imgscroll",imgScroll)
+   },[])
+
    useEffect(()=>{
       if(scrollPosition > 1000 && scrollPosition < 1100)
       {
@@ -511,11 +518,11 @@ const Home = () => {
   //   console.log("asdfghjk",scroll);
   // };
 
-  // useEffect(()=>{
-  //   getscroll();
-  //   ref.current.scrollRight = 1000
-  // })
 
+//   const getoffSet = e => {
+//     console.log("hellojeihe")
+//     console.log(e, e.natiiveEvent.target.childNodes[0].offsetTop)
+//  }
   return (
       <div>
         {/* <HomeFirst/> */}
@@ -571,15 +578,15 @@ const Home = () => {
       </div>
       </section>
       <div className='home'>
-      <div className='scrollImg ' style={{background:"#ffffff"}} >
-      <div ref={scroll} className='whatWeMake'>
+      <div className='scrollImg'  style={{background:"#ffffff"}} >
+      <div  className='whatWeMake'>
       <p class="aniheader textInAnimation">What WE MAKE</p>
       </div>
       <br/>
      
      
       {/* <ParallaxText>A Wild Sheep Chase</ParallaxText> */}
-      <img   width="80%" height="600vh" style={{marginLeft:"10%",marginRight:"10%",height: "100vh"}} src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
+      <img   ref={scroll} width="80%" height="600vh" style={{marginLeft:"10%",marginRight:"10%",height: "100vh"}} src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
       
       <br/>
       <br/>

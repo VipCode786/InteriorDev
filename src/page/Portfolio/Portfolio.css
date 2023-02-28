@@ -433,7 +433,7 @@
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(16, 1.8vw);
   grid-gap: 1.250rem; 
-  background-color:#636363;
+  background-color:#D9D9D9;
   
 }
 
@@ -988,7 +988,7 @@
   font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 3.6vw;
     line-height: 139.1%;
   
 }
@@ -1193,7 +1193,7 @@
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(78, 1.8vw);
   grid-gap: 0.8rem; 
-  background-color:#636363;
+  background-color:#D9D9D9;
   
 }
 
@@ -1298,7 +1298,7 @@
 .railing {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(54, 1.8vw);
+  grid-template-rows: repeat(62, 1.8vw);
   grid-gap: 0.8rem; 
   
 }
@@ -1350,8 +1350,8 @@
 .railing__item--2 {
   grid-column-start: 2;
   grid-column-end: 20;
-  grid-row-start: 2;
-  grid-row-end: 16;
+  grid-row-start: 3;
+  grid-row-end: 24;
   z-index: 100;
   /** Alternative Syntax **/
   /* grid-column: 3 / span 2;  */
@@ -1361,8 +1361,8 @@
 .railing__item--3 {
   grid-column-start: 2;
   grid-column-end: 20;
-  grid-row-start: 16;
-  grid-row-end: 30;
+  grid-row-start: 24;
+  grid-row-end: 38;
   position: relative;
   /** Alternative Syntax **/
   /* grid-column: 5 / span 4;
@@ -1372,8 +1372,8 @@
 .railing__item--4 {
   grid-column-start: 2;
   grid-column-end: 20;
-  grid-row-start: 30;
-  grid-row-end: 44;
+  grid-row-start: 38;
+  grid-row-end: 54;
 
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4;  */
@@ -1383,8 +1383,8 @@
 .railing__item--5 {
   grid-column-start: 2;
   grid-column-end: 20;
-  grid-row-start: 44;
-  grid-row-end: 54;
+  grid-row-start: 54;
+  grid-row-end: 63;
 
   /** Alternative Syntax **/
   /* grid-column: 1 / span 4; */
@@ -1556,7 +1556,7 @@
 .other__item--1 {
   grid-column-start: 2;
   grid-column-end: 6;
-  grid-row-start: 46;
+  grid-row-start: 41;
   grid-row-end: 53;
  color: #FFFFFF;
   display: flex;
@@ -1597,7 +1597,7 @@
 .other__item--2 {
   grid-column-start: 2;
   grid-column-end: 20;
-  grid-row-start: 52;
+  grid-row-start: 48;
   grid-row-end: 64;
   z-index: 100;
   /** Alternative Syntax **/

@@ -677,8 +677,7 @@ section:nth-child(even) {
 
 @media screen and (min-width:1000px) {
   .video .centerScroll .scroll:hover {
- 
-    background-color: #524f4f;
+    background-color: #CB572C;
   }
 }
 

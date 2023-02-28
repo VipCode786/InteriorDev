@@ -57,25 +57,36 @@
 
 .process .rowProcess3 {
 
-
-display: -webkit-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      margin-left: 15rem;
+      margin-right: 4rem;
+      margin-top: -6rem;
+/* display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: normal;
 -ms-flex-direction: row;
         flex-direction: row;
-/* justify-content: center;
-margin-left: 45rem;
-margin-top: -6rem; */
-/* justify-content: flex-end;
-margin-top: -6rem;
-margin-right: 4rem; */
-margin-left: 59rem;
+
 margin-top: -6rem;
 -webkit-box-pack: center;
 -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: center; */
 
 }
 
@@ -144,7 +155,7 @@ color: #858585;
 
 .bgVector1{
   background: url("bg1.png");
-  background-size:contain;
+  background-size:100% 100%;
   background-repeat: no-repeat;
   width: 769px;
   height: 336px;
@@ -153,7 +164,7 @@ color: #858585;
 
 .bgVector2{
   background: url("bg2.png");
-  background-size:contain;
+  background-size:100% 100%;
   background-repeat: no-repeat;
   width: 769px;
   height: 336px;
@@ -167,10 +178,10 @@ color: #858585;
   margin-top: -39.3px;
 }
 .process .gear2 {
-  position: absolute;
+  /* position: absolute; */
   /* margin-left: 180px;
   margin-top: -10px; */
-  margin-left: 480px;
+  margin-left: 70%;
   margin-top: 70px;
 }
 .process .gear3 {
@@ -207,10 +218,10 @@ margin-top: -25px;
   margin-top: 120px; */
 }
 .process .gear7 {
-  position: absolute;
+  /* position: absolute; */
   /* margin-left: 5px;
   margin-top: -40px; */
-  margin-left: 570px;
+  margin-left: 82%;
   margin-top: 140px;
 }
 
@@ -349,15 +360,26 @@ margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:reverse;
+      -ms-flex-direction:column-reverse;
+          flex-direction:column-reverse;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 0rem;
-  margin-top: -6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* flex-wrap: nowrap;
+  margin-left: 0rem; */
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+margin-left: auto;
+margin-right: auto;
+}
+
+.process .rowProcess3 .noneProcesslast{
+  display: none;
 }
 }
 

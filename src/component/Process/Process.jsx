@@ -94,7 +94,14 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
 
         <div className='rowProcess3' >
            
-            
+        <div className='images  bgVector2 noneProcesslast'  style={{background:"none"}} >
+        {/* <i class = "fa fa-cog fa-5x slow-spin gear3"></i>
+            <i class = "fa fa-cog fa-5x slow-spin gear4"></i> */}
+                {/* <img src="gear.png" alt="" className='gear4' id="js-logo4"  />
+                <img src="gear.png" alt="" className='gear5' id="js-logo5"/>
+                <img src="gear.png" alt="" className='gear6' id="js-logo6"/> */}
+                {/* <img className='Vector' src="leftVector.png" alt="" /> */}
+            </div>
             <div className='columnProcess mobMargin3' >
             <img src="deliver.png" alt="" />
                 <div className='heading'>Deliver</div>

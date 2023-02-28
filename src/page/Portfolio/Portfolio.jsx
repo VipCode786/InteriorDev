@@ -140,7 +140,7 @@ const Portfolio = () => {
                 </figure>
                 
                 <figure class="gate__item gate__item--1" >
-                    <p style={{ color:"#ffffff"}}>Gates</p>
+                    <p style={{ color:"#ffffff"}}>GATES</p>
                 </figure>
                 <figure class="gateScroll">
                     <div ref={gate}></div>
@@ -232,7 +232,7 @@ const Portfolio = () => {
                     <div ref={railing}></div>
         </figure>
         <figure class="railing__item railing__item--1">
-            <p style={{ color:"#ffffff"}}>Railing</p>
+            <p style={{ color:"#ffffff"}}>RAILING</p>
         </figure>
           <figure class="railing__item railing__item--2">
             <img src="/portfolio/railing1.png" alt="railing image 2" class="railing__img" style={{zIndex:"1000"}}/>

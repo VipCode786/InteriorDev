@@ -880,3 +880,13 @@ margin-right: 0;
   }
   
 }
+
+@media screen and (max-width:999px) {
+  .home .ourTeam .heading {
+    font-size: 32px;
+  }
+
+  .home .ourClients_Heading {
+    font-size: 32px;
+  }
+}

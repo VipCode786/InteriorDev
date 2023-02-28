@@ -272,73 +272,6 @@
 }
 
 
-/* .gate {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(32, 1.8vw);
-  grid-gap: 1.250rem; 
-  
-}
-
-.gate__img {
-  width: 100%;
-  height: 100%;
- 
-  
-}
-
-.gate__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 11;
-  background-color:#CB572C;
-  display: flex;
-  justify-content: center;
-  font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4vw;
-    line-height: 139.1%;
- 
-}
-
-
-
-.gate__item--2 {
-  grid-column-start: 5;
-  grid-column-end: 12;
-  grid-row-start: 3;
-  grid-row-end: 9;
-  z-index: 100;
- 
-}
-
-.gate__item--3 {
-  grid-column-start: 12;
-  grid-column-end: 20;
-  grid-row-start: 2;
-  grid-row-end: 10;
-  position: relative;
- 
-}
-
-.gate__item--4 {
-  grid-column-start: 4;
-  grid-column-end: 11;
-  grid-row-start: 9;
-  grid-row-end: 17;
-
-  
-}
-
-.gate__item--5 {
-  grid-column-start: 11;
-  grid-column-end: 20;
-  grid-row-start: 10;
-  grid-row-end: 17;
-
-} */
 
 .canopy {
   display: grid;
@@ -641,7 +574,7 @@
   /* background: -webkit-linear-gradient(top, #383838 50%, #D9D9D9 50%); */
   /* background: url("./paragolaBG.png") right no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(52%, #383838), color-stop(45%, #D9D9D9));
   background: url("./paragolaBG.png") right no-repeat, -o-linear-gradient(top, #383838 52%, #D9D9D9 45%); */
-  background: url("./paragolaBG.png") right  no-repeat, linear-gradient(180deg, #383838 52%, #D9D9D9 45%);
+  /* background: url("./paragolaBG.png") right  no-repeat, linear-gradient(180deg, #383838 52%, #D9D9D9 45%); */
   background-size: 30vw
   
 }
@@ -652,6 +585,15 @@
   /* object-fit: cover;
   display: block;  */
   
+}
+
+.pergola__item--0{
+
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 1;
+  grid-row-end: 17;
+  background-color: #383838;
 }
 /* .pergola__item--0 {
   grid-column-start: 17;
@@ -1547,9 +1489,9 @@
 .other__item--0 {
   grid-column-start: 1;
   grid-column-end: 10;
-  grid-row-start: 45;
+  grid-row-start: 46;
   grid-row-end: 54;
-  margin-top: 0.9rem;
+  margin-top: -3.3vw;
   border-top: 26.042vw solid #CB572C;
   border-right: 45.573vw solid transparent;
 }

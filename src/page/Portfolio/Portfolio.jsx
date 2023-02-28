@@ -138,6 +138,7 @@ const Portfolio = () => {
                 <figure class="gate0_item--circle" >
                 
                 </figure>
+              
                 
                 <figure class="gate__item gate__item--1" >
                     <p style={{ color:"#ffffff"}}>GATES</p>
@@ -279,6 +280,9 @@ const Portfolio = () => {
         <figure class="other__item other__item--1" >
             <p style={{ color:"#ffffff"}}>OTHER PROJECTS</p>
         </figure>
+        <figure class="perBack" >
+                
+                </figure>
         <figure class="otherScroll">
                     <div ref={otherProjects}></div>
         </figure>

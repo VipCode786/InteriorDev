@@ -579,7 +579,7 @@ const Home = () => {
      
      
       {/* <ParallaxText>A Wild Sheep Chase</ParallaxText> */}
-      <img   width="80%" height="600vh" style={{marginLeft:"10%",marginRight:"10%",height: "100vh",objectFit: "cover"}} src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
+      <img   width="80%" height="600vh" style={{marginLeft:"10%",marginRight:"10%",height: "100vh"}} src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
       
       <br/>
       <br/>

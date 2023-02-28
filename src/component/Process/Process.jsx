@@ -25,7 +25,7 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
         <div className='header4d'>Our 4D Approach</div>
         <br/>
         <div className='rowProcess'>
-            <div className='columnProcess'>
+            <div className='columnProcess marginMob'>
             <img src="design.png" alt="" />
                 <div className='heading'>Design</div>
                 <p>We build you a concept and a solution that addresses your unique needs.</p>

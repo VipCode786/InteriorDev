@@ -156,7 +156,7 @@ const ContactPage = () => {
             </div>
             <br/>
            <div>
-            <label >Message <br/>
+            <label style={{color:"#080000"}} >Message <br/>
             <input className='messageStyle' 
             style={{
               marginLeft:'2rem',

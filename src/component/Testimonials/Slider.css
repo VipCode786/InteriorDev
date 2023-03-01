@@ -26,7 +26,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 40px;
   line-height: 118%;
   letter-spacing: 0.075em;
   color: #000000;
@@ -246,6 +246,7 @@ article h4 {
     line-height: 18px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
   }
   .person-img {
     border-radius: 50%;
@@ -277,7 +278,7 @@ article h4 {
   height: 24.312rem; */
   margin: 1rem;
   width: 18.312rem;
-height: 18.312rem;
+ height: 18.312rem;
 }
 
 

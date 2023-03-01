@@ -180,16 +180,17 @@ const Career = () => {
                 <div className='orange-bg'>
                     <div className='heading '>
                     Architect
-                    </div>
                     
+                    </div>
+                   
+                    {/* <br/>
                     <br/>
-                    <br/>
-                    <br/>
+                    <br/> */}
                     
                     
                    
                     <div className='rowCareerButtonfix'>
-                    <div className='boxViewCareer'>
+                    <div className='boxViewCareer' style={{width:"20rem"}}>
                     <Link to="/Interior_Design_Brochure.pdf" target="_blank" download> <div className='boxButtonCareer' style={{padding:"0.5rem"}}>
                     Job Description (Download)
                     </div></Link>

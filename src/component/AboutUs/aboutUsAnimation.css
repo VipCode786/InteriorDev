@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 .aboutUsAnimation {
   background-color: bisque;
@@ -18,8 +13,8 @@
 }
 .aboutUsAnimation .bottom-bg {
   height: 10vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f87e51), to(#f87e51));
   background-image: -o-linear-gradient(#f87e51, #f87e51 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f87e51), to(#f87e51));
   background-image: linear-gradient(#f87e51, #f87e51 100%);
   background-size: 100% 200px;
   background-repeat: no-repeat;

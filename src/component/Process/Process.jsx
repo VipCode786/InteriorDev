@@ -1,5 +1,6 @@
 import React from 'react'
 import './process.css';
+import Zoom from 'react-reveal/Zoom';
 
 const Process = () => {
 
@@ -27,8 +28,10 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
         <div className='rowProcess'>
             <div className='columnProcess marginMob'>
             <img src="design.png" alt="" />
+            <Zoom>
                 <div className='heading'>Design</div>
                 <p>We build you a concept and a solution that addresses your unique needs.</p>
+                </Zoom>
             </div>
             
             <div className='images marginTop10 bgVector1'>
@@ -57,18 +60,23 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
             </div>
             <div className='columnProcess mobMargin1'>
             <img src="detail.png" alt="" />
+            <Zoom>
                 <div className='heading'>Detail</div>
                 <p>Our team of architects and designers then work on creating a structure and implementing the
                     concept by working on the profiling of your project.</p>
+                    </Zoom>
             </div>
+           
         </div>
 
         <div className='rowProcess' >
             <div className='columnProcess mobMargin2'>
             <img src="develop.png" alt="" />
+            <Zoom>
                 <div className='heading'>Develop</div>
                 <p>We start the fabrication of your product once we’ve agreed on the project’s specifics and
                     have finalized the specifications.</p>
+                    </Zoom>
             </div>
 
             <div className='images  bgVector1'>
@@ -104,9 +112,11 @@ document.getElementById('js-logo10').style.transform ='rotate(' + theta + 'rad)'
             </div>
             <div className='columnProcess mobMargin3' >
             <img src="deliver.png" alt="" />
+            <Zoom>
                 <div className='heading'>Deliver</div>
                 <p>Our team of architects and designers then work on creating a structure and implementing the
                     concept by working on the profiling of your project.</p>
+                    </Zoom>
             </div>
         </div>
     </div>

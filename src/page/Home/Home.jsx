@@ -25,6 +25,8 @@ import Slider from '../../component/Testimonials/Slider'
 import $ from 'jquery';
 import Process from '../../component/Process/Process'
 import Pulse from 'react-reveal/Pulse';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const myHTML =
 `<div class="container">
@@ -98,9 +100,9 @@ const Home = () => {
     $(".buttonHover").on('mouseleave',function(){
       $(".discussProjects").css({ "background-size":" 100% 100%"});
     });
-    $(".scrollImg").on( 'scroll', function(){
-      // console.log('Event Fired');
-   });
+  //   $(".scrollImg").on( 'scroll', function(){
+  //     // console.log('Event Fired');
+  //  });
 
   
      
@@ -109,35 +111,15 @@ const Home = () => {
  },[sub])
  
     $(window).on('scroll',function(){
-    //   var wer = $('.heeloo').is(":visible");
-    //   if(wer)
-    //   {
-    //    $('html, body').animate({
-    //      scrollTop: $(".heeloo").offset().top
-    //  }, 1000)
-    //   }
+   
        er =  $('.scrollImg').offset().top;
        let one =  $('.scrollImg').offset().top;
-      //  console.log("onenenenene",one)
-      // console.log("er",er)
+   
 
       var dim = $('.scrollImg').is(":visible");
-      // if(dim)
-      // {
-      //   $('html, body').animate({
-      //     scrollTop: $("#myDiv").offset().top
-      // }, 1000);
-      //      setFlage2(true) 
-      // }
-      // if (dim == false && setFlage2==true) {
-      //       $('html, body').animate({
-      //             scrollTop: $("#myDiv").offset().top
-      //         }, 1000);
-      //         setFlage2(false)
-      //       }
+    
       if(scrollPosition>600 && scrollPosition <1900)
       {
-        //  console.log('Event Fired');
             $(".scrollImg").css({ 
                   "top": "0",
                   "bottom":"0",
@@ -155,15 +137,7 @@ const Home = () => {
       }
     });
 
-  //  const handleMouseEnter = () => {
-  //     setIsHovering(true);
-  //     setSub("sub-2")
-  //   };
-  
-  //   const handleMouseLeave = () => {
-  //     setIsHovering(false);
-  //     setSub(null)
-  //   };
+ 
 
    const scroll = useRef(null);
    const scrollBG = useRef(null)
@@ -171,19 +145,16 @@ const Home = () => {
     
     scrollBG.current.style.backgroundColor="#383838";
     scrollBG.current.style.backgroundColor=null
-    // setTimeout(() => {
-      
-      
-    // }, 1000);
+   
     scroll.current?.scrollIntoView({behavior: 'smooth'});
     
 
   };
-  useEffect(()=>{
+  // useEffect(()=>{
    
-    const imgScroll =  scroll.current.offsetTop ;
-     console.log("imgscroll",imgScroll)
-   },[])
+  //   const imgScroll =  scroll.current.offsetTop ;
+  //    console.log("imgscroll",imgScroll)
+  //  },[])
 
    useEffect(()=>{
       if(scrollPosition > 1000 && scrollPosition < 1100)
@@ -239,10 +210,7 @@ const Home = () => {
       if(scrollPosition > 1045 && scrollPosition < 1050)
       {
             setvalue(parseInt(30))
-    //         document
-    // .getElementById("sec2")
-    // .scrollIntoView({ behavior: "smooth" });
-            // FourDProcess.current?.scrollIntoView({behavior: 'smooth'});
+   
       }
 
      
@@ -298,6 +266,36 @@ const Home = () => {
       </div>
       </section>
       <div className='home'>
+        {/* <div style={{backgroundColor:"#ffffff", fontSize:"20px",display:"flex"}}  >
+        <div style={{padding:"1vw"}}>Gates</div>
+        <div style={{padding:"2vw"}}>Skylights</div>
+        <div style={{padding:"0vw,4vw"}}>C-Channels</div>
+        <div style={{padding:"1vw,5vw", fontSize:"30px",}}> Pergolas</div>
+        <div style={{padding:"3vw,5vw"}}>Canopies</div>
+        <div style={{padding:"4vw,5vw"}}> Staircase</div>
+        <div style={{padding:"5vw,5vw"}}>  Aluminium</div>
+        <div style={{padding:"6vw,5vw"}}>  doorsSwing</div>
+        <div style={{padding:"7vw,5vw"}}>  PyramidicalSupported</div>
+        <div style={{padding:"8vw,5vw"}}>Lock </div>
+        <div style={{padding:"9vw,5vw"}}> SystemMultiple</div>
+        <div style={{padding:"10vw,5vw"}}>ProfilesAluminium</div>
+        <div style={{padding:"11vw,5vw"}}> Staircase</div>
+        <div style={{padding:"3vw,5vw"}}>  Door</div>
+        <div style={{padding:"3vw,5vw"}}>  CladdingsPre-Fab</div>
+        
+     
+       
+              
+       
+         Gates 
+         
+         
+         Aluminium
+          
+          
+        
+         
+      </div> */}
       <div className='scrollImg'  style={{background:"#ffffff"}} >
       <div  className='whatWeMake'>
       <p class="aniheader textInAnimation">What WE MAKE</p>
@@ -305,7 +303,6 @@ const Home = () => {
       <br/>
      
      
-      {/* <ParallaxText>A Wild Sheep Chase</ParallaxText> */}
       <img   ref={scroll} width="80%" height="600vh" style={{marginLeft:"10%",marginRight:"10%",height: "100vh"}} src={`/frameBy/ezgif-frame-0${value}.jpg`} alt="" />
       
       <br/>
@@ -483,6 +480,7 @@ const Home = () => {
               </div>
               <br/>
               <div className='content'> 
+              <Fade bottom>
                      <p>
                     Being in the industry for over 4 decades,
                     
@@ -491,6 +489,7 @@ const Home = () => {
                     We have more than 250 skilled artisans with many of them having 30+ years of experience working with us. Teamwork and Leadership plays a vital role at Interior Craft.
 
                     </p>
+                    </Fade>
                </div> 
                
                <div className='meetButton'>

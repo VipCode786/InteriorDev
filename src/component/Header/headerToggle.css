@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 .toggleHeader .posAbslt {
   position: absolute;
@@ -83,18 +78,46 @@
 .toggleHeader .change .bar {
   background-color: white;
 }
-.toggleHeader .change #bar1 {
+
+/* .toggleHeader .change #bar1 {
   -webkit-transform: translateY(4px) rotateZ(-45deg);
       -ms-transform: translateY(4px) rotate(-45deg);
           transform: translateY(4px) rotateZ(-45deg);
+} */
+.toggleHeader .change #bar1 {
+  -webkit-transform: translateY(7px) rotateZ(-45deg);
+      -ms-transform: translateY(7px) rotate(-45deg);
+          transform: translateY(7px) rotateZ(-45deg);
+}
+
+@media screen and (max-width:1050px) {
+  .toggleHeader .change #bar1 {
+    -webkit-transform: translateY(4px) rotateZ(-45deg);
+        -ms-transform: translateY(4px) rotate(-45deg);
+            transform: translateY(4px) rotateZ(-45deg);
+  }
 }
 .toggleHeader .change #bar2 {
   opacity: 0;
 }
-.toggleHeader .change #bar3 {
+
+/* .toggleHeader .change #bar3 {
   -webkit-transform: translateY(-6px) rotateZ(45deg);
       -ms-transform: translateY(-6px) rotate(45deg);
           transform: translateY(-6px) rotateZ(45deg);
+} */
+.toggleHeader .change #bar3 {
+  -webkit-transform: translateY(-7px) rotateZ(45deg);
+      -ms-transform: translateY(-7px) rotate(45deg);
+          transform: translateY(-7px) rotateZ(45deg);
+}
+
+@media screen and (max-width:1050px) {
+  .toggleHeader .change #bar3 {
+    -webkit-transform: translateY(-6px) rotateZ(45deg);
+        -ms-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotateZ(45deg);
+  }
 }
 .toggleHeader .change-bg {
   width: 520px;
@@ -164,14 +187,18 @@
   width: 420px;
   height: 380px;
 
-  transform: translate(55%, -30%);
+  -webkit-transform: translate(55%, -30%);
+
+      -ms-transform: translate(55%, -30%);
+
+          transform: translate(55%, -30%);
 }
 }
 
 @media screen and (max-width: 1050px) {
   .toggleHeader .menuItems a {
     /* font-size: 20px; */
-    margin-right: 25px; 
+    /* margin-right: 25px;  */
   }
 
   .toggleHeader .menu-bg, .toggleHeader #menu {
@@ -198,4 +225,49 @@
     cursor: pointer;
 }
 
+
+
+}
+
+
+@media screen and (max-width:550px) {
+  .toggleHeader .menu-bg {
+    /* z-index: 1000;
+    width: 0;
+    height: 0; */
+    margin: 70px 0 20px 20px;
+z-index: 1000;
+  }
+  .toggleHeader .change-bg {
+  
+    -webkit-transform: translate(64%, -30%);
+  
+        -ms-transform: translate(64%, -30%);
+  
+            transform: translate(64%, -30%);
+  }
+  .toggleHeader .change-bg {
+    width: 420px;
+    height: 380px;
+    -webkit-transform: translate(58%, -30%);
+        -ms-transform: translate(58%, -30%);
+            transform: translate(58%, -30%);
+}
+
+
+
+
+}
+
+@media screen and  (max-width:999px){
+  .header .right-header .iso {
+   
+    margin-right: 140px;
+  }
+@media screen  and (max-width:550px){
+  .header .right-header .iso {
+    margin-right: 40px;
+  }
+}
+  
 }

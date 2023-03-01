@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 .contactPage {
@@ -159,6 +173,7 @@
 .contactPage .contactForm label {
   margin: 2rem 2rem 1rem 2rem;
   color: #979797;
+  white-space: nowrap;
 }
 .contactPage .contactForm p {
   margin-left: 2rem;

@@ -118,7 +118,7 @@ const ContactPage = () => {
              <form onSubmit={(e)=>upload(e)}>
             
             <div  className='flName'>
-            <label>FirstName<br/>
+            <label>First Name<br/>
             <input  type="text" 
             required
             onChange={(e) => {
@@ -126,7 +126,7 @@ const ContactPage = () => {
             }}
             /></label>
             
-             <label>LastName<br/>
+             <label>Last Name<br/>
             <input  type="text" required
              onChange={(e) => {
               setLastName(e.target.value);

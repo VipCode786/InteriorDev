@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 .header {
   background-color: #383838;
@@ -79,6 +73,7 @@
 .header .right-header .iso {
   height: 10vh;
   width: 5vw;
+  margin-right: 120px;
 }
 .header .right-header .iso img {
   margin-left: -5px;
@@ -116,6 +111,8 @@
     height: 100%;
     width: 25vw;
   }
+
+  
   .header .right-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -153,5 +150,16 @@
     margin-left: 25px;
     width: 100%;
     height: 90%;
+  }
+}
+
+
+@media screen and (max-width:550px) {
+  .header .logo {
+    width: 30vw;
+  }
+
+  .header .logo a {
+    height: 80%;
   }
 }

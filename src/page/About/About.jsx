@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AboutUsAnimation from '../../component/AboutUs/AboutUsAnimation'
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
+
 // import Pre from '../../component/AboutUs/Pre'
 import './about.css'
 const About = () => {
@@ -54,11 +57,14 @@ const About = () => {
     <br/>
     <div className='background1'>
       <div className='about1'>
+        <Fade left>
           <p className='margin3rem'>
           Interior Craft helps you with your project at every level, from designing and generating a prototype to detailing, manufacturing, and finally delivering the finished product to your site and facilitating a seamless installation in the least amount of time.
           </p>
+          </Fade>
+          
           <img src="/AboutUs/pic1.png" alt="1" />
-
+      
       </div>
 
     </div>
@@ -68,10 +74,11 @@ const About = () => {
     <div className="about2 mobileResponsive">
     <img src="/AboutUs/pic2.png" alt="2" />
     &nbsp;&nbsp;
+    <Fade right>
           <p>
           We currently run our business out of an 80,000 square foot premises in Noida, Uttar Pradesh. Our workforce of more than 250 artisans have been trained extensively in fabrication and carpentry to deliver the highest level of metal artistry.
           </p>
-         
+          </Fade>    
       </div>
     </div>
 
@@ -80,7 +87,7 @@ const About = () => {
    
     <div className='background3'>
     <div className='about1'>
-   
+    <Fade left>
           <p>
           To ensure that we provide the best quality we have a practice of utilizing our capital in buying new tech that helps us to have an edge in the market. Our factory is equipped with: -
            <br/> 1) Multiple CNC Machines
@@ -91,6 +98,7 @@ const About = () => {
            <br/> 6) Powder Coating Facility
            <br/> 7) Paint Booths
           </p>
+      </Fade>
           <img src="/AboutUs/pic3.png" alt="3" />
 
       </div>

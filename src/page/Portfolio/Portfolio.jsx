@@ -204,19 +204,19 @@ const Portfolio = () => {
                     <p style={{ color:"#ffffff"}}>STAIRCASE</p>
                 </figure>
                   <figure class="staircase__item staircase__item--2">
-                    <img src="/portfolio/staircase1.jpg" alt="staircase image 2" class="staircase__img" style={{zIndex:"1000"}}/>
+                    <img src="/portfolio/staircase1.png" alt="staircase image 2" class="staircase__img" style={{zIndex:"1000"}}/>
                 </figure>
                 <figure class="staircase__item staircase__item--3">
-                    <img src="/portfolio/staircase2.jpg" alt="staircase image 3" class="staircase__img" style={{zIndex:"1000"}}/>
+                    <img src="/portfolio/staircase2.png" alt="staircase image 3" class="staircase__img" style={{zIndex:"1000"}}/>
                 </figure>
-                 <figure class="staircase__item staircase__item--4">
-                    <img src="/portfolio/staircase4.jpg" alt="staircase image 4" class="staircase__img" />
+                 <figure class="staircase__item staircase__item--5">
+                    <img src="/portfolio/staircase5.png" alt="staircase image 4" class="staircase__img" />
                 </figure>
-               <figure class="staircase__item staircase__item--5">
-                    <img src="/portfolio/staircase3.jpg" alt="staircase image 5" class="staircase__img" />
+               <figure class="staircase__item staircase__item--4">
+                    <img src="/portfolio/staircase4.png" alt="staircase image 5" class="staircase__img" />
                 </figure>
                 <figure class="staircase__item staircase__item--6">
-                    <img src="/portfolio/staircase5.jpg" alt="staircase image 3" class="staircase__img" style={{zIndex:"1000"}}/>
+                    <img src="/portfolio/staircase3.png" alt="staircase image 3" class="staircase__img" style={{zIndex:"1000"}}/>
                 </figure>
                
               

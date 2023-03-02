@@ -169,8 +169,8 @@ const ContactPage = () => {
             /></label>
             
               </div>
-            <div>
-    <label for="files" class="uploadButton"><img src="Vector.png" /> &nbsp; Upload File
+            <div style={{marginLeft:"2rem"}}>
+    <label for="files" class="uploadButton"><img src="Vector.png" style={{marginLeft:"-2rem"}}/> &nbsp; Upload File
     <input id="files" accept=".jpg,.jpeg,.png,.pdf,.dwg" style={{visibility:"hidden",width:"0px"}} type="file" onChange={(e) => {
               handleFile(e)
           // setFile(e.target.files[0]);

@@ -53,12 +53,12 @@ const MyTeam = () => {
         <p>(Designation)</p>
         </div>
         
-    </div>
+    {/* </div>
 
     <br/>
     
     
-    <div className='row'>
+    <div className='row'> */}
         <div >
         <img src="/MyTeam/image57.png" alt="" />
         <p>Aadil Saifi</p>

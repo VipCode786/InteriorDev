@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .career {
   overflow-x: hidden;
 }
@@ -132,7 +139,9 @@
 }
 .career .grey-bg {
   width: 632px;
-  background: #7A7A7A;
+  /* background: rgba(122, 122, 122, 0.7); */
+  background-image: url("cncOperatorBreak.jpg");
+  background-size: cover;
   border-radius: 37px;
   margin: 2rem;
 }
@@ -151,7 +160,9 @@
 .career .orange-bg {
   width: 632px;
   margin: 2rem;
-  background: #CB572C;
+  /* background: #CB572C; */
+  background-image: url("architect.jpg");
+  background-size: cover;
   border-radius: 37px;
 }
 .career .orange-bg .heading {

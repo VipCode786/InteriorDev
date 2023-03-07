@@ -114,77 +114,86 @@ const Portfolio = () => {
             </div> 
       <div ref={gate}></div> */} 
        
-    <div class="container">
-            <div class="gate" >
-                <figure class="gate0_item--1" >
-                    <img src="/portfolio/bgport.png"  class="gate__img" alt="" />
+    <div className="container">
+            <div className="gate" >
+                <figure className="gate0_item--1"  >
+                    <img src="/portfolio/bgport.png"  className="gate__img" alt="" />
                 </figure>
-                <figure class="gate0_item--link" >
-                <a className='ref' onClick={()=>handleClick(gate)}>Gates</a><br/>
-                <a className='ref' onClick={()=>handleClick(canopy)}>Canopy</a><br/>
-                <a className='ref' onClick={()=>handleClick(staircase)}>Staircase</a><br/>
-                <a className='ref' onClick={()=>handleClick(railing)}>Railing</a><br/>
-                <a className='ref' onClick={()=>handleClick(pergola)}>Pergola</a><br/>
-                <a className='ref' onClick={()=>handleClick(otherProjects)}>Other Projects</a><br/>
+                <figure className="gate0_item--link" >
+                    
+                <a className='ref' onClick={()=>handleClick(gate)} style={{color:"#ffffff",fontWeight:"600",}}>Gates</a><br/>
+                <a className='ref' onClick={()=>handleClick(canopy)} style={{color:"#ffffff",fontWeight:"600"}}>Canopy</a><br/>
+                <a className='ref' onClick={()=>handleClick(staircase)} style={{color:"#ffffff",fontWeight:"600"}}>Staircase</a><br/>
+                <a className='ref' onClick={()=>handleClick(railing)} style={{color:"#ffffff",fontWeight:"600"}}>Railing</a><br/>
+                <a className='ref' onClick={()=>handleClick(pergola)} style={{color:"#ffffff",fontWeight:"600"}}>Pergola</a><br/>
+                <a className='ref' onClick={()=>handleClick(otherProjects)} style={{color:"#ffffff",fontWeight:"600"}}>Other Projects</a><br/>
                 </figure>
-                <figure class="gate0_item--p" >
-                <p > Our portfolio consists of projects
-                    from all over the globe
+                <figure className="gate0_item--p" >
+                <p ><b> Our portfolio consists of projects
+                    from all over the globe</b>
                 </p>
                 </figure>
-                <figure class="gate0_item--img" >
-                <img src="/portfolio/portfolio.png" class="gate__img" alt="" />
+                <figure className="gate0_item--bg" >
+                <img src="/portfolio/gate5.png" />
+                <img src="/portfolio/canopy3.jpg" />
+                <img src="/portfolio/staircase5.png"/>
+                <img src="/portfolio/railing3.jpg" />
+                <img src="/portfolio/pergola2.jpg" />
+                <img src="/portfolio/other2.jpg" />
                 </figure>
-                <figure class="gate0_item--circle" >
+                <figure className="gate0_item--img" >
+                <img src="/portfolio/portfolio.png" className="gate__img" alt="" />
+                </figure>
+                <figure className="gate0_item--circle" >
                 
                 </figure>
               
                 
-                <figure class="gate__item gate__item--1" >
+                <figure className="gate__item gate__item--1" >
                     <p style={{ color:"#ffffff"}}>GATES</p>
                 </figure>
-                <figure class="gateScroll">
+                <figure className="gateScroll">
                     <div ref={gate}></div>
                 </figure>
-                 <figure class="gate__item gate__item--2">
+                 <figure className="gate__item gate__item--2">
                 
                  
-                    <img src="/portfolio/gate5.png" alt="gate image 2" class="gate__img" style={{zIndex:"1000"}}/>
+                    <img src="/portfolio/gate5.png" alt="gate image 2" className="gate__img" style={{zIndex:"1000"}}/>
                 </figure>
-                <figure class="gate__item gate__item--3">
+                <figure className="gate__item gate__item--3">
                
-                    <img src="/portfolio/gate1.jpg" alt="gate image 3" class="gate__img" style={{zIndex:"1000"}}/>
+                    <img src="/portfolio/gate1.jpg" alt="gate image 3" className="gate__img" style={{zIndex:"1000"}}/>
                 </figure>
-                <figure class="gate__item gate__item--4">
-                    <img src="/portfolio/gate2.jpg" alt="gate image 4" class="gate__img" />
+                <figure className="gate__item gate__item--4">
+                    <img src="/portfolio/gate2.jpg" alt="gate image 4" className="gate__img" />
                 </figure>
-                <figure class="gate__item gate__item--5">
-                    <img src="/portfolio/gate6.png" alt="gate image 5" class="gate__img" />
+                <figure className="gate__item gate__item--5">
+                    <img src="/portfolio/gate6.png" alt="gate image 5" className="gate__img" />
                 </figure>
                
               
             </div>
         </div>
 <br/>
-        <div class="container" style={{background:"#383838"}}>
-            <div class="canopy">
-                <figure class="canopyScroll">
+        <div className="container" style={{background:"#383838"}}>
+            <div className="canopy">
+                <figure className="canopyScroll">
                     <div ref={canopy}></div>
                 </figure>
-                <figure class="canopy__item canopy__item--1">
+                <figure className="canopy__item canopy__item--1">
                     <p style={{ color:"#ffffff"}}>CANOPY</p>
                 </figure>
-                 <figure class="canopy__item canopy__item--2">
-                    <img src="/portfolio/canopy1.jpg" alt="canopy image 2" class="canopy__img" style={{zIndex:"1000"}}/>
+                 <figure className="canopy__item canopy__item--2">
+                    <img src="/portfolio/canopy1.jpg" alt="canopy image 2" className="canopy__img" style={{zIndex:"1000"}}/>
                 </figure>
-                 <figure class="canopy__item canopy__item--3">
-                    <img src="/portfolio/canopy3.jpg" alt="canopy image 3" class="canopy__img" style={{zIndex:"1000"}}/>
+                 <figure className="canopy__item canopy__item--3">
+                    <img src="/portfolio/canopy3.jpg" alt="canopy image 3" className="canopy__img" style={{zIndex:"1000"}}/>
                 </figure>
-                <figure class="canopy__item canopy__item--4">
-                    <img src="/portfolio/canopy5.png" alt="canopy image 4" class="canopy__img" />
+                <figure className="canopy__item canopy__item--4">
+                    <img src="/portfolio/canopy5.png" alt="canopy image 4" className="canopy__img" />
                 </figure>
-                <figure class="canopy__item canopy__item--5">
-                    <img src="/portfolio/canopy4.jpg" alt="canopy image 5" class="canopy__img" />
+                <figure className="canopy__item canopy__item--5">
+                    <img src="/portfolio/canopy8.png" alt="canopy image 5" className="canopy__img" />
                 </figure>
                
               
@@ -192,31 +201,31 @@ const Portfolio = () => {
         </div>
         <br/>
 
-        <div class="container" style={{background:"#383838"}}>
-            <div class="staircase">
-            <figure class="staircase__item staircase__item--0">
+        <div className="container" style={{background:"#383838"}}>
+            <div className="staircase">
+            <figure className="staircase__item staircase__item--0">
                     
                 </figure>
-                <figure class="staircaseScroll">
+                <figure className="staircaseScroll">
                     <div ref={staircase}></div>
                 </figure>
-                <figure class="staircase__item staircase__item--1">
+                <figure className="staircase__item staircase__item--1">
                     <p style={{ color:"#ffffff"}}>STAIRCASE</p>
                 </figure>
-                  <figure class="staircase__item staircase__item--2">
-                    <img src="/portfolio/staircase1.png" alt="staircase image 2" class="staircase__img" style={{zIndex:"1000"}}/>
+                  <figure className="staircase__item staircase__item--2">
+                    <img src="/portfolio/staircase1.png" alt="staircase image 2" className="staircase__img" style={{zIndex:"1000"}}/>
                 </figure>
-                <figure class="staircase__item staircase__item--3">
-                    <img src="/portfolio/staircase2.png" alt="staircase image 3" class="staircase__img" style={{zIndex:"1000"}}/>
+                <figure className="staircase__item staircase__item--3">
+                    <img src="/portfolio/staircase2.png" alt="staircase image 3" className="staircase__img" style={{zIndex:"1000"}}/>
                 </figure>
-                 <figure class="staircase__item staircase__item--5">
-                    <img src="/portfolio/staircase5.png" alt="staircase image 4" class="staircase__img" />
+                 <figure className="staircase__item staircase__item--5">
+                    <img src="/portfolio/staircase5.png" alt="staircase image 4" className="staircase__img" />
                 </figure>
-               <figure class="staircase__item staircase__item--4">
-                    <img src="/portfolio/staircase4.png" alt="staircase image 5" class="staircase__img" />
+               <figure className="staircase__item staircase__item--4">
+                    <img src="/portfolio/staircase4.png" alt="staircase image 5" className="staircase__img" />
                 </figure>
-                <figure class="staircase__item staircase__item--6">
-                    <img src="/portfolio/staircase3.png" alt="staircase image 3" class="staircase__img" style={{zIndex:"1000"}}/>
+                <figure className="staircase__item staircase__item--6">
+                    <img src="/portfolio/staircase3.png" alt="staircase image 3" className="staircase__img" style={{zIndex:"1000"}}/>
                 </figure>
                
               
@@ -224,85 +233,85 @@ const Portfolio = () => {
         </div>
         
 
-<div class="container" >
-    <div class="railing">
-    <figure class="railing__item railing__item--0">
+<div className="container" >
+    <div className="railing">
+    <figure className="railing__item railing__item--0">
             
         </figure>
-        <figure class="railingScroll">
+        <figure className="railingScroll">
                     <div ref={railing}></div>
         </figure>
-        <figure class="railing__item railing__item--1">
+        <figure className="railing__item railing__item--1">
             <p style={{ color:"#ffffff"}}>RAILING</p>
         </figure>
-          <figure class="railing__item railing__item--2">
-            <img src="/portfolio/railing1.png" alt="railing image 2" class="railing__img" style={{zIndex:"1000"}}/>
+          <figure className="railing__item railing__item--2">
+            <img src="/portfolio/railing1.png" alt="railing image 2" className="railing__img" style={{zIndex:"1000"}}/>
         </figure>
-         <figure class="railing__item railing__item--3">
-            <img src="/portfolio/railing2.png" alt="railing image 3" class="railing__img" style={{zIndex:"1000"}}/>
+         <figure className="railing__item railing__item--3">
+            <img src="/portfolio/railing2.png" alt="railing image 3" className="railing__img" style={{zIndex:"1000"}}/>
         </figure>
-        <figure class="railing__item railing__item--4">
-            <img src="/portfolio/railing3.jpg" alt="railing image 4" class="railing__img" />
+        <figure className="railing__item railing__item--4">
+            <img src="/portfolio/railing3.jpg" alt="railing image 4" className="railing__img" />
         </figure>
-        <figure class="railing__item railing__item--5">
-            <img src="/portfolio/railing4.jpg" alt="railing image 5" class="railing__img" />
+        <figure className="railing__item railing__item--5">
+            <img src="/portfolio/railing4.jpg" alt="railing image 5" className="railing__img" />
         </figure>
         
        
       
     </div>
 </div><br/>
-<div class="container" >
-    <div class="pergola" >
-    <figure class="pergola__item pergola__item--0">
+<div className="container" >
+    <div className="pergola" >
+    <figure className="pergola__item pergola__item--0">
             
         </figure>
-        <figure class="pergola__item pergola__item--1">
+        <figure className="pergola__item pergola__item--1">
             <p style={{ color:"#ffffff"}}>PERGOLA</p>
         </figure>
-        <figure class="pergolaScroll">
+        <figure className="pergolaScroll">
                     <div ref={pergola}></div>
         </figure>
-           <figure class="pergola__item pergola__item--2">
-            <img src="/portfolio/pergola1.jpg" alt="pergola image 2" class="pergola__img" style={{zIndex:"1000"}}/>
+           <figure className="pergola__item pergola__item--2">
+            <img src="/portfolio/pergola1.jpg" alt="pergola image 2" className="pergola__img" style={{zIndex:"1000"}}/>
         </figure>
-         <figure class="pergola__item pergola__item--3">
-            <img src="/portfolio/pergola2.jpg" alt="pergola image 3" class="pergola__img" style={{zIndex:"1000"}}/>
+         <figure className="pergola__item pergola__item--3">
+            <img src="/portfolio/pergola2.jpg" alt="pergola image 3" className="pergola__img" style={{zIndex:"1000"}}/>
         </figure>
-        <figure class="pergola__item pergola__item--4">
-            <img src="/portfolio/pergola3.jpg" alt="pergola image 4" class="pergola__img" />
+        <figure className="pergola__item pergola__item--4">
+            <img src="/portfolio/pergola3.jpg" alt="pergola image 4" className="pergola__img" />
         </figure>
       
    
-    <figure class="other__item other__item--0"  >
+    <figure className="other__item other__item--0"  >
             
         </figure>
-        <figure class="other__item other__item--1" >
+        <figure className="other__item other__item--1" >
             <p style={{ color:"#ffffff"}}>OTHER PROJECTS</p>
         </figure>
-        <figure class="perBack" >
+        <figure className="perBack" >
                 
                 </figure>
-        <figure class="otherScroll">
+        <figure className="otherScroll">
                     <div ref={otherProjects}></div>
         </figure>
-           <figure class="other__item other__item--2" s>
-            <img src="/portfolio/other1.jpg"  alt="other image 2" class="other__img" style={{zIndex:"1000"}}/>
+           <figure className="other__item other__item--2" s>
+            <img src="/portfolio/other1.jpg"  alt="other image 2" className="other__img" style={{zIndex:"1000"}}/>
         </figure>
-         <figure class="other__item other__item--3">
-            <img src="/portfolio/other2.jpg" alt="other image 3" class="other__img" style={{zIndex:"1000"}}/>
+         <figure className="other__item other__item--3">
+            <img src="/portfolio/other2.jpg" alt="other image 3" className="other__img" style={{zIndex:"1000"}}/>
         </figure>
-        <figure class="other__item other__item--4">
-            <img src="/portfolio/other3.jpg" alt="other image 4" class="other__img" />
+        <figure className="other__item other__item--4">
+            <img src="/portfolio/other3.jpg" alt="other image 4" className="other__img" />
         </figure>
-        <figure class="other__item other__item--5">
-            <img src="/portfolio/other4.jpg" alt="other image 5" class="other__img" />
+        <figure className="other__item other__item--5">
+            <img src="/portfolio/other4.jpg" alt="other image 5" className="other__img" />
         </figure>
-        <figure class="other__item other__item--6">
-            <img src="/portfolio/other5.jpg" alt="other image 3" class="other__img" style={{zIndex:"1000"}}/>
+        <figure className="other__item other__item--6">
+            <img src="/portfolio/other5.jpg" alt="other image 3" className="other__img" style={{zIndex:"1000"}}/>
         </figure>
-        <figure class="other__item other__item--7">
-            <img src="/portfolio/other6.jpg" alt="other image 3" class="other__img" style={{zIndex:"1000"}}/>
+        <figure className="other__item other__item--7">
+            <img src="/portfolio/other6.jpg" alt="other image 3" className="other__img" style={{zIndex:"1000"}}/>
         </figure> 
        </div>
       

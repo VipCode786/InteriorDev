@@ -101,7 +101,7 @@ const Career = () => {
         formData.append("Phone",Phone);
         formData.append("Message",Message);
     
-        axios.post("https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api/career", formData, {
+        axios.post("https://beamerlaw.onrender.com/api/interior/career", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },

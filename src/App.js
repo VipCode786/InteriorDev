@@ -49,7 +49,7 @@ function App() {
   }, []);
   return (
     <div >
-      {loading?(<Loader2/>):(<>
+      {/* {loading?(<Loader2/>):(<> */}
       
       <BrowserRouter>
       <Header/>
@@ -89,7 +89,7 @@ function App() {
           position: 'fixed',
           // padding: '1rem 2rem',
           // fontSize: '20px',
-          bottom: '10px',
+          bottom: '50px',
           right: '40px',
           border:"none",
           // color: '#fff',
@@ -103,8 +103,9 @@ function App() {
       </button>
       <Footer/>
       </BrowserRouter>
-      </>)
-      }
+      {/* </>
+       )
+       } */}
     </div>
   );
 }

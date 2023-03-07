@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 .process .header4d {
   font-family: "Poppins";
@@ -529,7 +536,12 @@ margin-right: auto;
 
 }
 } */
+@media screen and (max-width:999px) {
+  .process .header4d {
+font-size: 32px;
 
+  }
+}
 @media screen and (max-width:550px) {
   .mobMargin1{
     margin-top: -8rem;

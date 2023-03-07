@@ -24,10 +24,10 @@
   -webkit-animation: scroll 30s linear infinite;
           animation: scroll 30s linear infinite;
 }
-/* .slider .slide-track:hover {
+.slider .slide-track:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
-} */
+}
 @-webkit-keyframes scroll {
   0% {
     -webkit-transform: translateX(0);

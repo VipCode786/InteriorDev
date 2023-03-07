@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 .video-wrapper {
@@ -11,6 +18,21 @@
   height: 100%;
 }
 
+.about{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1900px;
+}
 .about .heading {
   font-family: "Poppins";
   font-style: normal;
@@ -25,8 +47,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -49,19 +71,19 @@
 
 }
 .about .background1 {
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
   margin-top: -3rem;
 }
 .about .background2 {
-  margin-left: 60px;
-  margin-right: 60px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
   margin-top: -8rem;
 }
 .about .background3 {
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-top: -8rem;
+  /* margin-left: 60px;
+  margin-right: 60px; */
+  margin-top: -6rem;
 }
 .about .about1 {
   display: -webkit-box;
@@ -71,12 +93,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
+  /* -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+          justify-content: center; */
+  /* -webkit-box-align: center;
+      -ms-flex-align: center; */
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-top: 30px;
 }
 .about .about1 p {
   max-width: 466px;
@@ -95,11 +123,11 @@
   text-align: justify;
   letter-spacing: 0.06em;
   color: #000000;
-  margin: 10px auto;
+  /* margin: 10px auto; */
 }
 .about .about1 img {
   width: 40%;
-  margin: auto;
+  /* margin: auto; */
 }
 .about .about2 {
   display: -webkit-box;
@@ -109,12 +137,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
+  /* -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+          justify-content: center; */
+  /* -webkit-box-align: center;
+      -ms-flex-align: center; */
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
 }
 .about .about2 p {
   max-width: 466px;
@@ -124,7 +157,7 @@
   font-size: 20px;
   line-height: 139.18%;
   /* or 45px */
-  margin: 10px auto;
+  /* margin: 10px auto; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +170,7 @@
 }
 .about .about2 img {
   width: 40%;
-  margin: auto;
+  /* margin: auto; */
 }
 .about .margin3rem {
   margin-top: -3rem;
@@ -224,6 +257,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 2vh;
+    margin-top: -60px;
   }
   .about .about1 p {
     width: 100%;
@@ -261,6 +295,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 2vh;
+    margin-top: -60px;
   }
   .about .about2 p {
     width: 100%;

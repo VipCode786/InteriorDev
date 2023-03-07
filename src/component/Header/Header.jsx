@@ -19,7 +19,7 @@ const Header = () => {
     const handle = ()=>{ setShow(!show)}
 
     function menuOnClick(){
-        setChangeShow(!changeShow)
+        // setChangeShow(!changeShow)
         setChangeNav(!changeNav)
         setChangeBG(!changeBG)
         setPositionChange(!positionChange)
@@ -76,7 +76,7 @@ const Header = () => {
     >
        <div className='toggleHeader' >
          <div id="menu" >
-        <div id="menu-bar" className={changeShow ? "change" : "null"} onClick={()=>menuOnClick()}>
+        <div id="menu-bar"  className={changeShow ? "change" : "null"} onClick={()=>menuOnClick()}>
           <div id="bar1" class="bar"></div>
           <div id="bar2" class="bar"></div>
           <div id="bar3" class="bar"></div>

@@ -40,9 +40,9 @@ const ContactPage = () => {
     formData.append("Phone",Phone);
     formData.append("Message",Message);
     // formData.append("name",name);
-
-   
-    axios.post("https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api/", formData, {
+    // https://roaring-faloodeh-29cc69.netlify.app/.netlify/functions/api/
+    
+    axios.post("https://beamerlaw.onrender.com/api/interior/contactus", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },

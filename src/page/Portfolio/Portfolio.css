@@ -887,8 +887,8 @@
 .otherScroll{
   grid-column-start: 1;
   grid-column-end: 21;
-  grid-row-start:1;
-  grid-row-end: 2;
+  grid-row-start:16;
+  grid-row-end: 17;
 }
 
 .other__item--1 {

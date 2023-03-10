@@ -153,7 +153,7 @@ const Portfolio = () => {
                     <p style={{ color:"#ffffff"}}>GATES</p>
                 </figure>
                 <figure className="gateScroll">
-                    <div ref={gate}></div>
+                    <div ref={gate}  id='gateLink'></div>
                 </figure>
                  <figure className="gate__item gate__item--2">
                 
@@ -178,7 +178,7 @@ const Portfolio = () => {
         <div className="container" style={{background:"#383838"}}>
             <div className="canopy">
                 <figure className="canopyScroll">
-                    <div ref={canopy}></div>
+                    <div ref={canopy} id="canopyLink"></div>
                 </figure>
                 <figure className="canopy__item canopy__item--1">
                     <p style={{ color:"#ffffff"}}>CANOPY</p>
@@ -207,7 +207,7 @@ const Portfolio = () => {
                     
                 </figure>
                 <figure className="staircaseScroll">
-                    <div ref={staircase}></div>
+                    <div ref={staircase} id="staircaseLink"></div>
                 </figure>
                 <figure className="staircase__item staircase__item--1">
                     <p style={{ color:"#ffffff"}}>STAIRCASE</p>
@@ -239,7 +239,7 @@ const Portfolio = () => {
             
         </figure>
         <figure className="railingScroll">
-                    <div ref={railing}></div>
+                    <div ref={railing} id="railingLink"></div>
         </figure>
         <figure className="railing__item railing__item--1">
             <p style={{ color:"#ffffff"}}>RAILING</p>
@@ -270,7 +270,7 @@ const Portfolio = () => {
             <p style={{ color:"#ffffff"}}>PERGOLA</p>
         </figure>
         <figure className="pergolaScroll">
-                    <div ref={pergola}></div>
+                    <div ref={pergola} id="pergolaLink"></div>
         </figure>
            <figure className="pergola__item pergola__item--2">
             <img src="/portfolio/pergola1.jpg" alt="pergola image 2" className="pergola__img" style={{zIndex:"1000"}}/>
@@ -292,9 +292,10 @@ const Portfolio = () => {
         <figure className="perBack" >
                 
                 </figure>
-        <figure className="otherScroll">
-                    <div ref={otherProjects}></div>
+        <figure className="other__item otherScroll">
+                    <div ref={otherProjects} id="otherscrollLink"></div>
         </figure>
+     
            <figure className="other__item other__item--2" s>
             <img src="/portfolio/other1.jpg"  alt="other image 2" className="other__img" style={{zIndex:"1000"}}/>
         </figure>

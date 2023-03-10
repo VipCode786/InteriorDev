@@ -132,8 +132,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2px;
-  width: 2vw;
-  height: 2vw;
+  width: 1vw;
+  height: 1vw;
 }
 .footer .ICLogo {
   width: 15rem;

@@ -16096,10 +16096,10 @@
       grid-column-start: 1;
   -ms-grid-column-span: 20;
   grid-column-end: 21;
-  -ms-grid-row:1;
-      grid-row-start:1;
+  -ms-grid-row:16;
+      grid-row-start:16;
   -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  grid-row-end: 17;
 }
 
 .other__item--1 {

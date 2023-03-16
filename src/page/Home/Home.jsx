@@ -28,6 +28,7 @@ import Pulse from 'react-reveal/Pulse';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { Bounce } from 'react-reveal'
+import WhatMake from '../../component/MakeBoxes/WhatMake'
 
 const myHTML =
   `<div class="container">
@@ -104,7 +105,9 @@ const Home = () => {
   //   $(".scrollImg").on( 'scroll', function(){
   //     // console.log('Event Fired');
   //  });
-
+  // useEffect(()=>{
+  //   var top = $('#bottom').position().top;
+  // })
 
 
   useEffect(() => {
@@ -139,6 +142,7 @@ const Home = () => {
 
 
   const scroll = useRef(null);
+
   const scrollBG = useRef(null)
   const scrollClick = () => {
 
@@ -149,10 +153,12 @@ const Home = () => {
 
 
   };
+  const myDiv = useRef(null);
   // useEffect(()=>{
-
-  //   const imgScroll =  scroll.current.offsetTop ;
+  //   const imgScroll =  myDiv.current.offsetTop ;
+  //   const divw = myDiv.current.getBoundingClientRect();
   //    console.log("imgscroll",imgScroll)
+  //    console.log("imgscroll2",Number(divw.top), Number(divw.bottom))
   //  },[])
 
   useEffect(() => {
@@ -281,39 +287,145 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+     
+
       {/* </section> */}
       <div className='home' >
-      <div className='featuredProjects'>
-          <br />
-          <br />
-          <p className='textInAnimation'>Featured Projects</p>
-          <br />
-          <br />
-          <div className='picRow'>
-            <Pulse>
-              <a href='/portfolio#gateLink'><img src="/FeaturedProjects/gate.png" alt="gate" /></a>
-            </Pulse>
-            <Pulse>
-              <a href='/portfolio#canopyLink'><img src="/FeaturedProjects/outdoor.png" alt="outdoor" /></a>
-            </Pulse>
-            <Pulse>
-            <a href='/portfolio#railingLink'><img src="/FeaturedProjects/railing.png" alt="railing" /></a>
-            </Pulse>
-           
-            <Pulse>
-            <a href='/portfolio#pergolaLink'><img src="/FeaturedProjects/pergola.png" alt="pergola" /></a>
-            </Pulse>
-            <Pulse>
-            <a href='/portfolio#staircaseLink'><img src="/FeaturedProjects/stairs.png" alt="stairs" /></a>
-            </Pulse>
-            <Pulse>
-            <a href='/portfolio#otherscrollLink'><img src="/FeaturedProjects/door.png" alt="door" /></a>
-            </Pulse>
+      <div className='whatWeMake' style={{backgroundColor:"#ffffff"}}>
+          <p class="aniheader textInAnimation">What WE MAKE</p>
+        </div>
+        <hr/>
+        {/* <WhatMake/> */}
+        <div style={{ backgroundColor: "#ffffff", fontSize: "4vw", display: "flex", flexDirection: "column", whiteSpace: "nowrap" }}  >
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Fade left>
+              <div style={{ padding: "1vw" }} className="tracking-in-expand">Gates</div>
+            </Fade>
+            <Fade top>
+              <div style={{ padding: "2vw", fontSize: "2vw" }}>Skylights</div>
+            </Fade>
+            <Fade bottom>
+              <div >C-Channels</div>
+            </Fade>
+            <Zoom>
+              <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "4vw" }}> Pergolas</div>
+            </Zoom>
+
+            <Fade bottom>
+              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "3vw" }}>Canopies</div>
+            </Fade>
+            <Fade right>
+              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "2vw" }}> Staircase</div>
+            </Fade>
           </div>
-          <br />
-          <div className='boxView'>
-            <Link to="portfolio" onClick={() => window.scrollTo(0, 0)}><button className='boxButton' style={{ paddingLeft: "30px", paddingRight: "30px" }}>  View More </button></Link>
+
+          <div style={{ display: "flex", flexDirection: "row", marginTop: "-2vw" }}>
+
+            <Fade left>
+              <div style={{ fontSize: "2vw" }}>Aluminium doors</div>
+            </Fade>
+            <Zoom bottom>
+              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "3vw" }}>Swing</div>
+            </Zoom>
+            <Zoom>
+              <div style={{ padding: "2vw", fontSize: "3vw" }}>Jambs</div>
+            </Zoom>
+            <Zoom bottom>
+              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "2vw" }}> Pyramidical</div>
+            </Zoom>
+            <Fade>
+              <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "4vw" }}> Supported</div>
+            </Fade>
+            <Fade right>
+              <div style={{ padding: "1vw" }}>Gates</div>
+            </Fade>
           </div>
+
+
+          <div style={{ display: "flex", flexDirection: "row" , marginTop:"-2vw"}}>
+            <Bounce left>
+              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "2vw" }}>Gates Lock System</div>
+            </Bounce>
+            <Bounce>
+              <div style={{ paddingTop: "1vw", marginLeft: "-9vw", fontSize: "1vw", marginTop: "4vw" }}> Cantilevered Canopies</div>
+            </Bounce>
+            <Zoom>
+              <div style={{ padding: "2vw", fontSize: "2vw" }}>Multiple Aluminium Profiles</div>
+            </Zoom>
+            <Fade>
+              <div style={{ fontSize: "1vw" }}>Aluminium Door Claddings</div>
+            </Fade>
+            <Pulse>
+              <div style={{ padding: "1vw", fontSize: "3.4vw", marginLeft: "-15vw" }}><b>Pre-Fab Structures</b></div>
+            </Pulse>
+            <Bounce right>
+              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "1vw" }}> Elevation Louvers</div>
+            </Bounce>
+
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Bounce left>
+              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "2vw" }}>Flat Skylights</div>
+            </Bounce>
+            <Zoom bottom>
+              <div style={{ padding: "2vw", fontSize: "2vw" }}>Planters</div>
+            </Zoom>
+            <Bounce>
+              <div >Sliding Gate wheels</div>
+            </Bounce>
+            <Fade bottom>
+              <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "2.4vw" }}> Central Stringer Staircase</div>
+            </Fade>
+            <Zoom>
+              <div style={{ padding: "1vw", marginLeft: "20vw" }}>Cantilevered Spiral Staircase</div>
+            </Zoom>
+            <Zoom right>
+              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "2vw" }}> Staircase Railings</div>
+            </Zoom>
+          </div>
+
+
+          <div style={{ display: "flex", flexDirection: "row", marginTop: "-2vw" }}>
+
+            <Zoom left>
+              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "2vw" }}>Drain Covers</div>
+            </Zoom>
+            <Bounce>
+              <div style={{ padding: "2vw", fontSize: "4vw" }}>Manhole Covers</div>
+            </Bounce>
+            <Fade bottom>
+              <div style={{ padding: "2vw", fontSize: "2vw" }}>Spiral Staircase</div>
+            </Fade>
+            <Zoom>
+            <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "2vw" }}> Side stringer Staircase</div>
+            </Zoom>
+            <Fade right>
+            <div style={{ marginTop: "5vw", marginLeft: "-30vw", fontSize: "2vw" }}>Cantilevered Spiral Staircase</div>
+            </Fade>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "row", marginTop: "-2vw" }}>
+            <Fade left>
+            <div style={{ padding: "2vw", fontSize: "3vw" }}>Baffle Ceilings</div>
+            </Fade>
+            <Zoom>
+            <div >Lift Jambs</div>
+            </Zoom>
+            <Bounce top>
+            <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "2vw" }}> Glass Floors</div>
+            </Bounce>
+            <Bounce bottom>
+            <div style={{ padding: "1vw" }}> Metal Jaali</div>
+            </Bounce>
+            <Fade right>
+            <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "1.5vw" }}> Balcony Railings</div>
+            </Fade>
+          </div>
+          
+
+
         </div>
         {/* <div className='whatWeMake'>
           <p class="aniheader textInAnimation">What WE MAKE</p>
@@ -519,6 +631,7 @@ const Home = () => {
           <div className='borderSet'></div>
       </div>
       </section> */}
+ 
 
         <div className='marquee'>
           <div className='marquee__content  scrollBorder'>
@@ -741,7 +854,7 @@ const Home = () => {
           <br />
           <div className='ourClients_Heading textInAnimation' >
             Our Clients
-          </div>
+        </div>
 
 
 
@@ -753,146 +866,46 @@ const Home = () => {
           <br />
           <br />
         </div>
-
-        {/* <Clients/>    */}
         <OurClients></OurClients>
         <div className='heeloo'></div>
         <br/>
         <br/>
-        <div className='whatWeMake' style={{backgroundColor:"#ffffff"}}>
-          <p class="aniheader textInAnimation">What WE MAKE</p>
-        </div>
-        <hr/>
-        <div style={{ backgroundColor: "#ffffff", fontSize: "4vw", display: "flex", flexDirection: "column", whiteSpace: "nowrap" }}  >
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <Fade left>
-              <div style={{ padding: "1vw" }} className="tracking-in-expand">Gates</div>
-            </Fade>
-            <Fade top>
-              <div style={{ padding: "2vw", fontSize: "2vw" }}>Skylights</div>
-            </Fade>
-            <Fade bottom>
-              <div >C-Channels</div>
-            </Fade>
-            <Zoom>
-              <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "4vw" }}> Pergolas</div>
-            </Zoom>
-
-            <Fade bottom>
-              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "3vw" }}>Canopies</div>
-            </Fade>
-            <Fade right>
-              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "2vw" }}> Staircase</div>
-            </Fade>
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "row", marginTop: "-2vw" }}>
-
-            <Fade left>
-              <div style={{ fontSize: "2vw" }}>Aluminium doors</div>
-            </Fade>
-            <Zoom bottom>
-              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "3vw" }}>Swing</div>
-            </Zoom>
-            <Zoom>
-              <div style={{ padding: "2vw", fontSize: "3vw" }}>Jambs</div>
-            </Zoom>
-            <Zoom bottom>
-              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "2vw" }}> Pyramidical</div>
-            </Zoom>
-            <Fade>
-              <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "4vw" }}> Supported</div>
-            </Fade>
-            <Fade right>
-              <div style={{ padding: "1vw" }}>Gates</div>
-            </Fade>
-          </div>
-
-
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <Bounce left>
-              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "2vw" }}>Gates Lock System</div>
-            </Bounce>
-            <Bounce>
-              <div style={{ paddingTop: "1vw", marginLeft: "-9vw", fontSize: "1vw", marginTop: "4vw" }}> Cantilevered Canopies</div>
-            </Bounce>
-            <Zoom>
-              <div style={{ padding: "2vw", fontSize: "2vw" }}>Multiple Aluminium Profiles</div>
-            </Zoom>
-            <Fade>
-              <div style={{ fontSize: "1vw" }}>Aluminium Door Claddings</div>
-            </Fade>
+        {/* <Clients/>    */}
+        <div className='featuredProjects'>
+          <br />
+          <br />
+          <p className='textInAnimation'>Featured Projects</p>
+          <br />
+          <br />
+          <div className='picRow'>
             <Pulse>
-              <div style={{ padding: "1vw", fontSize: "3.4vw", marginLeft: "-15vw" }}><b>Pre-Fab Structures</b></div>
+              <a href='/portfolio#gateLink'><img src="/FeaturedProjects/gate.png" alt="gate" /></a>
             </Pulse>
-            <Bounce right>
-              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "1vw" }}> Elevation Louvers</div>
-            </Bounce>
-
+            <Pulse>
+              <a href='/portfolio#canopyLink'><img src="/FeaturedProjects/outdoor.png" alt="outdoor" /></a>
+            </Pulse>
+            <Pulse>
+            <a href='/portfolio#railingLink'><img src="/FeaturedProjects/railing.png" alt="railing" /></a>
+            </Pulse>
+           
+            <Pulse>
+            <a href='/portfolio#pergolaLink'><img src="/FeaturedProjects/pergola.png" alt="pergola" /></a>
+            </Pulse>
+            <Pulse>
+            <a href='/portfolio#staircaseLink'><img src="/FeaturedProjects/stairs.png" alt="stairs" /></a>
+            </Pulse>
+            <Pulse>
+            <a href='/portfolio#otherscrollLink'><img src="/FeaturedProjects/door.png" alt="door" /></a>
+            </Pulse>
           </div>
-
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <Bounce left>
-              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "2vw" }}>Flat Skylights</div>
-            </Bounce>
-            <Zoom bottom>
-              <div style={{ padding: "2vw", fontSize: "2vw" }}>Planters</div>
-            </Zoom>
-            <Bounce>
-              <div >Sliding Gate wheels</div>
-            </Bounce>
-            <Fade bottom>
-              <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "2.4vw" }}> Central Stringer Staircase</div>
-            </Fade>
-            <Zoom>
-              <div style={{ padding: "1vw", marginLeft: "20vw" }}>Cantilevered Spiral Staircase</div>
-            </Zoom>
-            <Zoom right>
-              <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "2vw" }}> Staircase Railings</div>
-            </Zoom>
+          <br />
+          <div className='boxView'>
+            <Link to="portfolio" onClick={() => window.scrollTo(0, 0)}><button className='boxButton' style={{ paddingLeft: "30px", paddingRight: "30px" }}>  View More </button></Link>
           </div>
-
-
-          <div style={{ display: "flex", flexDirection: "row", marginTop: "-2vw" }}>
-
-            <Zoom left>
-              <div style={{ paddingTop: "0vw", paddingLeft: "2vw", fontSize: "2vw" }}>Drain Covers</div>
-            </Zoom>
-            <Bounce>
-              <div style={{ padding: "2vw", fontSize: "4vw" }}>Manhole Covers</div>
-            </Bounce>
-            <Fade bottom>
-              <div style={{ padding: "2vw", fontSize: "2vw" }}>Spiral Staircase</div>
-            </Fade>
-            <Zoom>
-            <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "2vw" }}> Side stringer Staircase</div>
-            </Zoom>
-            <Fade right>
-            <div style={{ marginTop: "5vw", marginLeft: "-30vw", fontSize: "2vw" }}>Cantilevered Spiral Staircase</div>
-            </Fade>
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "row", marginTop: "-2vw" }}>
-            <Fade left>
-            <div style={{ padding: "2vw", fontSize: "3vw" }}>Baffle Ceilings</div>
-            </Fade>
-            <Zoom>
-            <div >Lift Jambs</div>
-            </Zoom>
-            <Bounce top>
-            <div style={{ paddingTop: "1vw", paddingLeft: "2vw", fontSize: "2vw" }}> Glass Floors</div>
-            </Bounce>
-            <Bounce bottom>
-            <div style={{ padding: "1vw" }}> Metal Jaali</div>
-            </Bounce>
-            <Fade right>
-            <div style={{ paddingTop: "2vw", paddingLeft: "2vw", fontSize: "1.5vw" }}> Balcony Railings</div>
-            </Fade>
-          </div>
-          
-
-
         </div>
+
+        
+       
         {/* <div className='featuredProjects'>
           <br />
           <br />
@@ -965,10 +978,7 @@ const Home = () => {
 
 
       </div>
-      <Helmet>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-        <script src='scriptTextMove.js'></script>
-      </Helmet>
+     
     </div>
 
   )

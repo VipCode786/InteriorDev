@@ -1,17 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 
 
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
@@ -21,9 +7,14 @@
   overflow-x:hidden;
 } */
 
+.block {
+  height:300px;
+  background: blue;
+  margin-bottom: 20px;
+}
 
 .marquee {
-  --gap: 1rem;
+  --gap: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +73,7 @@
   background-color: #FFFFFF;
   max-width: 100vw;
   overflow-x: hidden;
-  margin-top: 0.2rem;
+  margin-top: 0.2px;
 }
 .home .ourClients_Heading {
   font-family: "Poppins";
@@ -234,17 +225,24 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+      
 }
 .home .counter .counter-box .count span {
   font-family: "Aldrich";
 }
 .home .testimonial {
-  background: #FFEBD9;
+  /* background: #FFEBD9; */
+  background-color: #f3f3f3;
   overflow-x: hidden;
   max-width: 100%;
 }
 .home .ourTeam {
-  background: #FFC693;
+  /* background: #FFC693; */
+  background-color: #FFFFFF;
+  background: url("./vector1.png"), #ffffff;
+  background-size: 100vw 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,8 +259,8 @@
           align-items: center;
 }
 .home .ourTeam .heading {
-  /* margin-top: 5rem; */
-  /* margin-left: 5rem; */
+  /* margin-top: 5px; */
+  /* margin-left: 5px; */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -284,7 +282,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* margin-left: 5rem; */
+  /* margin-left: 5px; */
 }
 .home .ourTeam .imageOwner {
   display: -webkit-box;
@@ -295,11 +293,11 @@
       -ms-flex-direction: row;
           flex-direction: row;
   height: 620px;
-  margin-right: 4rem;
+  margin-right: 4px;
 
 }
 .home .ourTeam .ourteamInfo{
-  margin-left: 4rem;
+  margin-left: 4px;
 }
 .home .ourTeam .imageOwner .nameOwner {
   margin-top: auto;
@@ -316,7 +314,7 @@
   /* or 38px */
   text-align: center;
   letter-spacing: -0.005em;
-  color: #333333;
+  color: #ffffff;
 }
 
 .home .ourTeam .imageOwner .nameOwner .ownedesignation {
@@ -328,7 +326,7 @@
   /* or 35px */
   text-align: right;
   letter-spacing: -0.005em;
-  color: #333333;
+  color: #ffffff;
   white-space: nowrap;
 }
 
@@ -353,7 +351,7 @@
     overflow-x: hidden;
 }
 .home .featuredProjects p {
-  margin-top: 1rem;
+  margin-top: 1px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -377,8 +375,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
- /* margin-left: 4rem;
-    margin-right: 4rem; */
+ /* margin-left: 4px;
+    margin-right: 4px; */
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
@@ -386,8 +384,8 @@
 
 }
 .home .featuredProjects .picRow img {
-  /* width: 27rem;
-  height: 20rem; */
+  /* width: 27px;
+  height: 20px; */
   width: 24.312rem;
   height: 24.312rem;
   margin: 3rem;
@@ -416,7 +414,7 @@
   transition: background-size 0.8s, color 0.8s, border-radius 1s;
 }
 .home .discussProjects p {
-  margin: 2rem;
+  margin: 2px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -501,7 +499,7 @@ section:nth-child(even) {
 @media only screen and (max-width: 850px) {
  
   .home .ourTeam .heading {
-    /* margin: 1rem; */
+    /* margin: 1px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -511,7 +509,7 @@ section:nth-child(even) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-            margin-top: 3rem;
+            margin-top: 3px;
     margin-left: 0% ;
     font-size: 40px;
 
@@ -521,7 +519,7 @@ section:nth-child(even) {
     font-size: 16px;
     font-family: "Poppins";
     font-style: normal;
-    margin: 0rem 2rem;
+    margin: 0px 1rem;
   }
   .home .ourTeam .imageOwner {
     
@@ -573,7 +571,7 @@ section:nth-child(even) {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-            font-size: 15px;
+            font-size: px;
   }
   .home .ourTeam .imageOwner .nameOwner .ownedesignation {
     
@@ -621,6 +619,15 @@ section:nth-child(even) {
     font-size: 22px;
   }
 }
+
+
+@media only screen and (max-width: 1250px) {
+.prev, .next {
+  position: absolute;
+  margin-top: 100px;
+  margin-top: 60%;
+}
+}
 @media only screen and (max-width: 1150px) {
   .home .counter .counter-box {
     -webkit-box-orient: vertical;
@@ -641,7 +648,7 @@ section:nth-child(even) {
 .video .box .mainHeading {
   position: absolute;
   top: 25vh;
-  padding: 1rem;
+  padding: 1px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   margin-left: 18px;
@@ -660,6 +667,7 @@ section:nth-child(even) {
           flex-direction: column;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+  padding: 0.4rem;
   /* Inside auto layout */
 }
 .video .box .mainHeading .color {
@@ -838,6 +846,28 @@ section:nth-child(even) {
     font-size: 50px;
   }
 }
+
+
+
+@media only screen and (max-width: 800px) {
+  .home .counter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .counter .counter-box {
+    width: 60%;
+    height: 70px;
+    margin-bottom: 1rem;
+  }
+  .home .ourTeam .imageOwner .nameOwner .ownerName {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
 @media only screen and (max-width: 530px) {
  
  
@@ -866,17 +896,7 @@ section:nth-child(even) {
   /* .home .hideMobile {
     display: none;
   } */
-  .home .counter {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .home .counter .counter-box {
-    width: 60%;
-    height: 70px;
-    margin-bottom: 1rem;
-  }
+  
   /* .First1 {
     display: none;
   } */
@@ -892,7 +912,7 @@ section:nth-child(even) {
     /* margin-top: -9vh; */
     margin-left: 2px;
     font-size: 20px;
-    padding-right: 1rem
+    padding-right: 1px
   }
   .video .box .mainHeading .headingContent {
     font-size: 20px;
@@ -914,7 +934,7 @@ section:nth-child(even) {
     /* width: 200px;
     height: 40px; */
   }
-   .video .centerScroll .scroll .scrollContent {
+  .video .centerScroll .scroll .scrollContent {
    
     font-size: 18px;
     display: -webkit-box;
@@ -937,8 +957,8 @@ section:nth-child(even) {
   
   font-size: 16px;
   
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 
@@ -954,6 +974,7 @@ section:nth-child(even) {
   }
   .video .box .mainHeading{
     font-size: 30px;
+    padding: 0.4rem;
   }
   .video .centerScroll .arrowOne {
     top: 82vh;

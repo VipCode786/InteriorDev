@@ -96,7 +96,7 @@ function App() {
           textAlign: 'center',
           background:"none",
           cursor:"pointer",
-          zIndex:"100"
+          zIndex:"999999"
         }}
       >
         <img width="40vw" height="40vh" src="/backtotop.png" />

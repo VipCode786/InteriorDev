@@ -1070,6 +1070,7 @@
   grid-column-end: 21;
   grid-row-start: 2;
   grid-row-end: 25;
+  margin-top: -3vw;
   /* background: url("./bgport.png"); */
   /* background-color:#CB572C; */
 }
@@ -1080,6 +1081,17 @@
   grid-row-end: 18;
   /* background: url("./bgport.png"); */
   /* background-color:#CB572C; */
+}
+
+.gate0_item--bg {
+  grid-column-start: 10;
+  grid-column-end: 21;
+  grid-row-start: 2;
+  grid-row-end: 17;
+  background: #CB572C;
+  position: relative;
+  z-index: -100;
+  margin-top: -0.3vw;
 }
 /* .gate0_item--link{
   grid-column-start: 14;
@@ -1122,7 +1134,7 @@
   border-radius: 4px;
   color: #373737;
   margin-right: 10px;
-  margin-bottom: 20px /* background-color: #FFFFFF; */;
+  margin-bottom: 10px;
 }
 .gate0_item--img{
   grid-column-start: 2;

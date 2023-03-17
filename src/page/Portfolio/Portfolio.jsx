@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import {useRef} from 'react';
 import { useLocation } from 'react-router-dom'
 
-import './Portfolio.css'
+import './Portfolio12.css'
 
 
 const Portfolio = () => {

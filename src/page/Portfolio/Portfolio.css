@@ -1,3 +1,5 @@
+
+
 .portfolio {
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -157,7 +159,7 @@
   background: #CB572C;
   position: relative;
   z-index: -100;
-  margin-top: 0.17vw;
+  /* margin-top: 0.17vw; */
   width: 100%;
   height: 103%;
 }
@@ -303,6 +305,7 @@
   grid-column-end: 21;
   grid-row-start: 2;
   grid-row-end: 25;
+  margin-top: -0.5vw;
 
   /* background: url("./bgport.png"); */
   /* background-color:#CB572C; */
@@ -316,40 +319,85 @@
   /* background-color:#CB572C; */
 }
 .gate0_item--link{
-  grid-column-start: 14;
-  grid-column-end: 18;
-  grid-row-start: 7;
-  grid-row-end: 17;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2.08vw;
-  line-height: 139.1%;
-  letter-spacing: 0.025em;
-  color: #383838;
-  /* text-decoration: underline;
-  text-decoration-color: #963411; */
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 10;
+  /* grid-row-end: 17; */
+ z-index: 9999999;
+ display: flex;
+ flex-direction: row;
+ margin-left: -2vw;
+ flex-wrap: wrap;
 
  
 }
-.gate0_item--link a:hover{
+
+.gate0_item--link .btnLink{
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8vw;
+  line-height: 139.1%;
+  /* or 33px */
+  background-color: #FFFFFF;
+  padding: 0.1vw 1vw;
+  border-radius: 4px;
+  color: #373737;
+  margin-right:20px;
+  margin-bottom:20px
+  /* background-color: #FFFFFF; */
+
+ 
+}
+.gate0_item--link a:hover .btnLink{
   cursor: pointer;
   color: #CB572C;
 }
 .gate0_item--p{
+
   grid-column-start: 2;
   grid-column-end: 10;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  font-family: "Poppins";
+  grid-row-start: 4;
+  grid-row-end: 10;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.gate0_item--p h1{
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
-  font-size: 2vw;
-  line-height: 139.1%;
+  font-weight: 500;
+  font-size: 4.5vw;
+  line-height: 180.1%;
+  /* or 115px */
+  
+  display: flex;
+  align-items: flex-end;
   letter-spacing: 0.025em;
-  color: #FFFFFF;
+  text-transform: uppercase;
+  
+  color: #F3F3F3;
 }
 
+.gate0_item--p p{
+  max-width: 35vw;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5vw;
+  line-height: 116.6%;
+  /* or 37px */
+  
+  display: flex;
+  align-items: flex-end;
+  text-align: justify;
+  letter-spacing: 0.025em;
+  
+  color: #FFFFFF;
+  
+}
 .gate0_item--img{
   grid-column-start: 2;
   grid-column-end: 10;
@@ -989,11 +1037,9 @@
   .canopy{
     grid-gap: 0.5rem; 
   }
-
   .pergola{
     grid-gap: 0.5rem; 
   }
-
   .railing{
     grid-gap: 0.5rem; 
   }
@@ -1035,7 +1081,7 @@
   /* background: url("./bgport.png"); */
   /* background-color:#CB572C; */
 }
-.gate0_item--link{
+/* .gate0_item--link{
   grid-column-start: 14;
   grid-column-end: 18;
   grid-row-start: 7;
@@ -1051,8 +1097,8 @@
 .gate0_item--link a:hover{
   cursor: pointer;
   color: #CB572C;
-}
-.gate0_item--p{
+} */
+/* .gate0_item--p{
   grid-column-start: 2;
   grid-column-end: 10;
   grid-row-start: 3;
@@ -1064,8 +1110,20 @@
   line-height: 139.1%;
   letter-spacing: 0.025em;
   color: #FFFFFF;
+} */
+.gate0_item--link .btnLink {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 139.1%;
+  background-color: #FFFFFF;
+  padding: 0.2vw 1vw;
+  border-radius: 4px;
+  color: #373737;
+  margin-right: 10px;
+  margin-bottom: 20px /* background-color: #FFFFFF; */;
 }
-
 .gate0_item--img{
   grid-column-start: 2;
   grid-column-end: 10;
@@ -1148,14 +1206,12 @@
   grid-gap: 1.250rem; 
   
 }
-
 .gate__img {
   width: 100%;
   height: 100%;
  
   
 }
-
 .gate__item--1 {
   grid-column-start: 1;
   grid-column-end: 6;
@@ -1171,9 +1227,6 @@
     line-height: 139.1%;
  
 }
-
-
-
 .gate__item--2 {
   grid-column-start: 5;
   grid-column-end: 12;
@@ -1182,7 +1235,6 @@
   z-index: 100;
  
 }
-
 .gate__item--3 {
   grid-column-start: 12;
   grid-column-end: 20;
@@ -1191,22 +1243,18 @@
   position: relative;
  
 }
-
 .gate__item--4 {
   grid-column-start: 4;
   grid-column-end: 11;
   grid-row-start: 9;
   grid-row-end: 17;
-
   
 }
-
 .gate__item--5 {
   grid-column-start: 11;
   grid-column-end: 20;
   grid-row-start: 10;
   grid-row-end: 17;
-
 } */
 
 .canopy {

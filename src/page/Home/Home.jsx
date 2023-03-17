@@ -235,19 +235,12 @@ const Home = () => {
         </div>
         <div className='centerScroll ' >
           <div className='arrowOne'></div>
-          {/* <div className='arrow' onClick={scrollClick}>
-          <img src="/headerImages/arrow.svg" alt="arrow" />
-      </div> */}
           <div className="scroll" ref={scrollBG}>
-
             <div className='scrollContent' onClick={scrollClick}>Scroll to Explore</div>
           </div>
         </div>
       </div>
-      {/* <section class="Frist">
-    <h1 class="big-title">Text move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left rightText move left right Text move left right Text move left right Text move left right Text move left right</h1>
-  </section> */}
-      {/* <section class="First1" style={{background:"#ffffff"}}> */}
+      
       <div className='marquee'>
         <div className='marquee__content  scrollBorder'>
           <div className='border big1 '  >
@@ -873,10 +866,10 @@ const Home = () => {
         {/* <Clients/>    */}
         <div className='featuredProjects'>
           <br />
-          <br />
+          
           <p className='textInAnimation'>Featured Projects</p>
           <br />
-          <br />
+          
           <div className='picRow'>
             <Pulse>
               <a href='/portfolio#gateLink'><img src="/FeaturedProjects/gate.png" alt="gate" /></a>

@@ -92704,3 +92704,170 @@
   }
 
 }
+
+
+/* .pButtonDiv{
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  height:100vh;
+  background-color:white;
+} */
+.pbutton{
+  border: 4px solid white;
+  background-color: #c23400;
+  /* background-color:offwhite; */
+  font-size:20px;
+  padding:20px 40px;
+  text-transform:capitalize;
+  cursor:pointer;
+  transform:all 0.3s;
+  position:relative;
+  
+}
+.pbutton:before{
+  content:"";
+  position :absolute;
+  width:24px;
+  height:24px;
+  top:-5px;
+    left:-5px;
+  border-top:5px solid black;
+  border-left:5px solid black;
+  transition:all 0.25s;
+}
+.pbutton:hover:before ,button:hover:after{
+  width:104%;
+  height:110%;
+}
+.pbutton:after{
+  content:"";
+  position :absolute;
+  width: 24px;
+  height:24px;
+  bottom:-5px;
+    right:-5px;
+  border-bottom:5px solid black;
+  border-right:5px solid black;
+  transition:all 0.30s;
+}
+
+
+
+body {
+  background-color: #D2D5D8;
+}
+
+.gate0_item--img button {
+  transition: all 0.2s ease;
+  background: #d2d5d8;
+  border:0;
+  font-weight: bold;
+  margin: 2rem auto;
+  /* display: block; */
+  border-radius: 25px;
+  position: relative;
+  outline: none;
+  padding: 3px;
+  cursor: pointer;
+  min-width: 200px;
+  animation-name: button;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.btn-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  opacity: 1;
+  animation-name: button-text;
+  animation-duration: 0.75s;
+  animation-delay: 1.3s;
+  animation-fill-mode: backwards;
+}
+
+.gate0_item--img button:before,
+.gate0_item--img button:after,
+.gate0_item--img button span:before,
+.gate0_item--img button span:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+
+.gate0_item--img button:before {
+/*   box-shadow: -10px -8px 20px #fff; */
+  animation-name: button-before;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.gate0_item--img button:after {
+/*   box-shadow: 10px 8px 20px #9496B0; */
+  animation-name: button-after;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.btn-inner {
+  max-width: 250px;
+  position: relative;
+  background: #d2d5d8;
+/*   background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(210,213,216,1) 50%, rgba(210,213,216,1) 95%, rgba(148,150,176,1) 100%); */
+padding: 0.5rem 2.5rem; 
+ display: block;
+  border-radius: 25px;
+  position: relative;
+  animation-name: button-inner;
+  animation-duration: 0.75s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.gate0_item--img button.active .btn-text {
+  font-size: 0.95rem;
+}
+
+.gate0_item--img button.active .btn-inner:before {
+   box-shadow: 4px 4px 10px inset #9496B0;
+  -webkit-box-shadow: 4px 4px 10px inset #9496B0;
+}
+
+.gate0_item--img button.active .btn-inner:after {
+  box-shadow: -4px -4px 10px inset #fff;
+  -webkit-box-shadow: -4px -4px 10px inset #fff;
+}
+
+/* @keyframes button-before {
+  from {box-shadow: 0 0 0 #fff;}
+  to {box-shadow: -10px -8px 20px #fff;}
+}
+
+@keyframes button-after {
+  from {box-shadow: 0 0 0 #9496B0;}
+  to {box-shadow: 10px 8px 20px #9496B0;}
+} */
+
+@keyframes button-inner {
+  from {background: #d2d5d8;}
+  to {background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(210,213,216,1) 50%, rgba(210,213,216,1) 95%, rgba(148,150,176,1) 100%);}
+}
+
+@keyframes button {
+  from {background: #d2d5d8;}
+  to {background: linear-gradient(165deg, rgba(255,255,255,1) 10%, rgba(148,150,176,1) 100%);}
+}
+
+@keyframes button-text {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

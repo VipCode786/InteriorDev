@@ -1,9 +1,10 @@
+
 import React from 'react'
 import { useEffect } from 'react';
 import {useRef} from 'react';
 import { useLocation } from 'react-router-dom'
 
-import './Portfolio12.css'
+import './Portfolio.css'
 
 
 const Portfolio = () => {
@@ -62,7 +63,14 @@ const Portfolio = () => {
   
 
 
-  const handleClick = (a) => {
+//   useLayoutEffect(() => {
+//     first
+  
+//     return () => {
+//       second
+//     };
+//   }, [third])
+  let handleClick = (a) => {
     a.current?.scrollIntoView({behavior: 'smooth'});
   };
   // useEffect(() => {
@@ -88,9 +96,7 @@ const Portfolio = () => {
         <a className='ref' onClick={()=>handleClick(railing)}>Railing</a>
         <a className='ref' onClick={()=>handleClick(pergola)}>Pergola</a>
         <a className='ref' onClick={()=>handleClick(otherProjects)}>Other Projects</a>
-
         </div>
-
              Gates<br/>
               Canopy<br/>
               Staircase<br/>
@@ -98,7 +104,6 @@ const Portfolio = () => {
               Pergola<br/>
               OtherProjects<br/> 
               
-
              </div> 
         
         </div> 
@@ -120,17 +125,21 @@ const Portfolio = () => {
                     <img src="/portfolio/bgport.png"  className="gate__img" alt="" />
                 </figure>
                 <figure className="gate0_item--link" >
-                    
-                <a className='ref' onClick={()=>handleClick(gate)} style={{color:"#ffffff",fontWeight:"600",}}>Gates</a><br/>
-                <a className='ref' onClick={()=>handleClick(canopy)} style={{color:"#ffffff",fontWeight:"600"}}>Canopy</a><br/>
-                <a className='ref' onClick={()=>handleClick(staircase)} style={{color:"#ffffff",fontWeight:"600"}}>Staircase</a><br/>
-                <a className='ref' onClick={()=>handleClick(railing)} style={{color:"#ffffff",fontWeight:"600"}}>Railing</a><br/>
-                <a className='ref' onClick={()=>handleClick(pergola)} style={{color:"#ffffff",fontWeight:"600"}}>Pergola</a><br/>
-                <a className='ref' onClick={()=>handleClick(otherProjects)} style={{color:"#ffffff",fontWeight:"600"}}>Other Projects</a><br/>
+                 <div style={{display:"flex",flexWrap:"nowrap"}}>   
+                <a className='ref' onClick={()=>handleClick(gate)}><div className='btnLink'>Gates</div></a>
+                <a className='ref' onClick={()=>handleClick(canopy)}><div className='btnLink'>Canopy</div></a>
+                <a className='ref' onClick={()=>handleClick(staircase)} ><div className='btnLink'>Staircase</div></a>
+                </div>
+                <div style={{display:"flex",flexWrap:"nowrap"}}>   
+                <a className='ref' onClick={()=>handleClick(railing)} ><div className='btnLink'>Railing</div></a>
+                <a className='ref' onClick={()=>handleClick(pergola)} ><div className='btnLink'>Pergola</div></a>
+                </div>
+                <a className='ref' onClick={()=>handleClick(otherProjects)}><div className='btnLink'>Other Projects</div></a>
                 </figure>
                 <figure className="gate0_item--p" >
-                <p ><b> Our portfolio consists of projects
-                    from all over the globe</b>
+                    <h1>Our portfolio</h1>
+                <p >  consists of projects
+                    from all over the globe
                 </p>
                 </figure>
                 <figure className="gate0_item--bg" >
@@ -142,7 +151,7 @@ const Portfolio = () => {
                 <img src="/portfolio/other2.jpg" />
                 </figure>
                 <figure className="gate0_item--img" >
-                <img src="/portfolio/portfolio.png" className="gate__img" alt="" />
+                {/* <img src="/portfolio/portfolio.png" className="gate__img" alt="" /> */}
                 </figure>
                 <figure className="gate0_item--circle" >
                 

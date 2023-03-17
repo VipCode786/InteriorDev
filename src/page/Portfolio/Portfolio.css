@@ -142,7 +142,7 @@
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(32, 1.8vw);
   grid-gap: 1.250rem; 
-  margin-top: -2.8vw;
+  /* margin-top: -2.8vw; */
   
 }
 
@@ -303,9 +303,9 @@
 .gate0_item--1{
   grid-column-start: 1;
   grid-column-end: 21;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 25;
-  margin-top: -0.5vw;
+  /* margin-top: -0.5vw; */
 
   /* background: url("./bgport.png"); */
   /* background-color:#CB572C; */
@@ -1055,7 +1055,7 @@
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(55, 1.8vw);
   grid-gap: 0.8rem; 
-  margin-top: -2.8vw;
+  /* margin-top: -2.8vw; */
   
 }
 
@@ -1068,9 +1068,9 @@
 .gate0_item--1{
   grid-column-start: 1;
   grid-column-end: 21;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 25;
-  margin-top: -3vw;
+  /* margin-top: -3vw; */
   /* background: url("./bgport.png"); */
   /* background-color:#CB572C; */
 }
@@ -1086,12 +1086,12 @@
 .gate0_item--bg {
   grid-column-start: 10;
   grid-column-end: 21;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 17;
   background: #CB572C;
   position: relative;
   z-index: -100;
-  margin-top: -0.3vw;
+  /* margin-top: -0.3vw; */
 }
 /* .gate0_item--link{
   grid-column-start: 14;

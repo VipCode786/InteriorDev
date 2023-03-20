@@ -595,12 +595,13 @@ section:nth-child(even) {
     max-width: 233px;
 }
   .home .meetButton {
-    display: -webkit-box;
+    margin-left: 1rem;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
+            justify-content: center; */
   }
   .home .counter .counter-box {
     -webkit-box-orient: vertical;

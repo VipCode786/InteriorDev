@@ -357,3 +357,30 @@
     -webkit-transform-origin:0 0;
   } */
 }
+
+@media screen and (max-width: 450px) {
+  .contactPage .contactInfo h1 {
+   font-size: 22px;
+  }
+
+  .contactPage .content1 {
+    margin-left: 2rem;
+    font-size: 10px;
+  }
+
+  .contactPage .contactInfo .contactDetails {
+    margin-top: 0.2rem;
+  }
+
+  .footer .footerLogo .row img {
+    width: 10vw;
+    height: 6vw;
+}
+}
+
+@media screen and (max-width: 1050px) {
+  .footer .footerLogo .row img {
+    width: 5vw;
+    height: 3vw;
+}
+}

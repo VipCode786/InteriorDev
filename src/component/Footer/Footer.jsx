@@ -105,7 +105,7 @@ const Footer = () => {
       <Link to="/policy">Privacy Policy &nbsp;</Link>
 </p><br/>
 <div className='boxView' style={{justifyContent:"flex-start",margin:"0px"}} >
-                    <div className='boxButton row' style={{paddingTop:"5px",paddingBottom:"5px", paddingRight:"15px",paddingLeft:"18px"}}>
+                    <div className='boxButton row buttonPadding' >
                     <a href='Interior_Design_Brochure.pdf' download className='downloadImg'>Download Brochure</a>
                     <img src="downloadImg.png"  alt="" />
                     </div>

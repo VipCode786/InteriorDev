@@ -81,7 +81,7 @@ const ContactPage = () => {
               <div className='contact-paragraph'>
                 Please fill out the form and our team will contact you within 2 business days.
                 </div>
-                <br/>
+                
                 <div className='contactDetails'>
                     <img src="/contactUs/phone.svg" alt="" /> &nbsp; &nbsp; &nbsp; <p>0120-3110478</p>
                 </div>

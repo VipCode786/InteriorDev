@@ -913,7 +913,8 @@ section:nth-child(even) {
     /* margin-top: -9vh; */
     margin-left: 2px;
     font-size: 20px;
-    padding-right: 1px
+    padding-right: 1px;
+    margin-top: 4vh;
   }
   .video .box .mainHeading .headingContent {
     font-size: 20px;
@@ -1092,4 +1093,12 @@ font-size: 32px;
   100% {
     opacity: 1;
   }
+}
+
+@media screen and (max-width:550px) {
+  .video {
+    /* height: 90vh; */
+    background-image: url("./bgVideoMob.gif");
+    background-size: 100% 100%;
+}
 }

@@ -40,21 +40,21 @@ const About = () => {
     <div className='head'>
       
     </div>
-    <br/>
-    <br/>
+    {/* <br/>
+    <br/> */}
     <div className='heading textInAnimation'>
       About Us
     </div>
-    <br/>
+    {/* <br/> */}
     <div className='aboutContent'>
     <p>
       Interior Craft was set up in the year 1977 to cater to a variety of Industrial sectors. Soon there was a huge boost in the demand of Metal fabrications. This prompted our founder <b style={{color:
       "#000000"}}>  Mr. Anis Ahmed </b>to heavily invest in this field. Today, Interior Craft’s name is synonymous with metal fabrications of the highest caliber and craftsmanship of the best quality. We fabricate each and everything that can be crafted out of metal be it Gates, Staircases, Railings and much more. All the aspects of our projects are tailored to the clients’ needs. </p>
     </div>
+    {/* <br/>
     <br/>
     <br/>
-    <br/>
-    <br/>
+    <br/> */}
     <div className='background1'>
       <div className='about1'>
         <Fade left>
@@ -82,8 +82,8 @@ const About = () => {
       </div>
     </div>
 
-    <br/>
-    <br/>
+    {/* <br/>
+    <br/> */}
    
     <div className='background3'>
     <div className='about1'>

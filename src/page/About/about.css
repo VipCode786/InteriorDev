@@ -42,6 +42,7 @@
   text-align: center;
   letter-spacing: 0.025em;
   color: #3E3E3E;
+  margin: 2rem auto;
 }
 .about .aboutContent {
   -webkit-box-align: center;
@@ -73,7 +74,7 @@
 .about .background1 {
   /* margin-left: 60px;
   margin-right: 60px; */
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
 }
 .about .background2 {
   /* margin-left: 60px;
@@ -104,7 +105,7 @@
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          margin-top: 30px;
+          margin-top: 60px;
 }
 .about .about1 p {
   max-width: 466px;
@@ -192,7 +193,7 @@
     text-align: center;
     letter-spacing: 0.025em;
     color: #3E3E3E;
-    margin-top: -17rem;
+    margin-top: -14rem;
   }
   .about .aboutContent {
     /* -webkit-box-align: center;
@@ -228,7 +229,8 @@
     height: 20%;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: -12%;
+    /* margin-top: -12%; */
+    margin-top: 30%;
   }
   .about .background2 {
     margin-left: 10px;
@@ -240,7 +242,8 @@
     height: 20%;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: -5%;
+    margin-top: 20%;
+  
   }
   .about .about1 {
     display: -webkit-box;
@@ -276,6 +279,7 @@
     text-align: justify;
     letter-spacing: 0.06em;
     color: #000000;
+    margin-top: 1%;
   }
   .about .about1 img {
     width: 80%;
@@ -317,6 +321,7 @@
   }
   .about .about2 img {
     width: 80%;
+    margin-top: 5%;
   }
   .margin3rem {
     margin-top: 0;

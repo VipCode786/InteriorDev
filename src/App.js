@@ -18,6 +18,7 @@ import Loader from "./component/Loader/Loader";
 import Portfolio from "./page/Portfolio/Portfolio";
 import Loader2 from "./component/Loader/Loader2";
 import Policy from "./page/Policy/Policy";
+import CareerPage from "./page/Career/CareerPage";
 function App() {
 
   const[loading,setLoading] = useState(true);
@@ -59,7 +60,8 @@ function App() {
              {/* <Route exact path="/" render={() => {}} /> */}
              <Route path="/about" element={<About/>} />
              <Route path="/myteam" element={<MyTeam/>} />
-             <Route path="/career" element={<Career/>} />
+             {/* <Route path="/career" element={<Career/>} /> */}
+             <Route path="/career" element={<CareerPage/>} />
              <Route path="/contact" element={<Contact/>} />
              <Route path="/contactpage" element={<ContactPage/>} />
              <Route path="/portfolio" element={<Portfolio/>} />

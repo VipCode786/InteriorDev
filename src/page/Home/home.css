@@ -1097,17 +1097,23 @@ font-size: 32px;
 
 
 .whatImg{
-  width:"100vw";
-  height:"90vh"
+  width:100vw;
+  height:90vh;
+  background:url("playImage.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-color: #e7e79e;
 }
 @media screen and (max-width:550px) {
   .video {
     /* height: 90vh; */
-    background-image: url("./bgVideoMob.gif");
+    background-image: url("./bgVideoMob.gif") ;
     background-size: 100% 100%;
 }
 .whatImg{
-  width:"100vw";
-  height:auto;
+  width:100vw;
+  height:600px;
+  background:url("./playImageMob.png") no-repeat;
+  background-size: 100% 100%;
+  background-color: #e7e79e;
 }
 }

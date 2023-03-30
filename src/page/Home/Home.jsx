@@ -592,9 +592,10 @@ const Home = () => {
     <WhatWeMake/>
     <Zoom >
         <div className='whatImg'>
-          <img src="/WhatWeMake/playImage.jpg" alt="" class="aniheader textInAnimation" style={{width:"100%", height:"100%"}}/>
+         
+          <img alt="" class="aniheader textInAnimation" style={{width:"100%", height:"100%"}}/>
       {/* <video autoPlay muted playsInline  preload="metadata" style={{width:"100%", objectFit:"cover", marginTop:"-50px", height:"100%"}} >
-
+cdcdedc
       <source src="/WhatWeMake/WHATWEMAKE.mp4" type="video/mp4"/> */}
       {/* </video> */}
       </div>

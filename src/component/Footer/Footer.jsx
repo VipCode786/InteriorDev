@@ -65,7 +65,7 @@ const Footer = () => {
   <span>Instagram</span>
 <br/>
 <br/>
-<div className='row'>
+<div className='row1'>
  <div>
  <div className='resoucesBox'> 
    <img src="/FeaturedProjects/door.png" alt="" />
@@ -85,7 +85,7 @@ const Footer = () => {
 <div>
  <div className='footerLogo ' >
   
-   <div className='row' style={{marginTop:"15px"}}>
+   <div className='row1' style={{marginTop:"15px"}}>
     <a href='https://instagram.com/best.interior.designer?igshid=N2ZiY2E3YmU='>
    <img src="/Footer/Vector (5).svg" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;
    </a>
@@ -105,7 +105,7 @@ const Footer = () => {
       <Link to="/policy">Privacy Policy &nbsp;</Link>
 </p><br/>
 <div className='boxView' style={{justifyContent:"flex-start",margin:"0px"}} >
-                    <div className='boxButton row buttonPadding' >
+                    <div className='boxButton row1 buttonPadding' >
                     <a href='Interior_Design_Brochure.pdf' download className='downloadImg'>Download Brochure</a>
                     <img src="downloadImg.png"  alt="" />
                     </div>

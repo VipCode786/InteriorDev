@@ -29,6 +29,7 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import { Bounce } from 'react-reveal'
 import WhatMake from '../../component/MakeBoxes/WhatMake'
+import WhatWeMake from '../../component/WhatWEMake/WhatWeMake'
 
 const myHTML =
   `<div class="container">
@@ -285,12 +286,13 @@ const Home = () => {
 
       {/* </section> */}
       <div className='home' >
-      <div className='whatWeMake' style={{backgroundColor:"#ffffff"}}>
+      {/* <div className='whatWeMake' style={{backgroundColor:"#ffffff"}}>
           <p class="aniheader textInAnimation">What WE MAKE</p>
-        </div>
-        <hr/>
+        </div> */}
+        {/* <WhatWeMake/> */}
+        {/* <hr/> */}
         {/* <WhatMake/> */}
-        <div style={{ backgroundColor: "#ffffff", fontSize: "4vw", display: "flex", flexDirection: "column", whiteSpace: "nowrap" }}  >
+        {/* <div style={{ backgroundColor: "#ffffff", fontSize: "4vw", display: "flex", flexDirection: "column", whiteSpace: "nowrap" }}  >
           <div style={{ display: "flex", flexDirection: "row" }}>
             <Fade left>
               <div style={{ padding: "1vw" }} className="tracking-in-expand">Gates</div>
@@ -419,7 +421,7 @@ const Home = () => {
           
 
 
-        </div>
+        </div> */}
         {/* <div className='whatWeMake'>
           <p class="aniheader textInAnimation">What WE MAKE</p>
         </div>
@@ -584,15 +586,19 @@ const Home = () => {
         {/* </div> */}
         {/* <div class="video-container">
   <video autoPlay muted playsInline loop preload="metadata">
-  <source src="ICHOME.mp4" type="video/mp4"/>
+  <source src="/WhatWeMake/WHATWEMAKE.mp4" type="video/mp4"/>
   </video>
 </div> */}
-        {/* <div style={{width:"100vw", height:"100vh",objectFit:"cover"}}>
-      <video autoPlay muted playsInline loop preload="metadata"style={{width:"100%", height:"100%"}} >
+    <WhatWeMake/>
+    <Zoom >
+        <div style={{width:"100vw", height:"90vh"}}>
+          <img src="/WhatWeMake/playImage.jpg" alt="" class="aniheader textInAnimation" style={{width:"100%", height:"100%"}}/>
+      {/* <video autoPlay muted playsInline  preload="metadata" style={{width:"100%", objectFit:"cover", marginTop:"-50px", height:"100%"}} >
 
-      <source src="ICHOME.mp4" type="video/mp4"/>
-      </video>
-      </div> */}
+      <source src="/WhatWeMake/WHATWEMAKE.mp4" type="video/mp4"/> */}
+      {/* </video> */}
+      </div>
+      </Zoom >
         {/* <div dangerouslySetInnerHTML={{ __html: myHTML }} />; */}
 
 

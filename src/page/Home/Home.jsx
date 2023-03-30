@@ -591,7 +591,7 @@ const Home = () => {
 </div> */}
     <WhatWeMake/>
     <Zoom >
-        <div style={{width:"100vw", height:"90vh"}}>
+        <div className='whatImg'>
           <img src="/WhatWeMake/playImage.jpg" alt="" class="aniheader textInAnimation" style={{width:"100%", height:"100%"}}/>
       {/* <video autoPlay muted playsInline  preload="metadata" style={{width:"100%", objectFit:"cover", marginTop:"-50px", height:"100%"}} >
 

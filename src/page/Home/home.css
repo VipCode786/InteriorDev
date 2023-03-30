@@ -1095,10 +1095,19 @@ font-size: 32px;
   }
 }
 
+
+.whatImg{
+  width:"100vw";
+  height:"90vh"
+}
 @media screen and (max-width:550px) {
   .video {
     /* height: 90vh; */
     background-image: url("./bgVideoMob.gif");
     background-size: 100% 100%;
+}
+.whatImg{
+  width:"100vw";
+  height:auto;
 }
 }

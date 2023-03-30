@@ -6,7 +6,7 @@ const WhatWeMake = () => {
     
     
     
-    const messages = [ "Gates","Skylights","C-Channels","Pergolas","Canopies","Staircase","Aluminium","Pyramidical","Supported","Gates","Lock System","Pre-Fab Structures","Elevation Louvers","Canopies","Flat Skylights","Planters","Cantilevered" ,"Staircase","Railings","Manhole Covers","Drain Covers","Metal Jaali","Glass Floors","Lift Jambs","Baffle Ceilings"  ];
+    const messages = [ "Gates","Skylights","C-Channels","Pergolas","Canopies","Staircase","Pyramidical","Supported","Gates","Lock System","Pre-Fab Structures","Elevation Louvers","Canopies","Flat Skylights","Planters","Cantilevered" ,"Staircase","Railings","Manhole Covers","Drain Covers","Metal Jaali","Glass Floors","Lift Jambs","Baffle Ceilings"  ];
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
@@ -22,9 +22,9 @@ const WhatWeMake = () => {
           setText('');
           setIndex(0);
           setCurrentMessageIndex((currentMessageIndex + 1) % messages.length);
-        }, 1500);
+        }, 1000);
       }
-    }, 100);
+    }, 50);
 
     return () => clearInterval(intervalId);
   }, [index, currentMessageIndex, text]);

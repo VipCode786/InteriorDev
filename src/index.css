@@ -208,6 +208,9 @@ padding: 10px 20px;
   .borderText{
     font-size: 25px;
   }
+  .border{
+    height: 32px;
+}
 }
 
 @media only screen and (max-width: 750px) {

@@ -30,6 +30,7 @@ import Zoom from 'react-reveal/Zoom';
 import { Bounce } from 'react-reveal'
 import WhatMake from '../../component/MakeBoxes/WhatMake'
 import WhatWeMake from '../../component/WhatWEMake/WhatWeMake'
+import Makes from '../../component/Makes/Makes'
 
 const myHTML =
   `<div class="container">
@@ -589,17 +590,15 @@ const Home = () => {
   <source src="/WhatWeMake/WHATWEMAKE.mp4" type="video/mp4"/>
   </video>
 </div> */}
-    <WhatWeMake/>
-    <Zoom >
+<Makes/>
+    {/* <WhatWeMake/> */}
+    {/* <Zoom >
         <div className='whatImg'>
          
           <img alt="" class="aniheader textInAnimation" style={{width:"100%", height:"100%"}}/>
-      {/* <video autoPlay muted playsInline  preload="metadata" style={{width:"100%", objectFit:"cover", marginTop:"-50px", height:"100%"}} >
-cdcdedc
-      <source src="/WhatWeMake/WHATWEMAKE.mp4" type="video/mp4"/> */}
-      {/* </video> */}
+   
       </div>
-      </Zoom >
+      </Zoom > */}
         {/* <div dangerouslySetInnerHTML={{ __html: myHTML }} />; */}
 
 

@@ -31,6 +31,7 @@ import { Bounce } from 'react-reveal'
 import WhatMake from '../../component/MakeBoxes/WhatMake'
 import WhatWeMake from '../../component/WhatWEMake/WhatWeMake'
 import Makes from '../../component/Makes/Makes'
+import MakeMobile from '../../component/Makes/MakeMobile'
 
 const myHTML =
   `<div class="container">
@@ -558,10 +559,12 @@ const Home = () => {
 
         </div> */}
         {/* <div className='scrollImg'  style={{background:"#ffffff"}} > */}
-        {/* <div  className='whatWeMake'>
-      <p class="aniheader textInAnimation">What WE MAKE</p> */}
-        {/* </div> */}
-
+        <div  className='whatWeMake'>
+        
+      <p class="aniheader textInAnimation" style={{marginTop:"20px",marginBottom:"10px"}}>What WE MAKE !</p>
+         </div>
+        <MakeMobile/>
+        <Makes/>
         {/* <br/>
      
      
@@ -590,7 +593,7 @@ const Home = () => {
   <source src="/WhatWeMake/WHATWEMAKE.mp4" type="video/mp4"/>
   </video>
 </div> */}
-<Makes/>
+
     {/* <WhatWeMake/> */}
     {/* <Zoom >
         <div className='whatImg'>

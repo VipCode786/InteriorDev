@@ -1,0 +1,103 @@
+.mobContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  width:100vw;
+  display: flex;
+   
+}
+
+.mobContainer img{
+  width: 100%;
+}
+.mobContent {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, rgba(203, 87, 44, 0.5) 6.37%, rgba(0, 0, 0, 0) 100%);
+  color: burlywood;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: end; */
+  /* align-items: center; */
+  padding: 10px;
+  gap: 20px;
+  bottom: 0%;
+  animation:none;
+  /* right: 0; */
+}
+
+.mobContent .isVisible {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90deg, rgba(203, 87, 44, 0.5) 6.37%, rgba(0, 0, 0, 0) 100%);
+  color: burlywood;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: end; */
+  /* align-items: center; */
+  padding: 10px;
+  gap: 20px;
+  bottom: 0%;
+  animation: box-from-right 3s ;
+  /* right: 0; */
+}
+
+  
+.mobContent h1{
+  font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+text-align: justify;
+margin-top: auto;
+color: #CB572C;
+}
+
+.mobContent p{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 139.1%;
+text-align: justify;
+letter-spacing: 0.025em;
+
+color: #FFFFFF;
+}
+
+.mobmakes{
+display: none;
+
+}
+
+
+.textLeft{
+  animation: box-from-left 3s ;
+}
+
+.textRight{
+  animation: box-from-right 3s ;
+}
+@keyframes box-from-left {
+  0% {
+      margin-left: -100%;
+  }
+  100% {
+      margin-left: 0%;
+  }
+  
+}
+
+@keyframes box-from-right {
+  0% {
+      margin-right: -100%;
+  }
+  100% {
+      margin-right: 0%;
+  }
+  
+}
+@media screen and (max-width:450px) {
+  .mobmakes{
+    display: block;
+    
+    }
+  
+}

@@ -1,45 +1,72 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 20%;
+  overflow-x: hidden;
+  height: 80vh;
+  /* margin-bottom: 20px; */
+}
+
+.image-wrapper img {
+  width: 100%;
+  /* height: 80vh; */
+}
+
+.text-box , .text-box1 {
+  position: absolute;
+  bottom: 10px;
+  left: 2%;
+  padding: 10px;
+  width: auto;
+  text-align: center;
+  top: auto;
+  text-align: left;
+  max-width:236px;
   
-  .image-wrapper {
-    position: relative;
-    width: 20%;
-    overflow-x: hidden;
-    height: 80vh;
-    /* margin-bottom: 20px; */
-  }
+ 
+
+
+
+
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), -webkit-gradient(linear, left top, right top, color-stop(6.37%, rgba(203, 87, 44, 0.8)), to(rgba(0, 0, 0, 0)));
   
-  .image-wrapper img {
-    width: 100%;
-    /* height: 80vh; */
-  }
+ 
+
+
+
+
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -o-linear-gradient(left, rgba(203, 87, 44, 0.8) 6.37%, rgba(0, 0, 0, 0) 100%);
   
-  .text-box , .text-box1 {
-    position: absolute;
-    bottom: 10px;
-    left: 2%;
-    padding: 10px;
-    width: auto;
-    text-align: center;
-    top: auto;
-    text-align: left;
-    max-width:236px;
-    
-   
+ 
 
 
 
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, rgba(203, 87, 44, 0.8) 6.37%, rgba(0, 0, 0, 0) 100%);
-    backdrop-filter: blur(2.5px);
-  }
-  
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, rgba(203, 87, 44, 0.8) 6.37%, rgba(0, 0, 0, 0) 100%);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+}
 
-  .text-box h1{
-    font-family: 'Poppins';
+
+.text-box h1{
+  font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
@@ -48,86 +75,115 @@ line-height: 39px;
 
 color: #CB572C;
 
-  }
+}
 
-  .text-box p{
-    font-family: 'Poppins';
+.text-box p{
+  font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 139.1%;
 /* or 28px */
 
+display: -webkit-box;
+
+display: -ms-flexbox;
+
 display: flex;
-align-items: flex-end;
+-webkit-box-align: end;
+  -ms-flex-align: end;
+      align-items: flex-end;
 letter-spacing: 0.025em;
 
 color: #FFFFFF;
-  }
-  .image-wrapper:nth-child(2), .image-wrapper:nth-child(4) {
-    text-align: left;
-   
-  }
-  
-  .image-wrapper:nth-child(2) .text-box, .image-wrapper:nth-child(4) .text-box {
-    top: 10px;
-    bottom: auto;
-    /* left: -30px; */
-    width: auto;
-    text-align: left;
-  }
-  
+}
+.image-wrapper:nth-child(2), .image-wrapper:nth-child(4) {
+  text-align: left;
+ 
+}
 
-  .image-container {
-    position: relative;
-    height: 100%;
-    overflow-x: hidden;
-     /* Set a fixed height for the container */
-    }
+.image-wrapper:nth-child(2) .text-box, .image-wrapper:nth-child(4) .text-box {
+  top: 10px;
+  bottom: auto;
+  /* left: -30px; */
+  width: auto;
+  text-align: left;
+}
 
-    .image-container img {
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        /* animation: slide-down 3s ease-in-out forwards; */
-    }
+
+.image-container {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+   /* Set a fixed height for the container */
+  }
+
+  .image-container img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      /* animation: slide-down 3s ease-in-out forwards; */
+  }
 
 .imgAni{
-    animation: slide-down 1s ;
-    overflow-x: hidden;
+  -webkit-animation: slide-down 1s ;
+          animation: slide-down 1s ;
+  overflow-x: hidden;
 }
 
 .textAni{
-    animation: box-from-left 3s ;
+  -webkit-animation: box-from-left 3s ;
+          animation: box-from-left 3s ;
+}
+@-webkit-keyframes slide-down {
+  0% {
+      top: -100%;
+  }
+  100% {
+      top: 0%;
+  }
 }
 @keyframes slide-down {
-    0% {
-        top: -100%;
-    }
-    100% {
-        top: 0%;
-    }
+  0% {
+      top: -100%;
+  }
+  100% {
+      top: 0%;
+  }
+}
+
+
+@-webkit-keyframes box-from-left {
+  0% {
+      margin-left: -100%;
+  }
+  100% {
+      margin-left: 0%;
+  }
+  
 }
 
 
 @keyframes box-from-left {
-    0% {
-        margin-left: -100%;
-    }
-    100% {
-        margin-left: 0%;
-    }
-    
+  0% {
+      margin-left: -100%;
+  }
+  100% {
+      margin-left: 0%;
+  }
+  
 }
 
 
-  
-  @media screen and (max-width:450px) {
-    .makes{
-      display: none;
-      
-      }
+
+@media screen and (max-width:450px) {
+  .makes{
+    display: none;
     
-  }
+    }
+  
+}

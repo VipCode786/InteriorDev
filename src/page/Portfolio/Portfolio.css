@@ -1690,7 +1690,7 @@
   grid-column-end: 20;
   grid-row-start: 3;
   grid-row-end: 15;
-  z-index: 100;
+  z-index: 101;
   /** Alternative Syntax **/
   /* grid-column: 3 / span 2;  */
   /* grid-row: 1 / span 2; */

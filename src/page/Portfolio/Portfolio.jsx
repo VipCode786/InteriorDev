@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import {useRef} from 'react';
 import { useLocation } from 'react-router-dom'
 
-import './Portfolio12.css'
+import './Portfolio.css'
 
 
 const Portfolio = () => {
@@ -42,10 +42,12 @@ const Portfolio = () => {
         pergola.current?.scrollIntoView({behavior: 'smooth'});
       }
       else if(a=="otherProjects"){
-        otherProjects.current?.scrollIntoView({behavior: 'smooth'});
+        otherProjects.current?.scrollIntoView({top:100,behavior: 'smooth'});
+       
       }
       else if(a=="gate"){
         gate.current?.scrollIntoView({behavior: 'smooth'});
+       
       }
       else{
         window.scrollTo(0,0)
@@ -295,14 +297,16 @@ const Portfolio = () => {
     <figure className="other__item other__item--0"  >
             
         </figure>
-        <figure className="other__item other__item--1" >
+         
+        <figure className="other__item other__item--1" ref={otherProjects} id="otherscrollLink" >
+        {/* <div ref={otherProjects} id="otherscrollLink"></div> */}
             <p style={{ color:"#ffffff"}}>OTHER PROJECTS</p>
         </figure>
         <figure className="perBack" >
                 
                 </figure>
         <figure className="other__item otherScroll">
-                    <div ref={otherProjects} id="otherscrollLink"></div>
+                  
         </figure>
      
            <figure className="other__item other__item--2" s>

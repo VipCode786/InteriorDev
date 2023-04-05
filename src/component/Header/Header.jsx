@@ -55,14 +55,14 @@ const Header = () => {
          </div> */}
        <div className='header'>
        <div className='logo'>
-          <Link to="/">  <img src="/headerImages/IC_2.png" alt="" /></Link>
+          <Link to="/">  <img src="/headerImages/logoB.png" alt="" /></Link>
        </div>
        <div className='right-header'>
         <div className='gmp '>
-            <img src="/headerImages/gmp.svg" alt="" />
+            <img src="/headerImages/gmp1.png" alt="" />
        </div>
        <div className='iso '>
-            <img src="/headerImages/iso.svg" alt="" />
+            <img src="/headerImages/iso2.png" alt="" />
        </div>
        
        {/* <div className='menu' onClick={handle}>
@@ -123,6 +123,7 @@ const Header = () => {
    
 
 </div>} */}
+
 </div>
   )
 }

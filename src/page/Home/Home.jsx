@@ -225,7 +225,6 @@ const Home = () => {
 
   return (
     <div>
-
       <div className='video'>
 
         <div className='box'>

@@ -7,7 +7,7 @@
 
 
 .header {
-  background-color: #383838;
+  background-color: #FFFFFF;
   height: 12vh;
   width: 100%;
   display: -webkit-box;
@@ -23,6 +23,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          border-bottom: 5px solid #cb572c;
 }
 .header .logo {
   display: -webkit-box;
@@ -90,7 +91,7 @@
 
 @media screen and (max-width: 1050px) {
   .header {
-    background-color: #383838;
+    background-color: #FFFFFF;
     height: 10vh;
     width: 100%;
     display: -webkit-box;
@@ -135,33 +136,62 @@
         -ms-flex-align: center;
             align-items: center;
     margin-right: 6rem;
+    margin-top: 2px;
+
   }
-  .header .right-header .marginR {
+  /* .header .right-header .marginR {
     margin-right: 15px;
   }
   .header .right-header .gmp {
-    height: 10vh;
+    height: auto;
     width: 10vw;
     margin-right: 15px;
   }
   .header .right-header .gmp img {
-    height: 90%;
-    width: 100%;
+    height: 60%;
+    width: 80%;
     margin-left: 25px;
+   
   }
   .header .right-header .iso {
-    height: 10vh;
+    height: auto;
     width: 10vw;
   }
   .header .right-header .iso img {
     margin-left: 25px;
-    width: 100%;
-    height: 90%;
-  }
+    width: 80%;
+    height: 60%;
+  } */
 }
 
 
 @media screen and (max-width:550px) {
+  .header .right-header .marginR {
+    margin-right: 15px;
+  }
+  .header .right-header .gmp {
+    height: auto;
+    width: 10vw;
+    margin-right: 15px;
+  }
+  .header .right-header .gmp img {
+    height: 60%;
+    width: 80%;
+    margin-left: 25px;
+   
+  }
+  .header .right-header .iso {
+    height: auto;
+    width: 10vw;
+  }
+  .header .right-header .iso img {
+    margin-left: 25px;
+    width: 80%;
+    height: 60%;
+  }
+
+
+
   .header .logo img{
     width: 30vw;
   }

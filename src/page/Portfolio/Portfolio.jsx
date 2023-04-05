@@ -45,7 +45,7 @@ const Portfolio = () => {
         otherProjects.current?.scrollIntoView({behavior: 'smooth'});
       }
       else if(a=="gate"){
-        otherProjects.current?.scrollIntoView({behavior: 'smooth'});
+        gate.current?.scrollIntoView({behavior: 'smooth'});
       }
       else{
         window.scrollTo(0,0)

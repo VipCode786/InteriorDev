@@ -163,7 +163,7 @@
    border-radius: 4px;
    padding: 5px 8px;
    margin: 10px auto;
-   background: #bab9b98c;
+   background: #c8c8c88c;
    border: none;
 }
 
@@ -295,6 +295,7 @@
     border: none;
     padding: 5px 11px;
     
+    
 }
 
 .careerFormDiv .careerStart .rightCareer .downloadJob .buttons  .applyButton{
@@ -310,7 +311,7 @@
     border-radius: 4px;
     color: #CB572C;
     padding: 5px 11px;
-  
+    cursor: pointer;
     
 }
 
@@ -474,7 +475,15 @@ margin-right: 40px;
         width: 95%;
         height:40px;
         border-radius: 4px;
-     
+        background: #CB572C;
+        border-radius: 4px;
+        font-family: "poppins";
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.025em;
+
+        color: #F3F3F3;
      }
     .careerFormDivTab  .rightCareer{
        
@@ -632,6 +641,15 @@ margin-right: 40px;
         background: url(mob.png);
         /* background-size:cover; */
     }
+
+    .contentCareer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 13%;
+        margin: 20px;
+    }
     .careerFormDivTab{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -662,8 +680,15 @@ margin-right: 40px;
             -ms-flex-positive: 1;
                 flex-grow: 1;
         max-width: 322px;
-        margin: 30px;
+        margin: auto;
+        padding: 10px;
+
       }
+
+      .afterBg .aboutCareer {
+        font-size: 24px;
+        text-align: center;
+    }
 
 }
 

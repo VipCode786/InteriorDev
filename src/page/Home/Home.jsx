@@ -148,12 +148,18 @@ const Home = () => {
 
   const scrollBG = useRef(null)
   const scrollClick = () => {
+    document.getElementById("buttonScroll").style.backgroundColor = "#ffffff";
 
-    FourDProcess.current.style.backgroundColor = "#383838";
-    FourDProcess.current.style.backgroundColor = null
-
+  
+    // FourDProcess.current.style.backgroundColor = "#ffffff";
+    // FourDProcess.current.style.backgroundColor = 'transparent';
     FourDProcess.current?.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(()=>{
+      document.getElementById("buttonScroll").style.backgroundColor = "transparent";
 
+    },1000)
+    
+  
 
   };
   const myDiv = useRef(null);
@@ -238,10 +244,17 @@ const Home = () => {
         </div>
         <div className='centerScroll ' >
           <div className='arrowOne'></div>
-          <div className="scroll" ref={scrollBG}>
+          <div className="scroll" ref={scrollBG} id="buttonScroll">
             <div className='scrollContent' onClick={scrollClick}>Scroll to Explore</div>
           </div>
         </div>
+      </div>
+
+      <div className='centerScrollMob'>
+      <div className='arrowOneMob'></div>
+      <div className="scrollMob" ref={scrollBG} id="buttonScroll">
+            <div className='scrollContentMob' onClick={scrollClick}>Scroll to Explore</div>
+          </div>
       </div>
       
       <div className='marquee'>
@@ -559,6 +572,7 @@ const Home = () => {
 
         </div> */}
         {/* <div className='scrollImg'  style={{background:"#ffffff"}} > */}
+        <div ref={FourDProcess}></div>
         <div  className='whatWeMake'>
         
       <p class="aniheader textInAnimation" style={{marginTop:"20px",marginBottom:"10px"}}>What WE MAKE !</p>
@@ -692,7 +706,7 @@ const Home = () => {
 
 
         </div>
-        <div ref={FourDProcess}></div>
+       
         <Process />
 
         {/* <HorizontalScroll/> */}

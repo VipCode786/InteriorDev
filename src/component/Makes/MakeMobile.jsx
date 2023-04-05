@@ -75,7 +75,7 @@ const MakeMobile = () => {
         <img src="WhatWeMake/imageBG1.png" alt="Snow" />
         <div class="mobContent" style={{right:"0%"}} id='right1'>
           <h1>Gates <br /> and <br />Doors</h1>
-          <div >
+          <div style={{marginTop:"auto"}} >
             <p>Aluminium Doors</p>
             <p>Aliminium Door Cladding</p>
             <p>Swing Gates</p>
@@ -90,7 +90,7 @@ const MakeMobile = () => {
         <img src="WhatWeMake/imageBG2.png" alt="Snow" />
         <div class="mobContent" style={{flexDirection:"row-reverse"}} id='left1'>
           <h1>Canopies</h1>
-          <div>
+          <div style={{marginTop:"auto"}}> 
             <p>Supported Canopies</p>
             <p>Cantilevered Canopies</p>
 
@@ -102,7 +102,7 @@ const MakeMobile = () => {
         <img src="WhatWeMake/imageBG3.png" alt="Snow" />
         <div class="mobContent" style={{right:"0%"}} id='right2'>
           <h1>Staircase</h1>
-          <div>
+          <div style={{marginTop:"auto"}}>
             <p>Central Stringer Staircase</p>
             <p>Side Stringer Staircase</p>
             <p>Spiral Staircase</p>
@@ -116,7 +116,7 @@ const MakeMobile = () => {
         <img src="WhatWeMake/imageBG4.png" alt="Snow" />
         <div class="mobContent" style={{flexDirection:"row-reverse"}} id='left2'>
           <h1>Railings</h1>
-          <div>
+          <div style={{marginTop:"auto"}}>
             <p>Staircase Railings</p>
             <p>Balcony Railings</p>
             <p>Cut Out Railings</p>
@@ -129,7 +129,7 @@ const MakeMobile = () => {
         <img src="WhatWeMake/imageBG5.png" alt="Snow" />
         <div class="mobContent" style={{right:"0%"}} id='right3'>
           <h1>Pergola <br /> and other<br />projects</h1>
-          <div>
+          <div style={{marginTop:"auto"}}>
             <p>Manhole Covers</p>
             <p>Drain Covers</p>
             <p>Multiple Aluminium Profiles</p>

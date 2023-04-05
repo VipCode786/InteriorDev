@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "./careerPage.css"
+import { useRef } from 'react';
 const CareerPage = () => {
     const [Name, setName] = useState();
     const [Vacancy, setVacancy] = useState();
@@ -32,6 +33,33 @@ const CareerPage = () => {
           alert("Submitted")
         });
       };
+
+      const scroll = useRef(null)
+      
+      var i = 0;
+      function change() {
+      
+      var doc = document.getElementById("textBlinking");
+      var color = ["#7B90FF", "#93FF81"];
+      doc.style.color = color[i];
+      i = (i + 1) % color.length;
+      }
+      const scrollClick = () => {
+
+      
+        scroll.current?.scrollIntoView({ behavior: 'smooth' });
+        setInterval(change,500)
+        // setTimeout(()=>{
+        //     change()
+        // },500)    
+    };
+
+    const scrollClickMob = () => {
+
+       
+         scroll.current?.scrollIntoView({ behavior: 'smooth' });
+        
+     };
   return (
     <div className='careerdiv'>
         <div className="careerbg">
@@ -48,9 +76,11 @@ const CareerPage = () => {
                     <div className="contentCareerImg">
                     <img src="/careerPage/ep_opportunity.png" alt="" />
                     </div>
-                    <div className="contentP">
-                    we offer exciting <b>opportunities</b> for career growth and development. We provide our employees with the training and tools they need to succeed in their roles and achieve their career goals.
+                    <div className="contentP" >
+                    We offer exciting <b>opportunities</b> for career growth and development. We provide our employees with the training and tools they need to succeed in their roles and achieve their career goals.
                     </div>
+
+
                 </div>
 
                 <div>
@@ -79,7 +109,7 @@ const CareerPage = () => {
            <div className='heading'>
             Careers at Interior Crafts
             </div>
-            <div className="formP">
+            <div className="formP" id='textBlinking'>
             If you'd like to join our team, please fill out the short form below. Don't forget to include a copy of your resume.
             </div>
 
@@ -115,7 +145,7 @@ const CareerPage = () => {
                        
                             <img src="/careerPage/Vector.svg" alt="" />
                         </button></Link>
-                        <div style={{ borderStyle:"4px #CB572C"}}>
+                        <div style={{ borderStyle:"4px #CB572C"}} onClick={scrollClick}>
                         <div className='applyButton'>
                             Apply
                         </div>
@@ -134,7 +164,7 @@ const CareerPage = () => {
                        
                             <img src="/careerPage/Vector.svg" alt="" />
                         </button></Link>
-                        <div className='applyButton'>
+                        <div className='applyButton' onClick={scrollClick}>
                             Apply
                         </div>
                         </div>
@@ -147,7 +177,7 @@ const CareerPage = () => {
 
 
         <div className="careerFormDivTab">
-            <div className='tab'>
+            <div className='tab' ref={scroll}>
            <div className='heading'>
             Careers at Interior Crafts
             </div>
@@ -155,7 +185,7 @@ const CareerPage = () => {
             If you'd like to join our team, please fill out the short form below. Don't forget to include a copy of your resume.
             </div>
 
-            <div className="careerForm">
+            <div className="careerForm" >
             <form onSubmit={(e) => upload(e)}>
                 <input type="text" required placeholder='Name'  onChange={(e)=>setName(e.target.value)}/><br/>
                 <input type="text" required placeholder='Vacancy Applied For' onChange={(e)=>setVacancy(e.target.value)}/><br/>
@@ -186,7 +216,7 @@ const CareerPage = () => {
                             <img src="/careerPage/Vector.svg" alt="" />
                         </button></Link>
                         <div style={{ borderStyle:"4px #CB572C"}}>
-                        <div className='applyButton'>
+                        <div className='applyButton' onClick={scrollClickMob}>
                             Apply
                         </div>
                         </div>
@@ -204,7 +234,7 @@ const CareerPage = () => {
                        
                             <img src="/careerPage/Vector.svg" alt="" />
                         </button>
-                        <div className='applyButton'>
+                        <div className='applyButton' onClick={scrollClickMob}>
                             Apply
                         </div>
                         </div>

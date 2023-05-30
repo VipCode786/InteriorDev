@@ -90,6 +90,9 @@
 }
 .myTeam .row div {
   margin: 0.5rem;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .myTeam .row img {
   /* height: 60vh;

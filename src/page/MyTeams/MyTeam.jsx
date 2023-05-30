@@ -31,19 +31,19 @@ const MyTeam = () => {
     <div className='row'>
         <div>
         <img src="/MyTeam/1-AnisAhmed.jpg" alt="" />
-        <p>Anish Ahmed</p>
+        <p>Anis Ahmed</p>
         <p>(Founder)</p>
         </div>
 
         <div>
         <img src="/MyTeam/2-MohammadAamir.jpg" alt="" />
-        <p>Mohammad Aamir</p>
+        <p>Mohammad Aamir Saifi</p>
         <p>(Business Head)</p>
         </div>
 
         <div>
         <img src="/MyTeam/image60.png" alt="" />
-        <p>Mohammad Aadil </p>
+        <p>Mohammad Aadil Saifi </p>
         <p>(Business Head)</p>
         </div>
 
@@ -85,7 +85,7 @@ const MyTeam = () => {
 
         <div>
         <img src="/MyTeam/9-MohammadShahbaz.jpg" alt="" />
-        <p>MohammadShahbaz</p>
+        <p>Mohammad Shahbaz Jahangir</p>
         <p>(Assistant Manager 'Procurement & HR')</p>
         </div>
 
@@ -97,7 +97,7 @@ const MyTeam = () => {
 
         <div>
         <img src="/MyTeam/11-DigambarNayak.jpg" alt="" />
-        <p>DigambarNayak</p>
+        <p>Digambar Nayak</p>
         <p>(Production Supervisor)</p>
         </div>
     </div>

@@ -30,27 +30,27 @@ const MyTeam = () => {
     
     <div className='row'>
         <div>
-        <img src="/MyTeam/image53.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/1-AnisAhmed.jpg" alt="" />
+        <p>Anish Ahmed</p>
+        <p>(Founder)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image54.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/2-MohammadAamir.jpg" alt="" />
+        <p>Mohammad Aamir</p>
+        <p>(Business Head)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image55.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/image60.png" alt="" />
+        <p>Mohammad Aadil </p>
+        <p>(Business Head)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image56.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/4-JawedKhan.jpeg" alt="" />
+        <p>Jawed Khan</p>
+        <p>(Operation & Management Head)</p>
         </div>
         
     {/* </div>
@@ -60,27 +60,45 @@ const MyTeam = () => {
     
     <div className='row'> */}
         <div >
-        <img src="/MyTeam/image57.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/5-AbidAli.jpg" alt="" />
+        <p>Abid Ali</p>
+        <p>(Finance Head)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image58.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/6-NafeesAhmed.jpg" alt="" />
+        <p>Nafees Ahmed</p>
+        <p>(Production Head)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image59.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/7-ShamimAkhtar.jpg" alt="" />
+        <p>Shamim Akhtar</p>
+        <p>(Lead Computational  Designer)</p>
         </div>
 
         <div>
-        <img src="/MyTeam/image60.png" alt="" />
-        <p>Aadil Saifi</p>
-        <p>(Designation)</p>
+        <img src="/MyTeam/8-KaleemAhmad.jpg" alt="" />
+        <p>Kaleem Ahmad</p>
+        <p>(Design Visualizer)</p>
+        </div>
+
+        <div>
+        <img src="/MyTeam/9-MohammadShahbaz.jpg" alt="" />
+        <p>MohammadShahbaz</p>
+        <p>(Assistant Manager 'Procurement & HR')</p>
+        </div>
+
+        <div>
+        <img src="/MyTeam/10-AmitKumar.jpg" alt="" />
+        <p>Amit Kumar</p>
+        <p>(Assistant Architect)</p>
+        </div>
+
+        <div>
+        <img src="/MyTeam/11-DigambarNayak.jpg" alt="" />
+        <p>DigambarNayak</p>
+        <p>(Production Supervisor)</p>
         </div>
     </div>
     <br/>

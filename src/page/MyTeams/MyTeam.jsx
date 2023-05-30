@@ -37,13 +37,13 @@ const MyTeam = () => {
 
         <div>
         <img src="/MyTeam/2-MohammadAamir.jpg" alt="" />
-        <p>Mohammad Aamir Saifi</p>
+        <p>Mohammad Aamir</p>
         <p>(Business Head)</p>
         </div>
 
         <div>
         <img src="/MyTeam/image60.png" alt="" />
-        <p>Mohammad Aadil Saifi </p>
+        <p>Mohammad Aadil</p>
         <p>(Business Head)</p>
         </div>
 
@@ -85,7 +85,7 @@ const MyTeam = () => {
 
         <div>
         <img src="/MyTeam/9-MohammadShahbaz.jpg" alt="" />
-        <p>Mohammad Shahbaz Jahangir</p>
+        <p>Mohammad Shahbaz</p>
         <p>(Assistant Manager 'Procurement & HR')</p>
         </div>
 

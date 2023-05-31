@@ -78,8 +78,8 @@ const MyTeam = () => {
         </div>
 
         <div>
-        <img src="/MyTeam/8-KaleemAhmad.png" alt="" />
-        <p>Kaleem Ahmad</p>
+        <img src="/MyTeam/8-KaleemAhmed.png" alt="" />
+        <p>Kaleem Ahmed</p>
         <p>(Design Visualizer)</p>
         </div>
 

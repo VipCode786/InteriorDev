@@ -31,7 +31,7 @@ const MyTeam = () => {
     <div className='row'>
         <div>
         <img src="/MyTeam/1-AnisAhmed.png" alt="" />
-        <p>Anis Ahmed</p>
+        <p>Anish Ahmed</p>
         <p>(Founder)</p>
         </div>
 
@@ -42,8 +42,8 @@ const MyTeam = () => {
         </div>
 
         <div>
-        <img src="/MyTeam/image60.png" alt="" />
-        <p>Mohammad Aadil</p>
+        <img src="/MyTeam/3-MohammadAadil.png" alt="" />
+        <p>Mohammad Aadil </p>
         <p>(Business Head)</p>
         </div>
 
@@ -78,8 +78,8 @@ const MyTeam = () => {
         </div>
 
         <div>
-        <img src="/MyTeam/8-KaleemAhmed.png" alt="" />
-        <p>Kaleem Ahmed</p>
+        <img src="/MyTeam/8-KaleemAhmad.png" alt="" />
+        <p>Kaleem Ahmad</p>
         <p>(Design Visualizer)</p>
         </div>
 

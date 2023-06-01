@@ -32,25 +32,25 @@ const MyTeam = () => {
         <div>
         <img src="/MyTeam/1-AnisAhmed.png" alt="" />
         <p>Anish Ahmed</p>
-        <p>(Founder)</p>
+        <p>Founder</p>
         </div>
 
         <div>
         <img src="/MyTeam/2-MohammadAamir.png" alt="" />
         <p>Mohammad Aamir</p>
-        <p>(Business Head)</p>
+        <p>Business Head</p>
         </div>
 
         <div>
         <img src="/MyTeam/3-MohammadAadil.png" alt="" />
         <p>Mohammad Aadil </p>
-        <p>(Business Head)</p>
+        <p>Business Head</p>
         </div>
 
         <div>
         <img src="/MyTeam/4-JawedKhan.png" alt="" />
         <p>Jawed Khan</p>
-        <p>(Operation & Management Head)</p>
+        <p>Operation & Management Head</p>
         </div>
         
     {/* </div>
@@ -62,43 +62,43 @@ const MyTeam = () => {
         <div >
         <img src="/MyTeam/5-AbidAli.png" alt="" />
         <p>Abid Ali</p>
-        <p>(Finance Head)</p>
+        <p>Finance Head</p>
         </div>
 
         <div>
         <img src="/MyTeam/6-NafeesAhmed.png" alt="" />
         <p>Nafees Ahmed</p>
-        <p>(Production Head)</p>
+        <p>Production Head</p>
         </div>
 
         <div>
         <img src="/MyTeam/7-ShamimAkhtar.png" alt="" />
         <p>Shamim Akhtar</p>
-        <p>(Lead Computational  Designer)</p>
+        <p>Lead Computational  Designer</p>
         </div>
 
         <div>
         <img src="/MyTeam/8-KaleemAhmed.png" alt="" />
         <p>Kaleem Ahmad</p>
-        <p>(Design Visualizer)</p>
+        <p>Design Visualizer</p>
         </div>
 
         <div>
         <img src="/MyTeam/9-MohammadShahbaz.png" alt="" />
         <p>Mohammad Shahbaz</p>
-        <p>(Assistant Manager 'Procurement & HR')</p>
+        <p>Assistant Manager 'Procurement & HR'</p>
         </div>
 
         <div>
         <img src="/MyTeam/10-AmitKumar.png" alt="" />
         <p>Amit Kumar</p>
-        <p>(Assistant Architect)</p>
+        <p>Assistant Architect</p>
         </div>
 
         <div>
         <img src="/MyTeam/11-DigambarNayak.png" alt="" />
         <p>Digambar Nayak</p>
-        <p>(Production Supervisor)</p>
+        <p>Production Supervisor</p>
         </div>
     </div>
     <br/>

@@ -64,6 +64,7 @@
   -webkit-animation: box-from-right 3s ;
           animation: box-from-right 3s ;
   /* right: 0; */
+    height: -webkit-fill-available;
 }
 
   

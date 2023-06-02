@@ -97,7 +97,7 @@ const MyTeam = () => {
 
         <div>
         <img src="/MyTeam/11-DigambarNayak.png" alt="" />
-        <p>Digambar Nayak</p>
+        <p>Digamber Nayak</p>
         <p>Production Supervisor</p>
         </div>
     </div>

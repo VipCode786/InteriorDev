@@ -39,7 +39,7 @@
   bottom: 0%;
   -webkit-animation:none;
           animation:none;
-  height: -webkit-fill-available;
+  height: 80%;
   /* right: 0; */
 }
 

@@ -31,7 +31,7 @@ const MyTeam = () => {
     <div className='row'>
         <div>
         <img src="/MyTeam/1-AnisAhmed.png" alt="" />
-        <p>Anish Ahmed</p>
+        <p>Anis Ahmed</p>
         <p>Founder</p>
         </div>
 
